@@ -11,3 +11,8 @@ CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标�
 
 ## mihomo内核
 - https://github.001315.xyz/https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+
+
+## 致谢
+[CM大佬](https://github.com/cmliu)
+
