@@ -2,7 +2,7 @@
 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子
 
 
-所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：[v2ray免费节点每日更新 – Telegram](https://t.me/lsmoo) 
+所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：[v2ray免费节点每日更新 – Telegram](https://d.aizrf.com/tgq) 
 
 | 名称 | 操作系统 | 地址 |
 |------|----------|------|
@@ -28,16 +28,16 @@ CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标�
 ## mihomo内核
 - https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
 
-# GitHub 文件加速
+# 无需代理更新节点订阅
 
 ## base64格式
-- https://github.001315.xyz/https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt
+- https://d.aizrf.com/vless-base64
 ## mihomo内核
-- https://github.001315.xyz/https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+- https://d.aizrf.com/vless-mihomo
 
 
 
 
 ## 致谢
-[CM大佬](https://github.com/cmliu)
+[CM大佬](https://d.aizrf.com/github-cmliu)
 
