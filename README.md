@@ -3,7 +3,7 @@
 
 
 所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：[v2ray免费节点每日更新 – Telegram](https://t.me/lsmoo) 
-[周润发公益订阅器](https://zrf.zrf.me/)
+
 | 名称 | 操作系统 | 地址 |
 |------|----------|------|
 | SingBox | Mac/Linux/Android/Ios | [https://sing-box.sagernet.org/clients/](https://sing-box.sagernet.org/clients/) |
