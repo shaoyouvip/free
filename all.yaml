@@ -1,352 +1,24 @@
 proxies:
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 4.4MB/s"
-      network: tcp
-      port: 10635
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 4.7MB/s"
-      network: ws
-      port: 2087
-      server: 108.165.152.59
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 4.1MB/s"
-      port: 11512
-      server: 108.181.24.77
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 1000 Mbps
     - cipher: aes-256-cfb
-      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 5.4MB/s"
+      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 4.9MB/s"
       password: amazonskr05
       port: "443"
-      server: 13.250.55.223
+      server: 13.229.210.217
       type: ss
       udp: true
-    - name: "\U0001F1F9\U0001F1FC台湾2 | ⬇️ 4.8MB/s"
-      network: ws
-      port: 2087
-      server: 108.165.152.98
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F300其他1-未识别 | ⬇️ 4.1MB/s"
-      network: ws
-      port: 19015
-      server: 222.114.11.234
-      servername: edccq.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾3 | ⬇️ 5.2MB/s"
-      network: ws
-      port: 12209
-      server: 175.196.105.220
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 4.9MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.99
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.3MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.15
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 4.2MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.206
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-      xudp: true
-    - client-fingerprint: chrome
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1EB\U0001F1EE芬兰1 | ⬇️ 4.2MB/s"
-      network: tcp
-      port: "2089"
-      reality-opts:
-        public-key: XAsXZH4n6RP54ieBFHOfTYpJ4RUMjgsa_FhUA2kZWig
-        short-id: b2058a43fe
-      server: 37.27.218.238
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6e18ff9e-ebc2-41c7-9d41-a7ee624cacd6
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 4.2MB/s"
-      network: ws
-      port: 18888
-      server: 183.106.162.127
-      servername: cv.vs2025.cfd
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: cv.vs2025.cfd
-        path: /?ed=2560
-    - name: "\U0001F1E6\U0001F1FA澳大利亚1 | ⬇️ 4.3MB/s"
-      network: ws
-      port: 80
-      server: 45.131.4.228
-      servername: gozargah.validbv7996.ir
-      tls: false
-      type: vless
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare@WangCai2"
-    - client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 4.3MB/s"
-      network: ws
-      port: "8443"
-      server: 172.67.153.156
-      servername: ovhwuxian.pai50288.uk
-      tls: true
-      type: vless
-      udp: true
-      uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-      ws-opts:
-        headers:
-            Host: ovhwuxian.pai50288.uk
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
-        path: /57ba2ab1
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 4.3MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.201
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 4.3MB/s"
-      network: ws
-      port: 80
-      server: 45.131.4.116
-      servername: gozargah.validbv7996.ir
-      skip-cert-verify: true
-      tls: false
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2flow"
-    - name: "\U0001F1EF\U0001F1F5日本3 | ⬇️ 7.0MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.151
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 4.6MB/s"
-      network: ws
-      port: 443
-      server: 212.183.88.136
-      servername: cv.vs2025.cfd
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 55520747-311e-4015-83ce-be46e2060ce3
-      ws-opts:
-        headers:
-            host: cv.vs2025.cfd
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F300其他2-CN | ⬇️ 6.6MB/s"
-      network: tcp
-      port: 28680
-      reality-opts:
-        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: shenzhou05.mysynology.net
-      servername: www.nvidia.com
-      tls: true
-      type: vless
-      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 5.8MB/s"
-      network: ws
-      port: 16044
-      server: 211.219.39.209
-      servername: edccq.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 4.2MB/s"
-      network: ws
-      port: 80
-      server: 45.131.4.131
-      servername: gozargah.validbv7996.ir
-      tls: false
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-    - name: "\U0001F1F9\U0001F1FC台湾4 | ⬇️ 4.9MB/s"
-      network: ws
-      port: 9950
-      server: 43.134.167.135
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
     - cipher: aes-256-cfb
-      name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 5.0MB/s"
+      name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 4.1MB/s"
       password: amazonskr05
       port: "443"
-      server: 13.229.48.116
+      server: 13.212.222.104
       type: ss
       udp: true
-    - name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 4.7MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.38
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 5.7MB/s"
-      network: ws
-      port: 12209
-      server: 175.196.105.220
-      servername: edccq.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 4.9MB/s"
-      port: 17549
-      server: 208.87.243.151
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria
-      up: 11 Mbps
     - alterId: "2"
       cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国12 | ⬇️ 5.4MB/s"
+      name: "\U0001F1EE\U0001F1F9意大利1 | ⬇️ 4.1MB/s"
       network: ws
-      port: "30808"
-      server: v8.heduian.link
+      port: "30805"
+      server: v5.heduian.link
       skip-cert-verify: false
       tls: false
       type: vmess
@@ -354,140 +26,34 @@ proxies:
       uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
       ws-opts:
         headers:
-            Host: baidu.com
+            Host: ocbc.com
         path: /oooo
       xudp: true
-    - name: "\U0001F1E9\U0001F1EA德国2 | ⬇️ 4.9MB/s"
-      network: ws
-      port: "8080"
-      server: 45.131.4.33
-      type: vless
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 5.5MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "27102"
+      server: aafrtpfxr.hkl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
       udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /
-      xudp: true
-    - auth: ef328e54-5378-4e06-b587-66528fc2e617
-      client-fingerprint: chrome
-      down: 100
-      name: "\U0001F300其他3-CN | ⬇️ 5.4MB/s"
-      obfs: salamander
-      obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
-      password: ef328e54-5378-4e06-b587-66528fc2e617
-      port: 31003
-      server: 212.192.12.56
-      skip-cert-verify: true
-      type: hysteria2
-      udp: true
-      up: 100
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 4.8MB/s"
-      port: 62003
-      server: 176.32.35.226
-      servername: apple.com
-      skip-cert-verify: true
-      tls: true
-      type: hysteria
-      up: 1000 Mbps
-    - name: "\U0001F1F9\U0001F1FC台湾5 | ⬇️ 4.7MB/s"
-      network: ws
-      port: 443
-      server: theo.ns.cloudflare.com
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 4.5MB/s"
+      network: tcp
+      port: 35311
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      server: shenzhou02.mysynology.net
+      servername: www.yahoo.com
       tls: true
       type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1F7\U0001F1FA俄罗斯2 | ⬇️ 5.3MB/s"
-      port: 10469
-      server: 46.17.41.174
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 100 Mbps
-    - name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 4.1MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.47
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1F9\U0001F1FC台湾6 | ⬇️ 4.3MB/s"
-      network: ws
-      port: 21081
-      server: 220.122.202.79
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾7 | ⬇️ 4.7MB/s"
-      network: ws
-      port: 443
-      server: duke.ns.cloudflare.com
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾8 | ⬇️ 5.9MB/s"
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 5.5MB/s"
       network: ws
       port: 12341
       server: 222.104.213.148
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - cipher: aes-256-cfb
-      name: "\U0001F1F8\U0001F1EC新加坡3 | ⬇️ 4.1MB/s"
-      password: amazonskr05
-      port: 443
-      server: 13.212.77.19
-      type: ss
-      udp: true
-    - name: "\U0001F1F9\U0001F1FC台湾9 | ⬇️ 4.7MB/s"
-      network: ws
-      port: 21242
-      server: 222.97.135.19
       servername: edccq.ambercc.filegear-sg.me
       skip-cert-verify: true
       tls: true
@@ -498,77 +64,56 @@ proxies:
         headers:
             host: edccq.ambercc.filegear-sg.me
         path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾10 | ⬇️ 5.8MB/s"
-      network: ws
-      port: 30019
-      server: 222.96.171.51
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡3 | ⬇️ 4.4MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 13.250.61.152
+      type: ss
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 4.7MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.119
-      servername: gozargah.validbv7996.ir
-      type: vless
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 4.6MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "33506"
+      server: aafrtpfxr.usl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
       udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed"
-      xudp: true
-    - name: "\U0001F1F9\U0001F1FC台湾11 | ⬇️ 4.2MB/s"
-      network: ws
-      port: 8443
-      server: 92.243.74.239
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 5.5MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "10465"
+      server: aafrtpfxr.hkl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1FA\U0001F1F8美国13 | ⬇️ 4.8MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.101
-      type: vless
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 6.4MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "22271"
+      server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
       udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-      xudp: true
     - down: ""
       fingerprint: ""
-      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 4.2MB/s"
+      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 4.5MB/s"
       obfs: ""
       obfs-password: ""
       password: dongtaiwang.com
-      port: "59967"
-      server: 195.154.33.70
+      port: "61770"
+      server: 51.159.226.1
       skip-cert-verify: true
       sni: www.bing.com
       type: hysteria2
       up: ""
-    - name: "\U0001F1F9\U0001F1FC台湾12 | ⬇️ 4.0MB/s"
+    - name: "\U0001F1F9\U0001F1FC台湾2 | ⬇️ 4.1MB/s"
       network: ws
-      port: 443
-      server: kip.ns.cloudflare.com
+      port: 50000
+      server: 221.165.64.92
       servername: edccq.ambercc.filegear-sg.me
       skip-cert-verify: true
       tls: true
@@ -579,116 +124,14 @@ proxies:
         headers:
             host: edccq.ambercc.filegear-sg.me
         path: /?ed=2560
-    - name: "\U0001F1EB\U0001F1EE芬兰2 | ⬇️ 4.1MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.145
-      servername: gozargah.validbv7996.ir
-      type: vless
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡4 | ⬇️ 4.7MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 47.129.157.77
+      type: ss
       udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - name: "\U0001F1F9\U0001F1FC台湾13 | ⬇️ 4.4MB/s"
-      network: ws
-      port: 30002
-      server: 38.59.242.216
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾14 | ⬇️ 5.4MB/s"
-      network: ws
-      port: 21242
-      server: 222.97.135.19
-      servername: edccq.aimercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: edccq.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1FA\U0001F1F8美国14 | ⬇️ 4.2MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      port: "47262"
-      server: 164.152.19.229
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      up: ""
-    - auth: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-      name: "\U0001F1F5\U0001F1F1波兰1 | ⬇️ 4.8MB/s"
-      password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-      port: 27142
-      server: pl3.xn--04q43rwxe.eu.org
-      skip-cert-verify: true
-      sni: pl3.xn--04q43rwxe.eu.org
-      type: hysteria2
-    - alterId: "0"
-      cipher: auto
-      name: "\U0001F1F9\U0001F1FC台湾15 | ⬇️ 4.6MB/s"
-      network: tcp
-      port: "34006"
-      server: v2-tw1-zx.netcar.live
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: a7a702a2-c56d-4379-972b-30690dddec0d
-      xudp: true
-    - name: "\U0001F1EB\U0001F1EE芬兰3 | ⬇️ 4.7MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.5.26
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-      xudp: true
-    - auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      name: "\U0001F1FA\U0001F1F8美国15 | ⬇️ 4.9MB/s"
-      password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-      port: 47262
-      server: 164.152.19.229
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - name: "\U0001F1E9\U0001F1EA德国3 | ⬇️ 4.8MB/s"
-      network: ws
-      port: 80
-      server: 45.131.5.179
-      servername: gozargah.validbv7996.ir
-      skip-cert-verify: true
-      tls: false
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    - name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 4.6MB/s"
+    - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.4MB/s"
       network: ws
       port: "80"
       server: 45.131.5.190
@@ -704,9 +147,9 @@ proxies:
       xudp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0香港3 | ⬇️ 5.6MB/s"
+      name: "\U0001F1ED\U0001F1F0香港3 | ⬇️ 4.4MB/s"
       network: tcp
-      port: 61178
+      port: 10860
       reality-opts:
         public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
       server: test123.zlqhdns.top
@@ -714,10 +157,10 @@ proxies:
       tls: true
       type: vless
       uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - name: "\U0001F1F9\U0001F1FC台湾16 | ⬇️ 4.2MB/s"
+    - name: "\U0001F1F9\U0001F1FC台湾3 | ⬇️ 4.3MB/s"
       network: ws
-      port: 12341
-      server: 222.104.213.148
+      port: 443
+      server: duke.ns.cloudflare.com
       servername: edccq.ambercc.filegear-sg.me
       skip-cert-verify: true
       tls: true
@@ -728,10 +171,97 @@ proxies:
         headers:
             host: edccq.ambercc.filegear-sg.me
         path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FC台湾17 | ⬇️ 4.2MB/s"
+    - client-fingerprint: chrome
+      name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 5.1MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "46668"
+      server: aafrtpfxr.krl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 5.2MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "27001"
+      server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他1-MY | ⬇️ 4.1MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "43383"
+      server: aafrtpfxr.myl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - cipher: aes-256-cfb
+      name: "\U0001F1F8\U0001F1EC新加坡5 | ⬇️ 4.8MB/s"
+      password: amazonskr05
+      port: "443"
+      server: 52.76.47.112
+      type: ss
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.8MB/s"
       network: ws
-      port: 2083
-      server: 27.50.49.231
+      port: 30019
+      server: 222.96.171.51
+      servername: edccq.ambercc.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edccq.ambercc.filegear-sg.me
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7法国2 | ⬇️ 4.7MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "43498"
+      server: aafrtpfxr.frl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F9\U0001F1FC台湾4 | ⬇️ 5.8MB/s"
+      network: tcp
+      port: 15700
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      server: zhee01.dynu.net
+      servername: www.nvidia.com
+      tls: true
+      type: vless
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - client-fingerprint: chrome
+      name: "\U0001F1F9\U0001F1FC台湾5 | ⬇️ 5.0MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "27201"
+      server: aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他2-AR | ⬇️ 4.5MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "43590"
+      server: aafrtpfxr.arl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1F9\U0001F1FC台湾6 | ⬇️ 4.5MB/s"
+      network: ws
+      port: 21081
+      server: 220.122.202.79
       servername: edccq.aimercc.filegear-sg.me
       skip-cert-verify: true
       tls: true
@@ -742,49 +272,112 @@ proxies:
         headers:
             host: edccq.aimercc.filegear-sg.me
         path: /?ed=2560
-    - name: "\U0001F1EC\U0001F1E7英国2 | ⬇️ 4.5MB/s"
+    - name: "\U0001F1F9\U0001F1FC台湾7 | ⬇️ 8.4MB/s"
       network: ws
-      port: "80"
-      server: 45.131.5.18
-      servername: gozargah.validbv7996.ir
-      type: vless
-      udp: true
-      uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-      ws-opts:
-        headers:
-            Host: gozargah.validbv7996.ir
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
-      xudp: true
-    - client-fingerprint: ""
-      flow: ""
-      mode: ""
-      name: "\U0001F1E9\U0001F1EA德国4 | ⬇️ 5.0MB/s"
-      network: ws
-      port: 2096
-      server: www.speedtest.net
-      servername: HmVnWhD3kK.sAaEdSgOvVzZlD1122.iNfO
+      port: 30002
+      server: 38.59.242.216
+      servername: edccq.aimercc.filegear-sg.me
+      skip-cert-verify: true
       tls: true
       type: vless
-      udp: false
-      uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-      ws-opts:
-        headers:
-            Host: HmVnWhD3kK.sAaEdSgOvVzZlD1122.iNfO
-        path: /
-    - alterId: "2"
-      cipher: auto
-      name: "\U0001F1E8\U0001F1E6加拿大2 | ⬇️ 4.3MB/s"
-      network: ws
-      port: "30825"
-      server: v25.heduian.link
-      skip-cert-verify: false
-      tls: false
-      type: vmess
       udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
       ws-opts:
         headers:
-            Host: baidu.com
-        path: /oooo
-      xudp: true
+            host: edccq.aimercc.filegear-sg.me
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F300其他3-TH | ⬇️ 5.0MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "43395"
+      server: aafrtpfxr.thl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1F9\U0001F1FC台湾8 | ⬇️ 4.4MB/s"
+      network: ws
+      port: 443
+      server: 172.64.35.66
+      servername: edccq.aimercc.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edccq.aimercc.filegear-sg.me
+        path: /?ed=2560
+    - cipher: chacha20-ietf
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 6.1MB/s"
+      password: asd123456
+      port: "8388"
+      server: 103.36.90.195
+      type: ss
+      udp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 4.2MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "12904"
+      server: 46.17.41.5
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria2
+      up: ""
+    - client-fingerprint: chrome
+      name: "\U0001F1EE\U0001F1F3印度1 | ⬇️ 5.4MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "42882"
+      server: aafrtpfxr.inl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 5.8MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "33505"
+      server: aafrtpfxr.usl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F5\U0001F1F1波兰1 | ⬇️ 4.0MB/s"
+      network: tcp
+      port: 47096
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      server: shenzhou02.mysynology.net
+      servername: www.nvidia.com
+      tls: true
+      type: vless
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - client-fingerprint: chrome
+      name: "\U0001F300其他4-ID | ⬇️ 6.4MB/s"
+      password: a439dc7a-fe3b-43e0-a186-1151f3e6fa7a
+      port: "43394"
+      server: aafrtpfxr.idl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+      skip-cert-verify: false
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+      udp: true
+    - name: "\U0001F1F9\U0001F1FC台湾9 | ⬇️ 6.6MB/s"
+      network: ws
+      port: 443
+      server: 38.207.190.246
+      servername: edccq.aimercc.filegear-sg.me
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      ws-opts:
+        headers:
+            host: edccq.aimercc.filegear-sg.me
+        path: /?ed=2560
