@@ -1,33 +1,135 @@
 proxies:
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F300其他1-CN | ⬇️ 5.4MB/s"
+      name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 4.1MB/s"
       network: tcp
-      port: "62157"
+      port: 15700
       reality-opts:
         public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-        short-id: ""
+      server: zhee01.dynu.net
+      servername: www.nvidia.com
+      tls: true
+      type: vless
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - name: "\U0001F300其他1-MY | ⬇️ 5.2MB/s"
+      network: tcp
+      port: "18264"
+      server: 43.216.7.77
+      type: vless
+      udp: true
+      uuid: 881a611f-a8ed-4fea-bda2-1f2bd77a5bfd
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 4.9MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "15544"
+      server: 108.181.5.133
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria2
+      up: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 4.8MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: dongtaiwang.com
+      port: "61770"
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F5\U0001F1F1波兰1 | ⬇️ 4.7MB/s"
+      network: tcp
+      port: 47096
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
       server: shenzhou02.mysynology.net
       servername: www.nvidia.com
       tls: true
       type: vless
-      udp: true
       uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-      xudp: true
-    - name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 5.0MB/s"
-      network: ws
-      port: "80"
-      server: 170.114.45.6
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 1000 Mbps
+      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 5.4MB/s"
+      port: 62003
+      server: 176.32.35.226
+      servername: apple.com
+      skip-cert-verify: true
+      tls: true
+      type: hysteria
+      up: 1000 Mbps
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 4.2MB/s"
+      obfs: salamander
+      obfs-password: 6c80ade6
+      password: 18463200c271aa6d
+      port: "443"
+      server: 45.63.116.113
+      skip-cert-verify: true
+      sni: vkvd127.mycdn.me
+      type: hysteria2
+      up: ""
+    - fast-open: true
+      name: "\U0001F1F7\U0001F1FA俄罗斯2 | ⬇️ 4.6MB/s"
+      password: dongtaiwang.com
+      port: 35751
+      server: 46.29.163.171
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.2MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+      port: "47262"
+      server: 164.152.19.229
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.0MB/s"
+      network: tcp
+      port: "30158"
+      reality-opts:
+        public-key: n7Ptb-3f4pw0D-hG-UP8Dp5Gf8J8Uxn029JMwdTyEFc
+        short-id: ee9e2505
+      server: 164.152.19.229
+      servername: www.yahoo.com
+      tls: true
       type: vless
       udp: true
-      uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-      ws-opts:
-        headers:
-            Host: free.pranithsandaruwan.shop
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-        path: /
+      uuid: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
       xudp: true
-    - name: "\U0001F300其他2-MY | ⬇️ 5.6MB/s"
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55 Mbps
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 4.7MB/s"
+      port: 17549
+      server: 208.87.243.151
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria
+      up: 11 Mbps
+    - name: "\U0001F300其他2-MY | ⬇️ 4.9MB/s"
       network: tcp
       port: "58491"
       server: 43.216.210.242
