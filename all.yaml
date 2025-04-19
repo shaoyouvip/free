@@ -1,7 +1,7 @@
 proxies:
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 6.1MB/s|16%|Netflix|Youtube|Openai|Gemini"
+      name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 5.2MB/s|16%|Netflix|Youtube|Openai|Gemini"
       port: 12477
       reality-opts:
         public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -13,139 +13,309 @@ proxies:
       udp: true
       uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 6.1MB/s|0%|Netflix|Openai"
-      password: eed9470e-2084-4766-91c8-3f066b43d83a
-      port: "34014"
-      server: sla.cn.964e995b760.gogodns.xin
-      skip-cert-verify: true
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F300其他1-AR | ⬇️ 4.5MB/s|66%|Openai|Gemini"
-      password: 0509203e-af57-479a-b7b0-27c4c0a3d502
-      port: "43590"
-      server: sla.cn.964e995b760.gogodns.xin
+      flow: xtls-rprx-vision
+      name: "\U0001F1E8\U0001F1ED瑞士1 | ⬇️ 4.1MB/s"
+      port: 443
+      server: 152.67.68.116
+      servername: YAPC-1.afshin.ir
       skip-cert-verify: false
-      sni: q08m.vgraxiw73s.hasyaf.cn
-      type: trojan
+      tls: true
+      type: vless
       udp: true
-    - flow: -udp443
+      uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F300其他1-TH | ⬇️ 4.0MB/s|Netflix|Youtube|Openai|Gemini"
+      port: 16955
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      server: bsuqian01.dynu.net
+      servername: www.yahoo.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 3.9MB/s|62%|Disney|Openai|Gemini"
+      network: ws
+      port: 443
+      server: 104.18.20.20
+      servername: us3.globals-download.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+      ws-opts:
+        headers:
+            Host: us3.globals-download.com
+        path: /pq/us3
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 5.0MB/s|41%|Openai"
+      network: ws
+      port: "2096"
+      server: dash.parspack.com
+      servername: rEDzOnE.MirAcLehEaRTbIt.ICu
+      tls: true
+      type: vless
+      udp: true
+      uuid: 18ae6a6e-1a80-4907-b7d0-a72b76151761
+      ws-opts:
+        headers:
+            Host: rEDzOnE.MirAcLehEaRTbIt.ICu
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36
+        path: /2096/@V2RayyNGVpn
+      xudp: true
+    - client-fingerprint: chrome
       http-opts:
         headers: {}
         path:
             - /
-      name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 4.5MB/s|Netflix|Openai"
+      name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 4.9MB/s|25%|Netflix|Youtube|Openai"
       network: tcp
-      port: "20878"
-      server: raynitro.holooserver.com
-      type: vless
-      udp: true
-      uuid: c7fb7cc9-be80-44dc-bfe3-a7d1429ca8b2
-      xudp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E8\U0001F1ED瑞士1 | ⬇️ 4.0MB/s|0%|Netflix|Openai"
-      network: tcp
-      port: "6718"
+      port: "3033"
       reality-opts:
-        public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
-        short-id: d6d54c08fbbf895f
-      server: 37.156.46.65
-      servername: stackoverflow.com
+        public-key: 9GYwmAKTskGpQ7sKrds-aa14vW-6yYzs-yE8Y7HBcTQ
+        short-id: ""
+      server: 91.107.254.145
+      servername: refersion.com
       tls: true
       type: vless
       udp: true
-      uuid: 7026bbec-b5af-13a4-0b00-e3f5f94c6e5f
+      uuid: c9915df4-48e4-4084-810b-438b8548c615
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 4.1MB/s|65%|Netflix|Openai"
+    - name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 4.2MB/s|62%|Netflix|Disney"
       network: ws
-      port: "2096"
-      server: whatismyipaddress.com
-      servername: wwwspeedtestnetwhiteberinsistomd6625996s29.sabzmaghz.ir
+      port: 443
+      server: 63.141.128.92
+      servername: bn.ylks0033.dpdns.org
+      skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       ws-opts:
         headers:
-            Host: wwwspeedtestnetwhiteberinsistomd6625996s29.sabzmaghz.ir
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
-        path: ""
-      xudp: true
-    - name: "\U0001F1E9\U0001F1EA德国2 | ⬇️ 4.2MB/s|25%|Netflix|Openai"
-      network: ws
-      port: "2082"
-      server: 104.17.147.22
-      type: vless
-      udp: true
-      uuid: 5dea11f6-47c8-4947-be08-46ba3e1777fe
-      ws-opts:
-        headers:
-            Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-        path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-      xudp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.5MB/s|41%|Netflix|Openai|Gemini"
-      network: tcp
-      port: 5229
-      server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net
-      type: vmess
-      uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.1MB/s|41%|Openai"
-      port: 5228
-      server: 7daa6f3a-sux8g0-tavf3m-18imv.cu.plebai.net
-      tls: false
-      type: vmess
-      uuid: 9a846cd4-7a86-11ed-a8bf-f23c91cfbbc9
+            host: bn.ylks0033.dpdns.org
+        path: /?ed=2560
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 4.2MB/s|48%|Openai|Gemini"
+      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 5.7MB/s|76%|Openai"
       network: tcp
-      port: 27932
+      port: 11839
       reality-opts:
         public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-      server: zhee01.dynu.net
-      servername: www.amazon.com
+      server: gysz0000.dynu.net
+      servername: www.nvidia.com
       tls: true
       type: vless
       uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 5.0MB/s|0%|Netflix|Disney|Youtube"
-      password: ee72abce-19c9-49c8-aa55-76ae40d71e71
-      port: "39226"
-      server: xm.miloli.cc
-      type: ss
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1E6\U0001F1FA澳大利亚1 | ⬇️ 5.0MB/s|54%|Youtube|Openai|Gemini"
+      network: tcp
+      port: 42426
+      reality-opts:
+        public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      server: bsuqian01.dynu.net
+      servername: gateway.icloud.com
+      tls: true
+      type: vless
+      uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+    - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.5MB/s|0%|Disney|Openai|Gemini"
+      password: 2342895f-ca91-49de-a409-2be44e77d05b
+      port: 27301
+      server: sla.cn.964e995b760.gogodns.xin
+      sni: q08m.vgraxiw73s.hasyaf.cn
+      type: trojan
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.4MB/s|41%|Netflix|Openai|Gemini"
+      network: tcp
+      port: "5228"
+      server: d88cbd41-sv2sg0-sv2tqi-1gy2v.cu.plebai.net
+      skip-cert-verify: false
+      tls: false
+      type: vmess
       udp: true
-    - cipher: chacha20-ietf
-      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 6.1MB/s|0%|Netflix|Disney|Youtube|Openai|Gemini"
-      password: asd123456
-      port: "8388"
-      server: 103.36.90.195
-      type: ss
+      uuid: 9b604194-17b7-11ef-80b0-f23c913c8d2b
+      xudp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      http-opts:
+        headers:
+            Host:
+                - nl1.bugfreenet.biz.ddns-ip.net
+        path:
+            - /?JOKERRVPN_JOKERRVPN
+      name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 4.4MB/s|Youtube|Openai"
+      network: http
+      port: "2095"
+      server: 0:0:0:0:0:ffff:9df5:4c61
+      skip-cert-verify: false
+      tls: false
+      type: vmess
       udp: true
+      uuid: 6ba15edd-efc5-426b-baf7-70b9c6607e26
+      xudp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
       http-opts:
         headers: {}
         path:
             - /
-      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 6.6MB/s|37%|Netflix|Openai|Gemini"
+      name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 5.8MB/s|36%|Netflix|Disney|Youtube|Openai|Gemini"
       network: tcp
       port: "443"
       reality-opts:
         public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
         short-id: 7a2b
-      server: 34.208.236.106
+      server: 3.38.146.81
       servername: zula.ir
       tls: true
       type: vless
       udp: true
       uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
       xudp: true
-# 2025-04-20 01:12:23
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 5.3MB/s|36%|Netflix|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 13.216.241.200
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 5.7MB/s|36%|Netflix|Disney|Youtube|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 43.207.187.242
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 5.4MB/s|36%|Netflix|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 54.161.119.252
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F0\U0001F1F7韩国2 | ⬇️ 4.4MB/s|36%|Netflix|Disney|Youtube|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 43.203.147.157
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 4.5MB/s|36%|Netflix|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 13.217.48.119
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F0\U0001F1F7韩国3 | ⬇️ 5.7MB/s|36%|Netflix|Disney|Youtube|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 3.38.200.223
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 4.5MB/s|36%|Netflix|Openai|Gemini"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+        short-id: 7a2b
+      server: 13.217.97.242
+      servername: zula.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+      xudp: true
+# 2025-04-20 02:18:23
