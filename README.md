@@ -17,7 +17,7 @@
 
 ## GUI.for.Clash使用教程：[点击查看](https://blog.aizrf.com/p/GUI-for-Clash/)
 
-# 节点导入方法
+## 节点导入方法
 
 > base64格式的订阅需要使用这样的方法进行使用！
 > 
