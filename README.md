@@ -26,7 +26,9 @@ CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标�
 # 节点更新订阅
 
 ## yaml格式的订阅
-- https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
+```
+https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
+```
 ## base64格式的订阅（需要使用上方节点导入方法）
 - https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt
 ## 带分流规则的mihomo订阅
