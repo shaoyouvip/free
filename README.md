@@ -18,7 +18,7 @@
 ## GUI.for.Clash使用教程：[点击查看](https://blog.aizrf.com/p/GUI-for-Clash/)
 
 # 节点导入方法
-base64格式的订阅需要使用这样的方法进行使用！
+> base64格式的订阅需要使用这样的方法进行使用！
 
 > CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点
 
