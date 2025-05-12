@@ -1,96 +1,179 @@
 proxies:
-    - alpn:
-        - h3
-      delay: 382
-      disable-sni: false
-      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 8.0MB/s"
-      password: f3ba3679-f2f4-465f-92a5-de320b775a88
-      port: 43516
-      reduce-rtt: false
-      request-timeout: 0
-      server: 185.22.155.105
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: tuic
-      udp-relay-mode: native
-      uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-      version: 5
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1F7\U0001F1FA俄罗斯2 | ⬇️ 9.5MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: dongtaiwang.com
-      port: "10011"
-      server: hy2.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      up: ""
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 8.9MB/s"
-      password: 423cf642-6528-410c-b542-2aae04113d33
-      port: "11501"
-      server: cdn-p1-hk.weibo-dns.com
-      type: ss
-      udp: true
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1173
-      down: 100
-      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 9.2MB/s"
-      port: 14241
-      protocol: udp
-      server: 51.159.226.1
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 100
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 9.6MB/s"
-      port: 11512
-      server: 108.181.24.77
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 1000 Mbps
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1432
-      down: "100"
-      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 9.9MB/s"
-      obfs: ""
-      port: 40528
-      protocol: ""
-      server: 208.87.243.187
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: "100"
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 9.2MB/s"
-      port: 17549
-      server: 208.87.243.151
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria
-      up: 1000 Mbps
+    - name: "\U0001F1F9\U0001F1FC台湾1 | ⬇️ 4.5MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 6.3MB/s"
+      network: ws
+      password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
+      port: 443
+      server: 104.21.112.1
+      skip-cert-verify: false
+      sni: 7bhui.191262.xyz
+      type: trojan
+      ws-opts:
+        headers:
+            Host: 7bhui.191262.xyz
+        path: /wGgR8FyAGgRCKSiyxgvJgLl
     - alpn:
         - http/1.1
       client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 10.4MB/s"
+      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.4MB/s"
+      network: ws
+      port: 443
+      server: 9e.iran.pp.ua
+      servername: 9e.iran.pp.ua
+      tls: true
+      type: vless
+      udp: true
+      uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+      ws-opts:
+        headers:
+            Host: 9e.iran.pp.ua
+        path: /K8X1ocJD1r0dTd5pVam9w
+    - name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "8880"
+      server: 103.245.228.99
+      type: vless
+      udp: true
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: reedfree8mahsang2.redorg.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+      xudp: true
+    - name: "\U0001F300其他1-未识别 | ⬇️ 3.9MB/s"
+      password: RlzoEILU
+      port: 36654
+      server: 36.151.251.61
+      skip-cert-verify: true
+      type: trojan
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 4.4MB/s"
+      network: ws
+      port: 443
+      server: cloudgetservice.mcloudservice.site
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      udp: true
+      uuid: b87cea1d-d14c-45c3-af40-7af5d3be88da
+      ws-opts:
+        headers:
+            Host: CANADa-199.BLaZecANADA.sIte
+        path: /linkvkvws
+      xudp: true
+    - name: "\U0001F1F0\U0001F1F7韩国2 | ⬇️ 4.2MB/s"
+      network: ws
+      port: 443
+      server: 185.133.35.112
+      servername: nl.ylka.dpdns.org
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+      ws-opts:
+        headers:
+            host: nl.ylka.dpdns.org
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.3MB/s"
+      network: tcp
+      password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+      port: "15229"
+      server: 8097dad9-sw5og0-sx7hbg-1mmbp.cu.plebai.net
+      skip-cert-verify: false
+      type: trojan
+      udp: true
+    - name: "\U0001F1E8\U0001F1ED瑞士1 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "2053"
+      server: 37.156.44.42
+      type: vless
+      udp: true
+      uuid: ffd9509f-afa3-45c8-d737-38dd00555312
+      ws-opts:
+        headers:
+            Host: ""
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+        path: /telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      fingerprint: ""
+      name: "\U0001F1E8\U0001F1ED瑞士2 | ⬇️ 5.6MB/s"
+      network: ws
+      port: 2053
+      server: tify-binex-join.espikernajafi.ir
+      tls: false
+      type: vless
+      udp: false
+      uuid: ffd9509f-afa3-45c8-d737-38dd00555312
+      ws-opts:
+        path: /telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560
+    - name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 4.0MB/s"
+      password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+      port: 15229
+      server: d6149d24-sw5og0-sx4b2t-tng5.cu.plebai.net
+      skip-cert-verify: true
+      sni: d6149d24-sw5og0-sx4b2t-tng5.cu.plebai.net
+      type: trojan
+      udp: true
+    - name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 5.8MB/s"
+      network: ws
+      port: "80"
+      server: 38.60.91.60
+      type: vless
+      udp: true
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: reedfree8mahsang2.redorg.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+        path: "Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F300其他2-SE | ⬇️ 5.9MB/s"
+      network: ws
+      password: aeituqOkfYhy
+      port: "2053"
+      server: 172.67.142.21
+      skip-cert-verify: false
+      sni: tasnim.andishehnegariran.ir
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: "/\U0001F194@M3HDIO1"
+    - client-fingerprint: chrome
+      name: "\U0001F300其他3-MD | ⬇️ 4.2MB/s"
+      network: ws
+      port: "8443"
+      server: 158.101.199.249
+      servername: CiR346yL3b.DeRaKhT.iNfO
+      tls: true
+      type: vless
+      udp: true
+      uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+      ws-opts:
+        headers:
+            Host: CiR346yL3b.DeRaKhT.iNfO
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 4.2MB/s"
       network: ws
       port: "443"
       server: 104.21.71.131
@@ -102,409 +185,135 @@ proxies:
       ws-opts:
         headers:
             Host: m5rtghj.999854.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
         path: /GsJV4ORk0e0CScyGqcQZW
       xudp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 11.3MB/s"
-      password: qwerREWQ@@
-      port: "15098"
-      server: 125.141.31.72
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 12.7MB/s"
-      password: 423cf642-6528-410c-b542-2aae04113d33
-      port: "11532"
-      server: cdn-p1-hk.weibo-dns.com
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 13.5MB/s"
-      network: ws
-      password: f82fb954-06a1-4f0b-9180-17e07585b61f
-      port: "443"
-      server: 104.21.64.1
-      skip-cert-verify: false
-      sni: 6hj8.191262.xyz
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
-        path: /Yu29UN3Yz8hcnI3SlZor0
-    - name: "\U0001F300其他1-未识别 | ⬇️ 13.6MB/s"
-      network: ws
-      port: "80"
-      server: 45.131.7.93
-      servername: 901.dbodanwi.workers.dev
-      type: vless
-      udp: true
-      uuid: 6f183280-b258-437a-a216-e83f7dece776
-      ws-opts:
-        headers:
-            Host: 901.dbodanwi.workers.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
-        path: Telegram@WangCai2/?ed=2048
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 18.7MB/s"
-      network: ws
-      port: "443"
-      server: mas10xyz.890602.xyz
-      servername: MAs10xyZ.890602.XyZ
-      tls: true
-      type: vless
-      udp: true
-      uuid: 4f3f7db1-f416-473e-8321-b2cec71c04ab
-      ws-opts:
-        headers:
-            Host: mas10xyz.890602.xyz
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
-        path: /YzFLmzNIEQsAmceLxv94lPbgMw
-      xudp: true
-    - name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 27.7MB/s"
-      network: ws
-      port: "80"
-      server: 104.21.56.44
-      servername: REEdfREe8MahSaNg2.rEDOrG.IR
-      type: vless
-      udp: true
-      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-      ws-opts:
-        headers:
-            Host: REEdfREe8MahSaNg2.rEDOrG.IR
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-        path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 19.9MB/s"
-      network: ws
-      port: "443"
-      server: 188.42.88.45
-      servername: CxNiMjJz.cAfUnEaR.InFo
-      tls: true
-      type: vless
-      udp: true
-      uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-      ws-opts:
-        headers:
-            Host: CxNiMjJz.cAfUnEaR.InFo
-            User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
-        path: /
-      xudp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F300其他2-VN | ⬇️ 12.1MB/s"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.22
-      type: ss
-    - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 11.7MB/s"
-      password: 423cf642-6528-410c-b542-2aae04113d33
-      port: "11536"
-      server: ieplqz.youku-dns.com
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 15.9MB/s"
-      password: 423cf642-6528-410c-b542-2aae04113d33
-      port: 11535
-      server: ieplqz.youku-dns.com
-      type: ss
-    - alpn:
-        - http/1.1
-      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 13.9MB/s"
-      network: ws
-      password: 1549e70f-dc57-45e3-ac7c-515f0161db72
-      port: 443
-      server: 104.21.7.147
-      skip-cert-verify: false
-      sni: 6667.HUAnGSHanG.dpdNs.orG
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
-        path: /TomYJoQX0RSt1mktNrT
-    - alpn:
-        - http/1.1
-      name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 11.2MB/s"
-      network: ws
-      password: a926af96-2cfe-4169-8107-6c5f0d74a938
-      port: 443
-      server: 104.21.112.1
-      skip-cert-verify: false
-      sni: zsde.7777128.xyz
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-        path: /5NB3RVAWa3Uo1P5zFPkui
-    - alpn:
-        - http/1.1
-      name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 9.4MB/s"
-      network: ws
-      password: a926af96-2cfe-4169-8107-6c5f0d74a938
-      port: "443"
-      server: 104.21.48.1
-      skip-cert-verify: false
-      sni: zsde.7777128.xyz
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
-        path: /5NB3RVAWa3Uo1P5zFPkui
-    - name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 22.3MB/s"
-      network: tcp
-      password: 8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC
-      port: 443
-      server: 43.207.112.226
-      skip-cert-verify: true
-      sni: terture.meijireform.com
-      type: trojan
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1F7\U0001F1FA俄罗斯3 | ⬇️ 15.4MB/s"
-      port: 62003
-      server: 176.32.35.226
-      servername: apple.com
-      skip-cert-verify: true
-      tls: true
-      type: hysteria
-      up: 1000 Mbps
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 14.6MB/s"
-      network: ws
-      password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
-      port: "443"
-      server: 172.67.135.37
-      skip-cert-verify: false
-      sni: m9rrrfgh.459.pp.ua
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-        path: /l6lvY4hFZriQDBimbKYmPIggy
-    - alpn:
-        - http/1.1
-      name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 8.6MB/s"
-      network: ws
-      password: f82fb954-06a1-4f0b-9180-17e07585b61f
-      port: 443
-      server: 104.21.16.1
-      skip-cert-verify: false
-      sni: 6hj8.191262.xyz
-      type: trojan
-      udp: true
-      ws-opts:
-        path: /Yu29UN3Yz8hcnI3SlZor0
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1EB\U0001F1F7法国2 | ⬇️ 8.4MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: dongtaiwang.com
-      port: "4489"
-      server: hy2-1.694463.xyz
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      up: ""
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1FA\U0001F1F8美国12 | ⬇️ 9.5MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: nfsn666
-      port: "8888"
-      server: sj-arm.nfsn666.gq
-      skip-cert-verify: true
-      sni: sj-arm.nfsn666.gq
-      type: hysteria2
-      up: ""
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1F7\U0001F1FA俄罗斯4 | ⬇️ 8.8MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: dongtaiwang.com
-      port: "10011"
-      server: 46.17.41.217
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-      up: ""
-    - client-fingerprint: chrome
-      name: "\U0001F1F0\U0001F1F7韩国2 | ⬇️ 12.7MB/s"
-      network: ws
-      port: "443"
-      server: 162.159.152.107
-      servername: hi.univermap.site
-      tls: true
-      type: vless
-      udp: true
-      uuid: d7f943df-d885-4589-93e6-da8b1b2bbde2
-      ws-opts:
-        headers:
-            Host: hi.univermap.site
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
-        path: /?ed=2560fp=random
-      xudp: true
-    - name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 10.0MB/s"
-      network: ws
-      port: "2052"
-      server: 86.38.214.22
-      type: vless
-      udp: true
-      uuid: 02475224-e7cd-58a5-a6d7-81d7d025acac
-      ws-opts:
-        headers:
-            Host: sPeedtest2.sbs.gb.vless.sitespeedtest.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
-        path: /vless
-      xudp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国13 | ⬇️ 13.3MB/s"
-      network: ws
-      password: 114ad614-fe6c-4422-b0af-be6161190d7a
-      port: "443"
-      server: 104.21.61.154
-      skip-cert-verify: false
-      sni: DDrt.191266.Xyz
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
-        path: /By7cEmOrNRS58yeduy9AOG
-    - alterId: "0"
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国14 | ⬇️ 16.8MB/s"
-      network: ws
-      port: "2096"
-      server: 141.101.120.253
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-      ws-opts:
-        headers:
-            Host: 1746882891.speed.adl.cccp.freefly.pp.ua
-        path: /
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1E9\U0001F1EA德国2 | ⬇️ 11.8MB/s"
-      network: ws
-      password: Aimer
-      port: "2053"
-      server: 108.165.152.241
-      skip-cert-verify: false
-      sni: epccj.ambercc.filegear-sg.me
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
-        path: /?ed=2560&proxyip=ts.hpc.tw
-    - name: "\U0001F1FA\U0001F1F8美国15 | ⬇️ 14.9MB/s"
-      network: ws
-      port: "80"
-      server: 104.21.56.44
-      type: vless
-      udp: true
-      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-      ws-opts:
-        headers:
-            Host: REEdfREe8MahSaNg2.rEDOrG.IR
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
-        path: /Join_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EC\U0001F1E7英国2 | ⬇️ 8.1MB/s"
-      network: ws
-      port: "443"
-      server: 45.8.211.230
-      servername: CxNiMjJz.cAfUnEaR.InFo
-      tls: true
-      type: vless
-      udp: true
-      uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-      ws-opts:
-        headers:
-            Host: CxNiMjJz.cAfUnEaR.InFo
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-        path: /
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F300其他3-MD | ⬇️ 10.2MB/s"
-      network: ws
-      port: "8443"
-      server: 205.233.181.186
-      servername: CiR346yL3b.DeRaKhT.iNfO
-      tls: true
-      type: vless
-      udp: true
-      uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-      ws-opts:
-        headers:
-            Host: CiR346yL3b.DeRaKhT.iNfO
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
-        path: /
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国16 | ⬇️ 9.1MB/s"
-      network: ws
-      port: "443"
-      server: ddfr.191266.xyz
-      servername: ddFR.191266.XYZ
-      tls: true
-      type: vless
-      udp: true
-      uuid: 114ad614-fe6c-4422-b0af-be6161190d7a
-      ws-opts:
-        headers:
-            Host: ddfr.191266.xyz
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36
-        path: /C1SukvGdr58yeduy9AOG
-      xudp: true
-    - delay: 653
-      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 21.2MB/s"
-      password: RlzoEILU
-      port: 49893
-      server: 36.151.251.57
-      skip-cert-verify: true
-      type: trojan
-      udp: true
-    - delay: 1582
-      down: ""
-      fingerprint: ""
-      name: "\U0001F1FA\U0001F1F8美国17 | ⬇️ 11.9MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: nfsn666
-      port: 8888
-      server: 192.9.129.48
-      skip-cert-verify: true
-      sni: sj-arm.nfsn666.gq
-      type: hysteria2
-      up: ""
     - alpn:
         - h2http/1.1
       client-fingerprint: chrome
-      delay: 1153
-      name: "\U0001F1E9\U0001F1EA德国3 | ⬇️ 11.3MB/s"
+      name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 4.9MB/s"
       network: ws
-      port: 2087
+      port: "2087"
       server: 162.159.153.2
+      servername: Tp4282DmBf.MoLaNaMaMaLi2.InFo
+      tls: true
+      type: vless
+      udp: true
+      uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+      ws-opts:
+        headers:
+            Host: Tp4282DmBf.MoLaNaMaMaLi2.InFo
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 5.4MB/s"
+      network: ws
+      port: "443"
+      server: 104.21.11.194
+      servername: m4dfghu.999358.xyz
+      tls: true
+      type: vless
+      udp: true
+      uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
+      ws-opts:
+        headers:
+            Host: m4dfghu.999358.xyz
+            User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko) Chrome/v1.0.0 Safari/538.1
+        path: /a2YATZF8eZrBwsbnEcmJLxC
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EA德国2 | ⬇️ 4.0MB/s"
+      network: ws
+      port: "8880"
+      server: 104.21.69.44
+      type: vless
+      udp: true
+      uuid: 6da2fee4-1e51-4a16-9562-47eed1cc9fcd
+      ws-opts:
+        headers:
+            Host: join.VPNCUSTOMIZE.iran.ir.arvancloud.ir.nett.ddns-ip.net.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+        path: /Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "443"
+      server: 172.67.204.177
+      servername: 6yhj7ty.191292.xyz
+      tls: true
+      type: vless
+      udp: true
+      uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
+      ws-opts:
+        headers:
+            Host: 6yhj7ty.191292.xyz
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /0HKVAwzpuQtCNTI3SlZor0
+      xudp: true
+    - alpn:
+        - h3
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EA德国3 | ⬇️ 4.2MB/s"
+      network: ws
+      port: "2087"
+      server: 172.67.204.84
+      servername: wimahdi.musics-fa.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 260bab25-db69-4b2f-94c9-99472732c3d1
+      ws-opts:
+        headers:
+            Host: wimahdi.musics-fa.ru
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+        path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
+      xudp: true
+    - alpn:
+        - h2http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 5.3MB/s"
+      network: ws
+      port: "2087"
+      server: 162.159.152.2
+      servername: Tp4245C64m.MoLaNaMaMaLi1.InFo
+      tls: true
+      type: vless
+      udp: true
+      uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+      ws-opts:
+        headers:
+            Host: Tp4245C64m.MoLaNaMaMaLi1.InFo
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1EE芬兰1 | ⬇️ 5.2MB/s"
+      network: tcp
+      port: "1010"
+      reality-opts:
+        public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+        short-id: ""
+      server: fi.panelmarzban.com
+      servername: refersion.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d2d622b2-66d0-4a89-a02f-40885ee01409
+      xudp: true
+    - alpn:
+        - h2http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EA德国4 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "2087"
+      server: scorpion1.info
       servername: Tp427MmQgZ.mOlAnAmAmAlI1.iNfO
       tls: true
       type: vless
@@ -513,180 +322,320 @@ proxies:
       ws-opts:
         headers:
             Host: Tp427MmQgZ.mOlAnAmAmAlI1.iNfO
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
         path: /
       xudp: true
-    - delay: 2167
-      name: "\U0001F1FA\U0001F1F8美国18 | ⬇️ 9.9MB/s"
-      port: 443
-      server: c8564247-svp0g0-swy6li-tni2.los.gotochinatown.net
-      sni: c8564247-svp0g0-swy6li-tni2.los.gotochinatown.net
-      tls: true
-      type: socks5
-    - delay: 435
-      name: "\U0001F1FA\U0001F1F8美国19 | ⬇️ 9.0MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.111
-      tls: false
-      type: vless
+    - cipher: aes-256-gcm
+      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 4.8MB/s"
+      password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+      port: "21114"
+      server: okanc.node-is.green
+      type: ss
       udp: true
-      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-      ws-opts:
-        headers:
-            Host: reedfree8mahsang2.redorg.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
-    - delay: 404
-      name: "\U0001F1FA\U0001F1F8美国20 | ⬇️ 10.2MB/s"
-      network: ws
-      port: 8880
-      server: 156.238.18.118
-      tls: false
-      type: vless
+    - cipher: 2022-blake3-aes-256-gcm
+      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 6.3MB/s"
+      password: NGEzZTE1NmE1Mjk4NDQ0NmZmNTQ2YjFkM2MyN2U5N2U=:MmM4YzQxODItYzljMi00YjMwLWIxYTMtOGQ2Nzk2Njc=
+      port: "52678"
+      server: us1mxevocgs.92859852.xyz
+      type: ss
       udp: true
-      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-      ws-opts:
-        headers:
-            Host: reedfree8mahsang2.redorg.ir
-        path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
-    - delay: 589
-      name: "\U0001F1FA\U0001F1F8美国21 | ⬇️ 11.1MB/s"
-      network: ws
-      port: 8880
-      server: 103.245.228.0
-      type: vless
-      udp: true
-      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-      ws-opts:
-        headers:
-            Host: reedfree8mahsang2.redorg.ir
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      xudp: true
-    - client-fingerprint: random
-      delay: 1130
-      name: "\U0001F1F0\U0001F1F7韩国3 | ⬇️ 11.9MB/s"
-      network: ws
-      port: 2053
-      server: 188.114.98.42
-      servername: hi.univermap.site
-      tls: true
-      type: vless
-      udp: true
-      uuid: d7f943df-d885-4589-93e6-da8b1b2bbde2
-      ws-opts:
-        headers:
-            Host: hi.univermap.site
-        path: /?ed=2560
     - client-fingerprint: chrome
-      delay: 1427
+      name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 5.2MB/s"
+      password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+      port: "35000"
+      server: gzyd.cg.xxality.cn
+      skip-cert-verify: false
+      sni: cgsg2.hysality.com
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
       http-opts:
         headers: {}
         path:
             - /
-      name: "\U0001F1FA\U0001F1F8美国22 | ⬇️ 10.4MB/s"
+      name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 4.2MB/s"
       network: tcp
-      port: 443
-      server: 135.148.177.165
+      port: "443"
+      server: 15.204.166.17
       servername: 147135010072.sec21org.com
       tls: true
       type: vless
       udp: true
       uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
       xudp: true
-    - delay: 1811
-      name: "\U0001F1FA\U0001F1F8美国23 | ⬇️ 12.0MB/s"
-      port: 443
-      server: 95c5aeb9-sw04g0-swy6li-tni2.sv.plebai.net
-      sni: 95c5aeb9-sw04g0-swy6li-tni2.sv.plebai.net
-      tls: true
-      type: socks5
-    - cipher: aes-256-gcm
-      name: "\U0001F1EF\U0001F1F5日本3 | ⬇️ 21.7MB/s"
-      password: 423cf642-6528-410c-b542-2aae04113d33
-      port: 11528
-      server: cdn-p1-jp.weibo-dns.com
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8美国24 | ⬇️ 14.7MB/s"
-      password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-      port: 443
-      server: 7a3baf51-sw7j40-t1bnjq-1krtb.sv.plebai.net
-      tls: true
-      type: http
-      username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    - name: "\U0001F1FA\U0001F1F8美国25 | ⬇️ 10.1MB/s"
-      port: 443
-      server: d7157d7f-sw1z40-t1bnjq-1krtb.sv.plebai.net
-      tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国26 | ⬇️ 9.9MB/s"
-      port: 443
-      server: 7a3baf51-sw7j40-t1bnjq-1krtb.sv.plebai.net
-      tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国27 | ⬇️ 8.2MB/s"
-      port: 443
-      server: f2772bb7-sw3ts0-swy6li-tni2.los.gotochinatown.net
-      tls: true
-      type: socks5
-    - auth: nfsn666
-      name: "\U0001F1EC\U0001F1E7英国3 | ⬇️ 10.4MB/s"
-      password: nfsn666
-      port: 8888
-      server: ld-arm.nfsn666.gq
-      skip-cert-verify: true
-      sni: ld-arm.nfsn666.gq
-      type: hysteria2
+    - name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 4.4MB/s"
+      network: ws
+      port: "80"
+      server: 185.148.106.32
+      type: vless
       udp: true
-    - name: "\U0001F1FA\U0001F1F8美国28 | ⬇️ 8.8MB/s"
-      port: 443
-      server: bd6a6d85-sw5og0-t1bnjq-1krtb.los.gotochinatown.net
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: ipsycho.suex12.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+        path: /re5IzbZ9IZZMddtw?ed=2560
+      xudp: true
+    - name: "\U0001F1F3\U0001F1F1荷兰2 | ⬇️ 4.3MB/s"
+      network: ws
+      port: "80"
+      server: 45.8.211.61
+      type: vless
+      udp: true
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: ipsycho.suex12.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+        path: /re5IzbZ9IZZMddtw?ed=2560
+      xudp: true
+    - client-fingerprint: random
+      grpc-opts:
+        grpc-service-name: Tok
+      name: "\U0001F1E9\U0001F1EA德国5 | ⬇️ 5.9MB/s"
+      network: grpc
+      port: "22000"
+      reality-opts:
+        public-key: WcjPU1iR-woM10JNMkMmv-c1Dl37z6PRsqmciMAitlg
+        short-id: cb45d5eb4577c376
+      server: aether.rosha-studio.ir
+      servername: refersion.com
       tls: true
-      type: socks5
-    - auth: KYPSpQi9oC
-      name: "\U0001F1F3\U0001F1F1荷兰2 | ⬇️ 10.4MB/s"
-      obfs: salamander
-      obfs-password: v2raybluecrystal
-      password: KYPSpQi9oC
-      port: 54075
-      server: 77.239.112.132
-      skip-cert-verify: true
-      type: hysteria2
-    - name: "\U0001F1FA\U0001F1F8美国29 | ⬇️ 11.8MB/s"
-      password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-      port: 443
-      server: 180a9468-sw5og0-t1bnjq-1krtb.sv.plebai.net
+      type: vless
+      udp: true
+      uuid: 6e23c30c-a248-4dbe-9239-8412f8a8834b
+      xudp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EA德国6 | ⬇️ 5.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: T7Cwk-B3EvZqqRywIgN_TNotJiUOXYUI9bHqYKPnTi0
+        short-id: 105e89ba3d2a1c3b
+      server: shop.cafegamingblackhorse.ir
+      servername: tgju.org
       tls: true
-      type: http
-      username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    - name: "\U0001F1FA\U0001F1F8美国30 | ⬇️ 8.3MB/s"
-      port: 443
-      server: 52a433f1-svsps0-swy6li-tni2.los.gotochinatown.net
+      type: vless
+      udp: true
+      uuid: acc8587d-18a6-413e-ba3a-2b13e594d378
+      xudp: true
+    - alpn:
+        - h3
+        - h2
+        - http/1.1
+      client-fingerprint: random
+      name: "\U0001F300其他4-ME | ⬇️ 4.6MB/s"
+      network: ws
+      port: "443"
+      server: www.gco.gov.qa
+      servername: us.4056860.xyz
       tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国31 | ⬇️ 8.6MB/s"
-      port: 443
-      server: 942502fe-svy9s0-t1bnjq-1krtb.los.gotochinatown.net
+      type: vless
+      udp: true
+      uuid: bc2a2e87-e34b-4126-91ce-e7bccdafc4d4
+      ws-opts:
+        headers:
+            Host: us.4056860.xyz
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /ws
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F300其他5-未识别 | ⬇️ 4.7MB/s"
+      network: ws
+      port: 8443
+      server: 104.18.118.195
+      servername: 1743919978.speed.zjgza.cccp.freefly.pp.ua
+      skip-cert-verify: false
       tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国32 | ⬇️ 13.2MB/s"
-      port: 443
-      server: 5e26927f-svfr40-swy6li-tni2.los.gotochinatown.net
+      type: vmess
+      udp: true
+      uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+      ws-opts:
+        headers:
+            Host: 1743919978.speed.zjgza.cccp.freefly.pp.ua
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1FA匈牙利1 | ⬇️ 4.3MB/s"
+      network: ws
+      port: "443"
+      server: 172.67.204.84
+      servername: cr77.hedieh.dpdns.org
       tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国33 | ⬇️ 15.6MB/s"
+      type: vless
+      udp: true
+      uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
+      ws-opts:
+        headers:
+            Host: cr77.hedieh.dpdns.org
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1F3\U0001F1F1荷兰3 | ⬇️ 4.2MB/s"
+      network: ws
+      port: "80"
+      server: 89.116.250.78
+      servername: ipsycho.suex12.ir
+      type: vless
+      udp: true
+      uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+      ws-opts:
+        headers:
+            Host: ipsycho.suex12.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
+        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed"
+      xudp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      http-opts:
+        headers:
+            Host:
+                - sb.zhuanshu.com
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 5.8MB/s"
+      network: http
+      port: "47006"
+      server: 141.11.122.27
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 364a033d-99bf-4610-d552-8516e63aaac5
+      xudp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      http-opts:
+        headers:
+            Host:
+                - parsabr.com
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EA德国7 | ⬇️ 5.3MB/s"
+      network: http
+      port: "443"
+      server: 167.172.180.77
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 1d60daae-a8ff-4293-a3ce-679c6778281a
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国12 | ⬇️ 4.2MB/s"
+      network: ws
       port: 443
-      server: 180a9468-sw5og0-t1bnjq-1krtb.sv.plebai.net
+      server: 1wweerttt.131.pp.ua
+      servername: 1WWeeRtTt.131.PP.ua
+      skip-cert-verify: false
       tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国34 | ⬇️ 15.2MB/s"
+      type: vmess
+      udp: true
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: 1wweerttt.131.pp.ua
+        path: /h7Rcu0y30lhjdVjJ3gc4aj
+      xudp: true
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 5.0MB/s"
+      network: ws
+      port: "52512"
+      server: aflzzul.meiquankongjian.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+      ws-opts:
+        headers:
+            Host: aflzzul.meiquankongjian.com
+        path: /564dfa20/
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国13 | ⬇️ 4.6MB/s"
+      network: ws
       port: 443
-      server: 66024b5e-svsps0-t28b6o-ef48.los.gotochinatown.net
+      server: d2860d7d-07ee-a0db-ef7b-54808db00b03.890601.pp.ua
+      servername: D2860d7d-07ee-A0Db-EF7B-54808dB00b03.890601.pP.UA
+      skip-cert-verify: false
       tls: true
-      type: socks5
-    - name: "\U0001F1FA\U0001F1F8美国35 | ⬇️ 14.0MB/s"
-      port: 443
-      server: c96dfa8f-svjgg0-t28b6o-ef48.los.gotochinatown.net
+      type: vmess
+      udp: true
+      uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+      ws-opts:
+        headers:
+            Host: d2860d7d-07ee-a0db-ef7b-54808db00b03.890601.pp.ua
+        path: /h7Rcu0y30lhjdVjJ3gc4aj
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F3\U0001F1F1荷兰4 | ⬇️ 4.4MB/s"
+      network: ws
+      password: bpb-trojan
+      port: "443"
+      server: japan.com
+      skip-cert-verify: false
+      sni: zamim340.ggff.net
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+        path: /tr?ed=2560
+    - name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 4.7MB/s"
+      network: ws
+      port: "8080"
+      server: 104.26.14.85
+      type: vless
+      udp: true
+      uuid: 6abbaf96-4b16-48d3-b996-a6067fc6eb2c
+      ws-opts:
+        headers:
+            Host: M4.nF9JZ2st7N.zULAiR.ORG.
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+        path: /?ed/Telegram@WedBaZ------
+      xudp: true
+    - alpn:
+        - h3h2
+      client-fingerprint: chrome
+      name: "\U0001F300其他6-未识别 | ⬇️ 4.9MB/s"
+      network: ws
+      port: "443"
+      server: www.speedtest.net
+      servername: 5G9043aJwE.sAkHrE.iNfO
       tls: true
-      type: socks5
-# 2025-05-13 04:17:29
+      type: vless
+      udp: true
+      uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+      ws-opts:
+        headers:
+            Host: 5G9043aJwE.sAkHrE.iNfO
+            User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EA德国8 | ⬇️ 4.6MB/s"
+      network: ws
+      port: "8443"
+      server: www.speedtest.net
+      servername: www.fardares.ir
+      tls: true
+      type: vless
+      udp: true
+      uuid: 42890216-1d90-489d-a231-e0f5df231fb2
+      ws-opts:
+        headers:
+            Host: www.fardares.ir
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+        path: /video
+      xudp: true
+# 2025-05-13 05:14:24
