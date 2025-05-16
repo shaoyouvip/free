@@ -1,195 +1,20 @@
 proxies:
-  - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 8.5MB/s"
-    network: ws
-    port: 443
-    server: 185.133.35.36
-    skip-cert-verify: false
+  - client-fingerprint: random
+    grpc-opts:
+      grpc-service-name: Tok
+    name: "\U0001F300其他1-未识别 | ⬇️ 4.4MB/s"
+    network: grpc
+    port: 22000
+    reality-opts:
+      public-key: WcjPU1iR-woM10JNMkMmv-c1Dl37z6PRsqmciMAitlg
+      short-id: cb45d5eb4577c376
+    server: aether.rosha-studio.ir
     tls: true
     type: vless
     udp: true
-    uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-    ws-opts:
-      headers:
-        Host: 0229.patterdeng.pp.ua
-      path: /?ed=2560
-    servername: 0229.patterdeng.pp.ua
-  - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 8.9MB/s"
-    password: RlzoEILU
-    port: 7815
-    server: 36.151.251.59
-    skip-cert-verify: true
-    type: trojan
-    udp: true
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 8.0MB/s"
-    network: ws
-    port: 2096
-    server: 141.101.120.253
-    skip-cert-verify: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-    ws-opts:
-      headers:
-        Host: 1746882891.speed.adl.cccp.freefly.pp.ua
-      path: /
+    uuid: 6e23c30c-a248-4dbe-9239-8412f8a8834b
     xudp: true
-    servername: 1746882891.speed.adl.cccp.freefly.pp.ua
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: 1000 Mbps
-    name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 9.6MB/s"
-    port: 17549
-    server: 208.87.243.151
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria
-    up: 1000 Mbps
-    auth-str: dongtaiwang.com
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 8.5MB/s"
-    network: tcp
-    port: 900
-    server: 216.250.97.138
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
-    ws-headers:
-      Host: 216.250.97.138
-    ws-path: /
-  - alpn:
-      - h3
-    disable-sni: false
-    name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 9.4MB/s"
-    password: f3ba3679-f2f4-465f-92a5-de320b775a88
-    port: 43516
-    reduce-rtt: false
-    request-timeout: 0
-    server: 185.22.155.105
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: tuic
-    udp-relay-mode: native
-    uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-    version: 5
-  - cipher: aes-256-cfb
-    client-fingerprint: chrome
-    name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 8.1MB/s"
-    password: qwerREWQ@@
-    port: 11389
-    server: p231.panda004.net
-    tfo: true
-    type: ss
-    udp: true
-  - delay: 1142
-    down: ''
-    fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 8.1MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-    port: 443
-    server: 208.87.242.215
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
-    up: ''
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 13.9MB/s"
-    network: tcp
-    port: 45056
-    server: haa.dashuai.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: f62d41d8-6921-4a17-925f-35dc64d7b183
-    xudp: true
-  - alpn:
-      - h2http/1.1
-    client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 8.4MB/s"
-    network: ws
-    port: 2087
-    server: scorpion1.info
-    tls: true
-    type: vless
-    udp: true
-    uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-    ws-opts:
-      headers:
-        Host: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
-      path: /
-    xudp: true
-    servername: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
-  - alpn:
-      - h2http/1.1
-    client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 8.8MB/s"
-    network: ws
-    port: 2087
-    server: 162.159.153.2
-    tls: true
-    type: vless
-    udp: true
-    uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-    ws-opts:
-      headers:
-        Host: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/48.0.2564.116 Safari/537.36
-      path: /
-    xudp: true
-    servername: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
-  - alpn:
-      - h2http/1.1
-    client-fingerprint: chrome
-    name: "\U0001F300其他1-MD | ⬇️ 8.6MB/s"
-    network: ws
-    port: 2096
-    server: www.speedtest.net
-    tls: true
-    type: vless
-    udp: true
-    uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-    ws-opts:
-      headers:
-        Host: FdEuQxFq0.ZuMiNhO.InFo
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
-          wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
-          Chrome/62.0.3202.84 Mobile Safari/537.36
-      path: /
-    xudp: true
-    servername: FdEuQxFq0.ZuMiNhO.InFo
-  - client-fingerprint: chrome
-    name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 8.2MB/s"
-    network: ws
-    port: 2096
-    server: 199.34.228.178
-    tls: true
-    type: vless
-    udp: true
-    uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-    ws-opts:
-      headers:
-        Host: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/51.0.2704.63 Safari/537.36
-      path: /
-    xudp: true
-    servername: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
+    servername: refersion.com
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -728,4 +553,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-05-16 17:16:28
+# 2025-05-16 18:16:39
