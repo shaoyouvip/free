@@ -1,98 +1,173 @@
 proxies:
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 5.7MB/s"
+    - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 8.5MB/s"
       network: ws
-      port: 30808
-      server: v8.heduian.link
+      port: 443
+      server: 185.133.35.36
+      servername: 0229.patterdeng.pp.ua
       skip-cert-verify: false
-      tls: false
-      type: vmess
+      tls: true
+      type: vless
       udp: true
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
       ws-opts:
         headers:
-            Host: baidu.com
-        path: /oooo
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.2MB/s"
+            Host: 0229.patterdeng.pp.ua
+        path: /?ed=2560
+    - name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 8.9MB/s"
       password: RlzoEILU
-      port: "7815"
+      port: 7815
       server: 36.151.251.59
       skip-cert-verify: true
       type: trojan
       udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 5.9MB/s"
-      password: 93f122df-87be-4554-b6cd-4f55da7f619a
-      port: "39102"
-      server: 183.236.51.26
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 4.9MB/s"
-      password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-      port: "15229"
-      server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 8.0MB/s"
+      network: ws
+      port: 2096
+      server: 141.101.120.253
+      servername: 1746882891.speed.adl.cccp.freefly.pp.ua
       skip-cert-verify: false
-      sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
-      type: trojan
+      tls: true
+      type: vmess
       udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 5.5MB/s"
-      password: 398e0d38-8649-11ef-959c-f23c9164ca5d
-      port: "15229"
-      server: 72135393-swb8g0-sxzls8-1gxvd.cu.plebai.net
-      skip-cert-verify: false
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 5.5MB/s"
-      password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-      port: "15229"
-      server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
-      skip-cert-verify: false
-      type: trojan
-      udp: true
+      uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+      ws-opts:
+        headers:
+            Host: 1746882891.speed.adl.cccp.freefly.pp.ua
+        path: /
+      xudp: true
     - alpn:
         - h3
-        - h2
-        - http/1.1
+      auth_str: dongtaiwang.com
+      down: 1000 Mbps
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 9.6MB/s"
+      port: 17549
+      server: 208.87.243.151
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria
+      up: 1000 Mbps
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 8.5MB/s"
+      network: tcp
+      port: 900
+      server: 216.250.97.138
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
+      ws-headers:
+        Host: 216.250.97.138
+      ws-path: /
+    - alpn:
+        - h3
+      disable-sni: false
+      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 9.4MB/s"
+      password: f3ba3679-f2f4-465f-92a5-de320b775a88
+      port: 43516
+      reduce-rtt: false
+      request-timeout: 0
+      server: 185.22.155.105
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: tuic
+      udp-relay-mode: native
+      uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+    - cipher: aes-256-cfb
       client-fingerprint: chrome
-      grpc-opts:
-        grpc-service-name: '@drakvpn'
-      name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 5.2MB/s"
-      network: grpc
-      port: "43015"
-      server: 116.203.149.50
-      servername: p8n5b65s8931.contigolibre.com
+      name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 8.1MB/s"
+      password: qwerREWQ@@
+      port: 11389
+      server: p231.panda004.net
+      tfo: true
+      type: ss
+      udp: true
+    - delay: 1142
+      down: ""
+      fingerprint: ""
+      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 8.1MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+      port: 443
+      server: 208.87.242.215
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      up: ""
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 13.9MB/s"
+      network: tcp
+      port: "45056"
+      server: haa.dashuai.cyou
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: f62d41d8-6921-4a17-925f-35dc64d7b183
+      xudp: true
+    - alpn:
+        - h2http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 8.4MB/s"
+      network: ws
+      port: "2087"
+      server: scorpion1.info
+      servername: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
       tls: true
       type: vless
       udp: true
-      uuid: 4d6115c0-0385-4126-8b81-517d9a1e066a
+      uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+      ws-opts:
+        headers:
+            Host: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+        path: /
       xudp: true
-    - client-fingerprint: chrome
-      grpc-opts:
-        grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-      name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 5.1MB/s"
-      network: grpc
-      port: "2030"
-      reality-opts:
-        public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-        short-id: 7fe29733
-      server: 141.227.128.80
-      servername: refersion.com
+    - alpn:
+        - h2http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 8.8MB/s"
+      network: ws
+      port: "2087"
+      server: 162.159.153.2
+      servername: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
       tls: true
       type: vless
       udp: true
-      uuid: e66070a9-049f-42ce-9e14-9752141c3be4
+      uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+      ws-opts:
+        headers:
+            Host: Tp424UcMrG.mOlAnAmAmAlI1.iNfO
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+        path: /
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 5.6MB/s"
+    - alpn:
+        - h2http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F300其他1-MD | ⬇️ 8.6MB/s"
       network: ws
       port: "2096"
-      server: 154.92.9.2
+      server: www.speedtest.net
+      servername: FdEuQxFq0.ZuMiNhO.InFo
+      tls: true
+      type: vless
+      udp: true
+      uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+      ws-opts:
+        headers:
+            Host: FdEuQxFq0.ZuMiNhO.InFo
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 8.2MB/s"
+      network: ws
+      port: "2096"
+      server: 199.34.228.178
       servername: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
       tls: true
       type: vless
@@ -101,175 +176,7 @@ proxies:
       ws-opts:
         headers:
             Host: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
-        path: /
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
+        path: ""
       xudp: true
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 4.6MB/s"
-      network: tcp
-      port: "56702"
-      reality-opts:
-        public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-        short-id: 792147b8
-      server: jp4.interld123456789.com
-      servername: addons.mozilla.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: c6763909-34f1-4b80-9522-f70d930e90e6
-      xudp: true
-    - client-fingerprint: chrome
-      grpc-opts:
-        grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-      name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 5.6MB/s"
-      network: grpc
-      port: "2030"
-      reality-opts:
-        public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-        short-id: 7fe29733
-      server: 74.220.23.227
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: ad5e479a-d0f6-4809-902c-e74f5404336c
-      xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F3\U0001F1F1荷兰2 | ⬇️ 5.5MB/s"
-      network: tcp
-      port: "80"
-      reality-opts:
-        public-key: dK5nR9FbarexoEC-fYTBy2jtSHxIzUS1CyV3kLFnmCo
-        short-id: ""
-      server: snapp.ir.iraniantim.ir
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 76f2c7ff-1fa4-474f-f522-f2f76d5a4542
-      xudp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 4.7MB/s"
-      network: ws
-      port: 8080
-      server: 0e1121ca-swd340-teqqcv-1rc6n.hgc1.tcpbbr.net
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 32bd96d6-186b-11f0-9a65-f23c9164ca5d
-      ws-opts:
-        headers:
-            Host: broadcastlv.chat.bilibili.com
-        path: /
-      xudp: true
-    - alterId: "64"
-      cipher: auto
-      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 5.0MB/s"
-      network: tcp
-      port: "59152"
-      server: 120.232.153.40
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      xudp: true
-    - alterId: 2
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 4.6MB/s"
-      network: ws
-      port: 22643
-      server: 54.223.46.105
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-      ws-opts:
-        headers:
-            Host: zxjp-c.tkong.cc
-        path: /
-      xudp: true
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0香港3 | ⬇️ 5.2MB/s"
-      network: ws
-      port: 8080
-      server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
-      ws-opts:
-        headers:
-            Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-        path: /
-      xudp: true
-    - alterId: "0"
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0香港4 | ⬇️ 5.2MB/s"
-      network: ws
-      port: 8080
-      server: e4d173ea-swd340-sykxcb-1nhp7.hgc1.tcpbbr.net
-      skip-cert-verify: false
-      tls: false
-      type: vmess
-      udp: true
-      uuid: 5fc9c9aa-ea47-11ed-8397-f23c913c8d2b
-      ws-opts:
-        headers: {}
-        path: /
-      xudp: true
-    - client-fingerprint: random
-      grpc-opts:
-        grpc-service-name: Tok
-      name: "\U0001F300其他1-未识别 | ⬇️ 4.0MB/s"
-      network: grpc
-      port: "22000"
-      reality-opts:
-        public-key: WcjPU1iR-woM10JNMkMmv-c1Dl37z6PRsqmciMAitlg
-        short-id: cb45d5eb4577c376
-      server: aether.rosha-studio.ir
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 6e23c30c-a248-4dbe-9239-8412f8a8834b
-      xudp: true
-    - client-fingerprint: chrome
-      grpc-opts:
-        grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-      name: "\U0001F1EC\U0001F1E7英国2 | ⬇️ 5.4MB/s"
-      network: grpc
-      port: "2030"
-      reality-opts:
-        public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-        short-id: 7fe29733
-      server: ns7.esfahansiman.com
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
-      xudp: true
-    - client-fingerprint: chrome
-      grpc-opts:
-        grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-      name: "\U0001F1EC\U0001F1E7英国3 | ⬇️ 5.0MB/s"
-      network: grpc
-      port: "2030"
-      reality-opts:
-        public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-        short-id: 7fe29733
-      server: ns7.esfahansiman.com
-      servername: refersion.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1223d90d-88eb-4be8-a578-9f4f18e8cefc
-      xudp: true
-# 2025-05-16 15:15:30
+# 2025-05-16 16:20:59
