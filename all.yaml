@@ -4,7 +4,7 @@ proxies:
       auth-str: dongtaiwang.com
       delay: 2641
       down: "100"
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 6.6MB/s"
+      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 5.1MB/s"
       port: 36194
       protocol: udp
       server: 198.40.52.27
@@ -28,19 +28,68 @@ proxies:
       type: hysteria
       udp: true
       up: 100
-    - client-fingerprint: chrome
+    - down: ""
       fingerprint: ""
-      name: "\U0001F1EE\U0001F1F9意大利1 | ⬇️ 5.3MB/s"
-      network: ws
-      port: 443
-      server: ns4.esfahansiman.com
-      servername: WWW.pegAh-Esfahan.De.
-      tls: true
-      type: vless
-      udp: false
-      uuid: 5b1eca33-6d40-4a44-acf9-2de24695b9d7
-      ws-opts:
+      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 7.1MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
+      port: "3234"
+      server: 209.141.47.127
+      skip-cert-verify: true
+      sni: ""
+      type: hysteria2
+      up: ""
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 1000 Mbps
+      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 8.7MB/s"
+      port: 17549
+      server: 208.87.243.151
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria
+      up: 1000 Mbps
+    - auth: c0b2490e-2625-4b9c-b766-50fff8b92a21
+      name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 5.2MB/s"
+      password: c0b2490e-2625-4b9c-b766-50fff8b92a21
+      port: 35000
+      server: 132.145.239.250
+      skip-cert-verify: true
+      sni: api.push.apple.com
+      type: hysteria2
+    - alterId: 0
+      cipher: auto
+      http-opts:
         headers:
-            host: WWW.pegAh-Esfahan.De.
-        path: TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-# 2025-06-11 00:20:12
+            Host:
+                - d1.awsstatic.com
+        method: GET
+        path:
+            - /
+      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 6.7MB/s"
+      network: http
+      port: 2095
+      server: ::ffff:8e5d:fd31
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 21284025-a32f-4f90-aaba-55b5d22b0070
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      delay: 1831
+      down: "100"
+      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 7.9MB/s"
+      obfs: ""
+      port: 40528
+      protocol: ""
+      server: 208.87.243.187
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: "100"
+# 2025-06-11 01:13:51
