@@ -1,31 +1,26 @@
 proxies:
-  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 6.6MB/s"
-    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    port: 10086
-    server: asg.pagate.top
-    skip-cert-verify: false
-    sni: asg.pagate.top
-    type: hysteria2
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    delay: 2641
-    down: '100'
-    name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 6.5MB/s"
-    port: 36194
-    protocol: udp
-    server: 198.40.52.27
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    udp: 'true'
-    up: '100'
+  - name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 5.4MB/s"
+    network: ws
+    port: 8880
+    server: '::ffff:156.238.18.224'
+    type: vless
+    udp: true
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    ws-opts:
+      headers:
+        Host: sg.laoyoutiao.link
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv)
+          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
+          Chrome/63.0.3239.111 Mobile Safari/537.36
+      path: /Telegram@WangCai2/?ed=2048
+    xudp: true
+    servername: sg.laoyoutiao.link
   - alpn:
       - h3
     auth_str: dongtaiwang.com
     down: 1000 Mbps
-    name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 5.5MB/s"
+    name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 9.0MB/s"
     port: 11512
     server: 108.181.24.77
     skip-cert-verify: true
@@ -34,229 +29,72 @@ proxies:
     udp: true
     up: 1000 Mbps
     auth-str: dongtaiwang.com
-  - client-fingerprint: chrome
-    name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 7.6MB/s"
-    password: 85f133142f04dbf6547da33895cfabb3
-    port: 39001
-    server: 125.94.40.221
-    skip-cert-verify: true
-    sni: www.yrtok.com
-    type: trojan
-  - name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 6.7MB/s"
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    port: 15229
-    server: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
-    skip-cert-verify: false
-    sni: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
-    type: trojan
-  - cipher: aes-256-gcm
-    name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 5.2MB/s"
-    password: 20bf42df-ae17-39b2-9b9f-4e34338b6558
-    port: 20065
-    server: wrjyn-g01.fr01-ae5.entry.v50307shvkaa.art
-    type: ss
-    udp: true
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 7.8MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
-    port: 3234
-    server: 209.141.47.127
-    skip-cert-verify: true
-    sni: ''
-    type: hysteria2
-    up: ''
-    disable-sni: true
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    delay: 932
-    down: 100
-    name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 6.8MB/s"
-    port: 14241
-    protocol: udp
-    server: 51.159.226.1
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    udp: true
-    up: 100
-  - name: "\U0001F300其他1-LV | ⬇️ 9.6MB/s"
-    password: e3826052-a5a4-4566-978b-cdd0e717a5eb
-    port: 53171
-    server: bgp-xdd.blue-bgp.xyz
-    skip-cert-verify: true
-    sni: cn.bing.com
-    type: trojan
-  - name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 7.5MB/s"
+  - name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 4.9MB/s"
     network: ws
-    port: 443
-    server: 45.67.215.209
-    skip-cert-verify: true
-    tls: true
+    port: 8880
+    server: '::ffff:156.238.18.160'
     type: vless
     udp: true
-    uuid: 55520747-311e-4015-83ce-be46e2060ce3
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     ws-opts:
       headers:
-        Host: ss.bgm2024.dpdns.org
-      path: /?ed=2560
-    servername: ss.bgm2024.dpdns.org
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 6.1MB/s"
-    port: 46430
-    reality-opts:
-      public-key: kQoMZ1G4jwT9yTlF-NtZwhG22j3NQhzlvGsiiLxrLzI
-      short-id: e27f3a
-    server: 143.14.220.136
-    skip-cert-verify: false
-    tls: true
+        Host: sg.laoyoutiao.link
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
+          Safari/537.36
+      path: /Telegram@WangCai2/?ed=2048
+    xudp: true
+    servername: sg.laoyoutiao.link
+  - name: "\U0001F300其他1-未识别 | ⬇️ 5.5MB/s"
+    network: ws
+    port: 8880
+    server: '::ffff:156.238.18.148'
     type: vless
     udp: true
-    uuid: 021423af-85fc-4bb6-b32e-deeed97581e1
-    network: tcp
-    servername: yahoo.com
-  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 5.9MB/s"
-    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    port: 10086
-    server: ajp.pagate.top
-    skip-cert-verify: false
-    sni: ajp.pagate.top
-    type: hysteria2
-  - name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 5.7MB/s"
-    password: <password>
-    port: 443
-    server: 38f6538e-sx8kg0-t1bnjq-1krtb.hkt2.cdnhuawei.com
-    tls: true
-    type: socks5
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    sni: 38f6538e-sx8kg0-t1bnjq-1krtb.hkt2.cdnhuawei.com
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: randomized
-    name: "\U0001F1EB\U0001F1EE芬兰1 | ⬇️ 12.7MB/s"
-    network: ws
-    password: '8r<[9''l6hAO#8ZQi'
-    port: 8443
-    server: koma-yt.pages.dev
-    skip-cert-verify: false
-    sni: Koma-YT.PAGeS.Dev
-    type: trojan
-    udp: true
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     ws-opts:
       headers:
+        Host: sg.laoyoutiao.link
         User-Agent: >-
           Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
           like Gecko) Chrome/70.0.3538.110 Safari/537.36
-      path: /tro8sFW1S91B6sZrM1?ed=2560
-  - name: "\U0001F1F3\U0001F1F1荷兰2 | ⬇️ 8.1MB/s"
+      path: /Telegram@WangCai2/?ed=2048
+    xudp: true
+    servername: sg.laoyoutiao.link
+  - name: "\U0001F300其他2-未识别 | ⬇️ 8.5MB/s"
     network: ws
     port: 8880
-    server: cloud.updatte.tech
+    server: '::ffff:156.238.18.206'
     type: vless
     udp: true
-    uuid: v2Rayfast_7
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     ws-opts:
       headers:
-        Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+        Host: sg.laoyoutiao.link
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /?ed=2048
+          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.103 Safari/537.36
+      path: /Telegram@WangCai2/?ed=2048
     xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 7.0MB/s"
+    servername: sg.laoyoutiao.link
+  - name: "\U0001F300其他3-未识别 | ⬇️ 7.3MB/s"
     network: ws
-    port: 443
-    server: 152.67.203.34
-    tls: true
+    port: 8880
+    server: '::ffff:156.238.18.167'
     type: vless
     udp: true
-    uuid: cd2e9541-3fce-4d95-9bec-919d884f911e
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
     ws-opts:
       headers:
-        Host: piqie.justin-lifeistooshort.info
+        Host: sg.laoyoutiao.link
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile
+          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
           Safari/537.36
-      path: /tiger
+      path: /Telegram@WangCai2/?ed=2048
     xudp: true
-    servername: piqie.justin-lifeistooshort.info
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 9.0MB/s"
-    network: ws
-    port: 443
-    server: 104.19.222.79
-    tls: true
-    type: vless
-    udp: true
-    uuid: cd2e9541-3fce-4d95-9bec-919d884f911e
-    ws-opts:
-      headers:
-        Host: wureq.stephen-lifeistooshort.info
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-      path: /tiger
-    xudp: true
-    servername: wureq.stephen-lifeistooshort.info
-  - alpn:
-      - h2
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 9.5MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-      short-id: 7a2b
-    server: 3.10.175.222
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-    xudp: true
-    servername: zula.ir
-  - alpn:
-      - http/1.1
-    client-fingerprint: randomized
-    name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 7.3MB/s"
-    network: ws
-    port: 443
-    server: 104.17.148.22
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3058e698-61fd-4d12-95bc-f1fe4c071713
-    ws-opts:
-      headers:
-        Host: hozori.ir
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-          (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-      path: /Telegram@V2ray_Alpha
-    xudp: true
-    servername: hOZori.iR
-  - alpn:
-      - ''
-    alterId: '0'
-    cipher: auto
-    name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 10.6MB/s"
-    network: tcp
-    port: 19379
-    server: e9vm2tgj.8542112.xyz
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: d341195d-6316-32ea-949c-aaea2b2cb0a8
-    xudp: true
+    servername: sg.laoyoutiao.link
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -795,4 +633,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-06-14 23:14:21
+# 2025-06-15 00:17:31
