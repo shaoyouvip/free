@@ -1,9 +1,26 @@
 proxies:
+  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+    delay: 1176
+    name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 6.4MB/s"
+    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+    port: 10086
+    server: asg.pagate.top
+    skip-cert-verify: false
+    sni: asg.pagate.top
+    type: hysteria2
+  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+    name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 5.1MB/s"
+    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+    port: 10086
+    server: ajp.pagate.top
+    skip-cert-verify: false
+    sni: ajp.pagate.top
+    type: hysteria2
   - alpn:
       - h3
     auth_str: dongtaiwang.com
     down: 1000 Mbps
-    name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 14.8MB/s"
+    name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 9.2MB/s"
     port: 11512
     server: 108.181.24.77
     skip-cert-verify: true
@@ -12,262 +29,8 @@ proxies:
     udp: true
     up: 1000 Mbps
     auth-str: dongtaiwang.com
-  - name: "\U0001F300其他1-未识别 | ⬇️ 9.3MB/s"
-    network: ws
-    port: 8880
-    server: '::ffff:156.238.18.167'
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: sg.laoyoutiao.link
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /Telegram@WangCai2/?ed=2048
-    xudp: true
-    servername: sg.laoyoutiao.link
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    delay: 1391
-    down: '1000'
-    name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 5.1MB/s"
-    obfs: ''
-    port: 10803
-    protocol: ''
-    server: 185.22.155.71
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria
-    up: '1000'
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    delay: 1276
-    down: 1000 Mbps
-    name: "\U0001F1F7\U0001F1FA俄罗斯2 | ⬇️ 5.3MB/s"
-    port: 62003
-    server: 176.32.35.226
-    servername: apple.com
-    skip-cert-verify: true
-    type: hysteria
-    up: 1000 Mbps
-  - alterId: 0
-    cipher: auto
-    country: "\U0001F1FA\U0001F1F8US"
-    delay: 1363
-    h2-opts: {}
-    http-opts: {}
-    name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 6.6MB/s"
-    network: ws
-    port: 443
-    server: cloudgetservice.mcloudservice.site
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    uuid: 2c329585-67a8-498b-8d38-176dac806bc7
-    ws-opts:
-      headers:
-        HOST: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
-      path: /linkws
-    servername: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
-  - cipher: aes-256-gcm
-    delay: 1387
-    name: "\U0001F300其他2-GR | ⬇️ 4.9MB/s"
-    password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-    port: 64931
-    server: zf1.10101251.xyz
-    type: ss
-  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    delay: 1176
-    name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 7.0MB/s"
-    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    port: 10086
-    server: asg.pagate.top
-    skip-cert-verify: false
-    sni: asg.pagate.top
-    type: hysteria2
-  - delay: 1328
-    name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 5.8MB/s"
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 15229
-    server: 5e086b44-swkhs0-t4cy3j-1qkeg.cu.plebai.net
-    skip-cert-verify: true
-    sni: 5e086b44-swkhs0-t4cy3j-1qkeg.cu.plebai.net
-    type: trojan
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    delay: 1533
-    name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 5.1MB/s"
-    network: ws
-    port: 2087
-    server: zula.ir
-    tls: true
-    type: vless
-    udp: true
-    uuid: 904cdf83-1b0c-4cd5-a0c1-6690c1ee6219
-    ws-opts:
-      headers:
-        Host: rita.adaspoloandco.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: /downloader
-    xudp: true
-    servername: rita.adaspoloandco.com
-  - cipher: aes-256-cfb
-    delay: 1033
-    name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 5.9MB/s"
-    password: yijian0503
-    port: 443
-    server: 13.125.35.232
-    type: ss
-    udp: true
-  - name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 8.8MB/s"
-    password: FpQhGpIr
-    port: 38632
-    server: 36.151.251.62
-    skip-cert-verify: true
-    sni: 36.151.251.62
-    type: trojan
-    udp: true
-  - name: "\U0001F1F8\U0001F1EC新加坡3 | ⬇️ 9.4MB/s"
-    password: HrTsLJvh
-    port: 38632
-    server: 36.151.251.62
-    skip-cert-verify: true
-    sni: 36.151.251.62
-    type: trojan
-    udp: true
   - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 5.1MB/s"
-    network: ws
-    port: 8880
-    server: 190.93.244.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他3-未识别 | ⬇️ 6.2MB/s"
-    network: ws
-    port: 8880
-    server: 193.124.18.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 5.0MB/s"
-    network: ws
-    port: 8880
-    server: 86.38.214.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他4-未识别 | ⬇️ 6.0MB/s"
-    network: ws
-    port: 8880
-    server: 185.251.81.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他5-未识别 | ⬇️ 5.4MB/s"
-    network: ws
-    port: 8880
-    server: 31.43.179.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5日本3 | ⬇️ 5.5MB/s"
-    network: ws
-    port: 8880
-    server: 89.116.250.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他6-未识别 | ⬇️ 10.0MB/s"
-    network: ws
-    port: 8880
-    server: 31.12.75.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他7-未识别 | ⬇️ 7.5MB/s"
-    network: ws
-    port: 8880
-    server: 45.142.120.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他8-未识别 | ⬇️ 6.4MB/s"
+    name: "\U0001F300其他1-未识别 | ⬇️ 6.8MB/s"
     network: ws
     port: 8880
     server: 14.102.229.213
@@ -282,7 +45,7 @@ proxies:
       path: /?ed=2560
     servername: jp.laoyoutiao.link
   - client-fingerprint: chrome
-    name: "\U0001F300其他9-未识别 | ⬇️ 7.0MB/s"
+    name: "\U0001F300其他2-未识别 | ⬇️ 5.5MB/s"
     network: ws
     port: 8880
     server: 66.235.200.213
@@ -296,353 +59,66 @@ proxies:
         Host: jp.laoyoutiao.link
       path: /?ed=2560
     servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他10-未识别 | ⬇️ 5.3MB/s"
-    network: ws
-    port: 8880
-    server: 108.165.216.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他11-未识别 | ⬇️ 9.0MB/s"
-    network: ws
-    port: 8880
-    server: 168.100.6.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F300其他12-未识别 | ⬇️ 4.9MB/s"
-    network: ws
-    port: 8880
-    server: 170.114.46.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5日本4 | ⬇️ 11.3MB/s"
-    network: ws
-    port: 8880
-    server: 185.148.105.213
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: jp.laoyoutiao.link
-      path: /?ed=2560
-    servername: jp.laoyoutiao.link
-  - client-fingerprint: chrome
-    name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 11.8MB/s"
-    password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-    port: 8313
-    server: dozo01.flztjc.top
-    skip-cert-verify: false
-    sni: hk-13-568.flztjc.net
+  - name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 10.0MB/s"
+    password: FpQhGpIr
+    port: 38632
+    server: 36.151.251.62
+    skip-cert-verify: true
+    sni: 36.151.251.62
     type: trojan
     udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1ED\U0001F1F0香港2 | ⬇️ 11.8MB/s"
-    password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-    port: 8313
-    server: 183.232.235.2
-    skip-cert-verify: false
-    sni: hk-13-568.flztjc.net
+  - name: "\U0001F1F8\U0001F1EC新加坡3 | ⬇️ 7.2MB/s"
+    password: HrTsLJvh
+    port: 38632
+    server: 36.151.251.62
+    skip-cert-verify: true
+    sni: 36.151.251.62
     type: trojan
     udp: true
-  - name: "\U0001F1EF\U0001F1F5日本5 | ⬇️ 5.8MB/s"
-    network: ws
-    port: 50000
-    server: 121.139.174.91
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-    ws-opts:
-      headers:
-        Host: edmc.ambercc.filegear-sg.me
-      path: /?ed=2560&proxyip=ts.hpc.tw
-    servername: edmc.ambercc.filegear-sg.me
-  - name: "\U0001F300其他13-未识别 | ⬇️ 8.7MB/s"
-    network: ws
-    port: 8880
-    server: '::ffff:156.238.18.203'
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: sg.laoyoutiao.link
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
-          (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-      path: /Telegram@WangCai2/?ed=2048
-    xudp: true
-    servername: sg.laoyoutiao.link
-  - name: "\U0001F300其他14-未识别 | ⬇️ 8.9MB/s"
-    network: ws
-    port: 8880
-    server: '::ffff:156.238.18.70'
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: sg.laoyoutiao.link
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/45.0.2454.101 Safari/537.36
-      path: /Telegram@WangCai2/?ed=2048
-    xudp: true
-    servername: sg.laoyoutiao.link
-  - name: "\U0001F1EF\U0001F1F5日本6 | ⬇️ 5.8MB/s"
-    network: ws
-    port: 2083
-    server: 27.50.49.47
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-    ws-opts:
-      headers:
-        Host: edmz.ambercc.filegear-sg.me
-      path: /?ed=2560&proxyip=ts.hpc.tw
-    servername: edmz.ambercc.filegear-sg.me
-  - name: "\U0001F1EF\U0001F1F5日本7 | ⬇️ 5.4MB/s"
-    network: ws
-    port: 2087
-    server: 103.116.7.100
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-    ws-opts:
-      headers:
-        Host: edmc.ambercc.filegear-sg.me
-      path: /?ed=2560&proxyip=ts.hpc.tw
-    servername: edmc.ambercc.filegear-sg.me
-  - name: "\U0001F1EF\U0001F1F5日本8 | ⬇️ 6.3MB/s"
-    network: ws
-    port: 2096
-    server: 27.50.49.156
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-    ws-opts:
-      headers:
-        Host: edmc.ambercc.filegear-sg.me
-      path: /?ed=2560&proxyip=ts.hpc.tw
-    servername: edmc.ambercc.filegear-sg.me
-  - name: "\U0001F1F8\U0001F1EC新加坡4 | ⬇️ 5.5MB/s"
-    network: ws
-    port: 8880
-    server: '::ffff:156.238.18.89'
-    type: vless
-    udp: true
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    ws-opts:
-      headers:
-        Host: sg.laoyoutiao.link
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.181 Safari/537.36
-      path: /Telegram@WangCai2/?ed=2048
-    xudp: true
-    servername: sg.laoyoutiao.link
-  - cipher: aes-256-cfb
-    name: "\U0001F1F0\U0001F1F7韩国2 | ⬇️ 10.6MB/s"
-    password: qwerREWQ@@
-    port: 11389
-    server: p231.panda004.net
-    type: ss
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0香港3 | ⬇️ 5.1MB/s"
-    password: 85f133142f04dbf6547da33895cfabb3
-    port: 39001
-    server: 120.233.128.68
-    skip-cert-verify: true
-    sni: 120.233.128.68
-    type: trojan
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 8.2MB/s"
-    network: ws
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 8.2MB/s"
+    obfs: ''
+    obfs-password: ''
+    password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
     port: 443
-    server: 172.67.163.14
-    tls: true
-    type: vless
-    udp: true
-    uuid: 585acd30-52bf-4b70-a537-e13649fafefc
-    ws-opts:
-      headers:
-        Host: dfcvrf.2031.pp.ua
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/46.0.2490.71 Safari/537.36
-      path: /rU9rSjDSOd4yY2fOe
-    xudp: true
-    servername: DfcVrf.2031.pp.Ua
-  - name: "\U0001F1F0\U0001F1F7韩国3 | ⬇️ 6.0MB/s"
-    password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-    port: 21003
-    server: 120.233.44.201
+    server: 208.87.242.215
     skip-cert-verify: true
-    sni: k15.tudou211.com
-    type: trojan
+    sni: www.bing.com
+    type: hysteria2
+    up: ''
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 6.7MB/s"
+    obfs: ''
+    obfs-password: ''
+    password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+    port: 443
+    server: 108.181.23.255
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+    up: ''
+  - cipher: aes-256-cfb
+    name: "\U0001F1F0\U0001F1F7韩国1 | ⬇️ 7.5MB/s"
+    password: yijian0503
+    port: 443
+    server: 43.203.219.33
+    type: ss
     udp: true
   - alterId: 2
     cipher: auto
-    name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 7.4MB/s"
+    name: "\U0001F1E8\U0001F1E6加拿大1 | ⬇️ 9.4MB/s"
     network: ws
-    port: 30808
-    server: v8.heduian.link
-    skip-cert-verify: false
-    tls: false
+    port: 30825
+    server: v25.heduian.link
+    skip-cert-verify: true
     type: vmess
-    udp: true
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     ws-opts:
       headers:
-        Host: v8.heduian.link
+        Host: v25.heduian.link
       path: /oooo
-    xudp: true
-    servername: v8.heduian.link
-  - auth: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
-    name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 5.4MB/s"
-    password: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
-    port: 8443
-    server: 77e4ecc4-swkhs0-sxicvr-1swry.hy2.gotochinatown.net
-    sni: 77e4ecc4-swkhs0-sxicvr-1swry.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 5.6MB/s"
-    password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
-    port: 3234
-    server: 209.141.47.127
-    skip-cert-verify: true
-    type: hysteria2
-  - name: "\U0001F300其他15-未识别 | ⬇️ 6.3MB/s"
-    network: ws
-    port: 8880
-    server: 91.193.58.247
-    type: vless
-    udp: true
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/69.0.3497.100 Safari/537.36
-      path: /
-    xudp: true
-    servername: steep.skyfigure.top
-  - auth: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-    name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 6.8MB/s"
-    password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-    port: 8443
-    server: 3233ac27-swin40-sxh7iw-1ryup.hy2.gotochinatown.net
-    sni: 3233ac27-swin40-sxh7iw-1ryup.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-  - client-fingerprint: firefox
-    name: "\U0001F300其他16-VN | ⬇️ 8.4MB/s"
-    network: tcp
-    port: 34045
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    server: 103.81.85.15
-    tls: true
-    type: vless
-    udp: true
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    name: "\U0001F1EF\U0001F1F5日本9 | ⬇️ 6.3MB/s"
-    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    port: 10086
-    server: ajp.pagate.top
-    skip-cert-verify: false
-    sni: ajp.pagate.top
-    type: hysteria2
-  - alpn:
-      - h3%2Ch2%2Chttp%2F1.1
-    client-fingerprint: chrome
-    name: "\U0001F300其他17-GL | ⬇️ 6.6MB/s"
-    network: ws
-    port: 8443
-    server: gl.ccccccccccccccccccccccccccccccccccccccccccc.cc
-    skip-cert-verify: false
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 268c3eaa-7768-4cfd-8b9d-10c755d6cfa1
-    ws-opts:
-      headers:
-        Host: gl.ccccccccccccccccccccccccccccccccccccccccccc.cc
-      path: /
-    servername: gl.ccccccccccccccccccccccccccccccccccccccccccc.cc
-  - alterId: 0
-    cipher: auto
-    country: "\U0001F1ED\U0001F1F0 HK"
-    h2-opts: {}
-    http-opts: {}
-    name: "\U0001F1ED\U0001F1F0香港4 | ⬇️ 5.6MB/s"
-    network: ws
-    port: 8080
-    server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-    skip-cert-verify: true
-    type: vmess
-    uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-    ws-opts:
-      headers:
-        HOST: broadcastlv.chat.bilibili.com
-        Host: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-      path: /
-    servername: broadcastlv.chat.bilibili.com
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0香港5 | ⬇️ 7.8MB/s"
-    network: ws
-    port: 8080
-    server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-    ws-opts:
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-      path: /
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -1181,4 +657,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-06-15 14:21:16
+# 2025-06-15 15:14:28
