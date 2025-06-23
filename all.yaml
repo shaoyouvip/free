@@ -1,277 +1,546 @@
 proxies:
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 7.8MB/s"
-      port: 17549
-      server: 208.87.243.151
+    - name: "\U0001F1ED\U0001F1F0HK_1 | ⬇️ 4.1MB/s"
+      password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+      port: 8313
+      server: 183.232.235.2
       skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria
-      up: 1000 Mbps
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1592
-      down: "100"
-      name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 7.7MB/s"
-      obfs: ""
-      port: 40528
-      protocol: ""
-      server: 208.87.243.187
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: "100"
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 1000 Mbps
-      name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 7.4MB/s"
-      port: 11512
-      server: 108.181.24.77
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
+      type: trojan
       udp: true
-      up: 1000 Mbps
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 5.4MB/s"
-      network: ws
+    - cipher: aes-256-cfb
+      name: "\U0001F1F0\U0001F1F7KR_1 | ⬇️ 5.5MB/s"
+      password: qwerREWQ@@
+      port: 11389
+      server: p231.panda004.net
+      type: ss
+    - client-fingerprint: safari
+      flow: xtls-rprx-vision-udp443-udp443
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_1 | ⬇️ 4.2MB/s"
+      network: tcp
       port: "443"
-      server: 172.64.33.110
-      servername: edmp.aimercc.filegear-sg.me
+      server: 204.10.194.78
+      servername: yfnl1.xn--4gq62f52gppi29k.com
       tls: true
       type: vless
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+      xudp: true
+    - name: "\U0001F1F8\U0001F1ECSG_1 | ⬇️ 4.9MB/s"
+      network: tcp
+      password: FpQhGpIr
+      port: 38632
+      server: 36.151.251.62
+      skip-cert-verify: true
+      sni: 36.151.251.62
+      type: trojan
+      udp: true
+    - name: ❓Other_1 | ⬇️ 4.0MB/s
+      network: ws
+      port: "80"
+      server: 45.131.208.191
+      servername: yuming.kkllllkkkk95.workers.dev
+      type: vless
+      udp: true
+      uuid: 7f037831-591d-4067-9c8c-39f07d12858a
       ws-opts:
         headers:
-            Host: edmp.aimercc.filegear-sg.me
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-        path: /?ed=2560&proxyip=ts.hpc.tw
+            Host: yuming.kkllllkkkk95.workers.dev
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
+        path: Telegram@WangCai2/?ed=2048
       xudp: true
-    - name: "\U0001F1F3\U0001F1F1荷兰1 | ⬇️ 10.7MB/s"
+    - name: ❓Other_2 | ⬇️ 265.6MB/s
+      network: ws
+      port: "80"
+      server: 45.131.211.103
+      servername: vless.behradmirzaei1388.workers.dev
+      type: vless
+      udp: true
+      uuid: c58905af-2040-413e-adbc-0e81cc8eb35f
+      ws-opts:
+        headers:
+            Host: vless.behradmirzaei1388.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: Telegram@WangCai2/?ed=2048
+      xudp: true
+    - name: ❓Other_3 | ⬇️ 5.8MB/s
+      network: ws
+      port: "80"
+      server: 45.131.211.69
+      servername: 5435.nhopzuei.workers.Dev
+      type: vless
+      udp: true
+      uuid: 6034088f-b713-40dd-93be-eaea802eafe1
+      ws-opts:
+        headers:
+            Host: 5435.nhopzuei.workers.Dev
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: Telegram@WangCai2/?ed=2048
+      xudp: true
+    - name: ❓Other_4 | ⬇️ 31.2MB/s
+      network: ws
+      port: "80"
+      server: 45.131.211.153
+      servername: 656654647567245851483768538765962936476541237567854816545176587.11feea65a1d70a.workers.dev
+      type: vless
+      udp: true
+      uuid: c1d22711-2adf-4ffa-a5d8-439e665bb951
+      ws-opts:
+        headers:
+            Host: 656654647567245851483768538765962936476541237567854816545176587.11feea65a1d70a.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+        path: Telegram@WangCai2/?ed=2048
+      xudp: true
+    - name: ❓Other_5 | ⬇️ 4.4MB/s
       network: ws
       port: "8080"
-      server: 141.101.121.108
+      server: 45.131.6.6
+      servername: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
+      type: vless
+      udp: true
+      uuid: 260c4900-69a9-465c-8c3a-272eb1b4ec00
+      ws-opts:
+        headers:
+            Host: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: Telegram@WangCai2/?ed=2048
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_1 | ⬇️ 4.1MB/s"
+      network: ws
+      port: "443"
+      server: 172.67.197.165
+      servername: 4444R.0890604.xyZ
+      tls: true
+      type: vless
+      udp: true
+      uuid: a7c9c017-db10-4d15-b01b-0634db498b57
+      ws-opts:
+        headers:
+            Host: 4444R.0890604.xyZ
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+        path: /xZjr7v1DqrYyamxeTh7sLJtI1
+      xudp: true
+    - name: "\U0001F1EB\U0001F1EEFI_1 | ⬇️ 3.9MB/s"
+      network: ws
+      port: "8080"
+      server: 172.67.71.48
+      type: vless
+      udp: true
+      uuid: a3414279-e59b-4f84-b0fe-aa6d5f4282b6
+      ws-opts:
+        headers:
+            Host: q5.19KAla.co
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_2 | ⬇️ 4.1MB/s"
+      network: ws
+      password: a96cb093-b164-4bc6-bd27-deb0e385de07
+      port: "443"
+      server: 104.21.42.93
+      skip-cert-verify: false
+      sni: uuuUuuUuJ.999864.Xyz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /CNLtVWdiKPpIlRig3qizHXb
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      name: "\U0001F1EB\U0001F1EEFI_2 | ⬇️ 4.0MB/s"
+      network: ws
+      port: "80"
+      server: 102.177.189.30
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 5ccf6c13-f60f-4c34-91e4-ce8cd44b5fe5
+      ws-opts:
+        headers:
+            Host: q2.19kAla.co
+        path: /
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EADE_2 | ⬇️ 4.6MB/s"
+      network: ws
+      port: "80"
+      server: 172.67.208.128
+      type: vless
+      udp: true
+      uuid: 033a4982-a8c7-4bfb-9481-5a8a1c62cfd6
+      ws-opts:
+        headers:
+            Host: azadnet.b0b723a182.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+        path: /iDE2j5JJnqTGPjmS?ed=2560
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_3 | ⬇️ 4.0MB/s"
+      network: ws
+      port: "443"
+      server: 104.21.63.135
+      servername: 333r.8906004.Xyz
+      tls: true
+      type: vless
+      udp: true
+      uuid: cb1d2f45-1af3-4bab-a308-7c0c27bac24a
+      ws-opts:
+        headers:
+            Host: 333r.8906004.xyz
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        path: /YkFQqkZ9vqpDooparWRe5wKJ0R
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_4 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "443"
+      server: 104.21.70.32
+      servername: pPP0.89890604.xYZ
+      tls: true
+      type: vless
+      udp: true
+      uuid: fa050497-fc2a-45ee-89c0-96670c4ecb65
+      ws-opts:
+        headers:
+            Host: ppp0.89890604.xyz
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+        path: /0USILhLWoWgQPuXTwt
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EADE_3 | ⬇️ 4.5MB/s"
+      network: ws
+      port: "80"
+      server: 188.114.99.42
+      type: vless
+      udp: true
+      uuid: ced20efa-802d-4589-a91f-26947496c81f
+      ws-opts:
+        headers:
+            Host: q3.19kala.co
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: /
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_5 | ⬇️ 5.6MB/s"
+      network: ws
+      password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+      port: "443"
+      server: 104.21.14.54
+      skip-cert-verify: false
+      sni: 6666YHjU.777159.xYz
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+        path: /dilyfCPEmLvYr5hYXD
+    - alpn:
+        - http/1.1
+      client-fingerprint: randomized
+      name: ❓Other_6 | ⬇️ 4.3MB/s
+      network: ws
+      port: "2096"
+      server: 104.21.68.56
+      servername: fREE.CFDNs.oNLiNE
+      tls: true
+      type: vless
+      udp: true
+      uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+      ws-opts:
+        headers:
+            Host: free.cfdns.online
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /LEAHKkh1VHphBTvi
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8US_6 | ⬇️ 4.1MB/s"
+      network: ws
+      port: "80"
+      server: 172.67.10.124
+      type: vless
+      udp: true
+      uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+      ws-opts:
+        headers:
+            Host: a1.ghormehsabzi.dpdns.org
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: /?ed=2580
+      xudp: true
+    - name: "\U0001F1EB\U0001F1EEFI_3 | ⬇️ 4.2MB/s"
+      network: ws
+      port: "2082"
+      server: 102.177.189.248
+      type: vless
+      udp: true
+      uuid: b111f8c5-1244-4ec8-8d74-79c13ef9037e
+      ws-opts:
+        headers:
+            Host: q6.19kalA.co
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+        path: ""
+      xudp: true
+    - name: "\U0001F1EF\U0001F1F5JP_1 | ⬇️ 4.8MB/s"
+      network: ws
+      port: "8880"
+      server: 104.26.1.212
+      type: vless
+      udp: true
+      uuid: 6ec52bc7-fcd7-4841-ab69-70d6e03a6eda
+      ws-opts:
+        headers:
+            Host: www.speedtest.net.zula.ir.cfp1.a2hdhjdxjbxjsjdjd.ddns-ip.nEt.
+            User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+        path: ""
+      xudp: true
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EADE_4 | ⬇️ 4.4MB/s"
+      network: ws
+      port: "2087"
+      server: 104.21.6.115
+      servername: matoride.gorbe.site
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7ebd0a40-a5ae-4762-8929-b5a2c7623d74
+      ws-opts:
+        headers:
+            Host: matoride.gorbe.site
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+        path: /download?ed=2560
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_7 | ⬇️ 3.9MB/s"
+      network: ws
+      port: "443"
+      server: 172.67.131.27
+      servername: oo098.89060004.xyZ
+      tls: true
+      type: vless
+      udp: true
+      uuid: 509ed9b7-8d64-4204-8ec8-6b749020ac3f
+      ws-opts:
+        headers:
+            Host: oo098.89060004.xyz
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+        path: /VlJKGXt3aXBStn7
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_8 | ⬇️ 4.0MB/s"
+      network: ws
+      password: fa050497-fc2a-45ee-89c0-96670c4ecb65
+      port: "443"
+      server: 104.21.63.135
+      skip-cert-verify: false
+      sni: Rrr4.8906004.xYZ
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /DZxb5QZyWgQPuXTwt
+    - name: ❓Other_7 | ⬇️ 4.1MB/s
+      network: ws
+      port: "2082"
+      server: 172.67.111.155
+      type: vless
+      udp: true
+      uuid: 4e4fe94d-d9f2-4679-879a-b06fbb28ddf1
+      ws-opts:
+        headers:
+            Host: 831tg.na15iwpb.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1F0\U0001F1F7KR_2 | ⬇️ 4.3MB/s"
+      network: ws
+      port: "80"
+      server: 162.159.14.42
+      servername: spx.lindak.dpdns.org
+      type: vless
+      udp: true
+      uuid: db9d419e-3094-4942-9313-d39afd3dd163
+      ws-opts:
+        headers:
+            Host: spx.lindak.dpdns.org
+            User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko) Chrome/v1.0.0 Safari/538.1
+        path: /?ed=2560
+      xudp: true
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EADE_5 | ⬇️ 3.9MB/s"
+      network: ws
+      port: "2087"
+      server: 172.64.153.173
+      servername: matoride.gorbe.site
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7ebd0a40-a5ae-4762-8929-b5a2c7623d74
+      ws-opts:
+        headers:
+            Host: matoride.gorbe.site
+            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+        path: /download?ed=2560
+      xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: randomized
+      name: ❓Other_8 | ⬇️ 4.2MB/s
+      network: ws
+      port: "8443"
+      server: 172.67.2.238
+      servername: UuHuHyygESDFGh.uyHjhGVGfcJGUJHbUilbvfdxdXM.xYz
+      tls: true
+      type: vless
+      udp: true
+      uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+      ws-opts:
+        headers:
+            Host: UuHUhYygeSDFgH.uyhjHgvgfcjgujHbuilbVFdxdXm.Xyz
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+        path: /sMCNjwi0FFy3GPdY/ODQuMjM1LjE2OS4yMzQ=?ed=2560
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_9 | ⬇️ 4.5MB/s"
+      network: ws
+      password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
+      port: "443"
+      server: 172.67.201.36
+      skip-cert-verify: false
+      sni: ggGGGGgggGGgGggy.FReevPN2026.DpDNS.Org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30
+        path: /l96MZ8se5Kl2p8BiMhP42l
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: randomized
+      name: ❓Other_9 | ⬇️ 4.0MB/s
+      network: ws
+      port: "443"
+      server: 104.21.64.1
+      servername: bPb.BAIzExIer.fIlEGEAr-SG.ME
+      tls: true
+      type: vless
+      udp: true
+      uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+      ws-opts:
+        headers:
+            Host: bPb.BaIzEXier.FilegEAR-sG.mE
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+        path: /HWhEHazcZEw6W9cc?ed=2560
+      xudp: true
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_10 | ⬇️ 4.7MB/s"
+      network: ws
+      password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c
+      port: "443"
+      server: 172.67.162.74
+      skip-cert-verify: false
+      sni: p09.IrAN.pP.Ua
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+        path: /s1XRkMWuneQkqtp5KKSues
+    - name: "\U0001F1F3\U0001F1F1NL_1 | ⬇️ 4.0MB/s"
+      network: ws
+      port: "8080"
+      server: 141.101.120.38
       type: vless
       udp: true
       uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
       ws-opts:
         headers:
             Host: 1750293123492.china.baidu.bilibili.china.aeko.cn
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36
         path: /?ed=2048
       xudp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5日本2 | ⬇️ 6.3MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_6 | ⬇️ 4.3MB/s"
       network: ws
-      port: "443"
-      server: 172.64.35.168
-      servername: edmp.aimercc.filegear-sg.me
-      tls: true
+      port: "80"
+      server: 104.21.113.169
+      servername: pari.parinazz.dpdns.org
       type: vless
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      uuid: 1f431db3-1918-4e7b-a855-c93485e11694
       ws-opts:
         headers:
-            Host: edmp.aimercc.filegear-sg.me
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
-        path: /?ed=2560&proxyip=ts.hpc.tw
+            Host: pari.parinazz.dpdns.org
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - name: "\U0001F1EF\U0001F1F5JP_2 | ⬇️ 15.6MB/s"
+      network: ws
+      port: "8080"
+      server: 104.18.14.19
+      type: vless
+      udp: true
+      uuid: 41956a47-8432-4a3f-b70d-a54fc7efd6b8
+      ws-opts:
+        headers:
+            Host: 0223.jq2ter91.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
+        path: /Telegram@V2ray_Alpha/?ed=2560
       xudp: true
     - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1939
-      down: 100
-      name: "\U0001F1F7\U0001F1FA俄罗斯1 | ⬇️ 7.0MB/s"
-      port: 62003
-      protocol: udp
-      server: 176.32.35.226
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 100
-    - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-      delay: 815
-      name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 7.2MB/s"
-      password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-      port: 10086
-      server: asg.pagate.top
-      skip-cert-verify: false
-      sni: asg.pagate.top
-      type: hysteria2
-    - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-      delay: 2974
-      name: "\U0001F1EF\U0001F1F5日本3 | ⬇️ 7.1MB/s"
-      password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-      port: 10086
-      server: ajp.pagate.top
-      skip-cert-verify: false
-      sni: ajp.pagate.top
-      type: hysteria2
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1605
-      down: 100
-      name: "\U0001F1F3\U0001F1F1荷兰2 | ⬇️ 5.7MB/s"
-      port: 14241
-      protocol: udp
-      server: 51.159.226.1
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 100
-    - auth: b3b81bf2-e5c1-4484-a1e3-42db1f83ab82
-      delay: 1215
-      name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 7.2MB/s"
-      obfs: salamander
-      obfs-password: yw3WPVnZYdiqCT1n
-      password: b3b81bf2-e5c1-4484-a1e3-42db1f83ab82
-      port: 443
-      server: us1.vip.edu.kg
-      skip-cert-verify: false
-      sni: us1.vip.edu.kg
-      type: hysteria2
-      udp: true
-    - client-fingerprint: chrome
-      delay: 774
-      name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 5.2MB/s"
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_11 | ⬇️ 4.4MB/s"
       network: ws
-      port: 8880
-      server: 195.85.23.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      delay: 821
-      name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 5.7MB/s"
-      network: ws
-      port: 8880
-      server: 188.244.122.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      delay: 407
-      name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 10.9MB/s"
-      network: ws
-      port: 8880
-      server: 185.148.106.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      delay: 951
-      name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 5.4MB/s"
-      network: ws
-      port: 8880
-      server: 103.245.228.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - delay: 623
-      name: "\U0001F1EF\U0001F1F5日本4 | ⬇️ 5.7MB/s"
-      network: ws
-      port: 2083
-      server: 154.218.15.250
-      servername: edmp.aimercc.filegear-sg.me
+      port: "443"
+      server: 66tghji.191262.xyz
+      servername: 66tGHjI.191262.XyZ
       tls: true
       type: vless
       udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+      uuid: 509ed9b7-8d64-4204-8ec8-6b749020ac3f
       ws-opts:
         headers:
-            Host: edmp.aimercc.filegear-sg.me
-        path: /?ed=2560
-    - client-fingerprint: chrome
-      delay: 400
-      name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 7.2MB/s"
+            Host: 66tghji.191262.xyz
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+        path: /VlJKGXt3aXBStn7
+      xudp: true
+    - name: "\U0001F1F3\U0001F1F1NL_2 | ⬇️ 4.2MB/s"
       network: ws
-      port: 8880
-      server: 188.164.248.251
-      servername: Telegram-channel-WangCai2
-      tls: false
+      port: "8080"
+      server: 104.26.14.85
       type: vless
       udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+      uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
       ws-opts:
         headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      delay: 1553
-      name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 5.7MB/s"
-      network: ws
-      port: 8880
-      server: 188.42.89.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      delay: 1580
-      name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 7.3MB/s"
-      network: ws
-      port: 8880
-      server: 45.149.12.251
-      servername: Telegram-channel-WangCai2
-      tls: false
-      type: vless
-      udp: true
-      uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-      ws-opts:
-        headers:
-            Host: cf.d3z.net
-        path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5日本5 | ⬇️ 8.8MB/s"
-      network: tcp
-      port: 40543
-      reality-opts:
-        public-key: -DGhvkCZEcENlqMp6d-XvOU67Is7KuBZK_OoIDl8gC8
-        short-id: 0db09a8b
-      server: 47.79.43.40
-      servername: www.yahoo.com
-      tls: true
-      type: vless
-      uuid: 2c6654b9-6cad-4bd9-85d7-b5fc36a9c99a
-# 2025-06-23 14:24:55
+            Host: QW.VU6d72nt9y.zULaiR.orG.
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+        path: /?ed=2048
+      xudp: true
+# 2025-06-23 15:17:20
