@@ -21,8 +21,8 @@
 
 > base64格式的订阅需要使用这样的方法进行使用！
 > 
-> CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点
-
+> CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点，如出现base64格式的订阅.从剪切版导入不正确，那可以在复制的时候把最后方的时间戳删掉，不要复制到时间戳。
+> <img width="1284" height="445" alt="QQ20250812-034749" src="https://github.com/user-attachments/assets/597da486-3e14-4342-bf50-f6f2c27b3462" />
 
 # 无需代理更新节点订阅
 
