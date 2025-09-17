@@ -1,70 +1,18 @@
 proxies:
-    - http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1E9\U0001F1EADE_1|2.1MB/s"
-      network: tcp
-      port: "28260"
-      server: 91.98.41.123
-      type: vless
-      udp: true
-      uuid: defb9686-1d5d-4919-a87f-c93b54b9c0d3
-      xudp: true
-    - alpn:
-        - http%2F1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_1|3.8MB/s"
-      network: ws
-      port: 443
-      server: 104.21.71.83
-      servername: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
-      skip-cert-verify: false
-      tfo: false
-      tls: true
-      type: vless
-      uuid: 3c2f5010-bc17-46d7-a5d3-7489f3a8dded
-      ws-opts:
-        headers:
-            Host: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
-        path: /GJuqYfsZSA3HxKLVmdalbjJm7kb1B
-    - name: "\U0001F1F8\U0001F1ECSG_1|3.6MB/s"
-      network: ws
-      password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
-      port: 20230
-      server: sg005.421421.xyz
-      skip-cert-verify: true
-      sni: www.alibaba.com
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: www.alibaba.com
-        path: ""
-    - cipher: chacha20-ietf
-      name: "\U0001F1FA\U0001F1F8US_2|2.2MB/s"
-      obfs: plain
-      obfs-param: 45672222545.microsoft.com
-      password: bxsnucrgk6hfish
-      port: 1081
-      protocol: auth_aes128_sha1
-      protocol-param: 222545:TIvS2C
-      server: yd-05.paofunlink.com
-      type: ssr
-      udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1F3\U0001F1F1NL_1|4.7MB/s"
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 51.15.17.169
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F7\U0001F1FARU_1|4.1MB/s"
+      password: 7Lt2sqUu9wsA4lAgPcXdjB
+      port: "8443"
+      server: 95.81.106.102
       type: ss
+      udp: true
     - alterId: 1
       cipher: auto
-      name: "\U0001F1EB\U0001F1F7FR_1|4.8MB/s"
+      name: "\U0001F1E8\U0001F1E6CA_1|2.8MB/s"
       network: ws
       port: 443
       server: kampong.org
-      skip-cert-verify: false
+      servername: kampong.org
       tls: true
       type: vmess
       uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -72,44 +20,61 @@ proxies:
         headers:
             Host: kampong.org
         path: linkvws
-    - encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|2.6MB/s"
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_1|2.0MB/s"
       network: ws
-      port: 443
-      server: backus1.dh03.shop
-      servername: backus1.dh03.shop
+      port: 2053
+      server: 141.101.120.100
+      servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+      skip-cert-verify: false
       tls: true
       type: vless
-      uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+      udp: true
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
       ws-opts:
         headers:
-            Host: backus1.dh03.shop
-        path: /higate
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      delay: 1079
-      down: "100"
-      name: "\U0001F1EB\U0001F1F7FR_2|4.5MB/s"
-      obfs: ""
-      port: 15010
-      protocol: ""
-      server: 195.154.200.40
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: "100"
+            Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+        path: /telegram@V2ray_Alpha/?ed=2048
+    - client-fingerprint: randomized
+      name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
+      network: ws
+      port: 2053
+      server: 141.101.121.62
+      servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+        path: /
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_1|3.5MB/s"
+      network: ws
+      port: 80
+      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+      servername: "\U0001F1ED\U0001F1F0HK-119.237.209.132-0297 | 0.221MB"
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+      ws-opts:
+        headers:
+            Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+        path: /
     - alterId: 0
       cipher: auto
       country: "\U0001F1EB\U0001F1F7FR"
-      delay: 1014
+      delay: 965
       h2-opts: {}
       http-opts: {}
-      name: "\U0001F1EB\U0001F1F7FR_3|3.9MB/s"
+      name: "\U0001F1EB\U0001F1F7FR_1|4.4MB/s"
       network: ws
       port: 443
-      server: 57.128.189.240
+      server: 57.128.189.253
       servername: kapelleng.com
       skip-cert-verify: true
       tls: true
@@ -119,294 +84,275 @@ proxies:
         headers:
             HOST: kapelleng.com
         path: /linkvws
-    - name: "\U0001F1EB\U0001F1F7FR_4|5.4MB/s"
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_2|5.3MB/s"
       network: ws
-      port: "8080"
-      server: 51.38.168.151
-      type: vless
-      udp: true
-      uuid: dde87267-da95-4a6b-9891-0c864a3e9be8
+      port: 80
+      server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
       ws-opts:
         headers:
-            Host: wWw.SpeEDTeSt.nEt
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
-        path: /wslinka?ed
+            Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+        path: /
+    - name: "\U0001F1F9\U0001F1FCTW_1|6.4MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      auth_str: dongtaiwang.com
+      down: 55 Mbps
+      name: "\U0001F1EB\U0001F1F7FR_2|2.1MB/s"
+      port: 50011
+      protocol: udp
+      server: 62.210.127.217
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      udp: true
+      up: 11 Mbps
+    - name: "\U0001F1F2\U0001F1FEMY_1|2.3MB/s"
+      password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+      port: 443
+      server: malaysia.viefast.net
+      skip-cert-verify: true
+      sni: csapp.catch.net.tw
+      type: trojan
+      udp: true
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EC\U0001F1E7GB_1|4.1MB/s"
+      network: tcp
+      port: "1443"
+      reality-opts:
+        public-key: FkyaPwhmd80B_vHrzI_74WrhAcTHXMC6g83x61jL3Xs
+        short-id: ""
+      server: 91.242.228.10
+      servername: speed.cloudflare.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
       xudp: true
     - grpc-opts:
         grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-      name: "\U0001F1EB\U0001F1F7FR_5|4.1MB/s"
+      name: "\U0001F1EB\U0001F1F7FR_3|2.7MB/s"
       network: grpc
-      port: "25365"
-      server: 141.94.213.115
+      port: "15819"
+      server: 141.227.136.183
       type: vless
       udp: true
-      uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
+      uuid: 1f90ea31-15a1-4896-bfff-c83f74ce0f7e
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_4|3.6MB/s"
+      network: grpc
+      port: "11230"
+      server: 141.227.166.22
+      type: vless
+      udp: true
+      uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_5|4.5MB/s"
+      network: grpc
+      port: "25365"
+      server: 141.227.172.56
+      type: vless
+      udp: true
+      uuid: 59076475-a35e-4b5b-8e60-da7f215f618b
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_6|6.1MB/s"
+      network: grpc
+      port: "59185"
+      server: 141.227.140.224
+      type: vless
+      udp: true
+      uuid: 6c8b1551-128c-44f2-82d3-1065ad0c2024
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_7|4.8MB/s"
+      network: grpc
+      port: "39703"
+      server: 141.227.168.179
+      type: vless
+      udp: true
+      uuid: 29e646a4-2fda-4495-83cc-e041b660fa21
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_8|6.2MB/s"
+      network: grpc
+      port: "46393"
+      server: 57.130.29.231
+      type: vless
+      udp: true
+      uuid: 10377e13-ba4e-4b86-ad26-08ac573bfa29
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_9|4.2MB/s"
+      network: grpc
+      port: "27236"
+      server: 152.228.242.123
+      type: vless
+      udp: true
+      uuid: 859e3599-42c2-4e7e-8f8e-f96b764db26f
       xudp: true
     - client-fingerprint: firefox
-      grpc-opts:
-        grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
-      name: "\U0001F1F8\U0001F1EASE_1|4.0MB/s"
-      network: grpc
-      port: "443"
-      reality-opts:
-        public-key: TIvPO8pe4ICvHUItzR-S4966pToAcugMSDUvJFS6ah0
-        short-id: 4cdd84908413
-      server: wndisdkvwmqyod.curfuffled.com
-      servername: tgju.org
-      tls: true
-      type: vless
-      udp: true
-      uuid: 52c5f186-8599-4043-84bf-2759186c8281
-      xudp: true
-    - grpc-opts:
-        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-      name: "\U0001F1EB\U0001F1F7FR_6|4.1MB/s"
-      network: grpc
-      port: "36626"
-      server: 57.129.92.155
-      type: vless
-      udp: true
-      uuid: 4981b98f-4943-4083-83aa-00b028f57a18
-      xudp: true
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_2|6.1MB/s"
+      name: "\U0001F1E9\U0001F1EADE_1|5.4MB/s"
       network: tcp
-      port: "11861"
+      port: "39626"
       reality-opts:
-        public-key: 06aHIL409lDgNcq2_ROvSQAuj9B4sl0llMTwv2-gMwk
-        short-id: f86a884dacf3
-      server: 91.107.245.212
-      servername: www.digikala.com
+        public-key: eUPFDtu0ZgmQQHqsSJJ2APBDF7X9Pje7LPBYehTMJBs
+        short-id: "85"
+      server: 91.98.139.247
+      servername: www.steampowered.com
       tls: true
       type: vless
       udp: true
-      uuid: 5bfe92c8-b3e6-4278-b703-90f520dd32f4
+      uuid: d4f5c51c-6bed-4a1c-a335-b0df490249d5
       xudp: true
     - grpc-opts:
         grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-      name: "\U0001F1EB\U0001F1F7FR_7|4.3MB/s"
-      network: grpc
-      port: "31846"
-      server: 141.227.160.228
-      type: vless
-      udp: true
-      uuid: d4163749-abe1-4f84-a8c9-4972795892f2
-      xudp: true
-    - grpc-opts:
-        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-      name: "\U0001F1EB\U0001F1F7FR_8|3.9MB/s"
+      name: "\U0001F1EC\U0001F1E7GB_2|6.0MB/s"
       network: grpc
       port: "25365"
-      server: 141.227.134.153
+      server: 51.89.230.180
       type: vless
       udp: true
-      uuid: 0a708abd-79b3-420d-a564-e8a1ff580f83
+      uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
+      xudp: true
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1EB\U0001F1F7FR_10|4.9MB/s"
+      network: grpc
+      port: "10227"
+      server: 141.227.176.48
+      type: vless
+      udp: true
+      uuid: ba1fc4fe-c5a5-4ad3-b4e2-f02ecffd992e
       xudp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1E7GB_1|4.7MB/s"
+      name: "\U0001F1FA\U0001F1F8US_3|3.0MB/s"
       network: tcp
-      port: "8081"
+      port: "443"
       reality-opts:
-        public-key: nT4JZTeUVOw-XZ-htdqbFi1je4ZHeg-ALICrDk2usFE
-        short-id: d19d7a2d3da8595a
-      server: 51.89.2.113
+        public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+        short-id: ""
+      server: usa4.worldunlocked.org
       servername: yahoo.com
       tls: true
       type: vless
       udp: true
-      uuid: f924939e-2d9a-46b7-a3c2-67a225b7c027
+      uuid: 5187e249-b0dc-490e-ab89-cb3bbff55cb3
       xudp: true
-    - name: "\U0001F1E9\U0001F1EADE_3|5.9MB/s"
-      network: ws
-      port: "80"
-      server: 51.195.31.95
+    - grpc-opts:
+        grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+      name: "\U0001F1F5\U0001F1F1PL_1|5.2MB/s"
+      network: grpc
+      port: "24881"
+      server: 146.59.116.149
       type: vless
       udp: true
-      uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
-      ws-opts:
-        headers:
-            Host: wWw.speEDtEST.NeT
-            User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-        path: /wslinws?ed
+      uuid: a8e10cc2-3de0-4558-b303-bfba2a5919b3
       xudp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1E9\U0001F1EADE_4|4.4MB/s"
-      network: ws
-      port: "8443"
-      server: www.speedtest.net
-      servername: www.speedtest24.ir
-      tls: true
-      type: vless
-      udp: true
-      uuid: 244fff6a-adfc-45b8-b797-5ccb23f64e40
-      ws-opts:
-        headers:
-            Host: www.speedtest24.ir
-            User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-        path: /@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config?ed=2048
-      xudp: true
-    - cipher: chacha20-ietf
-      name: "\U0001F1E8\U0001F1F3CN_1|3.9MB/s"
-      obfs: plain
-      obfs-param: 45672222545.microsoft.com
-      password: bxsnucrgk6hfish
-      port: "5956"
-      protocol: auth_aes128_sha1
-      protocol-param: 222545:TIvS2C
-      server: yd-07.paofunlink.com
-      type: ssr
-      udp: true
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_4|3.2MB/s"
-      network: ws
-      password: 4174b95d-115e-4d39-add6-1f8db95bb860
-      port: "443"
-      server: 172.67.153.179
-      skip-cert-verify: false
-      sni: qqqqqqqqqqa.www890604.dpdns.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
-        path: /uzJNzgkkYWRWGxgFnoFPw1
-    - alpn:
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_5|2.9MB/s"
-      network: ws
-      password: c2633560-5acb-4dd3-9c22-9a6c2fd212e2
-      port: "443"
-      server: ddddccvggyyu.457.pp.ua
-      skip-cert-verify: false
-      sni: ddDdCcVggYYU.457.PP.uA
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36
-        path: /0eGw4mEUlhltSk3Y8O5OsbJkA
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_6|2.1MB/s"
-      network: ws
-      port: "443"
-      server: m2-1cm.pages.dev
-      servername: M2-1CM.paGes.DeV
+      name: "\U0001F1E9\U0001F1EADE_2|3.9MB/s"
+      network: tcp
+      port: "32167"
+      reality-opts:
+        public-key: 8GR3JcYx9_MbgHhxdSAOt-PLsO7tFg4yidfCCwtbQ1E
+        short-id: e0
+      server: abri.abriabri.ir
+      servername: www.tgju.org
       tls: true
       type: vless
       udp: true
-      uuid: 0ef0630e-544c-4ed0-a4de-861f14695f37
-      ws-opts:
-        headers:
-            Host: M2-1CM.paGes.DeV
-            User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
-        path: /ognicwivyrkxih6r
+      uuid: 0f1065c0-2c48-4d7c-b7da-1af5ca0e8af3
       xudp: true
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8US_7|3.6MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_3|4.3MB/s"
       network: ws
-      port: "2053"
-      server: 141.101.120.15
-      servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-      tls: true
+      port: "2082"
+      server: www.speedtest.net
       type: vless
       udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      uuid: 25b3e0c9-58ed-417d-aeb7-876571441799
       ws-opts:
         headers:
-            Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-            User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
-        path: /?ed=2048
+            Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+        path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
       xudp: true
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8US_8|2.5MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_4|6.4MB/s"
       network: ws
-      port: "2053"
-      server: 141.101.121.34
-      servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-      tls: true
+      port: "8880"
+      server: 172.66.40.99
       type: vless
       udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      uuid: 934ad667-dce8-402a-aa45-3c3b52252c0a
       ws-opts:
         headers:
-            Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-        path: /?ed=2048
+            Host: websocket.network.www.speedtest.net.flutter.dev.russia.python.elmahstyle.xyz.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: /@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048
       xudp: true
-    - client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8US_9|2.0MB/s"
-      network: ws
-      port: "2096"
-      server: 1750926563683.tencentapp.cn
-      servername: 1750926570965.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
-      tls: true
+    - name: "\U0001F1EB\U0001F1EEFI_1|2.9MB/s"
+      network: tcp
+      port: 40749
+      server: 65.21.246.137
+      skip-cert-verify: true
+      tls: false
       type: vless
       udp: true
-      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-      ws-opts:
-        headers:
-            Host: 1750926570965.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
-            User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko) Chrome/v1.0.0 Safari/538.1
-        path: /?ed=2048
-      xudp: true
-    - client-fingerprint: random
-      name: "\U0001F1FA\U0001F1F8US_10|2.6MB/s"
+      uuid: 27f72d40-9efd-4acc-9cda-aad772be72f6
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1EE\U0001F1F9IT_1|3.3MB/s"
       network: ws
-      password: trojan
-      port: "443"
-      server: azadnet-9ya.pages.dev
+      port: 30805
+      server: v5.heduian.link
       skip-cert-verify: false
-      sni: azadnet-9ya.pages.dev
+      tls: false
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      ws-opts:
+        headers:
+            Host: v5.heduian.link
+        path: /oooo
+    - country: "\U0001F1EE\U0001F1F3 IN"
+      name: "\U0001F1EE\U0001F1F3IN_1|4.8MB/s"
+      password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+      port: 443
+      server: in.viefast.net
+      skip-cert-verify: true
       type: trojan
       udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
-        path: /?ed=2560
     - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F7\U0001F1FARU_1|5.3MB/s"
-      password: 7Lt2sqUu9wsA4lAgPcXdjB
-      port: "8443"
-      server: 95.81.106.102
+      name: "\U0001F1FA\U0001F1F8US_4|4.4MB/s"
+      password: 102826c0-8ad3-4417-8843-6da0f5c80cfe
+      port: "35604"
+      server: gw.liangyuandianwan.com
       type: ss
       udp: true
-    - name: "\U0001F1EC\U0001F1E7GB_2|2.2MB/s"
-      network: ws
-      port: "443"
-      server: 77.110.121.185
-      type: vless
-      udp: true
-      uuid: be5456ae-54ce-49bd-bd1f-72459b673c71
-      ws-opts:
-        headers:
-            Host: ""
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
-        path: /@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip@fotonvip
-      xudp: true
-    - alpn:
-        - ""
-      alterId: "0"
-      cipher: auto
-      name: "\U0001F1FA\U0001F1F8US_11|2.4MB/s"
-      network: ws
-      port: 443
-      server: 40.160.16.216
-      servername: fapeng.org
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-      ws-opts:
-        headers:
-            Host: fapeng.org
-        path: linkvws
-      xudp: true
-# 2025-09-18 03:11:58
+# 2025-09-18 04:16:00
