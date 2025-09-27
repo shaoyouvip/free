@@ -1,8 +1,8 @@
 proxies:
-  - name: "\U0001F1FA\U0001F1F8US_1|4.0MB/s"
+  - name: "\U0001F1FA\U0001F1F8US_1|3.5MB/s"
     network: ws
-    port: 2096
-    server: 141.11.203.32
+    port: 443
+    server: 91.215.153.85
     skip-cert-verify: false
     tls: true
     type: vless
@@ -11,53 +11,174 @@ proxies:
     ws-opts:
       headers:
         Host: kejiland.freewarp.eu.org
-      path: /snippets
+      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_2|2.1MB/s"
-    network: ws
-    port: 2096
-    server: 195.13.45.32
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_1|2.8MB/s"
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    port: 8080
-    server: 151.242.251.131
-    type: ss
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_2|4.1MB/s"
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    port: 8080
-    server: 151.242.251.147
-    type: ss
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55
-    name: "\U0001F1F3\U0001F1F1NL_3|2.8MB/s"
-    port: 49003
-    protocol: udp
-    server: 51.159.226.1
+  - auth: 83d353f8-07e8-444a-b3e8-3bfa9bae151c
+    name: "\U0001F1FA\U0001F1F8US_2|2.3MB/s"
+    password: 83d353f8-07e8-444a-b3e8-3bfa9bae151c
+    port: 16090
+    server: els.ylccloud.top
     skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
+    sni: els.ylccloud.top
+    type: hysteria2
     udp: true
-    up: 11
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_3|2.7MB/s"
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1FA\U0001F1F8US_3|2.0MB/s"
+    obfs: ''
+    obfs-password: ''
+    password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+    port: 2056
+    server: lsj3.mangshe.xyz
+    skip-cert-verify: true
+    sni: lsj3.mangshe.xyz
+    type: hysteria2
+    up: ''
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1EB\U0001F1F7FR_1|2.2MB/s"
+    obfs: ''
+    obfs-password: ''
+    password: dongtaiwang.com
+    port: 5355
+    server: 51.159.111.32
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+    up: ''
+  - name: "\U0001F1FA\U0001F1F8US_4|2.4MB/s"
+    network: ws
+    password: wb6368
+    port: 2087
+    server: 92.243.75.49
+    skip-cert-verify: true
+    sni: hsdgbuys.pages.dev
+    tfo: true
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        Host: hsdgbuys.pages.dev
+      path: /
+  - name: "\U0001F1FA\U0001F1F8US_5|2.6MB/s"
     network: ws
     port: 2096
-    server: 185.251.80.32
+    server: 104.239.72.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_6|3.7MB/s"
+    network: ws
+    port: 2096
+    server: 192.169.223.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_7|2.3MB/s"
+    network: ws
+    port: 2096
+    server: 89.116.161.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_8|2.2MB/s"
+    network: ws
+    port: 2096
+    server: 160.153.137.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_9|2.0MB/s"
+    network: ws
+    port: 2096
+    server: 156.238.19.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_10|2.3MB/s"
+    network: ws
+    port: 2096
+    server: 156.225.72.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8US_11|2.1MB/s"
+    network: ws
+    port: 2096
+    server: 156.243.246.32
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: /snippets
+    servername: kejiland.freewarp.eu.org
+  - alterId: 2
+    cipher: auto
+    name: "\U0001F1EE\U0001F1F9IT_1|3.2MB/s"
+    network: ws
+    port: 30805
+    server: v5.heduian.link
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    ws-opts:
+      headers:
+        Host: v5.heduian.link
+      path: /oooo
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_12|2.0MB/s"
+    network: ws
+    port: 2096
+    server: 194.76.18.32
     tls: true
     type: vless
     udp: true
@@ -66,16 +187,35 @@ proxies:
       headers:
         Host: kejiland.freewarp.eu.org
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/51.0.2704.103 Safari/537.36
+          Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
+          Safari/537.36
       path: /snippets
     xudp: true
     servername: kejiland.freewarp.eu.org
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_4|3.4MB/s"
+    name: "\U0001F1E9\U0001F1EADE_1|2.2MB/s"
+    network: ws
+    port: 443
+    server: net2026cd.zanddynastyofpersia.org
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
+    ws-opts:
+      headers:
+        Host: ''
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      path: /eJsVXFVZ6iavNx1EFxOyH861WH
+    xudp: true
+    servername: net2026cd.zanddynastyofpersia.org
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_13|3.3MB/s"
     network: ws
     port: 2096
-    server: 212.183.88.32
+    server: 185.7.240.32
     tls: true
     type: vless
     udp: true
@@ -85,281 +225,232 @@ proxies:
         Host: kejiland.freewarp.eu.org
         User-Agent: >-
           Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/56.0.2924.87 Safari/537.36
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
       path: /snippets
     xudp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_5|2.1MB/s"
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_2|5.0MB/s"
+    network: grpc
+    port: 36626
+    server: 57.129.92.155
+    type: vless
+    udp: true
+    uuid: 4981b98f-4943-4083-83aa-00b028f57a18
+    xudp: true
+  - client-fingerprint: chrome
+    name: "\U0001F1F8\U0001F1EASE_1|4.8MB/s"
     network: ws
-    port: 2096
-    server: 94.140.0.32
-    skip-cert-verify: true
+    port: 443
+    server: 104.18.33.45
     tls: true
     type: vless
     udp: true
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
     ws-opts:
       headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_6|2.0MB/s"
-    network: ws
-    port: 2096
-    server: 166.62.115.32
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_7|3.3MB/s"
-    network: ws
-    port: 2096
-    server: 80.93.202.32
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_8|2.6MB/s"
-    network: ws
-    port: 2096
-    server: 204.93.210.32
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EADE_1|3.9MB/s"
-    network: ws
-    port: 80
-    server: www.speedtest.net
-    type: vless
-    udp: true
-    uuid: 1-ESKE-AZ--JKVPN--JKVPN
-    ws-opts:
-      headers:
-        Host: joker11.ahang-alpha.ir
+        Host: nkAnG2rEpLACE.airlineSHoma.Com
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: >-
-        /TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN-TELEGRAM-KANAL-JKVPN-@JKVPN
+          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
+          (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+      path: /
       early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
+      max-early-data: 2560
+    xudp: true
+    servername: nkAnG2rEpLACE.airlineSHoma.Com
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_14|2.2MB/s"
+    network: ws
+    port: 8443
+    server: 188.114.97.202
+    tls: true
+    type: vless
+    udp: true
+    uuid: c2e177d4-e610-4abd-85cd-1a869d158751
+    ws-opts:
+      headers:
+        Host: teslakit1.pages.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/61.0.3163.100 Safari/537.36
+      path: /
+    xudp: true
+    servername: teslakit1.pages.dev
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_3|6.0MB/s"
+    network: grpc
+    port: 12393
+    server: 141.227.134.24
+    type: vless
+    udp: true
+    uuid: b6977b89-c21a-46b3-ac1c-6e6dac52939a
     xudp: true
   - grpc-opts:
       grpc-service-name: >-
         ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-    name: "\U0001F1E8\U0001F1E6CA_1|3.9MB/s"
+    name: "\U0001F1EB\U0001F1F7FR_4|6.4MB/s"
     network: grpc
-    port: 56010
-    server: 148.113.138.64
+    port: 25978
+    server: 5.196.223.72
     type: vless
     udp: true
-    uuid: 2ecdfbf0-90a5-45df-bc57-9988eb001cd7
+    uuid: 66138dd4-6d20-4d44-8eaa-5583ec4d7bda
+    xudp: true
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_5|6.4MB/s"
+    network: grpc
+    port: 25365
+    server: 141.94.213.115
+    type: vless
+    udp: true
+    uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
     xudp: true
   - client-fingerprint: chrome
-    name: "\U0001F1EB\U0001F1EEFI_1|5.1MB/s"
-    network: tcp
-    port: 7601
-    reality-opts:
-      public-key: d0MTB2pELj6kUMwYkDZCyf65mA9TbEa45bNJIqgRHTU
-      short-id: 9f54d072d0c27dc6
-    server: 65.109.217.125
+    name: "\U0001F1EB\U0001F1F7FR_6|4.1MB/s"
+    network: ws
+    port: 443
+    server: record.persianmizban.com
     tls: true
     type: vless
     udp: true
-    uuid: d09c7283-6a69-4c8e-b633-e3927166e07f
+    uuid: 160cc7e0-1e01-44e8-71fd-b162fbb1c83e
+    ws-opts:
+      headers:
+        Host: lgoin.persianmizban.com
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
+          Safari/537.36
+      path: /
     xudp: true
-    servername: yahoo.com
-  - alterId: 0
-    cipher: auto
-    country: "\U0001F1EE\U0001F1F3 IN"
-    h2-opts: {}
-    http-opts:
-      method: GET
-      path:
-        - /
-    name: ❓Other_1|2.2MB/s
-    network: http
-    port: 18872
-    server: 123.58.203.92
-    type: vmess
-    uuid: edfe29a5-cc54-488d-a31d-ca71f39e38d4
+    servername: lgoin.persianmizban.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_7|3.3MB/s"
+    network: grpc
+    port: 27424
+    server: 141.227.132.180
+    type: vless
+    udp: true
+    uuid: c0258bc8-50e5-4dc3-82d7-6026ec740f38
+    xudp: true
   - alpn:
-      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_2|4.7MB/s"
+    network: ws
+    port: 50000
+    server: amin.cz1.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: 9b758f8d-6577-4a17-c9de-a16bd5a82f6d
+    ws-opts:
+      headers:
+        Host: amin.cz1.ir
+        User-Agent: >-
+          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
+          (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+      path: >-
+        /@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android
+    xudp: true
+    servername: amin.cz1.ir
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_15|5.3MB/s"
+    network: ws
+    port: 443
+    server: 172.66.46.236
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0ef0630e-544c-4ed0-a4de-861f14695f37
+    ws-opts:
+      headers:
+        Host: M2-1CM.paGes.DeV
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+      path: /
+    xudp: true
+    servername: M2-1CM.paGes.DeV
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_16|2.3MB/s"
+    network: ws
+    port: 2083
+    server: 104.18.3.26
+    tls: true
+    type: vless
+    udp: true
+    uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+    ws-opts:
+      headers:
+        Host: ex.sue.x10.mx
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+          Gecko) Chrome/26.0.1410.64 Safari/537.31
+      path: /
+    xudp: true
+    servername: ex.sue.x10.mx
+  - alpn:
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8US_9|3.6MB/s"
+    name: "\U0001F1FA\U0001F1F8US_17|2.5MB/s"
     network: ws
-    password: 'T@_WvT8Ho@LW%w_,'
-    port: 2053
-    server: nop-55q.pages.dev
+    password: 'E]5p#2Hxe3q)t_oX'
+    port: 2087
+    server: 172.66.46.252
     skip-cert-verify: false
-    sni: NOp-55q.pAgEs.dEv
+    sni: WEEKNdJoOn.pages.DeV
     type: trojan
     udp: true
     ws-opts:
       headers:
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/55.0.2883.87 Safari/537.36
-      path: /trGPZDfetEwuO25SAs
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/67.0.3396.99 Safari/537.36
+      path: /trSNoMcKVNUpvSvYIS
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1E9\U0001F1EADE_2|2.2MB/s"
-    network: tcp
-    port: 3020
-    reality-opts:
-      public-key: NVjEaDFrdzaFQHvMt8BPORsLFR3iD8NA31Dpn-1HRFk
-      short-id: ecd8d10c1518fb7b
-    server: de.gpairnetwork369.de
-    tls: true
-    type: vless
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F8\U0001F1ECSG_1|2.8MB/s"
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: '(TG @WangCai2)4fa101a:48723'
+      mode: tls
+    port: 2377
+    server: 5.44.249.42
+    type: ss
     udp: true
-    uuid: f6b74f9a-0ac7-43f0-a4cc-5cee6f1eaf7f
-    xudp: true
-    servername: www.refersion.com
   - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_10|2.3MB/s"
+      - h3
+    client-fingerprint: random
+    name: "\U0001F1E9\U0001F1EADE_3|4.9MB/s"
     network: ws
-    port: 443
-    server: 172.67.187.28
-    tls: true
-    type: vless
-    udp: true
-    uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0
-    ws-opts:
-      headers:
-        Host: dddddddddddddt.iran2035.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: /xeg9Fvgzc4aVkracmjyiKVby2Lp
-    xudp: true
-    servername: DDdDddDDDdddDT.IRan2035.dPDNS.oRg
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_11|4.7MB/s"
-    network: ws
-    password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
-    port: 443
-    server: 104.21.14.54
-    skip-cert-verify: false
-    sni: 6666YHjU.777159.xYz
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/50.0.2661.102 Safari/537.36
-      path: /dilyfCPEmLvYr5hYXD
-  - alpn:
-      - http/1.1
-    alterId: '0'
-    cipher: auto
-    name: "\U0001F1FA\U0001F1F8US_12|2.2MB/s"
-    network: ws
-    port: 443
-    server: b47c127d-bec2-6281-8d44-63d0c17d7a4a.freevpnatm2025.dpdns.org
-    skip-cert-verify: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-    ws-opts:
-      headers:
-        Host: b47c127d-bec2-6281-8d44-63d0c17d7a4a.freevpnatm2025.dpdns.org
-      path: /e7JS5ETJeA85VyjPCYXwETL
-    xudp: true
-    servername: b47c127d-bec2-6281-8d44-63d0c17d7a4a.freevpnatm2025.dpdns.org
-  - alpn:
-      - ''
-    alterId: '0'
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK_1|4.6MB/s"
-    network: tcp
-    port: 64019
-    server: pub.ap20250909.xyz
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: 59033095-4fda-31ab-9f9d-06d464aef2be
-    xudp: true
-  - client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: >-
-        CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_configCANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-    name: "\U0001F1EA\U0001F1F8ES_1|2.6MB/s"
-    network: grpc
-    port: 1210
-    reality-opts:
-      public-key: Vd0sQC88KWjeYFf9DoFF58X_sVVA2ixgDajUc6fTNgI
-      short-id: 7fe29733
-    server: ftp7.tehran-park.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5f66475e-6ba4-402e-b867-73ef4e96b1ab
-    xudp: true
-    servername: archive.ubuntu.com
-  - alpn:
-      - h2
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: ZMsCbFxoxpkiferG
-    name: "\U0001F1F2\U0001F1E9MD_1|2.4MB/s"
-    network: grpc
-    port: 443
-    reality-opts:
-      public-key: '-prrDVM_FkIt1qMv9CwKxtKeLWvDcqHRj3SafaEod20'
-      short-id: ef9562f77d304f77
-    server: 91.225.219.139
-    tls: true
-    type: vless
-    udp: true
-    uuid: 46d968fc-b944-4456-b71c-e52707779538
-    xudp: true
-    servername: freecurrencyrates.com
-  - client-fingerprint: chrome
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1E9\U0001F1EADE_3|4.0MB/s"
-    network: tcp
     port: 2083
-    reality-opts:
-      public-key: AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k
-      short-id: ''
-    server: hdfyrplc1.freeairlians.com
+    server: 162.159.142.252
     tls: true
     type: vless
     udp: true
-    uuid: 044bf7b6-67c3-40b0-bf21-d9dd02790264
+    uuid: d2965257-0536-4811-a0d5-cdce54e90326
+    ws-opts:
+      headers:
+        Host: fei.634676.xyz
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/52.0.2743.116 Safari/537.36
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     xudp: true
-    servername: hdfyrplc1.freeairlians.com
+    servername: fei.634676.xyz
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -898,4 +989,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-09-27 09:07:05
+# 2025-09-27 10:50:44
