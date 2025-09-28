@@ -1,75 +1,90 @@
 proxies:
-  - client-fingerprint: randomized
-    name: "\U0001F1E9\U0001F1EADE_1|3.4MB/s"
+  - country: "\U0001F1E7\U0001F1ECBG"
+    delay: 1041
+    name: "\U0001F1FA\U0001F1F8US_1|3.8MB/s"
     network: ws
-    password: d0298536-d670-4045-bbb1-ddd5ea68683e
-    port: 2087
-    server: 104.25.254.4
-    skip-cert-verify: false
-    sni: azadnet-bdr.pages.dev
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /azadnet-bdr.pages.dev/?ed=2560&PROT_TYPE=trojan
-  - country: "\U0001F1EB\U0001F1F7FR"
-    delay: 1223
-    name: "\U0001F1EB\U0001F1F7FR_1|2.3MB/s"
-    password: telegram-id-directvpn
-    port: 22223
-    server: 15.236.93.132
-    skip-cert-verify: true
-    sni: trojan.burgerip.co.uk
-    type: trojan
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8US_1|2.2MB/s"
-    network: ws
-    port: 2096
-    server: 185.207.197.41
-    tls: true
-    type: vless
-    udp: true
-    uuid: 563608cd-f135-4e64-938d-d9eb3be1ba77
-    ws-opts:
-      headers:
-        Host: vless.keepfuck.me
-      path: /snippets
-    servername: vless.keepfuck.me
-  - name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
-    network: ws
-    port: 2096
-    server: 166.62.110.32
+    port: 443
+    server: 91.215.153.85
     tls: true
     type: vless
     udp: true
     uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    servername: kejiland.freewarp.eu.org
+  - delay: 2489
+    name: "\U0001F1EE\U0001F1F7IR_1|2.2MB/s"
+    network: tcp
+    port: 29500
+    server: 89.44.242.222
+    skip-cert-verify: true
+    type: vless
+    udp: true
+    uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+  - cipher: aes-256-gcm
+    client-fingerprint: chrome
+    name: "\U0001F1ED\U0001F1F0HK_1|4.2MB/s"
+    password: ccf426f1fe78
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: newroot2v1.dsjsapp.com
+      mode: websocket
+      mux: true
+      path: /zksuapgx
+      skip-cert-verify: false
+      tls: true
+    port: 443
+    server: 103.103.245.158
+    tfo: false
+    type: ss
+  - alpn:
+      - h3
+    disable-sni: false
+    name: "\U0001F1E8\U0001F1E6CA_1|2.7MB/s"
+    password: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+    port: 52434
+    reduce-rtt: false
+    request-timeout: 0
+    server: 40.233.77.57
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: tuic
+    uuid: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+    version: 5
+  - name: "\U0001F1FA\U0001F1F8US_2|2.1MB/s"
+    network: ws
+    port: 2096
+    server: 185.135.9.44
+    tls: true
+    type: vless
+    udp: true
+    uuid: 12345678-1234-1234-1234-123456789123
     ws-opts:
       headers:
         Host: kejiland.freewarp.eu.org
       path: /snippets
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8US_3|2.0MB/s"
-    network: ws
-    port: 2096
-    server: 185.59.218.41
-    tls: true
-    type: vless
-    udp: true
-    uuid: 563608cd-f135-4e64-938d-d9eb3be1ba77
-    ws-opts:
-      headers:
-        Host: vless.keepfuck.me
-      path: /snippets
-    servername: vless.keepfuck.me
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1EB\U0001F1F7FR_1|4.0MB/s"
+    obfs: ''
+    obfs-password: ''
+    password: dongtaiwang.com
+    port: 5355
+    server: 51.159.111.32
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+    up: ''
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_4|3.1MB/s"
+    name: "\U0001F1FA\U0001F1F8US_3|2.9MB/s"
     network: ws
     port: 2096
-    server: 104.254.140.32
+    server: 198.62.62.32
     tls: true
     type: vless
     udp: true
@@ -78,16 +93,16 @@ proxies:
       headers:
         Host: kejiland.freewarp.eu.org
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.106 Safari/537.36
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/41.0.2272.101 Safari/537.36
       path: /snippets
     xudp: true
     servername: kejiland.freewarp.eu.org
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_5|2.1MB/s"
+    name: "\U0001F1FA\U0001F1F8US_4|3.9MB/s"
     network: ws
     port: 2096
-    server: 103.116.7.32
+    server: 72.167.25.32
     tls: true
     type: vless
     udp: true
@@ -96,51 +111,16 @@ proxies:
       headers:
         Host: kejiland.freewarp.eu.org
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile
-          Safari/537.36
+          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/60.0.3112.113 Safari/537.36
       path: /snippets
     xudp: true
     servername: kejiland.freewarp.eu.org
-  - alterId: 2
-    cipher: auto
-    name: "\U0001F1EE\U0001F1F9IT_1|3.2MB/s"
-    network: ws
-    port: 30805
-    server: v5.heduian.link
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    ws-opts:
-      headers:
-        Host: v5.heduian.link
-      path: /oooo
-  - name: "\U0001F1EF\U0001F1F5JP_1|4.5MB/s"
-    password: auh2qWZuNd
-    port: 6770
-    server: 8.216.33.14
-    type: http
-    username: TcIVARdTgR
-  - name: "\U0001F1FA\U0001F1F8US_6|2.1MB/s"
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_5|2.5MB/s"
     network: ws
     port: 2096
-    server: 190.93.244.41
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 563608cd-f135-4e64-938d-d9eb3be1ba77
-    ws-opts:
-      headers:
-        Host: vless.keepfuck.me
-      path: /snippets
-    servername: vless.keepfuck.me
-  - name: "\U0001F1FA\U0001F1F8US_7|2.3MB/s"
-    network: ws
-    port: 2096
-    server: 160.153.137.32
-    skip-cert-verify: true
+    server: 135.84.76.32
     tls: true
     type: vless
     udp: true
@@ -148,13 +128,35 @@ proxies:
     ws-opts:
       headers:
         Host: kejiland.freewarp.eu.org
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/66.0.3359.117 Safari/537.36
       path: /snippets
+    xudp: true
     servername: kejiland.freewarp.eu.org
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_8|3.1MB/s"
+    name: "\U0001F1FA\U0001F1F8US_6|3.1MB/s"
     network: ws
     port: 2096
-    server: 185.18.184.44
+    server: 185.148.106.32
+    tls: true
+    type: vless
+    udp: true
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    ws-opts:
+      headers:
+        Host: kejiland.freewarp.eu.org
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/67.0.3396.99 Safari/537.36
+      path: /snippets
+    xudp: true
+    servername: kejiland.freewarp.eu.org
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_7|2.0MB/s"
+    network: ws
+    port: 2096
+    server: 193.124.224.44
     tls: true
     type: vless
     udp: true
@@ -163,115 +165,306 @@ proxies:
       headers:
         Host: kejiland.freewarp.eu.org
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/41.0.2272.101 Safari/537.36
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/61.0.3163.100 Safari/537.36
       path: /snippets
     xudp: true
     servername: kejiland.freewarp.eu.org
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1FA\U0001F1F8US_9|4.2MB/s"
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_8|2.3MB/s"
     network: ws
-    port: 443
-    server: 104.21.46.90
-    skip-cert-verify: false
+    port: 2096
+    server: 185.18.184.41
     tls: true
-    type: vmess
+    type: vless
     udp: true
-    uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
+    uuid: 563608cd-f135-4e64-938d-d9eb3be1ba77
     ws-opts:
       headers:
-        Host: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
-      path: /ri9mOOVJuAimB74kgXZ
+        Host: vless.keepfuck.me
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/56.0.2924.87 Safari/537.36
+      path: /snippets
     xudp: true
-    servername: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
-  - alpn:
-      - http/1.1
+    servername: vless.keepfuck.me
+  - auth: 712bdc36-24be-11ee-be53-f23c9313b177
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_10|4.7MB/s"
-    network: ws
-    port: 443
-    server: 172.67.187.28
-    tls: true
-    type: vless
-    udp: true
-    uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0
-    ws-opts:
-      headers:
-        Host: dddddddddddddt.iran2035.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
-          Safari/537.36
-      path: /xeg9Fvgzc4aVkracmjyiKVby2Lp
-    xudp: true
-    servername: DDdDddDDDdddDT.IRan2035.dPDNS.oRg
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_11|3.5MB/s"
-    network: ws
-    port: 443
-    server: 104.21.9.71
-    tls: true
-    type: vless
-    udp: true
-    uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
-    ws-opts:
-      headers:
-        Host: ddDDdDDdDDF.777198.XyZ
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /OjdW89Bpg4ykd4O
-    xudp: true
-    servername: ddDDdDDdDDF.777198.XyZ
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_12|4.7MB/s"
-    network: ws
-    password: 8b0a592f-1fee-4da0-add6-f8e108611164
-    port: 8443
-    server: fastcup.net
+    name: "\U0001F1FA\U0001F1F8US_9|3.1MB/s"
+    password: 712bdc36-24be-11ee-be53-f23c9313b177
+    port: 1743
+    server: bf1e9032-t3bpc0-tcl9of-5fdt.la.shifen.uk
     skip-cert-verify: false
-    sni: cdn-node-oss-92.paofu.de
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/62.0.3202.94 Safari/537.36
-      path: /profile/telegram@ssrsub
-  - name: "\U0001F1E9\U0001F1EADE_2|6.1MB/s"
-    network: tcp
-    port: 24199
-    server: 157.90.247.32
+    type: hysteria2
+    sni: bf1e9032-t3bpc0-tcl9of-5fdt.la.shifen.uk
+  - name: "\U0001F1EB\U0001F1EEFI_1|4.9MB/s"
+    network: ws
+    port: 59594
+    server: 46.62.156.154
     type: vless
     udp: true
-    uuid: ca46f1db-8cac-4c60-aa56-67b795dd9379
+    uuid: c5bcf3fb-eb77-4472-8750-55b56efef262
+    ws-opts:
+      headers:
+        Host: ''
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/69.0.3497.100 Safari/537.36
+      path: /
     xudp: true
   - alpn:
       - h3
       - h2
       - http/1.1
-    client-fingerprint: firefox
-    name: "\U0001F1EB\U0001F1F7FR_2|4.6MB/s"
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_1|4.8MB/s"
     network: ws
-    port: 443
-    server: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
+    port: 2095
+    server: bm.boulvarmoein.shop
     tls: true
     type: vless
     udp: true
-    uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+    uuid: telegram@v2rayng_76
     ws-opts:
       headers:
-        Host: ''
+        Host: bm.boulvarmoein.shop
         User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      path: >-
-        /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/39.0.2171.95 Safari/537.36
+      path: /Telegram@v2rayng_76=
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     xudp: true
-    servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
+    servername: bm.boulvarmoein.shop
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_2|6.2MB/s"
+    network: grpc
+    port: 36626
+    server: 57.129.92.155
+    type: vless
+    udp: true
+    uuid: 4981b98f-4943-4083-83aa-00b028f57a18
+    xudp: true
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: "\U0001F1EB\U0001F1F7FR_3|2.3MB/s"
+    network: tcp
+    port: 35588
+    reality-opts:
+      public-key: DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4
+      short-id: 5f4ab2905a60052e
+    server: ovhfrance.ip-venzo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 6b3a7034-39ec-f057-377d-cf6af57b4db4
+    xudp: true
+    servername: www.cloudflare.com
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_2|3.5MB/s"
+    network: ws
+    port: 443
+    server: 172.66.40.99
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0bfe0c56-9e18-44ac-bf97-2c7bcb5cd3c0
+    ws-opts:
+      headers:
+        Host: www.dollardoon.com
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.103 Safari/537.36
+      path: >-
+        /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    xudp: true
+    servername: www.dollardoon.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_4|4.5MB/s"
+    network: grpc
+    port: 47462
+    server: 141.227.142.158
+    type: vless
+    udp: true
+    uuid: fae6aee4-70ee-4416-b9ee-22d957262ef4
+    xudp: true
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_5|5.4MB/s"
+    network: grpc
+    port: 24292
+    server: 51.210.77.32
+    type: vless
+    udp: true
+    uuid: bb5be5c2-bf5e-4050-8193-eb18f1faa42e
+    xudp: true
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_10|4.1MB/s"
+    network: ws
+    port: 2083
+    server: 172.66.47.175
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4d794980-54c0-4fcb-8def-c2beaecadbad
+    ws-opts:
+      headers:
+        Host: azadnet05.pages.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/48.0.2564.109 Safari/537.36
+      path: /lZU7WqWIDqC1jRn6?ed
+    xudp: true
+    servername: azadnet05.pages.dev
+  - name: "\U0001F1EC\U0001F1E7GB_1|4.5MB/s"
+    network: ws
+    port: 80
+    server: 172.66.40.99
+    type: vless
+    udp: true
+    uuid: 33d12fef-85a5-422c-b350-186a41ba934f
+    ws-opts:
+      headers:
+        Host: >-
+          websocket.network.www.speedtest.net.flutter.dev.russia.python.vegaskala.com.
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      path: >-
+        /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+    xudp: true
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_6|6.1MB/s"
+    network: grpc
+    port: 37612
+    server: 135.125.88.66
+    type: vless
+    udp: true
+    uuid: bbb7af93-94f1-4ad7-8a4d-2b674bea8922
+    xudp: true
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_7|4.6MB/s"
+    network: grpc
+    port: 35728
+    server: 141.227.166.78
+    type: vless
+    udp: true
+    uuid: 7bd98eb6-5408-492c-a9f2-54776a68aeb6
+    xudp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1E8\U0001F1EDCH_1|4.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: XSIaUifuSpo2bF-eYsY5fgTG3wzo09SY-oGn73zJPF0
+      short-id: ''
+    server: 83.228.210.39
+    tls: true
+    type: vless
+    udp: true
+    uuid: 22d29719-4510-46f6-a26b-61fbb6963fcc
+    xudp: true
+    servername: www.samsung.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_8|4.1MB/s"
+    network: grpc
+    port: 18409
+    server: 141.227.174.221
+    type: vless
+    udp: true
+    uuid: 5342a980-50a4-4daa-9c45-e83f2ebab024
+    xudp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_3|6.5MB/s"
+    network: ws
+    port: 50000
+    server: amin.cz1.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: b168c449-ca1c-4514-e14b-156f0ddb9356
+    ws-opts:
+      headers:
+        Host: amin.cz1.ir
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/54.0.2840.99 Safari/537.36
+      path: >-
+        /@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android--------@Archive_Android
+    xudp: true
+    servername: amin.cz1.ir
+  - name: "\U0001F1E9\U0001F1EADE_4|4.1MB/s"
+    network: ws
+    port: 2082
+    server: www.speedtest.net
+    type: vless
+    udp: true
+    uuid: 869069d8-da8d-4871-f3fc-6f021c8f39a7
+    ws-opts:
+      headers:
+        Host: >-
+          novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2082
+    xudp: true
+  - alterId: 0
+    cipher: auto
+    country: "\U0001F1EE\U0001F1F3 IN"
+    h2-opts: {}
+    http-opts:
+      method: GET
+      path:
+        - /
+    name: "\U0001F1EE\U0001F1F3IN_1|2.2MB/s"
+    network: http
+    port: 18872
+    server: 123.58.203.92
+    type: vmess
+    uuid: edfe29a5-cc54-488d-a31d-ca71f39e38d4
+  - client-fingerprint: randomized
+    name: "\U0001F1E9\U0001F1EADE_5|4.4MB/s"
+    network: ws
+    port: 443
+    server: 104.21.16.1
+    tls: true
+    type: vless
+    udp: true
+    uuid: cb796646-d528-4b96-9984-86dbceed95ad
+    ws-opts:
+      headers:
+        Host: DD3A34A9.bPB1-1TS.PaGeS.DEV
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
+          Safari/537.36
+      path: /vpnAndroid2.vpnAndroid2.vpnAndroid2
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    servername: DD3A34A9.bPB1-1TS.PaGeS.DEV
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -810,4 +1003,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-09-28 09:16:42
+# 2025-09-28 11:04:46
