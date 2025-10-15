@@ -28,15 +28,15 @@
 
 ## yaml格式的订阅
 ```
-https://d.zrf.me/vless-all
+https://d.zrfme.com/vless-all
 ```
 ## base64格式的订阅（可直接订阅）
 ```
-https://d.zrf.me/vless-base64
+https://d.zrfme.com/vless-base64
 ```
 ## 带分流规则的mihomo订阅
 ```
-https://d.zrf.me/vless-mihomo
+https://d.zrfme.com/vless-mihomo
 ```
 
 # 节点更新订阅
