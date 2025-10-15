@@ -36,7 +36,7 @@ https://d.zrfme.com/vless-base64
 ```
 ## 带分流规则的mihomo订阅
 ```
-https://d.zrfme.com/vless-mihomo
+https://d.zrfme.com/vless-mihomo 
 ```
 
 # 节点更新订阅
