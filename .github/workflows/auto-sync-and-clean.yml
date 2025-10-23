@@ -23,7 +23,7 @@ jobs:
       # 同步上游仓库
       - name: Add upstream remote
         run: |
-          git remote add upstream https://github.com/free-nodes/v2rayfree.git || true
+          git remote add upstream https://github.com/shaoyouvip/free.git || true
           git fetch upstream
 
       - name: Rebase onto upstream/main
@@ -35,7 +35,7 @@ jobs:
       # 订阅文件清理步骤
       - name: Download subscription file
         run: |
-          curl -s -o base64.txt "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt"
+          curl -s -o base64.txt "https://raw.githubusercontent.com/tonygyf/free/refs/heads/main/base64.txt"
 
       - name: Remove timestamp tail
         run: |
