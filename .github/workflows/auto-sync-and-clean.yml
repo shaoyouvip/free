@@ -36,33 +36,39 @@ jobs:
           git rebase upstream/main || (git rebase --abort && git reset --hard upstream/main)
           echo "✅ 上游同步完成。"
 
-      # === Step 4: 下载并清理订阅文件 ===
+      # === Step 4: 下载并清理订阅文件（覆盖原文件） ===
       - name: Download and clean subscription
         run: |
           echo "🌐 正在下载订阅文件..."
-          curl -s -L "https://raw.githubusercontent.com/tonygyf/free/refs/heads/main/base64.txt" -o base64.txt
+          # 使用 raw.githubusercontent 的常见形式，避免 refs/heads 混淆
+          curl -s -L "https://raw.githubusercontent.com/tonygyf/free/main/base64.txt" -o base64.txt
 
           if [ ! -s base64.txt ]; then
             echo "❌ 下载失败或文件为空，退出。"
             exit 1
           fi
 
-          echo "🧹 删除尾部时间戳..."
-          # 删除所有以 # 开头且包含日期的行，例如 "# 2025-10-23 19:13:16"
-          sed -E '/^# *[0-9]{4}-[0-9]{2}-[0-9]{2}([ T][0-9]{2}:[0-9]{2}:[0-9]{2})?/d' base64.txt > base64_clean.txt
+          echo "🧹 删除行尾或独立的时间戳注释（例如 ' # 2025-10-23 19:13:16' 或单独一行 '# 2025-10-23'）..."
+          # 将匹配并删除行尾或整行的时间戳注释：
+          # - 匹配可选空白，#，可选空白，日期（yyyy-mm-dd）和可选时间部分
+          # - 仅删除该注释部分，不破坏其它内容
+          sed -E -i 's/[[:space:]]*# *[0-9]{4}-[0-9]{2}-[0-9]{2}([ T][0-9]{2}:[0-9]{2}:[0-9]{2})?$//g' base64.txt
 
-          echo "✅ 清理完成，生成 base64_clean.txt"
-          ls -lh base64_clean.txt
+          # （可选）去除行尾多余空白
+          sed -i 's/[[:space:]]\+$//' base64.txt
 
-      # === Step 5: 提交并推送修改 ===
+          echo "✅ 清理完成，生成并覆盖 base64.txt"
+          ls -lh base64.txt
+
+      # === Step 5: 提交并推送修改（覆盖原文件） ===
       - name: Commit and push changes
         run: |
-          git add base64_clean.txt
+          git add base64.txt
           if git diff --cached --quiet; then
             echo "ℹ️ 无变化，无需提交。"
           else
             echo "📦 检测到变化，提交中..."
-            git commit -m "Auto-sync upstream and clean subscription (update base64_clean.txt) [skip ci]"
+            git commit -m "Auto-sync upstream and clean subscription (normalize base64.txt) [skip ci]"
             git push origin main --force
             echo "✅ 提交并推送完成。"
           fi
