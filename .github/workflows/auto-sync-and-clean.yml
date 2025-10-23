@@ -1,0 +1,53 @@
+name: Auto Sync Fork & Clean Subscription
+
+on:
+  schedule:
+    - cron: '0 16 * * *'   # 每天北京时间 0 点执行（UTC 16 点）
+  workflow_dispatch:
+
+jobs:
+  sync_and_clean:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # 同步上游仓库
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/free-nodes/v2rayfree.git || true
+          git fetch upstream
+
+      - name: Rebase onto upstream/main
+        run: |
+          git checkout main
+          git fetch upstream
+          git rebase upstream/main || (git rebase --abort && git reset --hard upstream/main)
+
+      # 订阅文件清理步骤
+      - name: Download subscription file
+        run: |
+          curl -s -o base64.txt "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt"
+
+      - name: Remove timestamp tail
+        run: |
+          sed -i '/^# [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/d' base64.txt
+
+      # 提交并推送
+      - name: Commit and push changes
+        run: |
+          git add base64.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-sync and clean subscription timestamp [skip ci]"
+            git push origin main --force
+          else
+            echo "No changes to commit"
+          fi
