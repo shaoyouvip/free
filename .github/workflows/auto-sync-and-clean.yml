@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # 允许手动触发
   push:
     branches:
-      - main                # 当 main 有更新时也运行
+      - main                # 当 main 有更新时也执行
 
 jobs:
   sync_and_clean:
@@ -36,7 +36,7 @@ jobs:
           git rebase upstream/main || (git rebase --abort && git reset --hard upstream/main)
           echo "✅ 上游同步完成。"
 
-      # === Step 4: 下载并清理本地订阅文件 ===
+      # === Step 4: 下载并清理订阅文件 ===
       - name: Download and clean subscription
         run: |
           echo "🌐 正在下载订阅文件..."
@@ -48,8 +48,8 @@ jobs:
           fi
 
           echo "🧹 删除尾部时间戳..."
-          # 匹配并删除以 # YYYY-MM-DD 开头的时间行
-          sed '/^# [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/d' base64.txt > base64_clean.txt
+          # 删除所有以 # 开头且包含日期的行，例如 "# 2025-10-23 19:13:16"
+          sed -E '/^# *[0-9]{4}-[0-9]{2}-[0-9]{2}([ T][0-9]{2}:[0-9]{2}:[0-9]{2})?/d' base64.txt > base64_clean.txt
 
           echo "✅ 清理完成，生成 base64_clean.txt"
           ls -lh base64_clean.txt
@@ -62,7 +62,7 @@ jobs:
             echo "ℹ️ 无变化，无需提交。"
           else
             echo "📦 检测到变化，提交中..."
-            git commit -m "Auto-sync upstream and clean subscription file (generated base64_clean.txt) [skip ci]"
+            git commit -m "Auto-sync upstream and clean subscription (update base64_clean.txt) [skip ci]"
             git push origin main --force
             echo "✅ 提交并推送完成。"
           fi
