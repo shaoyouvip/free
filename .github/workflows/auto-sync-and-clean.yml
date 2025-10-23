@@ -3,51 +3,70 @@ name: Auto Sync Fork & Clean Subscription
 on:
   schedule:
     - cron: '0 16 * * *'   # 每天北京时间 0 点执行（UTC 16 点）
-  workflow_dispatch:
+  workflow_dispatch:        # 允许手动触发
+  push:
+    branches:
+      - main                # 当 main 有更新时也运行
 
 jobs:
   sync_and_clean:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
+      # === Step 1: 拉取仓库 ===
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # === Step 2: 配置 Git 用户信息 ===
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      # 同步上游仓库
-      - name: Add upstream remote
+      # === Step 3: 同步上游仓库 ===
+      - name: Add upstream and fetch
         run: |
+          echo "🔄 添加上游仓库并同步最新提交..."
           git remote add upstream https://github.com/shaoyouvip/free.git || true
           git fetch upstream
-
-      - name: Rebase onto upstream/main
-        run: |
           git checkout main
-          git fetch upstream
           git rebase upstream/main || (git rebase --abort && git reset --hard upstream/main)
+          echo "✅ 上游同步完成。"
 
-      # 订阅文件清理步骤
-      - name: Download subscription file
+      # === Step 4: 下载并清理本地订阅文件 ===
+      - name: Download and clean subscription
         run: |
-          curl -s -o base64.txt "https://raw.githubusercontent.com/tonygyf/free/refs/heads/main/base64.txt"
+          echo "🌐 正在下载订阅文件..."
+          curl -s -L "https://raw.githubusercontent.com/tonygyf/free/refs/heads/main/base64.txt" -o base64.txt
 
-      - name: Remove timestamp tail
-        run: |
-          sed -i '/^# [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/d' base64.txt
+          if [ ! -s base64.txt ]; then
+            echo "❌ 下载失败或文件为空，退出。"
+            exit 1
+          fi
 
-      # 提交并推送
+          echo "🧹 删除尾部时间戳..."
+          # 匹配并删除以 # YYYY-MM-DD 开头的时间行
+          sed '/^# [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/d' base64.txt > base64_clean.txt
+
+          echo "✅ 清理完成，生成 base64_clean.txt"
+          ls -lh base64_clean.txt
+
+      # === Step 5: 提交并推送修改 ===
       - name: Commit and push changes
         run: |
-          git add base64.txt
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto-sync and clean subscription timestamp [skip ci]"
-            git push origin main --force
+          git add base64_clean.txt
+          if git diff --cached --quiet; then
+            echo "ℹ️ 无变化，无需提交。"
           else
-            echo "No changes to commit"
+            echo "📦 检测到变化，提交中..."
+            git commit -m "Auto-sync upstream and clean subscription file (generated base64_clean.txt) [skip ci]"
+            git push origin main --force
+            echo "✅ 提交并推送完成。"
           fi
+
+      # === Step 6: 完成提示 ===
+      - name: Done
+        run: echo "🎉 所有任务执行完毕。"
