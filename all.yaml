@@ -1,28 +1,9 @@
 proxies:
-    - name: "\U0001F1ED\U0001F1F0HK_1|2.0MB/s"
-      network: tcp
-      password: adbac894-90b9-4913-b77e-a715a8d4ebc8
-      port: 20021
-      server: oss-cn-shanghai.letssepub.com
-      sni: dingding-doc.com
-      tls: true
-      type: trojan
-    - flow: xtls-rprx-vision-udp443
-      name: "\U0001F1FA\U0001F1F8US_1|3.8MB/s"
-      network: tcp
-      port: 17597
-      server: usvless.yydzx.xyz
-      servername: usvless.yydzx.xyz
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 4741863d-e3ac-4b9d-8185-466f437b3fa8
     - alpn:
         - h3
       auth-str: dongtaiwang.com
       down: "55"
-      name: "\U0001F1F3\U0001F1F1NL_1|4.3MB/s"
+      name: "\U0001F1F3\U0001F1F1NL_1|3.2MB/s"
       port: 49003
       protocol: udp
       server: 51.159.226.1
@@ -31,24 +12,60 @@ proxies:
       type: hysteria
       up: "11"
     - cipher: aes-256-cfb
-      country: "\U0001F1E8\U0001F1E6CA"
-      name: "\U0001F1E8\U0001F1E6CA_1|2.4MB/s"
-      password: amazonskr05
-      port: 443
-      server: 15.223.195.244
+      name: "\U0001F1FA\U0001F1F8US_1|2.4MB/s"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 104.192.226.106
       type: ss
-    - cipher: aes-256-cfb
-      country: "\U0001F1FA\U0001F1F8US"
-      name: "\U0001F1FA\U0001F1F8US_2|3.9MB/s"
-      password: amazonskr05
-      port: 443
-      server: 13.59.110.241
-      type: ss
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F9\U0001F1EDTH_1|3.1MB/s"
-      password: dc9ea653-becc-44f1-95f9-16773a0519e9
-      port: "30163"
-      server: tg01.gnzzrk001.top
-      type: ss
+    - auth: bc5e171b-fe66-47af-a600-b972104fe995
+      down: 10000
+      name: "\U0001F1FA\U0001F1F8US_2|3.1MB/s"
+      password: bc5e171b-fe66-47af-a600-b972104fe995
+      port: 8871
+      server: vo2.shigure.eu.org
+      skip-cert-verify: true
+      sni: vo2.shigure.eu.org
+      type: hysteria2
       udp: true
-# 2025-11-06 23:17:50
+      up: 10000
+    - auth: bc5e171b-fe66-47af-a600-b972104fe995
+      down: 1000
+      name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
+      password: bc5e171b-fe66-47af-a600-b972104fe995
+      port: 8870
+      server: us1.shigure.eu.org
+      skip-cert-verify: true
+      sni: us1.shigure.eu.org
+      type: hysteria2
+      udp: true
+      up: 1000
+    - alterId: 0
+      cipher: auto
+      name: ❓Other_1|5.6MB/s
+      network: ws
+      port: 443
+      server: cf.090227.xyz
+      servername: sgal.dagrate.eu.org
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+      ws-opts:
+        headers:
+            Host: sgal.dagrate.eu.org
+        path: /
+    - encryption: none
+      name: "\U0001F1F8\U0001F1ECSG_1|2.5MB/s"
+      network: ws
+      port: "8080"
+      server: partner.zoom.us
+      type: vless
+      udp: true
+      uuid: 65955e03-cb70-4791-8850-00e79e5badd7
+      ws-opts:
+        headers:
+            Host: vip.senu-zer.online
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+        path: /SenuXzVip
+      xudp: true
+# 2025-11-07 00:21:15
