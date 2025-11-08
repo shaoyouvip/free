@@ -1,32 +1,4 @@
 proxies:
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1EB\U0001F1F7FR_1|2.0MB/s"
-      port: 50011
-      protocol: udp
-      server: 62.210.10.186
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 11 Mbps
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      down: 55
-      name: "\U0001F1EB\U0001F1F7FR_2|2.1MB/s"
-      port: 35511
-      protocol: udp
-      server: 62.210.10.186
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      udp: true
-      up: 11
     - congestion-controller: bbr
       disable-sni: false
       name: "\U0001F1F8\U0001F1ECSG_1|3.7MB/s"
@@ -38,56 +10,33 @@ proxies:
       sni: sgtuic01.yydzx.xyz
       type: tuic
       uuid: 4e084535-bd62-458b-84a2-a0dc57c957aa
-    - alterId: 0
-      cipher: auto
-      name: "\U0001F1EF\U0001F1F5JP_1|4.2MB/s"
-      network: ws
-      port: 8443
-      server: jp3.nodea6a6.skynode.me
-      servername: node-59-175-206-86.speedtest.cn
-      tls: false
-      type: vmess
-      udp: true
-      uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4
-      ws-opts:
-        headers:
-            Host: node-59-175-206-86.speedtest.cn
-        path: /download?ed=2560
-    - alterId: 0
-      cipher: auto
-      country: "\U0001F1FA\U0001F1F8US"
-      h2-opts: {}
-      http-opts: {}
-      name: "\U0001F1FA\U0001F1F8US_1|5.1MB/s"
-      network: ws
-      port: 2086
-      server: 170.114.45.52
-      servername: ustoucjjnid18sj6us.lovebaipiao.com
-      skip-cert-verify: true
-      type: vmess
-      uuid: 9199bf78-8762-4ec5-9b7f-07396b71e9d4
-      ws-opts:
-        headers:
-            HOST: ustoucjjnid18sj6us.lovebaipiao.com
-        path: /
     - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1F3\U0001F1F1NL_1|2.2MB/s"
+      obfs: ""
+      port: "49003"
+      protocol: udp
+      server: 51.159.226.1
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: "11"
+    - alpn:
+        - h3
         - h2
         - http/1.1
-      client-fingerprint: randomized
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_1|2.1MB/s"
-      network: ws
-      port: "443"
-      server: ium3uojslvj2shb1yh8zu7etc34vmyfb.z8f5hmu0ue.workers.dev
-      servername: PmlMyazd.pagEs.Dev
+      alterId: "0"
+      cipher: auto
+      name: "\U0001F1F3\U0001F1F1NL_2|3.4MB/s"
+      network: tcp
+      port: "2083"
+      server: nl-v2ray.freevmess.com
+      skip-cert-verify: false
       tls: true
-      type: vless
+      type: vmess
       udp: true
-      uuid: b0e5da32-8bb4-4e65-94f1-99ddeefeaa5e
-      ws-opts:
-        headers:
-            Host: pmlmyazd.pages.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
-        path: /XqtZ2JB0WH2bmNOL?ed=2560
+      uuid: c3d066bc-4170-4006-a95c-0012367e8f13
       xudp: true
-# 2025-11-09 00:17:29
+# 2025-11-09 01:12:04
