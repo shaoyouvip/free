@@ -1,78 +1,170 @@
 proxies:
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_1|3.3MB/s"
-      password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-      port: "443"
-      server: 96.126.190.132
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: "100"
+      name: "\U0001F1EB\U0001F1F7FR_1|3.3MB/s"
+      port: 15010
+      protocol: udp
+      server: 195.154.200.40
       skip-cert-verify: true
-      sni: www.bilibili.com
-      type: trojan
-      udp: true
-    - name: "\U0001F1F9\U0001F1FCTW_1|2.1MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - cipher: chacha20-ietf
-      name: "\U0001F1ED\U0001F1F0HK_1|3.1MB/s"
-      password: asd123456
-      port: 8388
-      server: 103.149.182.203
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
-      network: ws
-      password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
-      port: 443
-      server: a76-4179-8a78-c8b78b3c00cb.664.qzz.io
-      skip-cert-verify: true
-      sni: A76-4179-8a78-c8B78B3C00Cb.664.QZz.iO
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            host: a76-4179-8a78-c8B78B3C00cB.664.qzz.Io
-        path: /E2JXJM5geneWfr9noOhn
-    - alterId: "0"
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0HK_2|4.2MB/s"
-      network: ws
-      port: 443
-      server: n1744453315.4u9ma.icu
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: c0fdc5d4-a891-40bf-afc5-1fed2faa15c5
-      ws-opts:
-        headers:
-            Host: n1744453315.4u9ma.icu
-        path: /
-      xudp: true
+      sni: apple.com
+      type: hysteria
+      up: "100"
     - cipher: aes-256-cfb
-      name: "\U0001F1E9\U0001F1EADE_1|3.8MB/s"
+      delay: 573
+      name: "\U0001F1E9\U0001F1EADE_1|3.0MB/s"
       password: amazonskr05
-      port: "443"
-      server: 18.197.20.26
+      port: 443
+      server: 3.72.36.217
       type: ss
       udp: true
+    - cipher: aes-256-cfb
+      delay: 554
+      name: "\U0001F1FA\U0001F1F8US_1|2.1MB/s"
+      password: amazonskr05
+      port: 443
+      server: 3.144.27.33
+      type: ss
+      udp: true
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EC\U0001F1E7GB_1|3.1MB/s"
+      password: Xtpc8bGdAQDzELPUi2acfL
+      port: "34379"
+      server: 147.45.179.63
+      type: ss
+      udp: true
+    - auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
+      name: "\U0001F1EF\U0001F1F5JP_1|2.1MB/s"
+      password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
+      port: 7940
+      server: jp4.dexlos.com
+      skip-cert-verify: true
+      type: hysteria2
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8US_2|2.8MB/s"
+      network: ws
+      port: 443
+      server: 104.19.189.82
+      servername: www.x-aniu-hk.netlib.re
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: e258977b-e413-4718-a3af-02d75492c349
+      ws-opts:
+        headers:
+            host: www.x-aniu-hk.netlib.re
+        path: /?ed=2560
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_3|2.0MB/s"
+      encryption: none
+      name: "\U0001F1E9\U0001F1EADE_2|2.8MB/s"
+      network: tcp
+      port: "3020"
+      reality-opts:
+        public-key: NVjEaDFrdzaFQHvMt8BPORsLFR3iD8NA31Dpn-1HRFk
+        short-id: ecd8d10c1518fb7b
+      server: de.gpairnetwork369.de
+      servername: www.refersion.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: f6b74f9a-0ac7-43f0-a4cc-5cee6f1eaf7f
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1E8\U0001F1E6CA_1|2.2MB/s"
+      network: tcp
+      port: "60552"
+      reality-opts:
+        public-key: QLOalXjMmrryGjcV7-jMDyWD2E7I23r9A95nqaP0Pho
+        short-id: e62fec30f1a0167e
+      server: 81.19.140.202
+      servername: yandex.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: ad6b2d75-1973-4c0d-8a5f-739f22628ffd
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EB\U0001F1F7FR_2|2.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho
+        short-id: ee6f3e8f44b1f0b6
+      server: 62.60.148.21
+      servername: st.ozone.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_3|2.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs
+        short-id: 428ef87fd47a3a32
+      server: de.nodes.rocketnetwork.ru
+      servername: fr.nodes.rocketnetwork.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: bccbecc9-c1d2-45d1-b3fa-771a19b9831c
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F8\U0001F1EASE_1|2.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: glhe0c9lgUiIGFqbxUeASeKOcL6_K0HOxAZ8pwkTxUA
+        short-id: a88b93330e650038
+      server: sweden-57.ptu.ink
+      servername: www.microsoft.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 30e77c60-5e2e-4e10-9a33-4d9f1fc43a7d
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F7\U0001F1FARU_1|2.4MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: RnIvbd50ZLR_blaue_KkJua5_z6pNgpO3RPiqAN3swg
+        short-id: a20d3ed244c76426
+      server: 84.201.138.55
+      servername: io.ozone.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: cf97c9a9-441e-43e1-9bd2-f66a198cd87b
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0HK_1|2.3MB/s"
       password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
       port: "443"
-      server: 96.126.190.245
+      server: 38.207.160.35
       skip-cert-verify: true
       sni: www.bilibili.com
       type: trojan
       udp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1F0\U0001F1F7KR_1|2.9MB/s"
-      password: dada0801
-      port: "80"
-      server: 43.203.199.246
-      type: ss
-      udp: true
-# 2025-11-19 06:15:44
+# 2025-11-19 07:14:49
