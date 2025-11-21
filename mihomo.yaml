@@ -1,34 +1,11 @@
 proxies:
   - alpn:
       - h3
-    auth: dongtaiwang.com
-    name: "\U0001F1EB\U0001F1F7FR_1|2.3MB/s"
-    password: dongtaiwang.com
-    port: 33880
-    server: 195.154.206.231
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria2
-    udp: true
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    delay: 1568
-    down: '100'
-    name: "\U0001F1EB\U0001F1F7FR_2|1.6MB/s"
-    port: 15010
-    server: 195.154.200.40
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '100'
-  - alpn:
-      - h3
     auth-str: dongtaiwang.com
     auth_str: dongtaiwang.com
     delay: 2958
     down: 55
-    name: "\U0001F1F3\U0001F1F1NL_1|2.9MB/s"
+    name: "\U0001F1F3\U0001F1F1NL_1|1.7MB/s"
     port: 49003
     protocol: udp
     server: 51.159.226.1
@@ -37,38 +14,170 @@ proxies:
     type: hysteria
     udp: true
     up: 11
-  - name: "\U0001F1FA\U0001F1F8US_1|1.8MB/s"
+  - auth: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
+    name: "\U0001F1ED\U0001F1F0HK_1|1.9MB/s"
+    password: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
+    port: 443
+    ports: 30000-60000
+    server: d7d6cfb6-t66sg0-tozbjw-1462e.hk1.hyhuawei.com
+    type: hysteria2
+    udp: true
+    sni: d7d6cfb6-t66sg0-tozbjw-1462e.hk1.hyhuawei.com
+  - auth: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+    name: "\U0001F1FA\U0001F1F8US_1|2.5MB/s"
+    password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+    port: 443
+    ports: 30000-60000
+    server: f44e6c2e-t66sg0-t7luxf-tng5.us.hyhuawei.com
+    type: hysteria2
+    udp: true
+    sni: f44e6c2e-t66sg0-t7luxf-tng5.us.hyhuawei.com
+  - auth: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+    name: "\U0001F1FA\U0001F1F8US_2|2.2MB/s"
+    password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+    port: 443
+    ports: 30000-60000
+    server: 0fd577a4-t66sg0-t7mzec-yjq0.us.hyhuawei.com
+    type: hysteria2
+    udp: true
+    sni: 0fd577a4-t66sg0-t7mzec-yjq0.us.hyhuawei.com
+  - client-fingerprint: chrome
+    name: "\U0001F1EC\U0001F1E7GB_1|2.5MB/s"
+    network: ws
+    password: 8b7d4642-dff2-4c16-81a4-88ca738d6718
+    port: 2053
+    server: 91.199.32.191
+    skip-cert-verify: false
+    sni: joss.gpj1.web.id
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/46.0.2490.71 Safari/537.36
+      path: /Free-VPN-CF-Geo-Project/91.199.32.191=2053
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1EE\U0001F1F7IR_1|3.1MB/s"
+    password: lXOVjEMsx00jeOQzHsQrkL
+    port: 4966
+    server: 213.176.16.71
+    type: ss
+    udp: true
+  - alterId: 2
+    cipher: auto
+    country: "\U0001F1ED\U0001F1F0HK"
+    h2-opts: {}
+    http-opts: {}
+    name: "\U0001F1ED\U0001F1F0HK_2|2.0MB/s"
+    network: ws
+    port: 80
+    server: 69bb0fb7-t66sg0-t7kvg3-1mij.hk3.p5pv.com
+    skip-cert-verify: true
+    type: vmess
+    uuid: c2c634e8-ab9e-11ef-97e0-f23c9164ca5d
+    ws-opts:
+      headers:
+        HOST: broadcastlv.chat.bilibili.com
+        Host: 69bb0fb7-t66sg0-t7kvg3-1mij.hk3.p5pv.com
+      path: /
+    servername: broadcastlv.chat.bilibili.com
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: randomized
+    name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
     network: ws
     password: '8r<[9''l6hAO#8ZQi'
     port: 8443
-    server: 172.66.44.230
+    server: koma-yt.pages.dev
     skip-cert-verify: false
     sni: Koma-YT.PAGeS.Dev
     type: trojan
     udp: true
     ws-opts:
       headers:
-        Host: Koma-YT.PAGeS.Dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.80 Safari/537.36
       path: /tro8sFW1S91B6sZrM1
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+  - encryption: none
+    name: "\U0001F1E9\U0001F1EADE_1|3.7MB/s"
+    network: ws
+    port: 2095
+    server: namemc.com
+    type: vless
+    udp: true
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    ws-opts:
+      headers:
+        Host: 114514.pusytroller.cf
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/69.0.3497.100 Safari/537.36
+      path: /
+    xudp: true
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1FA\U0001F1F8US_2|2.2MB/s"
-    network: ws
-    port: 2096
-    server: 195.13.45.253
+    flow: xtls-rprx-vision
+    name: "\U0001F1E7\U0001F1ECBG_1|3.6MB/s"
+    network: tcp
+    port: 38395
+    reality-opts:
+      public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+      short-id: ab12cd34
+    server: de-2.shvurgceo.online
     tls: true
     type: vless
     udp: true
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    ws-opts:
-      headers:
-        Host: gaosir.unfeeling.sbs
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/65.0.3325.162 Safari/537.36
-      path: /x @节点狂魔 /
+    uuid: 0f8e2cfc-fdf2-46c7-bfcd-ce8273d5ff13
     xudp: true
-    servername: gaosir.unfeeling.sbs
+    servername: vk.com
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F5\U0001F1F1PL_1|2.0MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU
+      short-id: ''
+    server: pugna.sligvpn.ru
+    tls: true
+    type: vless
+    udp: true
+    uuid: 5713fee0-2f51-4453-9502-b7fd38a657b6
+    xudp: true
+    servername: www.microsoft.com
+  - client-fingerprint: firefox
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F1\U0001F1FBLV_1|1.8MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 4JvLKnuuAs4h0cQ1j_S4SAuXQQ579D7Wr1sGBjmH-Ws
+      short-id: 73d3fec4
+    server: 188.253.21.106
+    tls: true
+    type: vless
+    udp: true
+    uuid: 9936ae5c-91cd-4c8a-80e9-5118a209a7e4
+    xudp: true
+    servername: yahoo.com
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F2\U0001F1E9MD_1|3.7MB/s"
+    password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
+    port: 443
+    server: 213.159.67.124
+    type: ss
+    udp: true
   - client-fingerprint: chrome
     encryption: none
     flow: xtls-rprx-vision
@@ -76,80 +185,69 @@ proxies:
       headers: {}
       path:
         - /
-    name: "\U0001F1E9\U0001F1EADE_1|2.4MB/s"
+    name: "\U0001F1EE\U0001F1F7IR_2|2.8MB/s"
     network: tcp
     port: 443
     reality-opts:
-      public-key: i3AAHIiAZOk2-3BFfQlPN5eRBfBpLt53M3p0JKuE0Cw
-      short-id: 0d680ba281cb229b
-    server: 85.192.24.131
+      public-key: XNL_xB1Spd09CQQQGnjeMPPK6_tPnFuYI_nLKk3EiWc
+      short-id: aabbccdd
+    server: 213.176.16.74
     tls: true
     type: vless
     udp: true
-    uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
+    uuid: d7fbe279896e40118c23d15fe537dddd
     xudp: true
-    servername: web.max.ru
+    servername: apple.com
   - client-fingerprint: chrome
     encryption: none
     flow: xtls-rprx-vision
-    name: "\U0001F1F7\U0001F1FARU_1|2.6MB/s"
+    name: "\U0001F1EC\U0001F1E7GB_2|1.5MB/s"
     network: tcp
-    port: 443
+    port: 8443
     reality-opts:
-      public-key: GjFTD96cethyxcRuToHUwv741QoDB9-V7LRsxEh6jTU
-      short-id: ab1cd2
-      spider-x: /
-    server: 147.45.234.51
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    server: 193.233.244.196
     tls: true
     type: vless
-    uuid: fd0718a1-c463-4297-8ba9-a7f4b93ce436
-    servername: www.vk.com
+    udp: true
+    uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+    xudp: true
+    servername: ign.com
   - down: ''
     fingerprint: ''
-    name: "\U0001F1EF\U0001F1F5JP_1|2.3MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: D844AF30-5BCD-419E-94D5-3417C648366A
-    port: 7078
-    server: jp4.dexlos.com
+    name: "\U0001F1EC\U0001F1E7GB_3|3.3MB/s"
+    obfs: salamander
+    obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+    password: 264f87be-abb5-4b23-bc6a-8e7f1fdccee1
+    port: 40000
+    server: dg.jgpyjc.top
     skip-cert-verify: false
-    sni: jp4.dexlos.com
+    sni: dg.jgpyjc.top
     type: hysteria2
     up: ''
   - down: ''
     fingerprint: ''
-    name: "\U0001F1EF\U0001F1F5JP_2|2.0MB/s"
+    name: "\U0001F1ED\U0001F1F0HK_3|2.8MB/s"
     obfs: ''
     obfs-password: ''
-    password: D844AF30-5BCD-419E-94D5-3417C648366A
-    port: 7794
-    server: jp4.dexlos.com
+    password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+    port: 443
+    server: 45d95c64-t66sg0-t7luxf-tng5.hk1.hyhuawei.com
     skip-cert-verify: false
-    sni: jp4.dexlos.com
+    sni: 45d95c64-t66sg0-t7luxf-tng5.hk1.hyhuawei.com
     type: hysteria2
     up: ''
   - down: ''
     fingerprint: ''
-    name: "\U0001F1EF\U0001F1F5JP_3|1.8MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: D844AF30-5BCD-419E-94D5-3417C648366A
-    port: 7071
-    server: jp4.dexlos.com
+    name: "\U0001F1FA\U0001F1F8US_4|2.1MB/s"
+    obfs: salamander
+    obfs-password: NmZjOTM5ODJmMWIzNWRkOA==
+    password: 0254ed8a-d541-4dbf-8889-cc5e48c2874d
+    port: 40000
+    server: jnd.jgpyjc.top
     skip-cert-verify: false
-    sni: jp4.dexlos.com
-    type: hysteria2
-    up: ''
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1EF\U0001F1F5JP_4|1.6MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: D844AF30-5BCD-419E-94D5-3417C648366A
-    port: 7039
-    server: jp4.dexlos.com
-    skip-cert-verify: false
-    sni: jp4.dexlos.com
+    sni: jnd.jgpyjc.top
     type: hysteria2
     up: ''
 proxy-groups:
@@ -690,4 +788,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-11-22 05:14:18
+# 2025-11-22 06:15:35
