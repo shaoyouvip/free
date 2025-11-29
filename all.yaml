@@ -1,44 +1,6 @@
 proxies:
-    - cipher: aes-256-cfb
-      name: "\U0001F1ED\U0001F1F0HK_1|1.6MB/s"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 216.250.97.82
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8US_1|2.5MB/s"
-      network: ws
-      port: 443
-      server: 193.124.18.13
-      servername: kuangbao.xiejiang.dpdns.org
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-      ws-opts:
-        headers:
-            Host: kuangbao.xiejiang.dpdns.org
-        path: /?ed=2560
-    - name: "\U0001F1EF\U0001F1F5JP_1|3.6MB/s"
-      network: ws
-      port: 443
-      server: 54.249.169.40
-      servername: kuangbao.xiejiang.dpdns.org
-      tls: true
-      type: vless
-      uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-      ws-opts:
-        headers:
-            Host: kuangbao.xiejiang.dpdns.org
-        path: /?ed=2560
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F3\U0001F1F1NL_1|1.5MB/s"
-      password: k1dBOmOB4oqi7Ump37a1bQ
-      port: 8080
-      server: 151.242.251.133
-      type: ss
     - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_2|2.4MB/s"
+      name: "\U0001F1EF\U0001F1F5JP_1|2.2MB/s"
       network: ws
       port: 2096
       server: 108.162.198.11
@@ -51,11 +13,32 @@ proxies:
         headers:
             Host: kuangbao.xiejiang.dpdns.org
         path: /?ed=2560
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_3|3.2MB/s"
+    - cipher: aes-128-gcm
+      name: "\U0001F1E6\U0001F1FAAU_1|1.7MB/s"
+      password: ec39dd066cc142fbb81c
+      plugin: obfs
+      plugin-opts:
+        host: 215996dd9f1c3db1e54b.microsoft.com
+        mode: http
+      port: 45934
+      server: au071.jd.kunlunpx.com
+      type: ss
+      udp: true
+    - cipher: aes-128-gcm
+      name: "\U0001F1ED\U0001F1F0HK_1|2.5MB/s"
+      password: a643f6f3733c9962851d
+      plugin: obfs
+      plugin-opts:
+        host: 215996dd9f1c3db1e54b.microsoft.com
+        mode: http
+      port: 45936
+      server: hk077.jd.kunlunpx.com
+      type: ss
+      udp: true
+    - name: "\U0001F1EF\U0001F1F5JP_2|1.8MB/s"
       network: ws
-      port: "2096"
-      server: freeyx.cloudflare88.eu.org
+      port: 443
+      server: 57.180.14.97
       servername: kuangbao.xiejiang.dpdns.org
       tls: true
       type: vless
@@ -64,24 +47,173 @@ proxies:
       ws-opts:
         headers:
             Host: kuangbao.xiejiang.dpdns.org
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
         path: /?ed=2560
-      xudp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: randomized
-      name: "\U0001F1FA\U0001F1F8US_2|2.4MB/s"
-      network: ws
-      password: 8r<[9'l6hAO#8ZQi
-      port: "8443"
-      server: koma-yt.pages.dev
-      skip-cert-verify: false
-      sni: Koma-YT.PAGeS.Dev
-      type: trojan
+    - cipher: aes-128-gcm
+      name: "\U0001F1F8\U0001F1ECSG_1|2.8MB/s"
+      password: f4cd0a554e9d0558c581
+      plugin: obfs
+      plugin-opts:
+        host: 215996dd9f1c3db1e54b.microsoft.com
+        mode: http
+      port: 45917
+      server: sg032.jd.kunlunpx.com
+      type: ss
       udp: true
+    - cipher: aes-128-gcm
+      name: "\U0001F1FB\U0001F1F3VN_1|2.0MB/s"
+      password: 3e79196cf9e970671245
+      plugin: obfs
+      plugin-opts:
+        host: 215996dd9f1c3db1e54b.microsoft.com
+        mode: http
+      port: 45931
+      server: vn047.jd.kunlunpx.com
+      type: ss
+      udp: true
+    - name: "\U0001F1EF\U0001F1F5JP_3|2.5MB/s"
+      network: ws
+      port: 2096
+      server: 108.162.198.24
+      servername: kuangbao.xiejiang.dpdns.org
+      tls: true
+      type: vless
+      uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
       ws-opts:
         headers:
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
-        path: /tro8sFW1S91B6sZrM1?ed=2560
-# 2025-11-30 01:13:32
+            Host: kuangbao.xiejiang.dpdns.org
+        path: /?ed=2560
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_2|1.7MB/s"
+      network: ws
+      port: 80
+      server: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 4729b4c8-1790-11eb-8684-f23c913c8d2b
+      ws-opts:
+        headers:
+            Host: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
+        path: /
+      xudp: true
+    - alterId: "2"
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_3|1.7MB/s"
+      network: ws
+      port: 80
+      server: a2121958-sv0xs0-tb36ag-1jfq7.hk3.p5pv.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
+      ws-opts:
+        headers:
+            Host: broadcastlv.chat.bilibili.com
+        path: /
+      xudp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1ED\U0001F1F0HK_4|1.6MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: 3e3201b3-8d9a-4007-a7db-fcf00833e947
+      port: "55518"
+      server: hk.518181.xyz
+      skip-cert-verify: true
+      sni: ovo.1234567890spcloud.com
+      type: hysteria2
+      up: ""
+    - alpn:
+        - ""
+      alterId: "2"
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_5|1.6MB/s"
+      network: ws
+      port: "80"
+      server: 7f074f62-sv6hs0-tdh9w7-ahsb.hk3.p5pv.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+      ws-opts:
+        headers:
+            Host: 7f074f62-sv6hs0-tdh9w7-ahsb.hk3.p5pv.com
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_1|2.6MB/s"
+      network: ws
+      port: "2096"
+      server: 195.13.45.253
+      servername: gaosir.unfeeling.sbs
+      tls: true
+      type: vless
+      udp: true
+      uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+      ws-opts:
+        headers:
+            Host: gaosir.unfeeling.sbs
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+        path: /x @节点狂魔 /
+      xudp: true
+    - encryption: none
+      name: "\U0001F1FA\U0001F1F8US_2|1.9MB/s"
+      network: ws
+      port: "2052"
+      server: www.visa.com.sg
+      type: vless
+      udp: true
+      uuid: 53b9fd0c-f577-4b22-81f0-9999dafea0e1
+      ws-opts:
+        headers:
+            Host: assistantdonkeyryfn-5zfnjz.assistant-donkey-ryfn.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+        path: /?ed=2560
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F3\U0001F1F1NL_1|3.1MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ
+        short-id: 21181028b56c8702
+      server: 6bng2wep.tree-top.cc
+      servername: www.apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 793099c5-0712-4ea0-bbe1-455da88fc671
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_1|1.9MB/s"
+      network: tcp
+      port: "49067"
+      reality-opts:
+        public-key: krhP4LVv8U-nFUhPdJmEsA4ojmhFPmNV7dNJBWB_5SM
+        short-id: 9cdd24503fce
+      server: alchemistss.fonixapp.org
+      servername: study.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4945561d-534d-488f-b367-436513e43349
+      xudp: true
+# 2025-11-30 02:21:39
