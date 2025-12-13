@@ -3,7 +3,7 @@ proxies:
         - h3
       auth-str: dongtaiwang.com
       down: "100"
-      name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
+      name: "\U0001F1EB\U0001F1F7FR_1|2.5MB/s"
       port: 15010
       protocol: udp
       server: 195.154.200.40
@@ -15,7 +15,7 @@ proxies:
         - h3
       auth-str: dongtaiwang.com
       down: "55"
-      name: "\U0001F1F3\U0001F1F1NL_1|1.0MB/s"
+      name: "\U0001F1F3\U0001F1F1NL_1|1.2MB/s"
       port: 49003
       protocol: udp
       server: 51.159.226.1
@@ -23,158 +23,345 @@ proxies:
       sni: apple.com
       type: hysteria
       up: "11"
+    - cipher: aes-256-cfb
+      country: "\U0001F1EB\U0001F1F7FR"
+      delay: 933
+      name: "\U0001F1EB\U0001F1F7FR_2|2.5MB/s"
+      password: amazonskr05
+      port: 443
+      server: 35.180.57.2
+      type: ss
+    - cipher: aes-256-cfb
+      country: "\U0001F1EB\U0001F1F7FR"
+      delay: 707
+      name: "\U0001F1EB\U0001F1F7FR_3|2.0MB/s"
+      password: amazonskr05
+      port: 443
+      server: 13.38.79.160
+      type: ss
+    - cipher: aes-256-cfb
+      name: "\U0001F1FA\U0001F1F8US_1|2.4MB/s"
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 104.192.226.106
+      type: ss
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F3\U0001F1F1NL_2|1.5MB/s"
+      password: k1dBOmOB4oqi7Ump37a1bQ
+      port: 8080
+      server: 82.38.31.218
+      type: ss
+    - cipher: aes-256-cfb
+      name: "\U0001F1EE\U0001F1EAIE_1|2.1MB/s"
+      password: amazonskr05
+      port: 443
+      server: 3.250.105.240
+      type: ss
+      udp: true
+    - congestion-controller: cubic
+      disable-sni: false
+      name: "\U0001F1EB\U0001F1F7FR_4|1.2MB/s"
+      password: 3ec84788-0386-490b-9527-2a9ce0e07776
+      port: 28132
+      reduce-rtt: false
+      request-timeout: 0
+      server: node.waifly.com
+      skip-cert-verify: true
+      sni: example.com
+      type: tuic
+      uuid: 3ec84788-0386-490b-9527-2a9ce0e07776
+    - name: "\U0001F1ED\U0001F1F0HK_1|1.7MB/s"
+      network: tcp
+      password: 76d630f2af6619c4a5de0ef953df3c6a
+      port: 443
+      server: 112.118.116.127
+      skip-cert-verify: false
+      sni: www.nintendogames.net
+      type: trojan
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1NL_2|1.5MB/s"
+      name: "\U0001F1F7\U0001F1FARU_1|1.8MB/s"
+      network: tcp
       port: 443
       reality-opts:
-        public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-        short-id: 7755e972daf8eec8
-      server: test-pc.intfreed.ru
-      servername: video.intfreed.ru
+        public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
+        short-id: 5540e44a53c3d01c
+      server: 217.16.24.170
+      servername: api-maps.yandex.ru
       skip-cert-verify: false
       tls: true
       type: vless
-      udp: true
-      uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1EB\U0001F1F7FR_2|1003KB/s"
-      port: 50011
-      protocol: udp
-      server: 62.210.10.186
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11 Mbps
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F5\U0001F1F1PL_1|2.5MB/s"
-      network: ws
-      port: "443"
-      server: alhilal.com
-      servername: rAyAn-cOnFiG-pl-1.pAriSa.dPdNs.oRg
-      tls: true
-      type: vless
-      udp: true
-      uuid: bf8ce0b2-71f3-4237-81eb-1dfeb66bd183
-      ws-opts:
-        headers:
-            Host: rAyAn-cOnFiG-pl-1.pAriSa.dPdNs.oRg
-            User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /ws
-      xudp: true
+      uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+    - cipher: chacha20-ietf
+      name: "\U0001F1ED\U0001F1F0HK_2|1.3MB/s"
+      password: asd123456
+      port: 8388
+      server: 103.149.182.191
+      type: ss
     - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_1|1.2MB/s"
-      network: ws
-      port: "2082"
-      server: www.speedtest.net
-      type: vless
-      udp: true
-      uuid: e2b25837-a49b-4f9e-8a52-5dd73678dc73
-      ws-opts:
-        headers:
-            Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-        path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1E8\U0001F1E6CA_1|2.1MB/s"
-      network: ws
-      port: "443"
-      server: cdnjs.com
-      servername: rAyAn-cOnFiG-ca-1.pAriSa.dPdNs.oRg
+      flow: xtls-rprx-vision
+      name: "\U0001F1F7\U0001F1FARU_2|1.3MB/s"
+      network: tcp
+      port: 443
+      server: jrghxqxyoy-518237151-direct.bahame.co
+      servername: jrghxqxyoy-518237151-direct.bahame.co
       tls: true
       type: vless
-      udp: true
-      uuid: 5ac0a5b2-33dd-44d4-ad2b-838cead54f7d
-      ws-opts:
-        headers:
-            Host: rAyAn-cOnFiG-ca-1.pAriSa.dPdNs.oRg
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
-        path: /ws
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
-      password: V8SKoIbr
-      port: 38353
-      server: 154.29.151.219
+      uuid: jrghxqxyoy
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F5\U0001F1F1PL_1|1.8MB/s"
+      network: tcp
+      port: 1488
+      reality-opts:
+        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      server: 51.250.99.190
+      servername: ads.x5.ru
+      tls: true
+      type: vless
+      uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    - name: "\U0001F1EF\U0001F1F5JP_1|1.0MB/s"
+      password: vZ9gnU
+      port: 38736
+      server: 103.134.35.75
       type: http
       username: kZXMC3Z1
-    - name: "\U0001F1FA\U0001F1F8US_2|1006KB/s"
-      network: ws
-      port: "2052"
-      server: 104.18.15.19
-      type: vless
-      udp: true
-      uuid: 41956a47-8432-4a3f-b70d-a54fc7efd6b8
-      ws-opts:
-        headers:
-            Host: 0223.jq2ter91.workers.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
-        path: /?ed=2560
-      xudp: true
-    - alpn:
-        - h3
-      client-fingerprint: chrome
+    - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|1.7MB/s"
-      network: ws
-      port: "443"
-      server: 104.17.2.63
-      servername: vless1-bu3.pages.dev
+      grpc-opts:
+        grpc-service-name: -@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN
+      name: "\U0001F1E9\U0001F1EADE_1|4.8MB/s"
+      network: grpc
+      port: "3060"
+      reality-opts:
+        public-key: LnDnwg2lFWruzisAY8t6ouWZ3JoQ_47XAl-jUx8tJx0
+        short-id: acd96c5fc628f1
+      server: 91.98.92.70
+      servername: miro.com
       tls: true
       type: vless
       udp: true
-      uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-      ws-opts:
-        headers:
-            Host: vless1-bu3.pages.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
-        path: /
+      uuid: Telegram--SRCVPN--
       xudp: true
     - encryption: none
-      name: "\U0001F1EE\U0001F1F3IN_1|2.6MB/s"
+      name: "\U0001F1E9\U0001F1EADE_2|4.1MB/s"
+      network: ws
+      port: "8080"
+      server: norman.ns.cloudflare.com
+      type: vless
+      udp: true
+      uuid: cd9d2923-5ab2-4e30-e000-90b64b48d80e
+      ws-opts:
+        headers:
+            Host: joKer.mEmBerGolaBi.IR
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
+        path: /TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN?ed=2048
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_3|3.9MB/s"
+      network: tcp
+      port: "2443"
+      reality-opts:
+        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+        short-id: ""
+      server: 93.123.84.219
+      servername: www.vk.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b62381-8d75-4a0c-9946-bf8f40772afe
+      xudp: true
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      encryption: none
+      grpc-opts:
+        grpc-service-name: Join-bede-Raiv2mmr
+      name: "\U0001F1EB\U0001F1F7FR_5|1.8MB/s"
+      network: grpc
+      port: "443"
+      server: my-fr-raiv2mmr-telegram-join.koyeb.app
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+      xudp: true
+    - encryption: none
+      grpc-opts:
+        grpc-service-name: '@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast'
+      name: "\U0001F1E9\U0001F1EADE_4|4.7MB/s"
+      network: grpc
+      port: "2718"
+      server: V2ngfast.heloisfood.ir
+      type: vless
+      udp: true
+      uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EADE_5|3.4MB/s"
+      network: ws
+      port: "10200"
+      server: 91.98.46.169
+      type: vless
+      udp: true
+      uuid: b786d9bd-b9f7-4587-a580-eb8a219f19f3
+      ws-opts:
+        headers:
+            Host: ""
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: ""
+      xudp: true
+    - http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_6|4.7MB/s"
+      network: tcp
+      port: "123"
+      server: 128.140.14.218
+      type: vless
+      udp: true
+      uuid: 0267c264-2d80-4eec-fc61-6a77e3e2fa93
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1E6\U0001F1F9AT_1|3.2MB/s"
+      network: tcp
+      port: "2083"
+      reality-opts:
+        public-key: ILR40ZmA56RadPtGy0UJmrSPva5Viapz65j-hrS25D8
+        short-id: 173c58
+      server: lifestealer.fonixapp.org
+      servername: configuration.apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 20b898ac-a156-41ee-be1c-34fa8fc88487
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_7|2.7MB/s"
+      network: tcp
+      port: "2083"
+      reality-opts:
+        public-key: rVZQETztt4al4bryh9sL7F9UlGvny2402yvDDJR7o3g
+        short-id: 6590cb
+      server: antimage.fonixapp.org
+      servername: ajax.cloudflare.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: ef6dfa5c-c976-468f-8a9a-660a0adad17f
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E8\U0001F1EDCH_1|1.8MB/s"
+      network: tcp
+      port: "2443"
+      reality-opts:
+        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+        short-id: ""
+      server: 45.141.119.10
+      servername: www.vk.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b62381-8d75-4a0c-9946-bf8f40772afe
+      xudp: true
+    - client-fingerprint: firefox
+      encryption: none
+      grpc-opts:
+        grpc-service-name: 7034vless
+      name: "\U0001F1F7\U0001F1FARU_3|1.1MB/s"
+      network: grpc
+      port: "7033"
+      reality-opts:
+        public-key: iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE
+        short-id: 16b6cda7ab793526
+      server: rusdokyav.vtuix.ir
+      servername: telewebion.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 2652fbc5-e1b1-691f-c9c7-11ad83e828a6
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_8|2.5MB/s"
       network: ws
       port: "2095"
-      server: 172.67.209.105
+      server: brenna.ns.cloudflare.com
       type: vless
       udp: true
-      uuid: 1953c1e6-af68-4c60-a6f8-f8194de580f6
+      uuid: 3-TEL-JKVPN--JKVPN
       ws-opts:
         headers:
-            Host: worker-ancient-bonus-70e8.96dc4cc80bfb.workers.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-        path: /?ed=2048
+            Host: joKer.mEmBerGolaBi.IR
+            User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: /TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN?ed=2048
       xudp: true
     - encryption: none
-      name: "\U0001F1FA\U0001F1F8US_4|1.2MB/s"
+      grpc-opts:
+        grpc-service-name: '@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1'
+      name: "\U0001F1E9\U0001F1EADE_9|4.8MB/s"
+      network: grpc
+      port: "6423"
+      server: masterserver1.heloisfood.ir
+      type: vless
+      udp: true
+      uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
+      xudp: true
+    - encryption: none
+      grpc-opts:
+        grpc-service-name: '@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet'
+      name: "\U0001F1E9\U0001F1EADE_10|3.6MB/s"
+      network: grpc
+      port: "4488"
+      server: V2ngnet.heloisfood.ir
+      type: vless
+      udp: true
+      uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_11|2.1MB/s"
       network: ws
       port: "80"
-      server: 104.18.26.94
+      server: 104.24.189.102
       type: vless
       udp: true
-      uuid: bc0a2570-d5fb-4906-b0f0-d47cdcd0a381
+      uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
       ws-opts:
         headers:
-            Host: esetsecuritylicense.tibivip547.workers.dev
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
-        path: /Telegram@proxy_mtm/?ed=2560
-      xudp: true
-    - encryption: none
-      name: "\U0001F1FA\U0001F1F8US_5|2.5MB/s"
-      network: ws
-      port: "8880"
-      server: www.visa.com
-      type: vless
-      udp: true
-      uuid: 41956a47-8432-4a3f-b70d-a54fc7efd6b8
-      ws-opts:
-        headers:
-            Host: 0223.jq2ter91.workers.dev
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+            Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
         path: /?ed=2560
       xudp: true
-# 2025-12-13 07:16:25
+    - http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_12|4.7MB/s"
+      network: tcp
+      port: "10100"
+      server: 91.98.46.169
+      type: vless
+      udp: true
+      uuid: 0c6fc388-2d1b-450b-a232-9df7dd56cd6b
+      xudp: true
+# 2025-12-13 09:15:13
