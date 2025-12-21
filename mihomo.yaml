@@ -1,89 +1,10 @@
 proxies:
-  - encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_1|1.8MB/s"
-    network: ws
-    port: 443
-    server: nekocloud.tencentapp.cn
-    tls: true
-    type: vless
-    uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
-    ws-opts:
-      headers:
-        Host: stall.saass.ccwu.cc
-      path: /proxyip=sjc.o00o.ooo
-    servername: stall.saass.ccwu.cc
-  - encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_2|1.0MB/s"
-    network: ws
-    port: 443
-    server: 172.64.53.226
-    tls: true
-    type: vless
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-      path: /
-    servername: snippets.kkii.eu.org
-  - name: "\U0001F1EF\U0001F1F5JP_3|2.6MB/s"
-    network: ws
-    password: 5a2c16f9
-    port: 443
-    server: freeyx.cloudflare88.eu.org
-    skip-cert-verify: false
-    sni: snippets.kkii.eu.org
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-      path: /
-  - name: "\U0001F1EF\U0001F1F5JP_4|1.1MB/s"
-    network: ws
-    port: 8443
-    server: nekocloud.tencentapp.cn
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
-    ws-opts:
-      headers:
-        Host: stall.saass.ccwu.cc
-      path: /proxyip=sjc.o00o.ooo
-    servername: stall.saass.ccwu.cc
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: '55'
-    name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
-    port: 35511
-    protocol: udp
-    server: 62.210.10.186
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '11'
-  - delay: 446
+  - delay: 572
     name: "\U0001F1F8\U0001F1ECSG_1|1.1MB/s"
     network: ws
-    port: 443
-    server: mfa.gov.ua
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
-    ws-opts:
-      headers:
-        Host: stall.saass.ccwu.cc
-      path: /proxyip=sjc.o00o.ooo
-    servername: stall.saass.ccwu.cc
-  - delay: 664
-    name: "\U0001F1EF\U0001F1F5JP_5|1.0MB/s"
-    network: ws
     password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    port: 2087
-    server: cf.877774.xyz
+    port: 2096
+    server: mfa.gov.ua
     skip-cert-verify: true
     sni: cm3-bpg.filegear-sg.me
     type: trojan
@@ -92,38 +13,55 @@ proxies:
       headers:
         Host: cm3-bpg.filegear-sg.me
       path: '/proxyip=210.61.97.241:81'
-  - client-fingerprint: chrome
-    delay: 1518
-    name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
+  - delay: 582
+    name: "\U0001F1F8\U0001F1ECSG_2|1.7MB/s"
     network: ws
-    port: 2053
-    server: www.gov.se
+    password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+    port: 2083
+    server: cf.090227.xyz
+    sni: cm3-bpg.filegear-sg.me
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        Host: cm3-bpg.filegear-sg.me
+      path: '/proxyip=210.61.97.241:81'
+  - client-fingerprint: chrome
+    delay: 431
+    name: "\U0001F1F8\U0001F1ECSG_3|1.0MB/s"
+    network: ws
+    port: 2087
+    server: 162.159.4.135
     tls: true
     type: vless
     udp: true
-    uuid: 6944a493-8d5c-3d04-a5d8-1a37061a17f7
+    uuid: e258977b-e413-4718-a3af-02d75492c349
     ws-opts:
       headers:
-        Host: saasorg.saaas.ccwu.cc
-      path: /proxyip=sjc.o00o.ooo
-    servername: saasorg.saaas.ccwu.cc
+        Host: qqq-3t8.pages.dev
+      path: /
+    servername: qqq-3t8.pages.dev
+  - auth: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
+    name: "\U0001F1E9\U0001F1EADE_1|1.5MB/s"
+    password: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
+    port: 27200
+    ports: 27200-28000
+    server: hl.kaixincloud.top
+    skip-cert-verify: false
+    sni: hl.kaixincloud.top
+    type: hysteria2
+    udp: true
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_1|1.2MB/s"
+    name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
     password: QCXDxuDlTTMD7jtgHUjIoj
     port: 8080
-    server: 151.242.251.153
+    server: 151.242.251.131
     type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1EB\U0001F1F7FR_2|1.4MB/s"
-    password: amazonskr05
-    port: 443
-    server: 15.237.246.157
-    type: ss
-  - name: "\U0001F1F8\U0001F1ECSG_2|1.4MB/s"
+  - name: "\U0001F1FA\U0001F1F8US_1|1.2MB/s"
     network: ws
     password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    port: 2053
-    server: www.shopify.com
+    port: 443
+    server: cmcc.877774.xyz
     skip-cert-verify: false
     sni: cm3-bpg.filegear-sg.me
     type: trojan
@@ -131,11 +69,11 @@ proxies:
       headers:
         Host: cm3-bpg.filegear-sg.me
       path: '/proxyip=210.61.97.241:81'
-  - name: "\U0001F1EF\U0001F1F5JP_6|1.2MB/s"
+  - name: "\U0001F1FA\U0001F1F8US_2|1.0MB/s"
     network: ws
     password: 5a2c16f9
     port: 443
-    server: cf.130519.xyz
+    server: 104.17.162.3
     skip-cert-verify: false
     sni: snippets.kkii.eu.org
     type: trojan
@@ -143,36 +81,35 @@ proxies:
       headers:
         Host: snippets.kkii.eu.org
       path: /%2F
-  - name: "\U0001F1EF\U0001F1F5JP_7|2.0MB/s"
+  - name: "\U0001F1F3\U0001F1F1NL_2|1.4MB/s"
     network: ws
-    password: 5a2c16f9
+    password: POORIARED
     port: 443
-    server: 777.ai7777777.xyz
-    skip-cert-verify: false
-    sni: snippets.kkii.eu.org
+    server: 172.67.134.185
+    sni: reDfRee8.REDFree8.ir
     type: trojan
     ws-opts:
+      path: >-
+        /eyJqdW5rIjoiVUl6eXhLZkkwUTJ3ZzkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+  - encryption: none
+    name: "\U0001F1FA\U0001F1F8US_3|1.0MB/s"
+    network: ws
+    port: 443
+    server: 104.19.173.145
+    tls: true
+    type: vless
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    ws-opts:
       headers:
-        Host: snippets.kkii.eu.org
-      path: /%2F
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F1EB\U0001F1F7FR_3|1.4MB/s"
-    port: 26691
-    protocol: udp
-    server: 62.210.196.68
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: 11 Mbps
+        Host: jp-99k.pages.dev
+      path: /
+    servername: jp-99k.pages.dev
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_8|2.3MB/s"
+    name: "\U0001F1FA\U0001F1F8US_4|1.1MB/s"
     network: ws
     port: 443
-    server: 172.64.229.205
+    server: 104.17.202.10
     tls: true
     type: vless
     udp: true
@@ -182,156 +119,10 @@ proxies:
         Host: snippets.kkii.eu.org
         User-Agent: >-
           Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/62.0.3202.94 Safari/537.36
+          like Gecko) Chrome/66.0.3359.181 Safari/537.36
       path: /
     xudp: true
     servername: snippets.kkii.eu.org
-  - name: "\U0001F1EF\U0001F1F5JP_9|3.3MB/s"
-    network: ws
-    password: 5a2c16f9
-    port: 443
-    server: 172.64.229.205
-    sni: snippets.kkii.eu.org
-    type: trojan
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-      path: /
-  - name: "\U0001F1F8\U0001F1ECSG_3|1.4MB/s"
-    network: ws
-    password: 5a2c16f9
-    port: 443
-    server: 162.159.24.131
-    sni: snippets.kkii.eu.org
-    type: trojan
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-      path: /
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1FA\U0001F1F8US_2|1.2MB/s"
-    network: ws
-    port: 443
-    server: 104.16.31.105
-    tls: true
-    type: vless
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    ws-opts:
-      headers:
-        Host: bb-67r.pages.dev
-      path: /
-    servername: bb-67r.pages.dev
-  - encryption: none
-    name: "\U0001F1E8\U0001F1E6CA_1|1.5MB/s"
-    network: ws
-    port: 80
-    server: 104.26.6.89
-    type: vless
-    uuid: c5b129d7-f133-4b34-a9c6-68c9a8f70248
-    ws-opts:
-      headers:
-        Host: EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK
-      path: /
-    servername: EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK
-  - name: "\U0001F1FA\U0001F1F8US_3|1.1MB/s"
-    network: ws
-    password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
-    port: 443
-    server: cf.0sm.com
-    skip-cert-verify: true
-    sni: vd.vmy2024.dpdns.org
-    type: trojan
-    ws-opts:
-      headers:
-        Host: vd.vmy2024.dpdns.org
-      path: /
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: ads.x5.ru
-    name: "\U0001F1F7\U0001F1FARU_1|1.2MB/s"
-    network: grpc
-    port: 444
-    reality-opts:
-      public-key: L0ZCh9LynIMEkK9BZq3gC--mzL6xnR4bkBJmXHSwVCM
-      short-id: 0614386789abcdef
-    server: 51.250.75.169
-    tls: true
-    type: vless
-    udp: true
-    uuid: c495cf08-e046-4311-aa4b-82cc16576992
-    xudp: true
-    servername: ads.x5.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1F1\U0001F1F9LT_1|1.5MB/s"
-    network: tcp
-    port: 22230
-    reality-opts:
-      public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-      short-id: a9725715bf4c62ff
-    server: 93.115.28.134
-    tls: true
-    type: vless
-    udp: true
-    uuid: 88152def-434e-488d-a63a-1c2a7ee401d3
-    xudp: true
-    servername: apple.com
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1E9\U0001F1EADE_1|1.8MB/s"
-    network: tcp
-    port: 11559
-    server: radhan.configraybot.sbs
-    type: vmess
-    uuid: f3eba84e-d48f-4535-bb4a-5ad91c67cbb3
-  - name: "\U0001F1FA\U0001F1F8US_4|1.4MB/s"
-    network: ws
-    password: 5a2c16f9
-    port: 443
-    server: 104.19.55.205
-    sni: snippets.kkii.eu.org
-    type: trojan
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-      path: /
-  - alterId: 0
-    cipher: auto
-    country: "\U0001F1E8\U0001F1F3CN"
-    h2-opts: {}
-    http-opts:
-      method: GET
-      path:
-        - /
-    name: "\U0001F1ED\U0001F1F0HK_1|4.8MB/s"
-    network: http
-    port: 80
-    server: 43.161.253.82
-    skip-cert-verify: true
-    type: vmess
-    uuid: bcb7c581-3c95-4569-a4e7-918141e91ea3
-    servername: a.189.cn
-  - encryption: none
-    name: "\U0001F1E9\U0001F1EADE_2|1.2MB/s"
-    network: tcp
-    port: 55484
-    server: 46.224.152.184
-    type: vless
-    udp: true
-    uuid: 1d03fcc7-8af7-4277-9a6d-bf8f1f0eb6e4
-    xudp: true
-  - encryption: none
-    name: "\U0001F1E9\U0001F1EADE_3|1.4MB/s"
-    network: tcp
-    port: 17080
-    server: 78.47.66.175
-    type: vless
-    udp: true
-    uuid: 3c53a875-557f-4ece-a0b1-8c3c8dfc0458
-    xudp: true
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -870,4 +661,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-12-21 22:14:56
+# 2025-12-21 23:15:25
