@@ -1,34 +1,7 @@
 proxies:
-    - delay: 572
-      name: "\U0001F1F8\U0001F1ECSG_1|1.1MB/s"
-      network: ws
-      password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-      port: 2096
-      server: mfa.gov.ua
-      skip-cert-verify: true
-      sni: cm3-bpg.filegear-sg.me
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: cm3-bpg.filegear-sg.me
-        path: /proxyip=210.61.97.241:81
-    - delay: 582
-      name: "\U0001F1F8\U0001F1ECSG_2|1.7MB/s"
-      network: ws
-      password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-      port: 2083
-      server: cf.090227.xyz
-      sni: cm3-bpg.filegear-sg.me
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: cm3-bpg.filegear-sg.me
-        path: /proxyip=210.61.97.241:81
     - client-fingerprint: chrome
       delay: 431
-      name: "\U0001F1F8\U0001F1ECSG_3|1.0MB/s"
+      name: "\U0001F1F8\U0001F1ECSG_1|2.9MB/s"
       network: ws
       port: 2087
       server: 162.159.4.135
@@ -41,39 +14,91 @@ proxies:
         headers:
             Host: qqq-3t8.pages.dev
         path: /
-    - auth: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
-      name: "\U0001F1E9\U0001F1EADE_1|1.5MB/s"
-      password: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
-      port: 27200
-      ports: 27200-28000
-      server: hl.kaixincloud.top
-      skip-cert-verify: false
-      sni: hl.kaixincloud.top
-      type: hysteria2
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
-      password: QCXDxuDlTTMD7jtgHUjIoj
-      port: 8080
-      server: 151.242.251.131
-      type: ss
-    - name: "\U0001F1FA\U0001F1F8US_1|1.2MB/s"
-      network: ws
-      password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-      port: 443
-      server: cmcc.877774.xyz
-      skip-cert-verify: false
-      sni: cm3-bpg.filegear-sg.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: cm3-bpg.filegear-sg.me
-        path: /proxyip=210.61.97.241:81
-    - name: "\U0001F1FA\U0001F1F8US_2|1.0MB/s"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: 55 Mbps
+      name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
+      port: 50011
+      protocol: udp
+      server: 62.210.10.186
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11 Mbps
+    - delay: 2454
+      name: "\U0001F1EF\U0001F1F5JP_1|2.6MB/s"
       network: ws
       password: 5a2c16f9
       port: 443
-      server: 104.17.162.3
+      server: freeyx.cloudflare88.eu.org
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - delay: 2600
+      name: "\U0001F1FA\U0001F1F8US_1|1020KB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.17.167.134
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      client-fingerprint: chrome
+      delay: 2898
+      down: 55 Mbps
+      name: "\U0001F1EB\U0001F1F7FR_2|1.5MB/s"
+      port: 26691
+      protocol: udp
+      server: 62.210.196.68
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11 Mbps
+    - name: "\U0001F1F2\U0001F1E9MD_1|2.1MB/s"
+      network: ws
+      port: 443
+      server: 94.131.118.18
+      servername: ads.x5.ru
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 784ac0b2-3837-4889-8ad6-b58259dd1d0f
+      ws-opts:
+        headers:
+            Host: ads.x5.ru
+        path: /kmdznvws
+    - name: "\U0001F1FA\U0001F1F8US_2|3.3MB/s"
+      network: ws
+      password: 8r<[9'l6hAO#8ZQi
+      port: 8443
+      server: koma-yt.pages.dev
+      sni: Koma-YT.PAGeS.Dev
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: Koma-YT.PAGeS.Dev
+        path: /tro8sFW1S91B6sZrM1
+    - name: "\U0001F1EF\U0001F1F5JP_2|3.3MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: cf.130519.xyz
       skip-cert-verify: false
       sni: snippets.kkii.eu.org
       type: trojan
@@ -81,44 +106,335 @@ proxies:
         headers:
             Host: snippets.kkii.eu.org
         path: '%2F'
-    - name: "\U0001F1F3\U0001F1F1NL_2|1.4MB/s"
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_1|1.0MB/s"
       network: ws
-      password: POORIARED
       port: 443
-      server: 172.67.134.185
-      sni: reDfRee8.REDFree8.ir
+      server: 104.19.61.72
+      servername: hk.nbee.pp.ua
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+      ws-opts:
+        headers:
+            Host: hk.nbee.pp.ua
+        path: /aa
+    - name: "\U0001F1EF\U0001F1F5JP_3|1.1MB/s"
+      password: vZ9gnU
+      port: 38736
+      server: 103.134.35.75
+      type: http
+      username: kZXMC3Z1
+    - name: "\U0001F1F8\U0001F1ECSG_2|3.0MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 162.159.24.131
+      sni: snippets.kkii.eu.org
       tls: true
       type: trojan
       ws-opts:
-        path: /eyJqdW5rIjoiVUl6eXhLZkkwUTJ3ZzkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    - encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|1.0MB/s"
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_3|2.7MB/s"
       network: ws
       port: 443
-      server: 104.19.173.145
-      servername: jp-99k.pages.dev
+      server: 104.16.31.105
+      servername: bb-67r.pages.dev
       tls: true
       type: vless
       uuid: e258977b-e413-4718-a3af-02d75492c349
       ws-opts:
         headers:
-            Host: jp-99k.pages.dev
+            Host: bb-67r.pages.dev
         path: /
+    - name: "\U0001F1F3\U0001F1F1NL_1|1.7MB/s"
+      network: ws
+      password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+      port: 443
+      server: cf.0sm.com
+      skip-cert-verify: true
+      sni: vd.vmy2024.dpdns.org
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: vd.vmy2024.dpdns.org
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1E9\U0001F1EADE_1|3.3MB/s"
+      network: tcp
+      port: 7443
+      server: a.confignor.site
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: e2558842-a86d-433d-b1e3-f1586262b88e
+      xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1FA\U0001F1F8US_4|1.1MB/s"
-      network: ws
-      port: "443"
-      server: 104.17.202.10
-      servername: snippets.kkii.eu.org
+      grpc-opts:
+        grpc-service-name: ads.x5.ru
+      name: "\U0001F1F7\U0001F1FARU_1|2.4MB/s"
+      network: grpc
+      port: "444"
+      reality-opts:
+        public-key: L0ZCh9LynIMEkK9BZq3gC--mzL6xnR4bkBJmXHSwVCM
+        short-id: 0614386789abcdef
+      server: 51.250.75.169
+      servername: ads.x5.ru
       tls: true
       type: vless
       udp: true
-      uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+      uuid: c495cf08-e046-4311-aa4b-82cc16576992
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      grpc-opts:
+        grpc-service-name: ads.x5.ru
+      name: "\U0001F1F7\U0001F1FARU_2|2.8MB/s"
+      network: grpc
+      port: "444"
+      reality-opts:
+        public-key: L0ZCh9LynIMEkK9BZq3gC--mzL6xnR4bkBJmXHSwVCM
+        short-id: 0614386789abcdef
+      server: 51.250.66.217
+      servername: ads.x5.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: c495cf08-e046-4311-aa4b-82cc16576992
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F0\U0001F1FFKZ_1|1.6MB/s"
+      network: tcp
+      port: "4443"
+      reality-opts:
+        public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+        short-id: aa7e96542880027a
+      server: 103.106.3.198
+      servername: github.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 680c950c-417b-4388-8d57-5cd6a65c3cd1
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1EB\U0001F1F7FR_3|2.1MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: o3H8CUivdt6lbFH6S7CQZ6dua7nUg5rYtPdSyXpjpx0
+        short-id: 6104c5e9613ea56c
+      server: 62.60.246.188
+      servername: web.max.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 405ec164-7923-4d76-8be5-7ae96e444f4e
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_2|2.8MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+        short-id: dcd27eb15ebed5f2
+      server: de.cdn.stun.su
+      servername: de.cdn.stun.su
+      tls: true
+      type: vless
+      udp: true
+      uuid: 9a5414b6-20b7-4313-8cd4-693d3c19ec05
+      xudp: true
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      encryption: none
+      grpc-opts:
+        grpc-service-name: Join-bede-Raiv2mmr
+      name: "\U0001F1EB\U0001F1F7FR_4|3.0MB/s"
+      network: grpc
+      port: "443"
+      server: yalda-raiv2mmr-telegram.koyeb.app
+      tls: true
+      type: vless
+      udp: true
+      uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1E6\U0001F1F1AL_1|2.7MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
+        short-id: 3846b9259d66cc64
+      server: 78.159.131.23
+      servername: al.cdn.stun.su
+      tls: true
+      type: vless
+      udp: true
+      uuid: 76f385df-bb5c-4e92-b60b-fce540b0a6a0
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      grpc-opts:
+        grpc-service-name: ads.x5.ru
+      name: "\U0001F1F7\U0001F1FARU_3|2.5MB/s"
+      network: grpc
+      port: "444"
+      reality-opts:
+        public-key: L0ZCh9LynIMEkK9BZq3gC--mzL6xnR4bkBJmXHSwVCM
+        short-id: 0614386789abcdef
+      server: 51.250.6.178
+      servername: ads.x5.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: c495cf08-e046-4311-aa4b-82cc16576992
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F7\U0001F1FARU_4|2.4MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+        short-id: a76ea384b29a4f79
+      server: 51.250.83.255
+      servername: ads.x5.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 76f385df-bb5c-4e92-b60b-fce540b0a6a0
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F8\U0001F1E8SC_1|2.7MB/s"
+      network: tcp
+      port: "993"
+      reality-opts:
+        public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
+        short-id: ""
+      server: 146.19.90.10
+      servername: speed.cloudflare.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: a48ac360-6114-a334-d678-6c267114e106
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_3|1.7MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: eKglVNr1vCmVZxLeGS6_-sZWXEJLWckuzkpmox1-jQ8
+        short-id: b05bc387
+      server: 84.200.81.229
+      servername: ozon.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 1a539db6-d162-42f4-9b56-687bd57bfbc2
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_4|2.4MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: eKglVNr1vCmVZxLeGS6_-sZWXEJLWckuzkpmox1-jQ8
+        short-id: b05bc387
+      server: de24.abvpn.ru
+      servername: ozon.ru
+      tls: true
+      type: vless
+      udp: true
+      uuid: 1a539db6-d162-42f4-9b56-687bd57bfbc2
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F5\U0001F1F1PL_1|2.3MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+        short-id: 1929ef620e9b34f5
+      server: 158.160.201.80
+      servername: m.vk.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: b27c7007-9a35-43cb-ab1e-8c5c0a7e3c34
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8US_4|1.4MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.19.55.205
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
       ws-opts:
         headers:
             Host: snippets.kkii.eu.org
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
         path: /
-      xudp: true
-# 2025-12-22 11:28:41
+    - name: "\U0001F1E9\U0001F1EADE_5|1.7MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 162.159.128.253
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F9\U0001F1EDTH_1|2.0MB/s"
+      password: f8f7aCzcPKbsF8p3
+      port: "990"
+      server: 119.59.98.58
+      type: ss
+      udp: true
+# 2025-12-22 12:36:22
