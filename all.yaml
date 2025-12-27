@@ -1,6 +1,6 @@
 proxies:
     - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_1|1.0MB/s"
+      name: "\U0001F1EF\U0001F1F5JP_1|2.0MB/s"
       network: ws
       port: 443
       server: 172.64.53.226
@@ -17,52 +17,35 @@ proxies:
     - alpn:
         - h3
       auth-str: dongtaiwang.com
-      down: "55"
-      name: "\U0001F1EB\U0001F1F7FR_1|1.4MB/s"
-      port: 35511
-      protocol: udp
-      server: 62.210.10.186
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: "11"
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
       down: 55 Mbps
-      name: "\U0001F1EB\U0001F1F7FR_2|1.0MB/s"
-      port: 50011
+      name: "\U0001F1EB\U0001F1F7FR_1|1.3MB/s"
+      port: 26691
       protocol: udp
-      server: 62.210.10.186
+      server: 62.210.196.68
       skip-cert-verify: true
       sni: apple.com
       type: hysteria
       up: 11 Mbps
-    - name: "\U0001F1EF\U0001F1F5JP_2|3.3MB/s"
-      network: tcp
-      password: BxceQaOe
-      port: 11945
-      server: 52.194.193.12
-      skip-cert-verify: true
-      sni: t.me%252Fripaojiedian
-      type: trojan
-    - name: "\U0001F1FA\U0001F1F8US_1|2.5MB/s"
+    - name: "\U0001F1EF\U0001F1F5JP_2|1.2MB/s"
       network: ws
       password: 5a2c16f9
       port: 443
-      server: 104.19.55.205
+      server: freeyx.cloudflare88.eu.org
       skip-cert-verify: false
       sni: snippets.kkii.eu.org
       type: trojan
+      udp: true
       ws-opts:
         headers:
             Host: snippets.kkii.eu.org
-        path: '%2F%2F'
-    - name: "\U0001F1F8\U0001F1ECSG_1|2.1MB/s"
+        path: /
+    - client-fingerprint: randomized
+      name: "\U0001F1EF\U0001F1F5JP_3|1.3MB/s"
       network: ws
       port: 443
-      server: cf.zhetengsha.eu.org
+      server: 108.162.198.185
       servername: snippets.kkii.eu.org
+      skip-cert-verify: false
       tls: true
       type: vless
       udp: true
@@ -71,129 +54,64 @@ proxies:
         headers:
             Host: snippets.kkii.eu.org
         path: /
-    - auth: fbcd4cae-9e11-4477-aa1e-51ae3febe9de
-      name: "\U0001F1FA\U0001F1F8US_2|1.2MB/s"
-      password: fbcd4cae-9e11-4477-aa1e-51ae3febe9de
-      port: 25200
-      ports: 25200-26200
-      server: us1.kaixincloud.top
-      skip-cert-verify: false
-      sni: us1.kaixincloud.top
-      type: hysteria2
-      udp: true
-    - auth: 34755bf3-5038-4ee7-9ae7-78c3369b6aaa
-      name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
-      password: 34755bf3-5038-4ee7-9ae7-78c3369b6aaa
-      port: 25200
-      ports: 25200-26200
-      server: us1.kaixincloud.top
-      skip-cert-verify: false
-      sni: us1.kaixincloud.top
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1FA\U0001F1F8US_4|1.1MB/s"
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5JP_4|2.0MB/s"
       network: ws
-      password: 5a2c16f9
       port: 443
-      server: 104.16.245.77
-      skip-cert-verify: true
-      sni: snippets.kkii.eu.org
-      tls: true
-      type: trojan
-      ws-opts:
-        path: /
-    - name: "\U0001F1F3\U0001F1F1NL_1|1.6MB/s"
-      network: ws
-      password: 5a2c16f9
-      port: 443
-      server: 104.21.94.161
-      skip-cert-verify: true
-      sni: snippets.kkii.eu.org
-      tls: true
-      type: trojan
-      ws-opts:
-        path: /
-    - encryption: none
-      name: "\U0001F1F8\U0001F1ECSG_2|2.5MB/s"
-      network: ws
-      port: 2087
-      server: 162.159.20.58
-      servername: sg-5j8.pages.dev
+      server: cdn.204910.best
+      servername: snippets.kkii.eu.org
+      skip-cert-verify: false
       tls: true
       type: vless
-      uuid: e258977b-e413-4718-a3af-02d75492c349
+      udp: true
+      uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
       ws-opts:
         headers:
-            Host: sg-5j8.pages.dev
+            Host: snippets.kkii.eu.org
         path: /
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
+    - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1F2\U0001F1E9MD_1|1.5MB/s"
-      network: ws
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EADE_1|1.0MB/s"
+      network: tcp
       port: "443"
-      server: 205.233.181.85
-      servername: j.arfilter2.blog
+      reality-opts:
+        public-key: RAO0oF4uh8HlNfJ_4exSLb-rmXzajkoYBX7ODesoRzs
+        short-id: ""
+      server: de1.jugploer.icu
+      servername: de1.jugploer.icu
       tls: true
       type: vless
       udp: true
-      uuid: telegram-id-Arfilter
-      ws-opts:
-        headers:
-            Host: j.arfilter2.blog
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
-        path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
+      uuid: 23d94ce7-81fe-4a37-935d-0fa980485c51
       xudp: true
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1NL_2|1.1MB/s"
+      name: "\U0001F1EA\U0001F1F8ES_1|1.9MB/s"
       network: tcp
       port: "443"
       reality-opts:
-        public-key: SxkcgZSO_Ek3EjJqudyx3UTwQIIUgB1fJyiDGmDI7mw
-        short-id: 99dfc27e5f2415dc
-      server: 51.250.89.217
-      servername: ads.x5.ru
+        public-key: do5W1A_cUiSkYzmQK1xCcky0LZEU6UQh9eSnz-LyJ0o
+        short-id: ""
+      server: nl1.jugploer.icu
+      servername: nl1.jugploer.icu
       tls: true
       type: vless
       udp: true
-      uuid: e5017995-2093-491b-a0fa-d4890782d42a
+      uuid: 23d94ce7-81fe-4a37-935d-0fa980485c51
       xudp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
+    - client-fingerprint: random
       encryption: none
-      name: "\U0001F1F2\U0001F1E9MD_2|2.3MB/s"
-      network: ws
+      flow: xtls-rprx-vision
+      name: ❓Other_1|1.3MB/s
+      network: tcp
       port: "443"
-      server: 205.233.181.73
-      servername: j.arfilter2.blog
+      server: s284.okgfwbackxyz.xyz
+      servername: u720947u41d0s284.okgfwbackxyz.xyz
       tls: true
       type: vless
       udp: true
-      uuid: telegram-id-Arfilter
-      ws-opts:
-        headers:
-            Host: j.arfilter2.blog
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
-        path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
+      uuid: f3dc78d2-a8cb-3f6e-bebd-b223dfa91691
       xudp: true
-    - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_1|2.5MB/s"
-      network: ws
-      port: "2082"
-      server: www.speedtest.net
-      type: vless
-      udp: true
-      uuid: 11afa1c6-32b2-4e3b-8e97-868e4259e96f
-      ws-opts:
-        headers:
-            Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-            User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Slackware/Chrome/12.0.742.100 Safari/534.30
-        path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-      xudp: true
-# 2025-12-27 20:32:40
+# 2025-12-27 21:25:29
