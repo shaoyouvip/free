@@ -1,301 +1,43 @@
 proxies:
     - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1EB\U0001F1F7FR_1|1.2MB/s"
-      port: 26691
-      protocol: udp
-      server: 62.210.196.68
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11 Mbps
-    - client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_1|1.5MB/s"
-      network: ws
-      password: 5a2c16f9
-      port: "443"
-      server: 172.64.229.2
-      skip-cert-verify: true
-      sni: snippets.kkii.eu.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
-        path: /
-    - delay: 2434
-      name: "\U0001F1F8\U0001F1ECSG_1|2.3MB/s"
-      network: ws
-      password: 5a2c16f9
-      port: 443
-      server: 162.159.24.131
-      skip-cert-verify: false
-      sni: snippets.kkii.eu.org
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: snippets.kkii.eu.org
-        path: /
-    - alpn:
         - h2
         - http/1.1
       client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1E6CA_1|2.5MB/s"
-      password: c8962740-02d1-4d3f-ba03-cad8e801c600
-      port: 20133
-      server: co-74c5a9-20.9966663.xyz
-      skip-cert-verify: true
-      type: anytls
-      udp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1E8\U0001F1EDCH_1|1.3MB/s"
-      password: c8962740-02d1-4d3f-ba03-cad8e801c600
-      port: 20135
-      server: chor.9966663.xyz
-      skip-cert-verify: true
-      type: anytls
-      udp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1EF\U0001F1F5JP_2|2.0MB/s"
-      password: 53db9c44-94a1-4976-8682-5d1c3642058d
-      port: 10009
-      server: hd.yuyan.vin
-      type: ss
-      udp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1F3\U0001F1F1NL_1|1.2MB/s"
-      password: c8962740-02d1-4d3f-ba03-cad8e801c600
-      port: 20135
-      server: nlor2.9966663.xyz
-      skip-cert-verify: true
-      type: anytls
-      udp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1E7\U0001F1ECBG_1|1.4MB/s"
-      password: c8962740-02d1-4d3f-ba03-cad8e801c600
-      port: 50053
-      server: zz.9966663.xyz
-      skip-cert-verify: true
-      type: anytls
-      udp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
+      name: "\U0001F1FA\U0001F1F8US_1|1.2MB/s"
       password: c8962740-02d1-4d3f-ba03-cad8e801c600
       port: 20132
       server: usp.9966663.xyz
       skip-cert-verify: true
       type: anytls
       udp: true
-    - cipher: aes-256-cfb
-      name: "\U0001F1FB\U0001F1F3VN_1|1.1MB/s"
-      password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-      port: 38388
-      server: 103.186.154.199
-      type: ss
-    - cipher: auto
-      name: "\U0001F1E9\U0001F1EADE_1|2.6MB/s"
-      network: none
-      port: 443
-      server: 5.75.201.242
-      tls: false
-      type: vless
-      uuid: dfb88783-5942-41fe-948e-04736d42f422
-    - cipher: auto
-      name: "\U0001F1E9\U0001F1EADE_2|1.4MB/s"
-      network: none
-      port: 8484
-      server: 5.75.201.242
-      tls: false
-      type: vless
-      uuid: 4ebe8b76-f543-4dfa-f5ee-6be7c9ed03eb
-    - cipher: auto
-      name: "\U0001F1E9\U0001F1EADE_3|1.8MB/s"
-      network: none
-      port: 5375
-      server: 5.75.201.242
-      tls: false
-      type: vless
-      uuid: db14ece9-98d0-4dad-8475-94f95cb38146
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1EA\U0001F1EAEE_1|3.5MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-        short-id: ""
-      server: tbankru.outlinekeys.net
-      servername: tbankru.outlinekeys.net
-      tls: true
-      type: vless
-      udp: true
-      uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_4|2.1MB/s"
-      network: tcp
-      port: "1488"
-      reality-opts:
-        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-        short-id: 6ba85179e30d4fc2
-      server: 51.250.16.178
-      servername: ads.x5.ru
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1NL_2|3.1MB/s"
-      network: tcp
-      port: "4443"
-      reality-opts:
-        public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-        short-id: aa7e96542880027a
-      server: 144.124.228.129
-      servername: github.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: ddffda27-8c5f-4f53-8450-4d11a1e0b368
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_3|2.4MB/s"
-      network: ws
-      port: "443"
-      server: 45.83.21.88
-      servername: rAyAn-007.pArViN.DpDnS.OrG
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-      ws-opts:
-        headers:
-            Host: rayan-007.parvin.dpdns.org
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
-        path: /Telegram:@AZARBAYJAB1?ed=2560
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1F5\U0001F1F1PL_1|1.4MB/s"
-      network: tcp
-      port: "1488"
-      reality-opts:
-        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-        short-id: 6ba85179e30d4fc2
-      server: 51.250.24.98
-      servername: ads.x5.ru
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-      xudp: true
-    - cipher: chacha20-ietf-poly1305
-      name: "\U0001F1E9\U0001F1EADE_5|3.0MB/s"
-      password: 7saUuuV-YDq8BTKgWUQFARU5BuPeXEfZ
-      port: "2050"
-      server: 144.31.84.76
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8US_2|2.7MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-        short-id: 86e999a2cdc2
-      server: us01-vlr01-gmn03.vpnvezdehod.net
-      servername: hls-svod.itunes.apple.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: e9dbc178-3656-40f8-8833-5023f306ef1d
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1EB\U0001F1EEFI_1|2.7MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: aCIjONksX6QbTfFBxN1eFqf5caspiR7QyttJ3kDH9yY
-        short-id: ""
-      server: vkru.outlinekeys.net
-      servername: vkru.outlinekeys.net
-      tls: true
-      type: vless
-      udp: true
-      uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
-      xudp: true
     - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      grpc-opts:
-        grpc-service-name: www.bing.com
-      name: "\U0001F1EE\U0001F1EAIE_1|2.1MB/s"
-      network: grpc
-      port: "48056"
-      server: 34.254.224.37
-      servername: 34.254.224.37
-      tls: true
-      type: vless
-      udp: true
-      uuid: d811ecf9-4029-4794-a43e-3611c3575b9e
-      xudp: true
+        - h3
+      auth-str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1EB\U0001F1F7FR_1|1.3MB/s"
+      port: 35511
+      protocol: udp
+      server: 62.210.10.186
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: "11"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: 55 Mbps
+      name: "\U0001F1EB\U0001F1F7FR_2|1.1MB/s"
+      port: 50011
+      protocol: udp
+      server: 62.210.10.186
+      skip-cert-verify: true
+      sni: apple.com
+      type: hysteria
+      up: 11 Mbps
     - client-fingerprint: chrome
       encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1EA\U0001F1EAEE_2|2.4MB/s"
-      network: tcp
-      port: "1488"
-      reality-opts:
-        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-        short-id: 6ba85179e30d4fc2
-      server: 51.250.104.85
-      servername: ads.x5.ru
-      tls: true
-      type: vless
-      udp: true
-      uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1EB\U0001F1EEFI_2|2.4MB/s"
+      name: "\U0001F1EB\U0001F1EEFI_1|1.2MB/s"
       network: tcp
       port: "443"
       reality-opts:
@@ -308,102 +50,204 @@ proxies:
       udp: true
       uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1E7GB_1|2.5MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: j_b7jaRqL2-82XSGRL0IYkNJ2Y3hrhhgq5kIBIK76lk
-        short-id: ""
-      server: 38.60.196.27
-      servername: www.cloudflare.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: e64c5bbb-a4b8-498e-b374-4462d961c8a2
-      xudp: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      name: "\U0001F1EF\U0001F1F5JP_3|2.2MB/s"
-      network: tcp
-      password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
-      port: "443"
-      server: ru2.nnvpn.io
+    - cipher: chacha20-ietf
+      name: ❓Other_1|1.2MB/s
+      password: asd123456
+      port: 8388
+      server: 103.149.183.200
+      type: ss
+    - cipher: chacha20-ietf
+      name: "\U0001F1ED\U0001F1F0HK_1|1.1MB/s"
+      password: asd123456
+      port: 8388
+      server: 103.149.182.158
+      type: ss
+    - name: "\U0001F1FA\U0001F1F8US_2|2.6MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: one.cf.cdn.hyli.xyz
       skip-cert-verify: false
-      sni: ru2.nnvpn.io
+      sni: snippets.kkii.eu.org
+      type: trojan
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - delay: 2370
+      name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.19.220.22
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
       type: trojan
       udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - name: "\U0001F1EF\U0001F1F5JP_1|1.3MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 172.64.229.21
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - name: "\U0001F1FA\U0001F1F8US_4|1.5MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.17.167.134
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - name: "\U0001F1FA\U0001F1F8US_5|1.7MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 172.64.229.3
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.21.94.161
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
+      ws-opts:
+        path: /
+    - name: "\U0001F1FA\U0001F1F8US_6|1.7MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 104.16.246.188
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
+      ws-opts:
+        path: /
+    - name: "\U0001F1EF\U0001F1F5JP_2|1.4MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: cf.130519.xyz
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: //
     - encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|2.0MB/s"
-      network: tcp
-      port: "12241"
-      server: 95.38.210.6
-      type: vless
-      udp: true
-      uuid: a4a941bd-fe1f-4e2e-81ad-2244e73da639
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1F5\U0001F1F1PL_2|1.7MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-        short-id: f79448a30d
-      server: 91.193.18.158
-      servername: hls-svod.itunes.apple.com
+      name: "\U0001F1EF\U0001F1F5JP_3|2.1MB/s"
+      network: ws
+      port: 41607
+      server: 45.159.48.37
+      servername: sni.111000.cc.cd
       tls: true
       type: vless
-      udp: true
-      uuid: 8e2cc81d-7ac4-4352-a7b5-bbfcfa81e49e
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1EA\U0001F1EAEE_3|2.4MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-        short-id: ""
-      server: 144.31.178.168
-      servername: tbankru.outlinekeys.net
+      uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+      ws-opts:
+        headers:
+            Host: sni.111000.cc.cd
+        path: /
+    - name: "\U0001F1F9\U0001F1FCTW_1|1.6MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: twmoon1-cdn-route.couldflare-cdn.com
       tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "\U0001F1EF\U0001F1F5JP_4|1.5MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 172.64.229.86
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - name: "\U0001F1E9\U0001F1EADE_1|2.0MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: 443
+      server: 162.159.128.253
+      skip-cert-verify: false
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            Host: snippets.kkii.eu.org
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_7|1.3MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: "443"
+      server: 104.17.237.219
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+        path: /
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_8|1.3MB/s"
+      network: ws
+      password: 5a2c16f9
+      port: "443"
+      server: 172.64.229.64
+      skip-cert-verify: true
+      sni: snippets.kkii.eu.org
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
+        path: /
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_2|2.1MB/s"
+      network: ws
+      port: "2082"
+      server: www.speedtest.net
       type: vless
       udp: true
-      uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
+      uuid: 9bdf7356-c1c6-46dd-c53d-b6183187de0a
+      ws-opts:
+        headers:
+            Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+        path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1F7\U0001F1FARU_1|2.7MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: dFORJuMEa7izUStNjvhLFvJ2Hudr4v07VQhQS-Wbyh8
-        short-id: fd
-      server: 89.169.182.230
-      servername: vk.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: ac2c8871-d4eb-40a6-8487-fd1b31c3bc22
-      xudp: true
-# 2025-12-30 15:19:22
+# 2025-12-30 16:24:17
