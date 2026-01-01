@@ -1,89 +1,5 @@
 proxies:
-  - client-fingerprint: chrome
-    delay: 1312
-    down: 500 Mbps
-    mtu: 1350
-    name: "\U0001F1FA\U0001F1F8US_1|3.3MB/s"
-    obfs: salamander
-    obfs-password: xK9mN2pLq5vR8wB3
-    password: A8069A5B-E992-44E8-917E-7246CFD19F61
-    port: 443
-    server: us3.dexlos.com
-    skip-cert-verify: false
-    sni: us3.dexlos.com
-    type: hysteria2
-    udp: true
-    up: 40 Mbps
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
-    port: 26691
-    protocol: udp
-    server: 62.210.196.68
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: 11 Mbps
-  - name: "\U0001F1F9\U0001F1FCTW_1|3.2MB/s"
-    password: exaxgqkKkd0TAMrCxeonWg==
-    port: 1443
-    server: twmoon1-cdn-route.couldflare-cdn.com
-    skip-cert-verify: false
-    sni: twmoon1-cdn-route.couldflare-cdn.com
-    tls: true
-    type: http
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: '55'
-    name: "\U0001F1EB\U0001F1F7FR_2|1.2MB/s"
-    port: 35511
-    protocol: udp
-    server: 62.210.10.186
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '11'
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F1EB\U0001F1F7FR_3|1.2MB/s"
-    port: 50011
-    protocol: udp
-    server: 62.210.10.186
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: 11 Mbps
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_1|3.1MB/s"
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    port: 8080
-    server: 45.87.175.28
-    type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1F5\U0001F1F9PT_1|1.2MB/s"
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.231.233.112
-    type: ss
-  - auth: E35FD247-3464-493A-AA34-AE0972EDFA8C
-    down: 500 Mbps
-    name: "\U0001F1ED\U0001F1F0HK_1|1.4MB/s"
-    password: E35FD247-3464-493A-AA34-AE0972EDFA8C
-    port: 9261
-    ports: 9000-10000
-    server: hk5.dexlos.com
-    skip-cert-verify: false
-    sni: hk5.dexlos.com
-    type: hysteria2
-    udp: true
-    up: 40 Mbps
-  - name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
+  - name: "\U0001F1EF\U0001F1F5JP_1|1.5MB/s"
     network: ws
     port: 443
     server: 162.159.45.232
@@ -98,11 +14,65 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     servername: l.ayovo.netlib.re
-  - name: "\U0001F1EF\U0001F1F5JP_2|1.4MB/s"
+  - client-fingerprint: chrome
+    delay: 1312
+    down: 500 Mbps
+    mtu: 1350
+    name: "\U0001F1FA\U0001F1F8US_1|1.0MB/s"
+    obfs: salamander
+    obfs-password: xK9mN2pLq5vR8wB3
+    password: A8069A5B-E992-44E8-917E-7246CFD19F61
+    port: 443
+    server: us3.dexlos.com
+    skip-cert-verify: false
+    sni: us3.dexlos.com
+    type: hysteria2
+    udp: true
+    up: 40 Mbps
+  - name: "\U0001F1EF\U0001F1F5JP_2|2.4MB/s"
     network: ws
     password: 5a2c16f9
     port: 443
-    server: 172.64.229.86
+    server: 172.64.229.44
+    skip-cert-verify: true
+    sni: snippets.kkii.eu.org
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        Host: snippets.kkii.eu.org
+      path: /
+  - name: "\U0001F1EF\U0001F1F5JP_3|1.8MB/s"
+    network: ws
+    password: 5a2c16f9
+    port: 443
+    server: 172.64.229.2
+    skip-cert-verify: true
+    sni: snippets.kkii.eu.org
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        Host: snippets.kkii.eu.org
+      path: /
+  - name: "\U0001F1EF\U0001F1F5JP_4|2.1MB/s"
+    network: ws
+    password: 5a2c16f9
+    port: 443
+    server: 172.64.229.10
+    skip-cert-verify: true
+    sni: snippets.kkii.eu.org
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        Host: snippets.kkii.eu.org
+      path: /
+  - name: "\U0001F1EF\U0001F1F5JP_5|1007KB/s"
+    network: ws
+    password: 5a2c16f9
+    port: 443
+    server: 172.64.229.5
     skip-cert-verify: true
     sni: snippets.kkii.eu.org
     type: trojan
@@ -112,216 +82,71 @@ proxies:
         Host: snippets.kkii.eu.org
       path: /
   - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1F8\U0001F1ECSG_1|1.1MB/s"
-    network: tcp
-    port: 29877
-    reality-opts:
-      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    server: yg2g.jiedian242.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 1a598715-d629-4d8c-910b-dbe5ebdc0b53
-    servername: www.nvidia.com
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5JP_3|3.3MB/s"
-    network: ws
+    delay: 1316
+    down: 500 Mbps
+    mtu: 1350
+    name: "\U0001F1FA\U0001F1F8US_2|1.4MB/s"
+    obfs: salamander
+    obfs-password: xK9mN2pLq5vR8wB3
+    password: A8069A5B-E992-44E8-917E-7246CFD19F61
     port: 443
-    server: 172.64.53.226
+    server: us6.dexlos.com
     skip-cert-verify: false
-    tls: true
-    type: vless
+    sni: us6.dexlos.com
+    type: hysteria2
     udp: true
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    up: 40 Mbps
+  - name: "\U0001F1FA\U0001F1F8US_3|1.3MB/s"
+    network: ws
+    password: 5a2c16f9
+    port: 443
+    server: 104.17.162.3
+    skip-cert-verify: false
+    sni: snippets.kkii.eu.org
+    type: trojan
     ws-opts:
       headers:
         Host: snippets.kkii.eu.org
-      path: /
-    servername: snippets.kkii.eu.org
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1F5\U0001F1F1PL_1|1.4MB/s"
-    network: tcp
-    port: 1488
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    server: 51.250.24.98
-    tls: true
-    type: vless
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    servername: ads.x5.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1EB\U0001F1EEFI_1|2.0MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 5vZadQxvsBfPR1hKN3TFOYsGLBBPDvd4sLVNnPzddRg
-    server: 45.144.53.177
-    tls: true
-    type: vless
-    uuid: 154b4f23-a05d-41d1-af8f-23580510e258
-    servername: my-rebar.shop
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8US_2|1.2MB/s"
-    network: ws
-    port: 2096
-    server: 185.156.19.138
-    tls: true
-    type: vless
-    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-    ws-opts:
-      headers:
-        Host: sni.111000.dns.army
-      path: /
-    servername: sni.111000.dns.army
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8US_3|1.8MB/s"
-    network: ws
-    port: 2096
-    server: 45.40.149.168
-    tls: true
-    type: vless
-    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-    ws-opts:
-      headers:
-        Host: sni.111000.v6.army
-      path: /
-    servername: sni.111000.v6.army
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_4|2.7MB/s"
-    network: ws
-    port: 443
-    server: cdn.204910.best
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/49.0.2623.112 Safari/537.36
-      path: /
-    xudp: true
-    servername: snippets.kkii.eu.org
-  - client-fingerprint: chrome
-    fingerprint: ''
-    name: "\U0001F1E9\U0001F1EADE_1|2.5MB/s"
-    network: ws
-    port: 443
-    server: mmrknight-meli1.koyeb.app
-    tls: true
-    type: vless
-    udp: false
-    uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-    ws-opts:
-      headers:
-        Host: mmrknight-meli1.koyeb.app
-      path: /ws
-    servername: mmrknight-meli1.koyeb.app
-  - encryption: none
-    name: "\U0001F1EB\U0001F1EEFI_2|2.4MB/s"
-    network: ws
-    port: 80
-    server: 151.101.3.8
-    type: vless
-    udp: true
-    uuid: 8c9f9dd9-da52-4a56-a6e4-16478f6ad95b
-    ws-opts:
-      headers:
-        Host: welcomtofreeboarders.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: >-
-        /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-    xudp: true
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1F3\U0001F1F1NL_2|2.5MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-      short-id: 2e40144ddc07e8e1
-    server: nl4.tunnely.ru
-    tls: true
-    type: vless
-    udp: true
-    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
-    xudp: true
-    servername: nl4.tunnely.ru
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_3|1.6MB/s"
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    port: 8080
-    server: 45.87.175.10
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf
-    name: "\U0001F1ED\U0001F1F0HK_2|2.3MB/s"
-    password: asd123456
-    port: 8388
-    server: 103.149.183.154
-    type: ss
-    udp: true
-  - encryption: none
-    name: "\U0001F1F3\U0001F1F1NL_4|1.0MB/s"
-    network: ws
-    port: 8880
-    server: 104.21.31.4
-    type: vless
-    udp: true
-    uuid: 0a5ab719-2407-4398-b507-8437ef365023
-    ws-opts:
-      headers:
-        Host: underthegun.cfd.
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
-          (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
-      path: >-
-        /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
-    xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5JP_5|2.6MB/s"
-    network: ws
-    port: 443
-    server: 108.162.198.185
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    ws-opts:
-      headers:
-        Host: snippets.kkii.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.139 Safari/537.36
-      path: /fp=randomized
-    xudp: true
-    servername: snippets.kkii.eu.org
+      path: /%2F
   - alterId: 1
     cipher: auto
     country: "\U0001F1EF\U0001F1F5JP"
     h2-opts: {}
     http-opts: {}
-    name: "\U0001F1EF\U0001F1F5JP_6|3.2MB/s"
+    name: "\U0001F1EF\U0001F1F5JP_6|4.7MB/s"
     network: tcp
-    port: 21583
-    server: npofb-g03.jp01-nn-vm0.entry.fr0528.art
+    port: 21581
+    server: mgtn7-g01.jp01-nn-vm0.entry.fr0528.art
     skip-cert-verify: true
     tls: true
     type: vmess
-    uuid: 5c44094f-43bb-301c-9878-37fd5e87d358
-    servername: npofb-g03.jp01-nn-vm0.entry.fr0528.art
+    uuid: 48d89c0f-c8a1-3b38-b35e-79f83a0b3530
+    servername: mgtn7-g01.jp01-nn-vm0.entry.fr0528.art
+  - alterId: 1
+    cipher: auto
+    country: "\U0001F1EF\U0001F1F5JP"
+    h2-opts: {}
+    http-opts: {}
+    name: "\U0001F1EF\U0001F1F5JP_7|2.8MB/s"
+    network: tcp
+    port: 46486
+    server: zre7b-g05.jp05-h6-vm0.entry.fr0528.art
+    skip-cert-verify: true
+    type: vmess
+    uuid: 8133667f-a211-30d9-8aec-bf1034c6e11e
+    servername: zre7b-g05.jp05-h6-vm0.entry.fr0528.art
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1EB\U0001F1EEFI_1|2.1MB/s"
+    obfs: salamander
+    obfs-password: Jsbdksj@V2RayyNGvpn$Miracle
+    password: gZBgjlPmPF
+    port: 2083
+    server: 85.9.197.203
+    skip-cert-verify: true
+    sni: refersion.com
+    type: hysteria2
+    up: ''
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -860,4 +685,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-01-01 19:14:47
+# 2026-01-01 20:35:46
