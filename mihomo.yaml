@@ -1,7 +1,7 @@
 proxies:
   - client-fingerprint: chrome
     delay: 834
-    name: "\U0001F1EF\U0001F1F5JP_1|1.6MB/s"
+    name: "\U0001F1EF\U0001F1F5JP_1|2.2MB/s"
     network: ws
     port: 443
     server: 162.159.44.142
@@ -15,94 +15,35 @@ proxies:
       max-early-data: 2560
       path: /
     servername: l.ayovo.netlib.re
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F8\U0001F1ECSG_1|1012KB/s"
-    network: ws
-    port: 443
-    server: 162.159.19.174
-    tls: true
-    type: vless
-    udp: true
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    ws-opts:
-      headers:
-        Host: tw1.aniusnippets.qzz.io
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/58.0.3029.110 Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: tw1.aniusnippets.qzz.io
-  - name: "\U0001F1F8\U0001F1ECSG_2|1.2MB/s"
-    network: ws
-    port: 443
-    server: 198.41.211.79
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    ws-opts:
-      headers:
-        Host: tw1.aniusnippets.qzz.io
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: tw1.aniusnippets.qzz.io
-  - client-fingerprint: chrome
-    name: "\U0001F1EC\U0001F1E7GB_1|1.4MB/s"
-    network: ws
-    port: 443
-    server: v1.dabache.top
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: 55 Mbps
+    name: "\U0001F1EB\U0001F1F7FR_1|1.4MB/s"
+    port: 26691
+    protocol: udp
+    server: 62.210.196.68
     skip-cert-verify: true
-    tls: true
-    type: vless
+    sni: apple.com
+    type: hysteria
+    up: 11 Mbps
+  - cipher: aes-128-gcm
+    delay: 796
+    name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
+    password: shadowsocks
+    port: 443
+    server: 37.19.198.236
+    type: ss
     udp: true
-    uuid: b61ce65d-cad5-4d31-a0a8-4fe5b9355b3c
-    ws-opts:
-      headers:
-        Host: do-lon1.025713.xyz
-      path: /announcement
-    servername: do-lon1.025713.xyz
   - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F1\U0001F1FALU_1|2.2MB/s"
+    delay: 398
+    name: "\U0001F1F8\U0001F1ECSG_1|1.1MB/s"
     network: ws
     port: 443
-    server: delilah.ns.cloudflare.com
+    server: 162.159.16.63
     tls: true
     type: vless
     udp: true
-    uuid: 8f654717-4009-4417-af5a-8b9bf7853e79
-    ws-opts:
-      headers:
-        Host: 639034354143079886.defender-amsjs.info
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/40.0.2214.115 Safari/537.36
-      path: /yirpvnws
-    xudp: true
-    servername: 639034354143079886.defender-amsjs.info
-  - auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-    name: "\U0001F1EB\U0001F1F7FR_1|2.5MB/s"
-    password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-    port: 21826
-    server: fq-fr.mxtn.net
-    skip-cert-verify: false
-    type: hysteria2
-    udp: true
-    sni: fq-fr.mxtn.net
-  - client-fingerprint: chrome
-    delay: 1000
-    name: "\U0001F1EF\U0001F1F5JP_2|3.1MB/s"
-    network: ws
-    port: 443
-    server: 162.159.45.232
-    tls: true
-    type: vless
     uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
     ws-opts:
       early-data-header-name: Sec-WebSocket-Protocol
@@ -111,34 +52,257 @@ proxies:
       max-early-data: 2560
       path: /
     servername: l.ayovo.netlib.re
-  - name: "\U0001F1EF\U0001F1F5JP_3|1.9MB/s"
+  - name: "\U0001F1ED\U0001F1F0HK_1|2.5MB/s"
+    password: 61d8077bfb174e171b8283f155a555ad
+    port: 443
+    server: 112.118.116.123
+    skip-cert-verify: false
+    sni: www.nintendogames.net
+    type: trojan
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_1|2.4MB/s"
+    port: 443
+    server: trial.axo.foundation
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 8f9ef160-7a47-4bde-918a-7ef36d4f2579
+    network: tcp
+    servername: trial.axo.foundation
+  - name: "\U0001F1F8\U0001F1ECSG_2|1.3MB/s"
+    network: ws
+    port: 443
+    server: cloudflare.182682.xyz
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    servername: l.ayovo.netlib.re
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_2|1.2MB/s"
+    network: ws
+    port: 443
+    server: 104.18.185.26
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    servername: l.ayovo.netlib.re
+  - cipher: aes-256-cfb
+    name: "\U0001F1EB\U0001F1F7FR_2|2.0MB/s"
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 195.154.119.77
+    type: ss
+  - cipher: chacha20-ietf
+    name: "\U0001F1F8\U0001F1ECSG_3|3.0MB/s"
+    password: asd123456
+    port: 8388
+    server: 103.36.91.32
+    type: ss
+  - client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_2|1.7MB/s"
+    network: ws
+    port: 8443
+    server: api.dark-coffe.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    ws-opts:
+      headers:
+        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+      path: /
+    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  - auth: 225a99f7-560d-4ae1-8342-998dea61b062
+    name: "\U0001F1FA\U0001F1F8US_3|2.7MB/s"
+    password: 225a99f7-560d-4ae1-8342-998dea61b062
+    port: 25200
+    ports: 25200-26200
+    server: us1.kaixincloud.top
+    skip-cert-verify: false
+    sni: us1.kaixincloud.top
+    type: hysteria2
+    udp: true
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_1|1.9MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.21
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1F0\U0001F1F7KR_1|1.9MB/s"
+    password: qwerREWQ@@
+    port: 11815
+    server: 121.170.203.148
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_2|1.2MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.51
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_3|1.1MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.67
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_4|1.0MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.210
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_5|1.2MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.181
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_6|1.0MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.250
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_7|1.0MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.197
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_8|1.2MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.41
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_9|1022KB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.236
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_10|1.1MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.82
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_11|1.9MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.46
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_12|1.1MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.113
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_13|1.2MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.115
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_14|1.1MB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.126
+    type: ss
+  - alterId: '0'
+    cipher: auto
+    name: "\U0001F1EB\U0001F1F7FR_3|2.5MB/s"
+    network: ws
+    port: 8080
+    server: zula.ir
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: nasnet
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: nasnet-511952424.mcitel.co
+      max-early-data: 2560
+      path: /nasnet/cdn
+    xudp: true
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1E9\U0001F1EADE_3|2.7MB/s"
     network: ws
     port: 2087
-    server: download.yunzhongzhuan.com
+    server: api.dark-coffe.com
     tls: true
     type: vless
-    uuid: e258977b-e413-4718-a3af-02d75492c349
+    udp: true
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
     ws-opts:
       headers:
-        Host: ww1.sgxaniu.qzz.io
+        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/32.0.1700.107 Safari/537.36
       path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: ww1.sgxaniu.qzz.io
-  - name: "\U0001F1F8\U0001F1ECSG_3|1.8MB/s"
+    xudp: true
+    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1E9\U0001F1EADE_4|2.0MB/s"
     network: ws
-    port: 2096
-    server: x.cf.090227.xyz
+    port: 443
+    server: api.dark-coffe.com
     tls: true
     type: vless
-    uuid: e258977b-e413-4718-a3af-02d75492c349
+    udp: true
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
     ws-opts:
       headers:
-        Host: tw1.aniusnippets.qzz.io
+        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.80 Safari/537.36
       path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: tw1.aniusnippets.qzz.io
+    xudp: true
+    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+  - client-fingerprint: chrome
+    encryption: none
+    grpc-opts:
+      grpc-service-name: grpc
+    name: "\U0001F1E9\U0001F1EADE_5|3.8MB/s"
+    network: grpc
+    port: 22955
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    server: octopusss5.info
+    tls: true
+    type: vless
+    udp: true
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    xudp: true
+    servername: one-piece.com
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -677,4 +841,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-01-10 06:17:23
+# 2026-01-10 07:16:50
