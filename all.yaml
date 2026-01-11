@@ -1,92 +1,6 @@
 proxies:
-    - encryption: none
-      name: "\U0001F1EF\U0001F1F5JP_1|3.3MB/s"
-      network: ws
-      port: "80"
-      server: 151.101.3.8
-      type: vless
-      udp: true
-      uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
-      ws-opts:
-        headers:
-            Host: mitivpn.global.ssl.fastly.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
-        path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
-      xudp: true
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8US_1|2.0MB/s"
-      port: 443
-      reality-opts:
-        public-key: _TIQSjojgpdSBoSVXuQjFSqIdPeXjQIQkM5cFSv6Gnc
-        short-id: 9613864900a8f12d
-      server: us2.miyazono-kaori.com
-      servername: download-porter.hoyoverse.com
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 582f44d4-4511-402c-a0b7-b5771a2a5c9d
-    - encryption: none
-      name: "\U0001F1F8\U0001F1ECSG_1|2.8MB/s"
-      network: ws
-      port: 443
-      server: cloudflare.182682.xyz
-      servername: l.ayovo.netlib.re
-      tls: true
-      type: vless
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-      ws-opts:
-        headers:
-            Host: l.ayovo.netlib.re
-        path: /?ed=2560
-    - name: "\U0001F1F9\U0001F1FCTW_1|2.3MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - name: "\U0001F1EF\U0001F1F5JP_2|2.9MB/s"
-      network: ws
-      port: 443
-      server: 162.159.44.142
-      servername: l.ayovo.netlib.re
-      tls: true
-      type: vless
-      udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-      ws-opts:
-        headers:
-            Host: l.ayovo.netlib.re
-        path: /?ed=2560
     - client-fingerprint: chrome
-      name: "\U0001F1EB\U0001F1EEFI_1|1.2MB/s"
-      port: 47539
-      reality-opts:
-        public-key: uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U
-        short-id: 82a55f31981ea6be
-      server: 178.17.53.28
-      servername: yandex.ru
-      tls: true
-      type: vless
-      uuid: 447c45cd-ade0-4bfe-90a0-3e581829f741
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1E7GB_1|1.2MB/s"
-      port: 443
-      reality-opts:
-        public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-        short-id: "20"
-      server: uk2.miyazono-kaori.com
-      servername: www.bp.com
-      tls: true
-      type: vless
-      uuid: 582f44d4-4511-402c-a0b7-b5771a2a5c9d
-    - client-fingerprint: chrome
-      name: "\U0001F1F8\U0001F1ECSG_2|1.1MB/s"
+      name: "\U0001F1F8\U0001F1ECSG_1|1.2MB/s"
       network: ws
       port: "443"
       server: 162.159.16.63
@@ -101,122 +15,85 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
         path: /?ed=2560
       xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1EF\U0001F1F5JP_3|2.6MB/s"
+    - encryption: none
+      name: "\U0001F1EF\U0001F1F5JP_1|1.2MB/s"
       network: ws
-      port: "443"
-      server: 162.159.45.232
-      servername: l.ayovo.netlib.re
+      port: "80"
+      server: 151.101.3.8
+      type: vless
+      udp: true
+      uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+      ws-opts:
+        headers:
+            Host: mitivpn.global.ssl.fastly.net
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+        path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
+      xudp: true
+    - alpn:
+        - h3
+      client-fingerprint: random
+      name: "\U0001F1FA\U0001F1F8US_1|1.4MB/s"
+      network: ws
+      port: 443
+      server: 37.0.6.46
+      servername: snippet.danfeng.frii.site
+      skip-cert-verify: true
       tls: true
       type: vless
       udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+      uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
       ws-opts:
         headers:
-            Host: l.ayovo.netlib.re
-            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+            Host: snippet.danfeng.frii.site
         path: /?ed=2560
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_2|1.6MB/s"
+      network: ws
+      port: "2053"
+      server: 25.129.197.138
+      servername: KhAmeneI.DPdNs.OrG
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8a07740f-b932-4372-a3a2-ed91f184cd33
+      ws-opts:
+        headers:
+            Host: khamenei.dpdns.org
+            User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+        path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
       xudp: true
-    - alpn:
-        - ""
-      alterId: "0"
+    - alterId: "2"
       cipher: auto
-      name: "\U0001F1EF\U0001F1F5JP_4|1.1MB/s"
-      network: tcp
-      port: "47083"
-      server: tunnel2.qqa678.com
+      name: "\U0001F1ED\U0001F1F0HK_1|1.2MB/s"
+      network: ws
+      port: "80"
+      server: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
       skip-cert-verify: false
       tls: false
       type: vmess
       udp: true
-      uuid: f66df097-93a0-43a1-b4c7-586e13f61f46
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_2|1.1MB/s"
-      network: ws
-      port: "443"
-      server: 104.17.25.173
-      servername: l.ayovo.netlib.re
-      tls: true
-      type: vless
-      udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+      uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
       ws-opts:
         headers:
-            Host: l.ayovo.netlib.re
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
-        path: /?ed=2560
-      xudp: true
-    - client-fingerprint: random
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0HK_1|1.3MB/s"
-      network: tcp
-      port: "443"
-      server: s410.okgfw.top
-      servername: u726759ufa9fs410.okgfw.top
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7ea4c8e3-0f76-3231-b5c8-27fed8bbe326
-      xudp: true
-    - client-fingerprint: random
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0HK_2|1.0MB/s"
-      network: tcp
-      port: "443"
-      server: s409.okgfw.top
-      servername: u726759u2d7es409.okgfw.top
-      tls: true
-      type: vless
-      udp: true
-      uuid: 7ea4c8e3-0f76-3231-b5c8-27fed8bbe326
-      xudp: true
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      down: 55 Mbps
-      name: "\U0001F1EB\U0001F1F7FR_1|2.1MB/s"
-      port: 26691
-      protocol: udp
-      server: 62.210.196.68
-      skip-cert-verify: true
-      sni: apple.com
-      type: hysteria
-      up: 11 Mbps
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|1.8MB/s"
-      network: ws
-      port: "443"
-      server: 104.21.227.134
-      servername: l.ayovo.netlib.re
-      tls: true
-      type: vless
-      udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-      ws-opts:
-        headers:
-            Host: l.ayovo.netlib.re
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-        path: /?ed=2560
-      xudp: true
-    - client-fingerprint: randomized
-      delay: 1167
-      name: "\U0001F1F3\U0001F1F1NL_1|1.0MB/s"
-      network: ws
-      port: 2095
-      server: itarmy.com.ua
-      skip-cert-verify: false
-      tfo: false
-      tls: false
-      type: vless
-      uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-      ws-opts:
-        headers:
-            Host: cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev
+            Host: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
         path: /
-# 2026-01-11 21:27:19
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1E9\U0001F1EADE_1|1.1MB/s"
+      network: ws
+      port: "2096"
+      server: api.dark-coffe.com
+      servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
+      tls: true
+      type: vless
+      udp: true
+      uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+      ws-opts:
+        headers:
+            Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /
+      xudp: true
+# 2026-01-11 22:15:30
