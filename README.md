@@ -2,7 +2,7 @@
 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子
 
 
-> 所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：[v2ray免费节点每日更新 – Telegram](https://d.aizrf.com/tgq) 
+> 所有v2ray免费节点都爬取自网络，请勿用于非法用途。电报地址：[v2ray免费节点每日更新 – Telegram](https://t.me/lsmoo) 
 
 | 名称 | 操作系统 | 地址 |
 |------|----------|------|
@@ -15,7 +15,7 @@
 | V2RayNG | Android | [https://github.com/2dust/v2rayNG](https://github.com/2dust/v2rayNG) |
 | V2RayU | Mac | [https://github.com/yanue/V2rayU](https://github.com/yanue/V2rayU) |
 
-## GUI.for.Clash使用教程：[点击查看](https://blog.aizrf.com/p/GUI-for-Clash/)
+## GUI.for.Clash使用教程：[点击查看](https://blog.zrf.me/p/GUI-for-Clash/)
 
 ## 节点导入方法
 
