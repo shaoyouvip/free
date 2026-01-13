@@ -57,5 +57,5 @@ https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
 
 
 ## 致谢
-[CM大佬](https://d.aizrf.com/github-cmliu)
+[CM大佬](https://d.zrf.me/github-cmliu)
 
