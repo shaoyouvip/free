@@ -15,27 +15,52 @@ proxies:
             User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
         path: /?ed=2560
       xudp: true
-    - name: "\U0001F1F8\U0001F1ECSG_2|2.1MB/s"
-      network: ws
-      port: 2087
-      server: 8.35.211.15
-      servername: l.ayovo.netlib.re
-      skip-cert-verify: false
+    - alterId: 0
+      cipher: auto
+      delay: 2830
+      name: "\U0001F1FA\U0001F1F8US_1|3.0MB/s"
+      port: 180
+      server: 82.198.246.97
+      skip-cert-verify: true
+      tls: false
+      type: vmess
+      udp: true
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1ED\U0001F1F0HK_1|1.5MB/s"
+      network: tcp
+      port: 8080
+      server: p1q2hkdx3a4.ef30mn.starwayvpn.com
       tls: true
       type: vless
       udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-      ws-opts:
-        headers:
-            Host: l.ayovo.netlib.re
-        path: /?ed=2560
+      uuid: 60b0c276-ddbe-4122-baf9-052b37df36ef
+    - auth: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+      name: "\U0001F1FA\U0001F1F8US_2|1.2MB/s"
+      password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+      port: 35000
+      ports: 35000-39000
+      server: 129.153.25.59
+      skip-cert-verify: true
+      sni: www.lamer.com.hk
+      type: hysteria2
+      udp: true
+    - auth: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+      name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
+      password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+      port: 443
+      server: 134.195.101.191
+      skip-cert-verify: true
+      sni: www.apple.com
+      type: hysteria2
+      udp: true
     - client-fingerprint: random
-      name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
+      name: "\U0001F1FA\U0001F1F8US_4|2.7MB/s"
       network: ws
       port: 443
-      server: cloudflare.182682.xyz
+      server: 27.50.48.8
       servername: snip.ere.de5.net
-      skip-cert-verify: false
       tls: true
       type: vless
       udp: true
@@ -44,80 +69,83 @@ proxies:
         headers:
             Host: snip.ere.de5.net
         path: /?ed=2560
-    - client-fingerprint: safari
+    - client-fingerprint: chrome
+      encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1E8SC_1|1.7MB/s"
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F3\U0001F1F1NL_1|2.6MB/s"
       network: tcp
-      port: 443
+      port: "443"
       reality-opts:
-        public-key: v72GjbmsDf-N2ZAdZwgIGgxy7lpMQ2W1HszfTzB0fEo
-      server: 2026.01.1.de.aimirror.top
-      servername: www.icloud.com
+        public-key: tTAg7K4oBAECfT5tmaABiQ0pj3yuR07WMXqjnQhUDHI
+        short-id: b42e9ba003a8f95d
+      server: alb.cdnvkaudio.com
+      servername: alb.cdnvkaudio.com
       tls: true
       type: vless
       udp: true
-      uuid: eeaa07ca-2693-42f8-e544-a16521d8e922
-    - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
-      network: tcp
-      port: 443
-      reality-opts:
-        public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-        short-id: 2da72ce6
-      server: 136.175.178.165
-      servername: navi.bankrate.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: a05a955e-608b-45e3-a13a-7db10b2a79e2
-    - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_1|2.5MB/s"
-      network: ws
-      port: "80"
-      server: 104.18.32.47
-      type: vless
-      udp: true
-      uuid: 1e35b4bf-b270-4c0b-918d-62746eedd2ad
-      ws-opts:
-        headers:
-            Host: EveRLaSTinG-fiNANcE439p1sxXHY.SPORtLAND.CompanY.
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
-        path: /?ed
+      uuid: 51d68902-063d-43c4-a29a-63b5561b4c96
       xudp: true
     - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_2|2.2MB/s"
+      name: "\U0001F1F3\U0001F1F1NL_2|2.4MB/s"
       network: ws
       port: "80"
-      server: 104.18.32.47
+      server: nodejs.org
       type: vless
       udp: true
-      uuid: ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a
+      uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
       ws-opts:
         headers:
-            Host: WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY.
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
-        path: /?ed
-      xudp: true
-    - encryption: none
-      name: "\U0001F1EB\U0001F1F7FR_1|1.9MB/s"
-      network: ws
-      port: "80"
-      server: 104.18.32.47
-      type: vless
-      udp: true
-      uuid: b11a59d6-7a55-4f34-bb8e-f452f96a5cff
-      ws-opts:
-        headers:
-            Host: aPt-ContEnt6NktmD8d88.wInDleR.cO.uK.
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+            Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
         path: /?ed
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1FA\U0001F1F8US_2|1.0MB/s"
+      name: "\U0001F1E9\U0001F1EADE_1|1.9MB/s"
+      network: ws
+      port: "2053"
+      server: 104.18.32.47
+      servername: ir1.airpanel.top
+      tls: true
+      type: vless
+      udp: true
+      uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
+      ws-opts:
+        headers:
+            Host: ir1.airpanel.top
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36
+        path: /
+      xudp: true
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1EB\U0001F1EEFI_1|1.7MB/s"
       network: ws
       port: "443"
-      server: 198.62.62.62
+      server: 188.114.98.23
+      servername: netserv.irmedia.sbs
+      tls: true
+      type: vless
+      udp: true
+      uuid: d060c686-2553-46aa-9f6d-7d3d3da14792
+      ws-opts:
+        headers:
+            Host: netserv.irmedia.sbs
+            User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+        path: /net_serv1
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_5|2.4MB/s"
+      network: ws
+      port: "443"
+      server: 198.62.62.241
       servername: l.ayovo.netlib.re
       tls: true
       type: vless
@@ -126,89 +154,309 @@ proxies:
       ws-opts:
         headers:
             Host: l.ayovo.netlib.re
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
         path: /?ed=2560
-      xudp: true
-    - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_3|2.8MB/s"
-      network: ws
-      port: "80"
-      server: 151.101.3.19
-      type: vless
-      udp: true
-      uuid: 0b516cf6-cd76-470c-954d-9374d734f445
-      ws-opts:
-        headers:
-            Host: yalandonya.global.ssl.fastly.net
-            User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-        path: /site
       xudp: true
     - client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1FA\U0001F1F8US_3|1.4MB/s"
+      name: "\U0001F1FA\U0001F1F8US_6|2.4MB/s"
       network: ws
       port: "443"
-      server: 216.205.52.113
-      servername: l.ayovo.netlib.re
+      server: 216.24.57.250
+      servername: afrcloud1.mmv.kr
       tls: true
       type: vless
       udp: true
-      uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+      uuid: 9591b889-87d1-404e-8430-b4b26bdb85be
       ws-opts:
         headers:
-            Host: l.ayovo.netlib.re
-            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
-        path: /?ed=2560
-      xudp: true
-    - encryption: none
-      name: "\U0001F1E9\U0001F1EADE_4|2.9MB/s"
-      network: ws
-      port: "80"
-      server: 104.18.32.47
-      type: vless
-      udp: true
-      uuid: a5712440-3cec-4a1b-82e8-767c54acd83a
-      ws-opts:
-        headers:
-            Host: authENTIC-cABinEtgqc4XfW2ud.spORTLAND.COmPAny.
-            User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
-        path: /?ed
+            Host: afrcloud1.mmv.kr
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /5.78.50.75=443
       xudp: true
     - client-fingerprint: firefox
+      encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1FA\U0001F1F8US_4|1.0MB/s"
-      port: 443
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EC\U0001F1E7GB_1|1.5MB/s"
+      network: tcp
+      port: "443"
       reality-opts:
-        public-key: _TIQSjojgpdSBoSVXuQjFSqIdPeXjQIQkM5cFSv6Gnc
-        short-id: 9613864900a8f12d
-      server: us2.miyazono-kaori.com
-      servername: download-porter.hoyoverse.com
+        public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
+        short-id: "20"
+      server: uk2.miyazono-kaori.com
+      servername: www.bp.com
       tls: true
       type: vless
+      udp: true
       uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
-    - client-fingerprint: edge
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
       flow: xtls-rprx-vision
-      name: "\U0001F1EC\U0001F1E7GB_1|1.0MB/s"
-      port: 55543
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F0\U0001F1FFKZ_1|1.1MB/s"
+      network: tcp
+      port: "443"
       reality-opts:
-        public-key: 2tzZ5oGqx3bO9SlM3FEiCa2F1JQ0UgYv7lIURNXft3U
-        short-id: 4adb5cd13e3a
-      server: mbqg940.26l6c42.rkzn8ni.vm331.cn
-      servername: www.discoverasr.com
+        public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+        short-id: 48720c
+      server: kz01-vlr01.tcp-reset-club.net
+      servername: hls-svod.itunes.apple.com
       tls: true
       type: vless
-      uuid: ca2da009-aa7f-46f2-9ca4-c88594ebab9e
-    - client-fingerprint: random
-      name: "\U0001F1F8\U0001F1ECSG_3|1.2MB/s"
+      udp: true
+      uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EADE_2|1.4MB/s"
       network: ws
-      port: 443
-      server: 198.41.223.110
-      servername: snip.ere.de5.net
+      port: "2083"
+      server: ip.ali.lat
+      servername: ip.ali.lat
       tls: true
       type: vless
-      uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
+      udp: true
+      uuid: 0f4dacd7-8f8f-4326-a849-1b1593e8e711
       ws-opts:
         headers:
-            Host: snip.ere.de5.net
-        path: /?ed=2560
-# 2026-01-29 03:23:52
+            Host: temp3.ali.lat
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        path: /
+      xudp: true
+    - client-fingerprint: qq
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F3\U0001F1F1NL_3|1.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw
+        short-id: 92dca6
+      server: nl1.miyazono-kaori.com
+      servername: www.philips.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_3|1.7MB/s"
+      network: ws
+      port: "80"
+      server: nodejs.org
+      type: vless
+      udp: true
+      uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
+      ws-opts:
+        headers:
+            Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+        path: /?ed=512
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E8\U0001F1E6CA_1|2.1MB/s"
+      network: ws
+      port: "80"
+      server: nodejs.org
+      type: vless
+      udp: true
+      uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
+      ws-opts:
+        headers:
+            Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
+            User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
+        path: /?ed
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8US_7|2.3MB/s"
+      network: ws
+      password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+      port: "443"
+      server: 216.24.57.250
+      skip-cert-verify: false
+      sni: afrcloud1.mmv.kr
+      type: trojan
+      udp: true
+      ws-opts:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+        path: /5.223.47.32=443
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1F3\U0001F1F1NL_4|1.2MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+        short-id: 48720c
+      server: 94.228.213.201
+      servername: hls-svod.itunes.apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_4|1.9MB/s"
+      network: ws
+      port: "80"
+      server: nodejs.org
+      type: vless
+      udp: true
+      uuid: 65fe56c2-78ec-417a-a666-9f393eac8b61
+      ws-opts:
+        headers:
+            Host: everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+        path: /?ed
+      xudp: true
+    - encryption: none
+      name: "\U0001F1F3\U0001F1F1NL_5|2.5MB/s"
+      network: ws
+      port: "80"
+      server: 104.18.32.47
+      type: vless
+      udp: true
+      uuid: c442898c-003a-41aa-a678-fc620942f3ae
+      ws-opts:
+        headers:
+            Host: mOTiVaTEd-pAiNTINgi2v64ot3px.oNEeAT.Co.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36
+        path: /?ed
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E8\U0001F1E6CA_2|2.4MB/s"
+      network: ws
+      port: "80"
+      server: nodejs.org
+      type: vless
+      udp: true
+      uuid: babc17e3-5e67-4e5d-8b34-d1fdf263a144
+      ws-opts:
+        headers:
+            Host: FeArlesS-bASEez2aTgpLFr.EcotOURISs.cO.UK.
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+        path: /?ed
+      xudp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      name: "\U0001F1EF\U0001F1F5JP_1|4.7MB/s"
+      network: tcp
+      port: "8080"
+      server: 8.209.254.92
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: e33f621f-7a7e-4b0c-9c15-c14e17f1c165
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_5|1.8MB/s"
+      network: ws
+      port: "80"
+      server: 104.18.32.47
+      type: vless
+      udp: true
+      uuid: c5fbb5dd-83bb-43ce-a799-e3e5c29e25da
+      ws-opts:
+        headers:
+            Host: gLeEfuL-GrassMcKS7Sr4kw.wiNdleR.co.Uk.
+            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+        path: /?ed
+      xudp: true
+    - alterId: 2
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_2|1.3MB/s"
+      network: ws
+      port: 80
+      server: hkt.gotochinatown.net
+      servername: broadcastlv.chat.bilibili.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+      ws-opts:
+        headers:
+            Host: hkt.gotochinatown.net
+        path: /
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1E8\U0001F1EDCH_1|3.3MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+        short-id: ""
+      server: 138.124.79.4
+      servername: sun6-21.userapi.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+      xudp: true
+    - client-fingerprint: ios
+      encryption: none
+      flow: xtls-rprx-vision
+      http-opts:
+        headers: {}
+        path:
+            - /
+      name: "\U0001F1EC\U0001F1E7GB_2|2.5MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+        short-id: d923
+      server: uk1.miyazono-kaori.com
+      servername: www.bp.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
+      xudp: true
+    - encryption: none
+      name: "\U0001F1E8\U0001F1E6CA_3|1.3MB/s"
+      network: ws
+      port: "80"
+      server: nodejs.org
+      type: vless
+      udp: true
+      uuid: 1a94fbd9-79d2-4aa7-bf1d-074f678d27ab
+      ws-opts:
+        headers:
+            Host: EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.
+            User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+        path: /?ed
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EADE_6|2.4MB/s"
+      port: 1080
+      server: 193.233.254.7
+      skip-cert-verify: false
+      type: socks5
+      username: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNzo%3D
+# 2026-01-29 04:25:36
