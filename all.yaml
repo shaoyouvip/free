@@ -1,221 +1,38 @@
 proxies:
-    - cipher: 2022-blake3-aes-256-gcm
-      delay: 1323
-      name: "\U0001F1EB\U0001F1F7FR_1|1.5MB/s"
-      password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
-      port: 8389
-      server: 57.131.42.19
-      type: ss
-      udp: true
-    - cipher: 2022-blake3-aes-256-gcm
-      name: "\U0001F1EB\U0001F1F7FR_2|1.1MB/s"
-      password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
-      port: "8390"
-      server: 57.131.42.19
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      country: "\U0001F1FA\U0001F1F8US"
-      delay: 685
-      name: "\U0001F1FA\U0001F1F8US_1|2.6MB/s"
-      password: hbhO0xomsJzhO24F
-      port: 443
-      server: 64.176.215.70
-      type: ss
-    - delay: 1288
-      name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
-      password: BxceQaOe
-      port: 2595
-      server: 13.113.192.229
-      skip-cert-verify: true
-      sni: t.me%252Fripaojiedian
-      type: trojan
-      udp: true
-    - auth: 41aec03d-4345-4bff-9bab-69d36d80033c
-      name: "\U0001F1EF\U0001F1F5JP_2|1.2MB/s"
-      password: 41aec03d-4345-4bff-9bab-69d36d80033c
-      port: 2056
-      server: sg1.eyucdn.xyz
-      skip-cert-verify: true
-      sni: sg1.eyucdn.xyz
-      type: hysteria2
-      udp: true
-    - name: "\U0001F1EF\U0001F1F5JP_3|3.7MB/s"
-      network: tcp
-      password: BxceQaOe
-      port: 2595
-      server: 13.113.192.229
-      skip-cert-verify: true
-      sni: t.me%252Fripaojiedian
-      type: trojan
-    - name: "\U0001F1FA\U0001F1F8US_2|2.8MB/s"
-      obfs: salamander
-      obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-      password: 6dfbef3b-f718-4053-806f-c9657e2fd943
-      port: 12345
-      server: us.jljd.xyz
-      skip-cert-verify: false
-      sni: us.jljd.xyz
-      type: hysteria2
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1NL_1|1.0MB/s"
-      port: 993
-      reality-opts:
-        public-key: 0xVsi6JYS-gJFUILwuePsB32jvWtxRT_okJSmcWEQEc
-      server: 155.212.37.10
-      servername: speed.cloudflare.com
-      tls: true
-      type: vless
-      uuid: c10999b4-7f93-5a50-3908-1467b1e52ae2
-    - client-fingerprint: chrome
-      flow: xtls-rprx-vision
-      name: "\U0001F1F7\U0001F1FARU_1|2.0MB/s"
-      port: 443
-      reality-opts:
-        public-key: h4mwlDeT6Rqx41RIMeaPi-qsugZ0JkKcyRU65_K64Ek
-        short-id: 0a0d3cae
-      server: s53.buzzvpn.online
-      servername: ads.x5.ru
-      tls: true
-      type: vless
-      uuid: 545f6499-bee2-454c-96db-0fc028d128f6
-    - name: "\U0001F1F8\U0001F1ECSG_1|1.1MB/s"
-      network: ws
-      port: 2096
-      server: 208.103.161.220
-      servername: WangCai.443888.xyz
-      tls: true
-      type: vless
-      uuid: 26524cce-d514-4014-a426-365fb266a14d
-      ws-opts:
-        headers:
-            Host: WangCai.443888.xyz
-        path: "/danfeng?ed=2560&Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    - name: "\U0001F1F8\U0001F1ECSG_2|1.8MB/s"
-      network: ws
-      port: 443
-      server: 162.159.6.53
-      servername: z.linglingqi.dpdns.org
-      tls: true
-      type: vless
-      uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
-      ws-opts:
-        headers:
-            Host: z.linglingqi.dpdns.org
-        path: /?ed=2048
-    - name: "\U0001F1FA\U0001F1F8US_3|1.2MB/s"
-      network: ws
-      port: 443
-      server: 212.22.76.20
-      servername: WangCai.443888.xyz
-      tls: true
-      type: vless
-      uuid: 26524cce-d514-4014-a426-365fb266a14d
-      ws-opts:
-        headers:
-            Host: WangCai.443888.xyz
-        path: "/danfeng?ed=2560&Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    - client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      http-opts:
-        headers: {}
-        path:
-            - /
-      name: "\U0001F1EC\U0001F1E7GB_1|1.0MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: SlyS4DeFZ7Ic9r8wc-FNpxfQvCqzEe05RsmhZ4jsYm0
-        short-id: 3cc8ceccd9de7f
-      server: 84.54.48.238
-      servername: www.amd.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: a25806c0-0e09-46a2-bd27-a94e92285ce9
-      xudp: true
-    - encryption: none
-      name: "\U0001F1F9\U0001F1F7TR_1|1.9MB/s"
-      network: ws
-      port: "2052"
-      server: 190.93.247.55
-      type: vless
-      udp: true
-      uuid: bb8d67a9-1a7a-4e0f-97ae-28bd9d95b6f4
-      ws-opts:
-        headers:
-            Host: speak-teammates.rxpgain.top
-            User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-        path: /t.me.V2RayyNGvpn?ed=1024
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1E9\U0001F1EADE_1|2.6MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
-        short-id: efd29b2d25
-      server: 64.188.64.59
-      servername: yandex.ru
-      tls: true
-      type: vless
-      udp: true
-      uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
-      xudp: true
-    - alpn:
-        - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
-      client-fingerprint: chrome
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1EB\U0001F1F7FR_3|2.9MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
-        short-id: 3bdec72a5a0ffd84
-      server: fr.cdn.stun.su
-      servername: fr.cdn.stun.su
-      tls: true
-      type: vless
-      udp: true
-      uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-      xudp: true
-    - alpn:
-        - ""
-      alterId: "0"
+    - alterId: 0
       cipher: auto
-      name: "\U0001F1E9\U0001F1EADE_2|1.5MB/s"
-      network: ws
-      port: "8080"
-      server: digitalocean.com
-      skip-cert-verify: false
-      tls: false
+      grpc-opts:
+        grpc-service-name: bkIJxIKIVWvLpZeLB7Jy3
+      name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
+      network: grpc
+      port: 443
+      server: 104.233.211.85.sslip.io
+      servername: 104.233.211.85.sslip.io
+      skip-cert-verify: true
+      tls: true
       type: vmess
       udp: true
-      uuid: nasnet
-      ws-opts:
-        early-data-header-name: Sec-WebSocket-Protocol
-        headers:
-            Host: nasnet-571299667.rahavard365.co
-        max-early-data: 2560
-        path: /NASNET/cdn
-      xudp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_2|3.4MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: ICOLwK5XaCT4d8pyRuDBwoT8WLp84_WfU0pUu3htBlE
-        short-id: eb
-      server: 62.50.146.224
-      servername: s3.firstvds.ru
-      tls: true
+      uuid: a5e71861-2fba-4040-a8e4-a215305f37c4
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1E9\U0001F1EADE_1|1.0MB/s"
+      password: 78c2e39121c820fb
+      port: 11201
+      server: 51.89.10.72
+      tfo: true
+      type: ss
+      udp: true
+    - encryption: none
+      name: "\U0001F1E9\U0001F1EADE_2|1.4MB/s"
+      network: ws
+      port: "80"
+      server: vpn.nnet.online
       type: vless
       udp: true
-      uuid: 5e01c65c-c662-4cf6-8d4f-7721f8ae523c
+      uuid: 79d24ca6-8f75-4653-9a9c-2d4ee38f4b88
+      ws-opts:
+        headers:
+            Host: nnet.online
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+        path: /vless-ntls
       xudp: true
-# 2026-02-13 23:37:52
+# 2026-02-14 00:40:13
