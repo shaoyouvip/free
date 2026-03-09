@@ -1,7 +1,23 @@
 proxies:
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1EF\U0001F1F5JP_1|2.5MB/s"
+    network: ws
+    port: 443
+    server: highspeedtesting01.publicvm.com
+    skip-cert-verify: false
+    tls: true
+    type: vmess
+    uuid: a301c77c-e549-494e-a1e2-b386412f4d11
+    ws-opts:
+      headers:
+        Host: highspeedtesting01.publicvm.com
+      path: /gredfbgr
+    client-fingerprint: chrome
+    servername: highspeedtesting01.publicvm.com
   - alterId: '0'
     cipher: auto
-    name: "\U0001F1EF\U0001F1F5JP_1|1.8MB/s"
+    name: "\U0001F1EF\U0001F1F5JP_2|2.3MB/s"
     network: ws
     port: 443
     server: highspeedtesting01.publicvm.com
@@ -17,117 +33,12 @@ proxies:
     xudp: true
     client-fingerprint: chrome
     servername: highspeedtesting01.publicvm.com
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1EF\U0001F1F5JP_2|1.6MB/s"
-    network: ws
-    port: 443
-    server: highspeedtesting01.publicvm.com
-    skip-cert-verify: false
-    tls: true
-    type: vmess
-    uuid: a301c77c-e549-494e-a1e2-b386412f4d11
-    ws-opts:
-      headers:
-        Host: highspeedtesting01.publicvm.com
-      path: /gredfbgr
-    client-fingerprint: chrome
-    servername: highspeedtesting01.publicvm.com
-  - name: "\U0001F1F8\U0001F1ECSG_1|1.3MB/s"
-    network: ws
-    port: 443
-    server: cf.tencentapp.cn
-    tls: true
-    type: vless
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: zgtwylnhh.cc.cd
-      path: /proxyip
-    client-fingerprint: chrome
-    servername: zgtwylnhh.cc.cd
-  - name: "\U0001F1F8\U0001F1ECSG_2|1.2MB/s"
-    network: ws
-    port: 2053
-    server: cf5.danfeng.eu.org
-    tls: true
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.sheilabelinda.ndjp.net
-      path: /danfeng
-    client-fingerprint: chrome
-    servername: snippet.sheilabelinda.ndjp.net
-  - name: "\U0001F1F0\U0001F1F7KR_1|1.0MB/s"
-    network: ws
-    port: 10912
-    server: 27.35.204.29
-    tls: true
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.fgfw.ye.gs
-      path: /danfeng
-    client-fingerprint: chrome
-    servername: snippet.fgfw.ye.gs
-  - name: "\U0001F1F0\U0001F1F7KR_2|1013KB/s"
-    network: ws
-    port: 15050
-    server: 218.150.33.69
-    tls: true
-    type: vless
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    client-fingerprint: chrome
-    servername: ylnhh.cc.cd
-  - name: "\U0001F1F0\U0001F1F7KR_3|1.2MB/s"
-    network: ws
-    port: 14147
-    server: 180.66.110.234
-    tls: true
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.fgfw.ye.gs
-      path: /danfeng
-    client-fingerprint: chrome
-    servername: snippet.fgfw.ye.gs
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1EE\U0001F1EAIE_1|1.7MB/s"
-    network: ws
-    port: 443
-    server: 13.248.215.36
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.gfw.nn.kg
-      path: /danfeng
-    servername: snippet.gfw.nn.kg
-  - name: "\U0001F1FA\U0001F1F8US_1|1.2MB/s"
-    password: 21a74582-f139-11ed-ab21-f23c913c8d2b
-    port: 15229
-    server: 7ffdbca5-tboxs0-tetg39-146qr.cu.oshuawei.com
-    tls: true
-    type: http
-    username: 21a74582-f139-11ed-ab21-f23c913c8d2b
-    sni: 7ffdbca5-tboxs0-tetg39-146qr.cu.oshuawei.com
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1F0\U0001F1F7KR_4|1.4MB/s"
+    name: "\U0001F1F0\U0001F1F7KR_1|1.8MB/s"
     network: ws
-    port: 26011
-    server: 220.124.144.20
+    port: 12184
+    server: 218.155.23.9
     tls: true
     type: vless
     udp: true
@@ -136,30 +47,99 @@ proxies:
       headers:
         Host: ylnhh.cc.cd
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.102 Safari/537.36
+          Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
+          Safari/537.36
       path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
     xudp: true
     servername: ylnhh.cc.cd
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8US_2|2.5MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: alvin9999.com
-    port: 30088
-    server: 157.254.223.24
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria2
-    up: ''
   - client-fingerprint: chrome
-    delay: 1682
-    name: "\U0001F1FA\U0001F1F8US_3|1.9MB/s"
+    encryption: none
+    name: "\U0001F1F0\U0001F1F7KR_2|1.4MB/s"
+    network: ws
+    port: 15380
+    server: 211.33.238.198
+    tls: true
+    type: vless
+    udp: true
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    ws-opts:
+      headers:
+        Host: ylnhh.cc.cd
+        User-Agent: >-
+          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+          (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
+    xudp: true
+    servername: ylnhh.cc.cd
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    auth_str: dongtaiwang.com
+    down: 55 Mbps
+    name: "\U0001F1FA\U0001F1F8US_1|1.5MB/s"
+    port: 38845
+    protocol: udp
+    server: 208.87.243.151
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria
+    udp: true
+    up: 11 Mbps
+  - alterId: 0
+    cipher: auto
+    name: ❓Other_1|2.1MB/s
+    port: 9006
+    server: select-hk.ddnskunlun.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+    network: tcp
+    client-fingerprint: chrome
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F8\U0001F1ECSG_1|1.0MB/s"
+    network: ws
+    port: 8443
+    server: 43.160.248.66
+    tls: true
+    type: vless
+    udp: true
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    ws-opts:
+      headers:
+        Host: ylnhh.cc.cd
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/58.0.3029.110 Safari/537.36
+      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
+    xudp: true
+    servername: ylnhh.cc.cd
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    encryption: none
+    name: "\U0001F1FA\U0001F1F8US_2|1.0MB/s"
+    network: ws
+    port: 28017
+    server: 38.83.41.89
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.gfw.nn.kg
+      path: /danfeng
+    servername: snippet.gfw.nn.kg
+  - client-fingerprint: chrome
+    delay: 2005
+    name: "\U0001F1F0\U0001F1F7KR_3|1.7MB/s"
     network: ws
     password: trojan
-    port: 587
-    server: 38.95.73.40
+    port: 11434
+    server: 220.93.106.4
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -170,12 +150,12 @@ proxies:
       max-early-data: 2560
       path: /
   - client-fingerprint: chrome
-    delay: 1190
-    name: "\U0001F1FA\U0001F1F8US_4|1.6MB/s"
+    delay: 1574
+    name: "\U0001F1F0\U0001F1F7KR_4|1.0MB/s"
     network: ws
     password: trojan
-    port: 8001
-    server: 178.157.50.221
+    port: 10003
+    server: 118.34.36.61
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -188,12 +168,63 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: random
-    encryption: none
-    name: "\U0001F1FA\U0001F1F8US_5|2.0MB/s"
+    name: "\U0001F1FA\U0001F1F8US_3|1.0MB/s"
     network: ws
     port: 443
-    server: 154.17.24.183
-    skip-cert-verify: false
+    server: 192.0.63.88
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.indevs.in
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.80 Safari/537.36
+      path: /danfeng
+    xudp: true
+    servername: snippet.fgfw.indevs.in
+  - client-fingerprint: chrome
+    encryption: none
+    grpc-opts:
+      grpc-service-name: grpc
+    name: "\U0001F1E9\U0001F1EADE_1|1.0MB/s"
+    network: grpc
+    port: 2053
+    reality-opts:
+      public-key: '-W4bzjVM_4jgVMYzPj1Mw6IOl_TYv_tqojpEaLb2XGw'
+      short-id: '23'
+    server: 64.188.83.117
+    tls: true
+    type: vless
+    udp: true
+    uuid: 71322f86-f37a-4929-ada0-05e6a2688145
+    xudp: true
+    servername: www.apple.com
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F0\U0001F1F7KR_5|1.2MB/s"
+    network: ws
+    port: 10082
+    server: 211.198.173.100
+    tls: true
+    type: vless
+    udp: true
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    ws-opts:
+      headers:
+        Host: ylnhh.cc.cd
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/40.0.2214.111 Safari/537.36
+      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
+    xudp: true
+    servername: ylnhh.cc.cd
+  - name: "\U0001F1F0\U0001F1F7KR_6|1.2MB/s"
+    network: ws
+    port: 50011
+    server: 119.194.117.229
     tls: true
     type: vless
     uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
@@ -201,236 +232,8 @@ proxies:
       headers:
         Host: snippet.fgfw.ndjp.net
       path: /danfeng
+    client-fingerprint: chrome
     servername: snippet.fgfw.ndjp.net
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    encryption: none
-    name: "\U0001F1F8\U0001F1ECSG_3|2.0MB/s"
-    network: ws
-    port: 8443
-    server: cf2.danfeng.eu.org
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.sheilabelinda.ndjp.net
-      path: /danfeng
-    servername: snippet.sheilabelinda.ndjp.net
-  - name: "\U0001F1EF\U0001F1F5JP_3|1.0MB/s"
-    password: c942d3cd-b89a-4809-bc40-630dd32330bb
-    port: 21996
-    ports: 21001-21999
-    server: jp.xn--ehqa22b.site
-    skip-cert-verify: false
-    sni: jp.xn--ehqa22b.site
-    tfo: false
-    type: hysteria2
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_4|3.1MB/s"
-    network: ws
-    port: 3389
-    server: 203.168.131.108
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.sheilabelinda.ndjp.net
-      path: /danfeng
-    servername: snippet.sheilabelinda.ndjp.net
-  - client-fingerprint: chrome
-    delay: 920
-    name: "\U0001F1F0\U0001F1F7KR_5|1.5MB/s"
-    network: ws
-    password: trojan
-    port: 11001
-    server: 121.131.136.208
-    skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
-  - client-fingerprint: chrome
-    delay: 1656
-    name: "\U0001F1E6\U0001F1FAAU_1|1.5MB/s"
-    network: ws
-    password: trojan
-    port: 12580
-    server: 52.64.121.20
-    skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 1o6M9Twiqa5Kg3eXVgyvpYuw5_D6pfuKy8YE1Mt0WCo
-      short-id: b92c
-    server: fr.top.keystrust.ru
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3130fccb-e72e-468d-b2ce-0721bb3058c8
-    xudp: true
-    servername: www.icloud.com
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F8\U0001F1ECSG_4|2.6MB/s"
-    network: ws
-    port: 8443
-    server: cf3.danfeng.eu.org
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.sheilabelinda.ndjp.net
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/62.0.3202.89 Safari/537.36
-      path: /danfeng
-    xudp: true
-    servername: snippet.sheilabelinda.ndjp.net
-  - client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE_1|1.5MB/s"
-    network: ws
-    port: 2053
-    server: 188.241.241.20
-    tls: true
-    type: vless
-    udp: true
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    ws-opts:
-      headers:
-        Host: bt5hpm5jf6.chinam.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.139 Safari/537.36
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: bt5hpm5jf6.chinam.eu.org
-  - client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE_2|1.4MB/s"
-    network: ws
-    port: 1006
-    server: 89.58.43.93
-    tls: true
-    type: vless
-    udp: true
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    ws-opts:
-      headers:
-        Host: bt5hpm5jf6.chinam.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/65.0.3325.181 Safari/537.36
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: bt5hpm5jf6.chinam.eu.org
-  - client-fingerprint: random
-    name: "\U0001F1F8\U0001F1ECSG_5|1.4MB/s"
-    network: ws
-    port: 443
-    server: 8.39.125.197
-    tls: true
-    type: vless
-    udp: true
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    ws-opts:
-      headers:
-        Host: bt5hpm5jf6.chinam.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: bt5hpm5jf6.chinam.eu.org
-  - client-fingerprint: random
-    name: "\U0001F1F8\U0001F1ECSG_6|1.4MB/s"
-    network: ws
-    port: 443
-    server: 8.39.125.166
-    tls: true
-    type: vless
-    udp: true
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    ws-opts:
-      headers:
-        Host: bt5hpm5jf6.chinam.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/56.0.2924.87 Safari/537.36
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: bt5hpm5jf6.chinam.eu.org
-  - client-fingerprint: random
-    name: "\U0001F1FA\U0001F1F8US_6|1.5MB/s"
-    network: ws
-    port: 443
-    server: 8.39.125.241
-    tls: true
-    type: vless
-    udp: true
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    ws-opts:
-      headers:
-        Host: bt5hpm5jf6.chinam.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/49.0.2623.112 Safari/537.36
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: bt5hpm5jf6.chinam.eu.org
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: ❓Other_1|1.2MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: vgmo5AxgVJfSME3mlK4ulM4HeVAn6eS2UO9wYEPNFiY
-      short-id: 065bdd7d1aa43b1d
-    server: mid-tr1.a-svc.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 1719a423-501b-405e-a818-96ff272aa0e3
-    xudp: true
-    servername: mid-tr1.a-svc.com
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -969,4 +772,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-03-09 22:03:22
+# 2026-03-09 23:54:38
