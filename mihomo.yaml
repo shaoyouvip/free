@@ -1,25 +1,109 @@
 proxies:
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
-    port: 38845
-    protocol: udp
-    server: 208.87.243.151
+  - name: "\U0001F1ED\U0001F1F0HK_1|1.2MB/s"
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    port: 60001
+    server: hknodev4.nekocloud.top
     skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria
+    sni: baidu.com
+    type: anytls
     udp: true
-    up: 11 Mbps
+  - name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    port: 60004
+    server: hknodev4.nekocloud.top
+    skip-cert-verify: true
+    sni: baidu.com
+    type: anytls
+    udp: true
+  - name: "\U0001F1F8\U0001F1ECSG_1|1.5MB/s"
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    port: 60003
+    server: hknodev4.nekocloud.top
+    skip-cert-verify: true
+    sni: baidu.com
+    type: anytls
+    udp: true
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1E6\U0001F1FAAU_1|1.3MB/s"
+    port: 64003
+    server: pub.ap20260228.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    network: tcp
+    client-fingerprint: chrome
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F9\U0001F1FCTW_1|1.1MB/s"
+    port: 64018
+    server: pub.ap20260228.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    network: tcp
+    client-fingerprint: chrome
   - client-fingerprint: chrome
-    delay: 1682
-    name: "\U0001F1FA\U0001F1F8US_2|1.7MB/s"
+    name: "\U0001F1FB\U0001F1F3VN_1|2.5MB/s"
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    port: 40511
+    server: vn01.jsylianjie6.com
+    skip-cert-verify: true
+    sni: jsygouer.weixin-baidu-qq.com
+    type: trojan
+    udp: true
+    network: tcp
+  - client-fingerprint: chrome
+    name: "\U0001F1EF\U0001F1F5JP_2|1.9MB/s"
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    port: 35203
+    server: jp05.stimaysmhy8.com
+    skip-cert-verify: true
+    sni: jsygouer.weixin-baidu-qq.com
+    type: trojan
+    udp: true
+    network: tcp
+  - name: "\U0001F1FA\U0001F1F8US_1|1.7MB/s"
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    port: 60001
+    server: 43.162.108.172
+    skip-cert-verify: true
+    sni: baidu.com
+    type: anytls
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8US_2|2.5MB/s"
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    port: 60002
+    server: 43.162.108.172
+    skip-cert-verify: true
+    sni: baidu.com
+    type: anytls
+    udp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1F0\U0001F1F7KR_1|1.5MB/s"
+    network: ws
+    port: 32768
+    server: 27.119.233.26
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.de5.net
+      path: /danfeng
+    servername: snippet.fgfw.de5.net
+  - client-fingerprint: chrome
+    delay: 1272
+    name: "\U0001F1F0\U0001F1F7KR_2|1.5MB/s"
     network: ws
     password: trojan
-    port: 587
-    server: 38.95.73.40
+    port: 27015
+    server: 211.252.46.215
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -30,206 +114,12 @@ proxies:
       max-early-data: 2560
       path: /
   - alpn:
-      - h2
-    name: "\U0001F1FA\U0001F1F8US_3|1.7MB/s"
-    password: dongtaiwang.com
-    port: 59901
-    server: 45.221.98.14
-    skip-cert-verify: true
-    type: anytls
-    udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1EF\U0001F1F5JP_1|1.8MB/s"
-    network: ws
-    port: 8443
-    server: 43.165.180.71
-    tls: true
-    type: vless
-    udp: true
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-        User-Agent: >-
-          Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML, like
-          Gecko) Chrome/5.0.342.1 Safari/533.2
-      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    xudp: true
-    servername: ylnhh.cc.cd
-  - name: "\U0001F1F0\U0001F1F7KR_1|1.1MB/s"
-    network: ws
-    port: 32789
-    server: 112.184.55.64
-    tls: true
-    type: vless
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-      path: "/Telegram\U0001F1E8\U0001F1F3+@WangCai2"
-    client-fingerprint: chrome
-    servername: ylnhh.cc.cd
-  - name: "\U0001F1EF\U0001F1F5JP_2|3.1MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 32455
-    server: 43.165.171.42
-    skip-cert-verify: true
-    sni: baidu.com
-    type: anytls
-    udp: true
-  - down: 10
-    name: "\U0001F1EF\U0001F1F5JP_3|1.1MB/s"
-    password: acdbf3ef-5421-4feb-8342-39b0e437ef5a
-    port: 24165
-    ports: 20000-30000
-    server: jp.zfork.com
-    skip-cert-verify: true
-    sni: cn.bing.com
-    type: hysteria2
-    up: 50
-  - name: "\U0001F1ED\U0001F1F0HK_1|3.2MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 60001
-    server: hknodev4.nekocloud.top
-    skip-cert-verify: true
-    sni: baidu.com
-    type: anytls
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0HK_2|1.4MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 56309
-    server: hkt.ccwink.cc
-    skip-cert-verify: true
-    sni: hkt.ccwink.cc
-    type: hysteria2
-  - name: "\U0001F1F8\U0001F1ECSG_1|3.2MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 60003
-    server: hknodev4.nekocloud.top
-    skip-cert-verify: true
-    sni: baidu.com
-    type: anytls
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0HK_3|1.0MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 60002
-    server: 43.161.240.193
-    skip-cert-verify: true
-    sni: baidu.com
-    type: anytls
-    udp: true
-  - name: "\U0001F1EF\U0001F1F5JP_4|2.0MB/s"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 60004
-    server: hknodev4.nekocloud.top
-    skip-cert-verify: true
-    sni: baidu.com
-    type: anytls
-    udp: true
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8US_4|1.1MB/s"
-    network: ws
-    port: 80
-    server: 104.16.9.24
-    type: vless
-    udp: true
-    uuid: 2ac6e527-6410-48ce-b9ba-cc8135ee2a3b
-    ws-opts:
-      headers:
-        Host: fragrant-recipe-09f4.wopecuyubak61.workers.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/54.0.2840.99 Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    xudp: true
-    client-fingerprint: chrome
-  - client-fingerprint: chrome
-    name: "\U0001F1F8\U0001F1ECSG_2|3.4MB/s"
-    network: ws
-    port: 2087
-    server: cf.9999669.xyz
-    tls: true
-    type: vless
-    udp: true
-    uuid: 77777777-6663-4ef2-b26b-ed2d70642678
-    ws-opts:
-      headers:
-        Host: hfnb8xmvw3h14.fx02.ccwu.cc
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/40.0.2214.111 Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: hfnb8xmvw3h14.fx02.ccwu.cc
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: grpc
-    name: "\U0001F1E9\U0001F1EADE_1|1010KB/s"
-    network: grpc
-    port: 2053
-    reality-opts:
-      public-key: '-W4bzjVM_4jgVMYzPj1Mw6IOl_TYv_tqojpEaLb2XGw'
-      short-id: '23'
-    server: 64.188.83.117
-    tls: true
-    type: vless
-    udp: true
-    uuid: 71322f86-f37a-4929-ada0-05e6a2688145
-    xudp: true
-    servername: www.apple.com
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1EF\U0001F1F5JP_5|3.3MB/s"
-    network: tcp
-    port: 61111
-    reality-opts:
-      public-key: Le7Qcuw8WuEHD4dsLVtVoOSM7ZixD7p0YT_JpsLR0W4
-      short-id: 5d
-    server: tokyo.high-speed-test-01.online
-    tls: true
-    type: vless
-    udp: true
-    uuid: 4c165520-7050-43d6-ab92-e6640d8e0501
-    xudp: true
-    servername: www.nintendo.com
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8US_5|2.0MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: 'hysteria2_fastlane_e4139zxuu:v98M16cL2SxCumFUxZ6gwTRuniuT54lC'
-    port: 1935
-    server: 144.31.63.58
-    skip-cert-verify: true
-    sni: de4.h.fastlanehosting.ru
-    type: hysteria2
-    up: ''
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1E8\U0001F1FECY_1|1.3MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: 'hysteria2_fastlane_81uqqeagr:LepBwrE84qJQqGYctplZF35Z8cSmFDn6'
-    port: 1935
-    server: 150.241.78.128
-    skip-cert-verify: true
-    sni: de3.h.fastlanehosting.ru
-    type: hysteria2
-    up: ''
-  - alpn:
       - http/1.1
     client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7KR_2|2.2MB/s"
+    name: "\U0001F1FA\U0001F1F8US_3|2.3MB/s"
     network: ws
-    port: 50001
-    server: 220.73.70.34
+    port: 26688
+    server: 45.121.138.23
     tls: true
     type: vless
     udp: true
@@ -238,11 +128,26 @@ proxies:
       headers:
         Host: snippet.fgfw.de5.net
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/67.0.3396.87 Safari/537.36
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/50.0.2661.102 Safari/537.36
       path: /danfeng
     xudp: true
     servername: snippet.fgfw.de5.net
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: "\U0001F1E6\U0001F1FAAU_2|2.9MB/s"
+    network: tcp
+    port: 64003
+    server: pub.ap20260228.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    xudp: true
+    client-fingerprint: chrome
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -781,4 +686,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-03-11 23:42:44
+# 2026-03-12 00:45:51
