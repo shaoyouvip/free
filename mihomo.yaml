@@ -1,47 +1,5 @@
 proxies:
-  - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_1|2.0MB/s"
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: mfvpn.fuchen.indevs.in
-      mode: websocket
-      mux: false
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-      tls: true
-    port: 443
-    server: cdns.doon.eu.org
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_2|2.7MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: mfa.gov.ua
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_3|1.8MB/s"
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: mfvpn.fuchen.indevs.in
-      mode: websocket
-      mux: false
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-      tls: true
-    port: 443
-    server: cf.zhetengsha.eu.org
-    type: ss
-    udp: true
-  - name: "\U0001F1F8\U0001F1ECSG_4|2.0MB/s"
+  - name: "\U0001F1FA\U0001F1F8US_1|3.2MB/s"
     network: ws
     port: 443
     server: 34.143.159.175
@@ -54,105 +12,174 @@ proxies:
       path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
     client-fingerprint: chrome
     servername: ylnhh.cc.cd
-  - name: "\U0001F1F8\U0001F1ECSG_5|1.3MB/s"
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
     network: ws
     port: 443
-    server: 77.93.91.159
+    server: 192.0.63.115
     tls: true
     type: vless
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    client-fingerprint: chrome
-    servername: ylnhh.cc.cd
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1F9\U0001F1FCTW_1|2.6MB/s"
-    network: ws
-    port: 12888
-    server: gtm1.ktmwan.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: bbd785de-9793-4453-be40-6a3fdc418203
-    ws-opts:
-      headers:
-        Host: baidu.com
-      path: /
-    client-fingerprint: chrome
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
-    network: ws
-    port: 16617
-    server: t.cnmjcn.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
     udp: true
-    uuid: 38207de1-de96-4f78-867b-7be6b41ef1dd
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
     ws-opts:
       headers:
-        Host: 3dfc06a29f8ae09dec34988159d21bee.mobgslb.tbcache.com
-      path: /
-    xudp: true
-    client-fingerprint: chrome
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1FB\U0001F1F3VN_1|1.1MB/s"
-    network: ws
-    port: 12891
-    server: gtm1.ktmwan.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: bbd785de-9793-4453-be40-6a3fdc418203
-    ws-opts:
-      headers:
-        Host: baidu.com
-      path: /
-    xudp: true
-    client-fingerprint: chrome
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK_1|2.0MB/s"
-    network: ws
-    port: 12890
-    server: gtm1.ktmwan.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: bbd785de-9793-4453-be40-6a3fdc418203
-    ws-opts:
-      headers:
-        Host: baidu.com
-      path: /
-    xudp: true
-    client-fingerprint: chrome
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F1FA\U0001F1F8US_1|1.7MB/s"
-    port: 38845
-    protocol: udp
-    server: 208.87.243.151
+        Host: snippet.danfeng.theworkpc.com
+      path: /danfeng
+    servername: snippet.danfeng.theworkpc.com
+  - name: "\U0001F1F0\U0001F1F7KR_1|1.3MB/s"
+    password: test.+
+    port: 30446
+    server: testkr3.ssv.vc
     skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria
+    tls: true
+    type: http
     udp: true
-    up: 11 Mbps
+    username: test
+    sni: testkr3.ssv.vc
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F3\U0001F1F1NL_1|1.3MB/s"
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    port: 8080
+    server: 82.38.31.191
+    type: ss
+    udp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1FA\U0001F1F8US_3|1.5MB/s"
+    network: ws
+    port: 443
+    server: 192.200.160.20
+    tls: true
+    type: vless
+    udp: true
+    uuid: dc08d353-44f5-45b6-b273-703ff5e955dc
+    ws-opts:
+      headers:
+        Host: 639073677243308853.camry-perma.info
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/54.0.2840.99 Safari/537.36
+      path: /jxyughws
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    servername: 639073677243308853.camry-perma.info
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1F0\U0001F1F7KR_1|1.3MB/s"
+    flow: xtls-rprx-vision
+    name: "\U0001F1F3\U0001F1F1NL_2|1.8MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    server: 143.20.236.51
+    tls: true
+    type: vless
+    udp: true
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    xudp: true
+    servername: yahoo.com
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F8\U0001F1ECSG_1|3.6MB/s"
+    port: 6004
+    server: cn02.365cloud5878.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    xudp: true
+    network: tcp
+    client-fingerprint: chrome
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F9\U0001F1FCTW_1|1.9MB/s"
+    port: 6002
+    server: cn02.365cloud5878.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    xudp: true
+    network: tcp
+    client-fingerprint: chrome
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1EF\U0001F1F5JP_1|2.5MB/s"
+    network: tcp
+    port: 31411
+    reality-opts:
+      public-key: ZkyNg1t5tbUhpuI2wntM2xStOz3k0taZJDLaoJ17CHo
+      short-id: b4fae2dd
+    server: 52.199.179.21
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3fe0153a-1608-4658-a9d0-9d73106dab33
+    xudp: true
+    servername: www.apple.com.cn
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F8\U0001F1ECSG_2|2.7MB/s"
+    network: tcp
+    port: 31411
+    reality-opts:
+      public-key: ZkyNg1t5tbUhpuI2wntM2xStOz3k0taZJDLaoJ17CHo
+      short-id: b4fae2dd
+    server: 52.221.224.137
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3fe0153a-1608-4658-a9d0-9d73106dab33
+    xudp: true
+    servername: www.lamer.com.sg
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1EF\U0001F1F5JP_2|3.3MB/s"
+    port: 6003
+    server: cn02.365cloud5878.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    xudp: true
+    network: tcp
+    client-fingerprint: chrome
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F0\U0001F1F7KR_2|1.7MB/s"
+    network: tcp
+    port: 19001
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+      short-id: ''
+    server: krp01.jumperservice.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
+    xudp: true
+    servername: addons.mozilla.org
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F0\U0001F1F7KR_3|2.6MB/s"
     network: ws
-    port: 23297
-    server: 112.167.47.83
+    port: 30020
+    server: 59.30.5.169
     tls: true
     type: vless
     udp: true
@@ -161,11 +188,259 @@ proxies:
       headers:
         Host: ylnhh.cc.cd
         User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
-          (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/36.0.1985.143 Safari/537.36
       path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
     xudp: true
     servername: ylnhh.cc.cd
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F0\U0001F1F7KR_4|1017KB/s"
+    network: ws
+    port: 30020
+    server: 121.139.183.69
+    tls: true
+    type: vless
+    udp: true
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    ws-opts:
+      headers:
+        Host: ylnhh.cc.cd
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
+    xudp: true
+    servername: ylnhh.cc.cd
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F3\U0001F1F1NL_3|2.5MB/s"
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    port: 8080
+    server: 82.38.31.101
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1FA\U0001F1F8US_4|3.8MB/s"
+    network: tcp
+    port: 19001
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      short-id: ''
+    server: malaysia01.jumperservice.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: e675787a-48db-45f9-9902-13b1b941446c
+    xudp: true
+    servername: www.speedtest.net
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1FA\U0001F1F8US_5|4.1MB/s"
+    network: tcp
+    port: 19001
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+      short-id: ''
+    server: malaysia01.jumperservice.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: d13545be-5c06-4283-cdf3-a364201bf9fb
+    xudp: true
+    servername: www.speedtest.net
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1FA\U0001F1F8US_6|2.5MB/s"
+    port: 19001
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+    server: malaysia01.jumperservice.com
+    tls: true
+    type: vless
+    uuid: e675787a-48db-45f9-9902-13b1b941446c
+    network: tcp
+    servername: www.speedtest.net
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: "\U0001F1FA\U0001F1F8US_7|2.1MB/s"
+    port: 19001
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+    server: malaysia01.jumperservice.com
+    tls: true
+    type: vless
+    uuid: d13545be-5c06-4283-cdf3-a364201bf9fb
+    network: tcp
+    servername: www.speedtest.net
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: "\U0001F1F0\U0001F1F7KR_5|1.4MB/s"
+    port: 19001
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+    server: krp01.jumperservice.com
+    tls: true
+    type: vless
+    uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
+    network: tcp
+    servername: addons.mozilla.org
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1F0\U0001F1F7KR_6|1.3MB/s"
+    port: 19001
+    reality-opts:
+      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+    server: krp01.jumperservice.com
+    tls: true
+    type: vless
+    uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
+    network: tcp
+    servername: addons.mozilla.org
+  - name: "\U0001F1FA\U0001F1F8US_8|2.3MB/s"
+    network: ws
+    port: 443
+    server: 192.0.63.49
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+      path: /danfeng
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: snippet.danfeng.theworkpc.com
+  - name: "\U0001F1FA\U0001F1F8US_9|1.1MB/s"
+    network: ws
+    port: 443
+    server: 192.0.54.250
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+      path: /danfeng
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: snippet.danfeng.theworkpc.com
+  - allowInsecure: '1'
+    alpn:
+      - h2
+    client-fingerprint: chrome
+    fp: chrome
+    name: "\U0001F1FF\U0001F1E6ZA_1|3.4MB/s"
+    password: dongtaiwang.com
+    port: 59901
+    server: 45.221.98.14
+    skip-cert-verify: true
+    type: anytls
+  - client-fingerprint: chrome
+    delay: 2911
+    name: "\U0001F1E6\U0001F1F9AT_1|1.1MB/s"
+    network: ws
+    password: trojan
+    port: 8888
+    server: 152.53.45.251
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_10|2.6MB/s"
+    network: tcp
+    port: 18959
+    reality-opts:
+      public-key: '-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA'
+      short-id: d557c6895d014075
+    server: 157.254.223.44
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+  - client-fingerprint: chrome
+    delay: 2230
+    name: "\U0001F1E9\U0001F1EADE_1|2.0MB/s"
+    network: ws
+    password: trojan
+    port: 8444
+    server: 38.180.48.182
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: chrome
+    encryption: none
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1FA\U0001F1F8US_11|2.3MB/s"
+    network: tcp
+    port: 8443
+    reality-opts:
+      public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
+      short-id: 3ca620a7ed5f3196
+    server: 132.243.200.65
+    tls: true
+    type: vless
+    udp: true
+    uuid: dc1b85fd-a08e-42d7-ae2b-0a320f3399b7
+    xudp: true
+    servername: sun6-21.userapi.com
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1FA\U0001F1F8US_12|1.1MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: pLNOJzdmxLqTaH0WzQ1k-cxeyl07DylajmgMmGidy0M
+      short-id: 1a2b3c4d
+    server: 94.183.232.17
+    tls: true
+    type: vless
+    udp: true
+    uuid: a604ecaf-5b49-40dd-8a72-5ee121c01a42
+    xudp: true
+    servername: learn.microsoft.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_2|2.8MB/s"
+    network: tcp
+    port: 8443
+    reality-opts:
+      public-key: YH_QnUEGzMHf8RjEDh5bRXocz7gq_QdrZWysD2yF_i8
+      short-id: ''
+    server: 171.22.18.162
+    tls: true
+    type: vless
+    udp: true
+    uuid: 20d3c935-98ba-4787-b5ed-b8b31d9be82c
+    xudp: true
+    servername: github.com
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -704,4 +979,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-03-15 02:32:17
+# 2026-03-15 03:23:26
