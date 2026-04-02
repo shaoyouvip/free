@@ -1,6 +1,6 @@
 proxies:
   - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_1|2.5MB/s"
+    name: "\U0001F1F8\U0001F1ECSG_1|1.0MB/s"
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
@@ -14,7 +14,7 @@ proxies:
     type: ss
     udp: true
   - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_1|1.5MB/s"
+    name: "\U0001F1F8\U0001F1ECSG_2|1.5MB/s"
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
@@ -27,127 +27,353 @@ proxies:
     server: cdns.doon.eu.org
     type: ss
     udp: true
-  - name: "\U0001F1F0\U0001F1F7KR_1|2.9MB/s"
-    password: test.+
-    port: 30446
-    server: testkr3.ssv.vc
+  - name: "\U0001F1E9\U0001F1EADE_1|1.9MB/s"
+    network: ws
+    port: 4001
+    server: 185.94.29.156
     skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-    username: test
-    sni: testkr3.ssv.vc
-  - name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
-    port: 8443
-    server: 195.181.173.199
-    skip-cert-verify: false
     tls: true
     type: vless
     udp: true
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    network: tcp
-    servername: ams1.fromblancwithlove.com
-  - name: "\U0001F1EE\U0001F1F9IT_1|1.2MB/s"
+    uuid: 00000000-0000-4000-8000-000000000000
+    ws-opts:
+      headers:
+        Host: sub.mot.ip-ddns.com
+      path: /
+    servername: sub.mot.ip-ddns.com
+  - cipher: none
+    name: "\U0001F1FA\U0001F1F8US_1|1.4MB/s"
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: mfvpn.fuchen.indevs.in
+      mode: websocket
+      mux: false
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+      tls: true
+    port: 443
+    server: 199.181.197.38
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US_2|1.5MB/s"
+    network: ws
+    port: 443
+    server: 104.19.58.118
+    tls: true
+    type: vless
+    uuid: 57d24033-f998-45c1-b973-16747ea76ce9
+    ws-opts:
+      headers:
+        Host: us1-us1.aiopen.sbs
+      path: /kbjc/us1
+    servername: us1-us1.aiopen.sbs
+  - client-fingerprint: chrome
+    name: "\U0001F1EF\U0001F1F5JP_1|1.3MB/s"
+    network: ws
+    port: 443
+    server: 69.84.182.13
+    tls: true
+    type: vless
+    uuid: 57d24033-f998-45c1-b973-16747ea76ce9
+    ws-opts:
+      headers:
+        Host: jp1-jp1.aiopen.sbs
+      path: /kbjc/jp1
+    servername: jp1-jp1.aiopen.sbs
+  - name: "\U0001F1EE\U0001F1F9IT_1|1.1MB/s"
     network: ws
     port: 7443
-    server: 222.167.202.45
+    server: 222.167.202.2
     tls: true
     type: vless
     uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
     ws-opts:
       headers:
         Host: 2026.hhhhh.eu.org
-      path: '/222.167.202.45:7443'
+      path: '/222.167.202.2:7443'
     servername: 2026.hhhhh.eu.org
-  - name: "\U0001F1E9\U0001F1EADE_1|1010KB/s"
-    password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    port: 443
-    server: 93143b04-tcxds0-tdm5u7-1pr35.de.oshuawei.com
-    tls: true
-    type: http
-    username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    sni: 93143b04-tcxds0-tdm5u7-1pr35.de.oshuawei.com
-  - cipher: none
-    name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
-    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ylnhh.us.ci
-      mode: websocket
-      mux: false
-      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
-      tls: true
-    port: 443
-    server: 50.62.90.16
-    type: ss
-    udp: true
-  - name: "\U0001F1E9\U0001F1EADE_2|1.0MB/s"
-    password: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-    port: 443
-    server: 8eb51c81-ta1og0-tg8syu-1nyy5.de.oshuawei.com
-    sni: 8eb51c81-ta1og0-tg8syu-1nyy5.de.oshuawei.com
-    tls: true
-    type: http
-    username: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-  - encryption: none
-    grpc-opts:
-      grpc-service-name: pol-x1.plugvpn.ru
-    name: "\U0001F1E8\U0001F1EDCH_1|2.5MB/s"
-    network: grpc
-    port: 443
-    server: pol-x1.plugvpn.ru
-    type: vless
-    udp: true
-    uuid: c8d65a3a-5002-4dff-bfd6-d4b9ef90b9cc
-    xudp: true
-  - allowInsecure: '1'
-    name: "\U0001F1FF\U0001F1E6ZA_1|1.9MB/s"
-    password: dongtaiwang.com
-    port: 59901
-    security: tls
-    server: 45.221.98.14
-    skip-cert-verify: true
-    sni: 45.221.98.14
-    type: anytls
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8US_2|1.3MB/s"
+  - name: "\U0001F1EE\U0001F1F9IT_2|1.4MB/s"
     network: ws
-    port: 80
-    server: www.speedtest.net
+    port: 7443
+    server: 222.167.202.36
+    tls: true
     type: vless
-    udp: true
-    uuid: 5152ff5b-56f7-400c-bc1d-2f1dd1ac1e13
+    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
     ws-opts:
       headers:
-        Host: 010.electrocellco-cf-010.workers.dev
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
-          Safari/537.36
-      path: >-
-        /eyJqdW5rIjoiM3JsR054alF6R2JFTTEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxMjUuNy4yNC4yNTEiXX0=
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+        Host: 2026.hhhhh.eu.org
+      path: '/222.167.202.36:7443'
+    servername: 2026.hhhhh.eu.org
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_3|1.2MB/s"
+    port: 180
+    server: 82.198.246.250
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    network: tcp
+  - client-fingerprint: safari
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_2|1.3MB/s"
+    port: 443
+    reality-opts:
+      public-key: UV34T0S_VyVcChA2Tb9MIbg4tr1mHGMr_Lw5Gvb17F8
+      short-id: "66ed2fdd"
+    server: 130.162.220.137
+    tls: true
+    type: vless
+    uuid: 57d24033-f998-45c1-b973-16747ea76ce9
+    network: tcp
+    servername: www.lamer.com
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F3\U0001F1F1NL_1|2.7MB/s"
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    port: 8080
+    server: 82.38.31.35
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1F5\U0001F1F9PT_1|2.6MB/s"
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 185.231.233.112
+    type: ss
+  - alterId: '0'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_4|2.5MB/s"
+    network: tcp
+    port: 180
+    server: 82.198.246.250
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     xudp: true
-  - client-fingerprint: random
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_5|1.6MB/s"
+    network: tcp
+    port: 180
+    server: 82.198.246.97
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    xudp: true
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_6|1.9MB/s"
+    network: tcp
+    port: 180
+    server: 82.198.246.97
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    xudp: true
+    servername: www.bing.com
+  - alpn:
+      - ''
+    alterId: '2'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_7|1.3MB/s"
+    network: tcp
+    port: 30829
+    server: v29.hdacd.com
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    xudp: true
+  - client-fingerprint: chrome
     flow: xtls-rprx-vision
     http-opts:
       headers: {}
       path:
         - /
-    name: "\U0001F1E8\U0001F1FECY_1|2.2MB/s"
+    name: "\U0001F1FA\U0001F1F8US_8|3.1MB/s"
     network: tcp
-    port: 509
+    port: 10121
     reality-opts:
-      public-key: pRsdYU_hqoFTLo_O5RxiVmP0CgHqurz_sAGWLQeC0Q0
-      short-id: ''
-    server: 45.12.133.210
+      public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
+      short-id: "9c2a7d4e5f18b6a3"
+    server: 150.241.83.152
     tls: true
     type: vless
     udp: true
-    uuid: 3bba04b2-98a7-4f03-8599-671cfa97ff49
+    uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
     xudp: true
-    servername: www.amd.com
+    servername: apple.com
+  - client-fingerprint: random
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F3\U0001F1F1NL_2|3.0MB/s"
+    network: tcp
+    port: 443
+    server: s504.okgg.top
+    tls: true
+    type: vless
+    udp: true
+    uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+    xudp: true
+    servername: u710947u9c18s504.okgg.top
+  - client-fingerprint: random
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F3\U0001F1F1NL_3|1.2MB/s"
+    network: tcp
+    port: 443
+    server: s502.okgg.top
+    tls: true
+    type: vless
+    udp: true
+    uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+    xudp: true
+    servername: u710947u761bs502.okgg.top
+  - client-fingerprint: chrome
+    name: "\U0001F1F0\U0001F1F7KR_1|1.6MB/s"
+    network: ws
+    password: trojan
+    port: 10003
+    server: 221.146.116.77
+    skip-cert-verify: false
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/67.0.3396.99 Safari/537.36
+      path: /
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1EB\U0001F1F7FR_1|3.1MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: ZnlCl_Jc2dV5-KK_ymmMcEDoe5lPyZ-5z_LGMRoiNTU
+      short-id: "b87063a35aaa942e"
+    server: 51.255.71.16
+    tls: true
+    type: vless
+    udp: true
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    xudp: true
+    servername: www.booking.com
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1EB\U0001F1F7FR_2|3.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
+      short-id: "c906f73d3ba8211f"
+    server: 145.239.8.221
+    tls: true
+    type: vless
+    udp: true
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    xudp: true
+    servername: www.leboncoin.fr
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E7\U0001F1ECBG_1|3.6MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: P7XdTB-V3VEV_B5Wenifit6OriVM5YUQ8ir-SSqes0U
+      short-id: "7a4f4b55a899ae1d"
+    server: 95.164.36.217
+    tls: true
+    type: vless
+    udp: true
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    xudp: true
+    servername: www.booking.com
+  - name: "\U0001F1FA\U0001F1F8US_9|1.1MB/s"
+    password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+    port: 443
+    server: fbd79892-t9zts0-tryjtz-12ach.jp.oshuawei.com
+    sni: fbd79892-t9zts0-tryjtz-12ach.jp.oshuawei.com
+    tls: true
+    type: http
+    username: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+  - name: "\U0001F1FA\U0001F1F8US_10|1.2MB/s"
+    password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+    port: 443
+    server: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
+    sni: c4c1f78e-t9zts0-tl09la-1q91p.jp.oshuawei.com
+    tls: true
+    type: http
+    username: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  - name: "\U0001F1FA\U0001F1F8US_11|1.3MB/s"
+    password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+    port: 443
+    server: 75575881-t9zts0-tarsld-1gevg.jp.oshuawei.com
+    sni: 75575881-t9zts0-tarsld-1gevg.jp.oshuawei.com
+    tls: true
+    type: http
+    username: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  - name: "\U0001F1FA\U0001F1F8US_12|1.3MB/s"
+    password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+    port: 443
+    server: f47d7a3e-ta1og0-tbao5v-gacy.jp.oshuawei.com
+    sni: f47d7a3e-ta1og0-tbao5v-gacy.jp.oshuawei.com
+    tls: true
+    type: http
+    username: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  - name: "\U0001F1FA\U0001F1F8US_13|1.2MB/s"
+    password: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+    port: 443
+    server: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
+    sni: e74ab57a-t9zts0-tnfe2z-1s4hc.jp.oshuawei.com
+    tls: true
+    type: http
+    username: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+  - cipher: aes-256-cfb
+    name: "\U0001F1F7\U0001F1FARU_1|2.5MB/s"
+    password: gYCYXfkUQEs2TaJQ
+    port: 9038
+    server: 194.116.173.21
+    type: ss
+  - alterId: 2
+    cipher: auto
+    country: "\U0001F1ED\U0001F1F0HK"
+    h2-opts: {}
+    http-opts: {}
+    name: "\U0001F1FA\U0001F1F8US_14|1.8MB/s"
+    network: tcp
+    port: 30808
+    server: v8.hdacd.com
+    skip-cert-verify: true
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -686,4 +912,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-04-03 01:50:24
+# 2026-04-03 02:51:41
