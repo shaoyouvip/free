@@ -1,5 +1,5 @@
 proxies:
-  - name: "\U0001F1E8\U0001F1E6CA_1|1.0MB/s"
+  - name: "\U0001F1E8\U0001F1E6CA_1|1.5MB/s"
     password: 6987a475-97a5-40ce-90fe-a59a21aa1c08
     port: 8444
     server: hjnd.0101.pw
@@ -7,241 +7,143 @@ proxies:
     sni: hjnd.0101.pw
     type: hysteria2
     udp: true
-  - name: "\U0001F1EB\U0001F1F7FR_1|1.4MB/s"
-    password: dongtaiwang.com
-    port: 41283
-    ports: '40022,41000-42000'
-    server: 163.172.113.118
-    skip-cert-verify: true
-    sni: www.microsoft.com
-    tfo: false
-    type: hysteria2
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_1|1.3MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 162.159.45.127
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_1|1.3MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 162.159.15.148
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 104.18.33.77
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_2|2.5MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 172.64.52.226
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_3|2.5MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 172.64.53.219
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_4|1.4MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 162.159.45.114
-    type: ss
-    udp: true
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1EE\U0001F1F3IN_1|2.6MB/s"
-    network: ws
-    port: 16626
-    server: planb.mojcn.com
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    udp: true
-    uuid: b49af8c9-0cf1-4212-8ed8-35b70d9f2cf4
-    ws-opts:
-      headers:
-        Host: 3416cbe57b7c52733721859d4e23be39.mobgslb.tbcache.com
-      path: /
-  - ech-opts:
-      enable: true
-      query-server-name: cloudflare-ech.com
-    name: "\U0001F1F8\U0001F1ECSG_2|2.9MB/s"
-    network: ws
-    password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
-    port: 443
-    server: yg1.ygkkk.dpdns.org
-    skip-cert-verify: false
-    sni: v.vivia.cc.cd
-    type: trojan
-    ws-opts:
-      headers:
-        Host: v.vivia.cc.cd
-      path: /
-  - name: "\U0001F1EF\U0001F1F5JP_5|1.7MB/s"
-    password: b5c64cdc-ec6b-47c6-83b3-732e6f31e150
-    port: 12308
-    server: 56.155.89.207
-    skip-cert-verify: true
-    sni: jp02.ulifeai.com
-    type: trojan
-    network: tcp
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1F8\U0001F1ECSG_3|2.4MB/s"
-    network: ws
+    http-opts:
+      headers:
+        Host:
+          - wcs.adobe.com
+      path:
+        - /
+    name: "\U0001F1ED\U0001F1F0HK_1|1.4MB/s"
+    network: tcp
     port: 443
-    server: 01-qq.com
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+      short-id: ''
+    server: 8.218.127.218
     tls: true
     type: vless
     udp: true
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    ws-opts:
-      headers:
-        Host: 3-7v4.pages.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/70.0.3538.102 Safari/537.36
-      path: /
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
     xudp: true
-    servername: 3-7v4.pages.dev
+    servername: wcs.adobe.com
   - alterId: '0'
-    cipher: aes-128-gcm
-    name: "\U0001F1FA\U0001F1F8US_2|1.0MB/s"
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_1|1.8MB/s"
     network: tcp
     port: 180
-    server: 82.198.246.37
+    server: 82.198.246.233
     skip-cert-verify: false
     tls: false
     type: vmess
     udp: true
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     xudp: true
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision-udp443
-    name: "\U0001F1EF\U0001F1F5JP_6|3.2MB/s"
-    port: 30000
-    security: tls
-    server: tokyo1.ap221.com
-    tls: true
-    type: vless
-    uuid: d206e996-9790-465f-8dbe-ef25383aac45
+  - alterId: '0'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_2|1.6MB/s"
     network: tcp
-    servername: tokyo.ap221.com
-  - ech-opts:
-      enable: true
-      query-server-name: cloudflare-ech.com
-    name: "\U0001F1F8\U0001F1ECSG_4|4.3MB/s"
-    network: ws
-    password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
-    port: 443
-    server: cf.090227.xyz
+    port: 180
+    server: 82.198.246.214
     skip-cert-verify: false
-    sni: v.vivia.cc.cd
-    type: trojan
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    xudp: true
+  - alterId: '0'
+    cipher: aes-128-gcm
+    name: "\U0001F1FA\U0001F1F8US_3|1.1MB/s"
+    network: tcp
+    port: 180
+    server: 82.198.246.9
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    xudp: true
+  - cipher: none
+    name: "\U0001F1EC\U0001F1E7GB_1|2.0MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 443
+    server: 68.168.31.169
+    type: ss
+    udp: true
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: none
+    name: "\U0001F1FA\U0001F1F8US_4|2.4MB/s"
+    network: ws
+    port: 443
+    server: cf.tencentapp.cn
+    skip-cert-verify: false
+    tls: true
+    type: vmess
+    udp: true
+    uuid: 75179185-d785-4f07-a164-c257c5960f0d
     ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
       headers:
-        Host: v.vivia.cc.cd
-      path: /
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8US_3|2.2MB/s"
-    obfs: ''
-    obfs-password: ''
+        Host: jvc-postal-approval-mass.trycloudflare.com
+      max-early-data: 2560
+      path: /vmess-argo
+    xudp: true
+    servername: jvc-postal-approval-mass.trycloudflare.com
+  - cipher: none
+    name: "\U0001F1E9\U0001F1EADE_1|1.1MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 443
+    server: 162.159.153.182
+    type: ss
+    udp: true
+  - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    name: "\U0001F1FA\U0001F1F8US_5|1.9MB/s"
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     port: 443
-    server: vpn-us-019.fastervpn.world
+    server: vpn-us-006.fastervpn.world
     skip-cert-verify: true
-    sni: vpn-us-019.fastervpn.world
+    sni: vpn-us-006.fastervpn.world
     type: hysteria2
-    up: ''
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_7|1.3MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 172.64.52.92
-    type: ss
     udp: true
-  - name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_0f7da3fc|1.3MB/s"
-    password: fc4dd6fd-4a35-42f5-8208-bbb089747292
-    port: 10004
-    server: 46.38.157.183
-    skip-cert-verify: true
-    sni: 46.38.157.183
-    type: hysteria2
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_e5240d65|1.0MB/s"
-    obfs: ''
-    obfs-password: ''
-    password: a722e51b-325e-4238-a480-02fe7d0dab28
-    port: 10003
-    server: 46.38.157.183
-    skip-cert-verify: true
-    sni: 46.38.157.183
-    type: hysteria2
-    up: ''
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1EC\U0001F1E7GB_2|1.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+      short-id: "4d2c4fa29e40fb49"
+    server: 213.193.252.98
+    tls: true
+    type: vless
+    udp: true
+    uuid: 91bbe282-f2ba-46a6-8752-36ae55279169
+    xudp: true
+    servername: velik.normbot.ru
   - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_5|3.8MB/s"
+    name: "\U0001F1F8\U0001F1ECSG_1|2.2MB/s"
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
@@ -251,27 +153,11 @@ proxies:
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
       tls: true
     port: 443
-    server: 172.64.145.67
+    server: 172.64.33.19
     type: ss
     udp: true
   - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_6|2.6MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: 0
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      skip-cert-verify: false
-      tls: true
-    port: 443
-    server: 104.18.33.237
-    skip-cert-verify: false
-    type: ss
-    udp: false
-  - cipher: none
-    name: "\U0001F1E9\U0001F1EADE_1|1.0MB/s"
+    name: "\U0001F1F8\U0001F1ECSG_2|1.1MB/s"
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
@@ -281,11 +167,11 @@ proxies:
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
       tls: true
     port: 443
-    server: 104.26.14.90
+    server: 104.18.46.154
     type: ss
     udp: true
   - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_8|1.5MB/s"
+    name: "\U0001F1F8\U0001F1ECSG_3|1.1MB/s"
     password: 79960b0b-7d31-4263-8915-6511b0e137a8
     plugin: v2ray-plugin
     plugin-opts:
@@ -295,123 +181,258 @@ proxies:
       path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
       tls: true
     port: 443
-    server: 162.159.45.203
+    server: 198.41.223.55
+    type: ss
+    udp: true
+  - cipher: none
+    name: "\U0001F1F8\U0001F1ECSG_4|1.2MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 443
+    server: 198.41.223.119
+    type: ss
+    udp: true
+  - multiplexing: MULTIPLEXING_LOW
+    name: "\U0001F1FA\U0001F1F8US_6|1.2MB/s"
+    password: dongtaiwang.com
+    port: 33990
+    server: 157.254.223.48
+    transport: TCP
+    type: mieru
+    username: dongtaiwang.com
+  - cipher: none
+    name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 443
+    server: 172.64.52.252
+    type: ss
+    udp: true
+  - cipher: none
+    name: "\U0001F1F8\U0001F1ECSG_5|1.8MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 443
+    server: 173.245.58.225
+    type: ss
+    udp: true
+  - cipher: none
+    name: "\U0001F1FA\U0001F1F8US_7|1.0MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 8443
+    server: 107.174.198.228
     type: ss
     udp: true
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F3C1 未知-A47735B3|1.2MB/s"
-    network: ws
-    port: 2053
-    server: 172.64.147.87
+    flow: xtls-rprx-vision
+    name: "\U0001F1F1\U0001F1F9LT_1|1.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+      short-id: "8bd29483ded126b4"
+    server: meow-riga.nethcloud.top
     skip-cert-verify: false
     tls: true
     type: vless
     udp: true
-    uuid: 52f94104-7a84-4342-8bcd-96969eb46cbe
+    uuid: 951c7521-7158-4978-b82c-2736d4f21044
+    xudp: true
+    servername: wikihow.com
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F3\U0001F1F1NL_1|1.0MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      _spider-x: /
+      public-key: iE7UA_fWJTdKZ2SUaAMY_8F9hpawC14D431KNkcXfkI
+      short-id: "de71"
+    server: 109.234.39.219
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 2202983c-4238-4beb-8519-27cd3dcd12ab
+    xudp: true
+    servername: yahoo.com
+  - cipher: none
+    name: "\U0001F1F3\U0001F1F1NL_2|1.1MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 8443
+    server: 185.193.159.9
+    type: ss
+    udp: true
+  - cipher: none
+    name: "\U0001F1F3\U0001F1F1NL_3|1.1MB/s"
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: woshinidie-et3.pages.dev
+      mode: websocket
+      mux: false
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+    port: 8443
+    server: 185.193.158.93
+    type: ss
+    udp: true
+  - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    name: "\U0001F3C1 未知-EC0B80C2|2.1MB/s"
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    port: 443
+    server: vpn-jp-018.fastervpn.world
+    skip-cert-verify: true
+    sni: vpn-jp-018.fastervpn.world
+    type: hysteria2
+  - name: "\U0001F1FA\U0001F1F8US_8|1.3MB/s"
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    port: 443
+    server: vpn-us-018.fastervpn.world
+    skip-cert-verify: true
+    sni: vpn-us-018.fastervpn.world
+    type: hysteria2
+  - name: "\U0001F1EB\U0001F1EEFI_1|1.1MB/s"
+    network: ws
+    port: 2083
+    server: 172.64.149.54
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: dcc864d3-4a2e-42dd-b17c-4f8447fb449c
     ws-opts:
       headers:
-        Host: tristandeng.cc.cd
-      path: /
+        Host: FiN.ShAkHle.ir.
+      path: /ws-content/app.js
     xudp: true
-    servername: tristandeng.cc.cd
+    servername: FiN.ShAkHle.ir.
   - cipher: none
-    name: "\U0001F1E9\U0001F1EADE_2|1.2MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    name: "\U0001F1E9\U0001F1EADE_2|1.8MB/s"
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 104.26.1.221
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_9|1.1MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 108.162.198.200
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1F8\U0001F1ECSG_7|1.3MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 172.64.156.45
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_10|1.4MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 162.159.44.65
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1FA\U0001F1F8US_4|1.6MB/s"
-    password: 79960b0b-7d31-4263-8915-6511b0e137a8
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: woshinidie-et3.pages.dev
-      mode: websocket
-      mux: false
-      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-      tls: true
-    port: 443
-    server: 209.237.135.93
-    type: ss
-    udp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP_11|2.1MB/s"
-    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ylnhh.us.ci
+      host: mfvpn.fuchen.indevs.in
       mode: websocket
       mux: 0
-      path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
       skip-cert-verify: false
       tls: true
-    port: 443
-    server: registry.cyou
+    port: 1010
+    server: 89.58.13.151
     skip-cert-verify: false
     type: ss
     udp: false
-  - auth: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
-    name: "\U0001F1FA\U0001F1F8US_5|1.3MB/s"
-    obfs: salamander
-    obfs-password: CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W
-    password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
-    port: 8932
-    server: nrealistic.nn-foto.ru
+  - client-fingerprint: random
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_3|1.0MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: D4JbWDBAWpkliHmRshHmsJ20d52qNucFMJQJrP8wIz0
+      short-id: "71a1419f8b4b8168"
+    server: euclients-de.onnstreaming.ru
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+    xudp: true
+    servername: euclients-de.onnstreaming.ru
+  - auth: dongtaiwang.com
+    name: "\U0001F1EB\U0001F1F7FR_1|1.4MB/s"
+    password: dongtaiwang.com
+    port: 40022
+    ports: 41000-42000
+    server: 163.172.113.118
     skip-cert-verify: true
-    sni: nrealistic.nn-foto.ru
+    sni: www.microsoft.com
     type: hysteria2
     udp: true
+  - encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F7\U0001F1FARU_1|2.1MB/s"
+    network: tcp
+    port: 52006
+    server: cluster-russia-1.firstvideocdn.ru
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+    xudp: true
+    servername: cluster-russia-1.firstvideocdn.ru
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_4|1.3MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+      short-id: '23'
+    server: pol1.pineappled.org
+    tls: true
+    type: vless
+    udp: true
+    uuid: dd09a21b-c1ac-4fde-83bb-dc09f85416b6
+    xudp: true
+    servername: www.apple.com
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F7\U0001F1FARU_2|1.6MB/s"
+    network: tcp
+    port: 52006
+    server: cluster-russia-1.firstvideocdn.ru
+    tls: true
+    type: vless
+    udp: true
+    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+    xudp: true
+    servername: cluster-russia-1.firstvideocdn.ru
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -950,4 +971,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-04-20 01:32:16
+# 2026-04-20 02:42:09
