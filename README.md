@@ -55,9 +55,9 @@ https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
 ```
 
 
-## Star History
+[## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=shaoyouvip/free&type=date&legend=top-left)](https://www.star-history.com/#shaoyouvip/free&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=shaoyouvip/free&type=date&legend=top-left)](https://www.star-history.com/#shaoyouvip/free&type=date&legend=top-left)](https://www.star-history.com/?repos=shaoyouvip%2Ffree&type=date&legend=top-left)
 
 ## 致谢
 [CM大佬](https://d.zrf.me/github-cmliu)
