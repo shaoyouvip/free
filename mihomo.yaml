@@ -1,9 +1,38 @@
 proxies:
+  - grpc-opts:
+      grpc-service-name: zhs
+    name: "\U0001F1F0\U0001F1F7KR_1|1.9MB/s"
+    network: grpc
+    password: c68526b9-f9e1-49a3-9711-e57d5c717563
+    port: 16335
+    server: dev.aoliuqu.press
+    skip-cert-verify: true
+    sni: dev.aoliuqu.press
+    type: trojan
+    udp: true
   - client-fingerprint: chrome
     encryption: none
     grpc-opts:
       grpc-service-name: ebl
-    name: "\U0001F1E6\U0001F1F9AT_1|1.5MB/s"
+    name: "\U0001F1F5\U0001F1F1PL_1|1.8MB/s"
+    network: grpc
+    port: 443
+    reality-opts:
+      public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+      short-id: ''
+    server: 83.168.88.40
+    tls: true
+    type: vless
+    udp: true
+    uuid: 18167dd6-2c24-4f6b-a416-64bac693127a
+    xudp: true
+    packet-encoding: xudp
+    servername: optim.tildacdn.pub
+  - client-fingerprint: chrome
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ebl
+    name: "\U0001F1E6\U0001F1F9AT_1|1.7MB/s"
     network: grpc
     port: 443
     reality-opts:
@@ -17,56 +46,30 @@ proxies:
     xudp: true
     packet-encoding: xudp
     servername: optim.tildacdn.pub
-  - name: "\U0001F1F0\U0001F1F7KR_1|5.1MB/s"
-    password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-    port: 443
-    server: vpn-kr-002.fastervpn.world
+  - name: "\U0001F1ED\U0001F1F0HK_1|2.6MB/s"
+    network: tcp
+    password: 1df3ece1218bedba28c6c6ac726a07bb
+    port: 39001
+    server: 114.80.8.128
     skip-cert-verify: true
-    sni: vpn-kr-002.fastervpn.world
+    sni: www.yrtok.com
+    type: trojan
+    udp: true
+  - name: "\U0001F1F8\U0001F1ECSG_1|5.3MB/s"
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    port: 443
+    server: 47.128.145.209
+    skip-cert-verify: true
+    sni: vpn-sg-001.fastervpn.world
+    tfo: false
     type: hysteria2
-    udp: true
-  - name: "\U0001F1F8\U0001F1ECSG_1|4.5MB/s"
-    network: ws
-    port: 443
-    server: 172.64.159.67
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
-    ws-opts:
-      headers:
-        Host: d6th0.4j9t.hj7.hh.hhyf.kdns.fr
-      path: /glasspanel/guest000_0_5de14443985f/
-    servername: d6th0.4j9t.hj7.hh.hhyf.kdns.fr
-  - client-fingerprint: chrome
-    ech-opts:
-      _dns: 'https://dns.alidns.com/dns-query'
-      enable: true
-      query-server-name: cloudflare-ech.com
-    encryption: none
-    name: "\U0001F1F8\U0001F1ECSG_2|4.5MB/s"
-    network: ws
-    packet-encoding: xudp
-    port: 443
-    server: 172.64.42.44
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    ws-opts:
-      headers:
-        Host: t1s1.rittbo.kdns.fr
-      path: /
-    servername: t1s1.rittbo.kdns.fr
   - client-fingerprint: firefox
     encryption: none
-    name: "\U0001F1EC\U0001F1E7GB_1|2.1MB/s"
+    name: "\U0001F1EC\U0001F1E7GB_1|2.0MB/s"
     network: xhttp
-    port: 48933
+    port: 48932
     reality-opts:
-      public-key: uugDdrD7u6_dXpH4SCUwUvP4eaG-InWUZk-VKpyxiHc
+      public-key: Dl4-nKAkksLHmX2yR0LWAzyFBjIj1W10R4OxHKMX2AI
       short-id: ''
     server: umbr.gconexustun.ru
     tls: true
@@ -74,7 +77,7 @@ proxies:
     udp: true
     uuid: 42455ebe-1c84-479a-9bac-6433c30f8d19
     xhttp-opts:
-      mode: packet-up
+      mode: auto
       path: /
       reuse-settings:
         c-max-reuse-times: 64-128
@@ -87,43 +90,62 @@ proxies:
       x-padding-bytes: 333-1777
     xudp: true
     packet-encoding: xudp
-    servername: cdn9-05.yahoo.com
+    servername: cdn4-23.yahoo.com
+  - name: "\U0001F1F3\U0001F1F1NL_1|1.5MB/s"
+    network: ws
+    port: 8880
+    server: skk.moe
+    type: vless
+    udp: true
+    uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
+    ws-opts:
+      headers:
+        Host: soft-meadow-980a.458.workers.dev
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile
+          Safari/537.36
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+    xudp: true
+    packet-encoding: xudp
   - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5JP_1|4.5MB/s"
+    encryption: none
+    name: "\U0001F1F8\U0001F1ECSG_2|2.6MB/s"
     network: ws
     port: 443
-    server: www.cnae.top
+    server: 172.64.146.86
     tls: true
     type: vless
     udp: true
-    uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
+    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
     ws-opts:
       headers:
-        Host: d6th0.4j9t.hj7.hh.hhyf.kdns.fr
+        Host: support.zoom.us.yxls.eu.cc
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /glasspanel/guest000_0_5de14443985f/fp=chrome
+          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      path: /sg-melbi
     xudp: true
     packet-encoding: xudp
-    servername: d6th0.4j9t.hj7.hh.hhyf.kdns.fr
-  - client-fingerprint: chrome
+    servername: support.zoom.us.yxls.eu.cc
+  - encryption: none
     name: "\U0001F1F8\U0001F1ECSG_3|4.3MB/s"
     network: ws
-    password: '666'
-    port: 443
-    server: 104.18.39.150
-    skip-cert-verify: false
-    sni: mik3u.d7pg.bac.hh.hhhdl.kdns.fr
-    type: trojan
+    port: 8880
+    server: 162.159.48.193
+    type: vless
     udp: true
+    uuid: 905d0e1f-4067-4a30-9c05-c64352faea62
     ws-opts:
       headers:
+        Host: divine-mode-93ad.46-54e.workers.dev
         User-Agent: >-
-          Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-          like Gecko) Chrome/5.0.342.1 Safari/533.2
-      path: /glasspanel/guest000_0_5de14443985f/
+          Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
+          Safari/537.36
+      path: /pyip=ProxyIP.US.CMLiussss.net
+    xudp: true
+    packet-encoding: xudp
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
