@@ -1,76 +1,79 @@
 proxies:
-    - auth: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      name: "\U0001F1F8\U0001F1ECSG_1|2.0MB/s"
-      obfs: salamander
-      obfs-password: xK9mN2pLq5vR8wB3
-      password: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      port: 20676
-      server: sg4.dexlos.com
+    - client-fingerprint: random
+      flow: xtls-rprx-vision
+      name: "\U0001F1EB\U0001F1F7FR_1|1.5MB/s"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+        short-id: 4fa44664f6a566d3
+      server: germany.superbuba.top
+      servername: germany.superbuba.top
+      tls: true
+      type: vless
+      uuid: b6af5776-fede-4765-b86c-806e827e9a07
+    - name: "\U0001F1EF\U0001F1F5JP_1|2.0MB/s"
+      password: AQ71834695
+      port: 443
+      server: integral-elf.rooster465.autos
       skip-cert-verify: true
-      type: hysteria2
-    - auth: 28d38ce6-7c79-4e9d-9175-2186da5be395
-      name: "\U0001F1FA\U0001F1F8US_1|2.2MB/s"
-      password: 28d38ce6-7c79-4e9d-9175-2186da5be395
-      port: 20000
-      server: 159.65.79.184
-      skip-cert-verify: true
-      sni: addons.mozilla.org
-      type: hysteria2
-    - auth: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
-      obfs: salamander
-      obfs-password: xK9mN2pLq5vR8wB3
-      password: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      port: 20450
-      server: us3.dexlos.com
-      skip-cert-verify: true
-      type: hysteria2
-    - auth: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      name: ❓Other_1|2.2MB/s
-      obfs: salamander
-      obfs-password: xK9mN2pLq5vR8wB3
-      password: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D
-      port: 20818
-      server: us5.dexlos.com
-      skip-cert-verify: true
-      type: hysteria2
-    - alpn:
-        - h3
-      congestion-controller: bbr
-      disable-sni: false
-      name: "\U0001F1EB\U0001F1F7FR_1|1.6MB/s"
-      password: dongtaiwang.com
-      port: 33888
-      server: 195.154.41.99
-      skip-cert-verify: true
-      sni: bing.com
-      type: tuic
+      type: trojan
       udp: true
-      udp-relay-mode: native
-      uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-    - name: "\U0001F1ED\U0001F1F0HK_1|3.5MB/s"
-      network: ws
-      port: 8443
-      server: 207.174.133.111
-      servername: ty986gfazs.cainiaohub.xyz
+    - name: "\U0001F1EF\U0001F1F5JP_2|1.8MB/s"
+      password: AQ71834695
+      port: 443
+      server: tops-marlin.rooster465.autos
       skip-cert-verify: true
+      sni: tops-marlin.rooster465.autos
+      type: trojan
+      udp: true
+    - auth: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+      name: "\U0001F1F7\U0001F1F4RO_1|2.1MB/s"
+      password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+      port: 8443
+      server: 77.74.123.133
+      skip-cert-verify: true
+      sni: grape-zet-turbo-nl.yyuyy.com
+      type: hysteria2
+    - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+      name: "\U0001F1FA\U0001F1F8US_1|2.1MB/s"
+      password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+      port: 443
+      server: taga10.api3-max.ru
+      skip-cert-verify: true
+      sni: taga10.api3-max.ru
+      type: hysteria2
+    - name: "\U0001F1F9\U0001F1FCTW_1|2.9MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - multiplexing: MULTIPLEXING_LOW
+      name: "\U0001F1FA\U0001F1F8US_2|1.7MB/s"
+      password: dongtaiwang.com
+      port: 34567
+      server: 157.254.223.44
+      transport: TCP
+      type: mieru
+      username: dongtaiwang.com
+    - client-fingerprint: firefox
+      encryption: none
+      grpc-opts:
+        grpc-service-name: UpdateService
+      name: "\U0001F1E9\U0001F1EADE_1|1.5MB/s"
+      network: grpc
+      port: "443"
+      reality-opts:
+        public-key: Jbu62FTsQXfCBLELy25KhLU3YQ7RMVaAvIcvcgFqliw
+        short-id: 9329f8b5985b2a7d
+      server: 46.8.209.56
+      servername: ads.x5.ru
       tls: true
       type: vless
       udp: true
-      uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-      ws-opts:
-        headers:
-            Host: ty986gfazs.cainiaohub.xyz
-        path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    - down: ""
-      fingerprint: ""
-      name: ❓Other_2|2.9MB/s
-      obfs: ""
-      obfs-password: ""
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-      port: "443"
-      server: 35.179.138.96
-      skip-cert-verify: true
-      sni: "https://t.me/WangCai2\U0001F1E8\U0001F1F3"
-      type: hysteria2
-      up: ""
+      uuid: 87e2ee4a-eb7b-41e9-bcda-a849c1a5bb47
+      xudp: true
