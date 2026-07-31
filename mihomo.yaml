@@ -1,61 +1,46 @@
 proxies:
-  - client-fingerprint: chrome
-    name: "\U0001F1F9\U0001F1FCTW_1|1.7MB/s"
-    network: tcp
-    password: i99Cef
-    port: 28101
-    server: 209.248.32.116
-    skip-cert-verify: true
-    sni: download.windowsupdate.com
-    type: trojan
-    udp: true
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: "\U0001F1E7\U0001F1F7BR_1|1.8MB/s"
+  - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+    name: 🇬🇧GB_1|2.6MB/s
+    password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
     port: 443
-    reality-opts:
-      public-key: tZEzySB7soxBmNn2NPyzvUZtC7H1O0pyZx5M60_X2g4
-      short-id: "496ee75c2f91f51d"
-    server: 201.51.2.248
+    server: wopa8.api3-max.ru
+    skip-cert-verify: true
+    sni: wopa8.api3-max.ru
+    type: hysteria2
+    udp: true
+  - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+    name: 🇹🇷TR_1|2.2MB/s
+    password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+    port: 443
+    server: taga3.api3-max.ru
+    skip-cert-verify: true
+    sni: taga3.api3-max.ru
+    type: hysteria2
+    udp: true
+  - name: 🇰🇷KR_1|1.9MB/s
+    password: test.+
+    port: 30446
+    server: testkr3.ssv.vc
     skip-cert-verify: true
     tls: true
-    type: vless
+    type: http
     udp: true
-    uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-    network: tcp
-    servername: ads.x5.ru
-  - client-fingerprint: firefox
-    encryption: none
-    grpc-opts:
-      grpc-service-name: neurex
-    name: "\U0001F1EB\U0001F1EEFI_1|1.9MB/s"
-    network: grpc
-    port: 16923
-    reality-opts:
-      public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-      short-id: "10ffb85da1c2d986"
-    server: 212.237.217.130
-    tls: true
-    type: vless
-    udp: true
-    uuid: d41fc81c-8679-494e-a687-60b15af4b14d
-    xudp: true
-    packet-encoding: xudp
-    servername: api-maps.yandex.ru
+    username: test
+    sni: testkr3.ssv.vc
 proxy-groups:
-  - name: "\U0001F680 节点选择"
+  - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F680 手动切换"
+  - name: 🚀 手动切换
     include-all: true
     type: select
   - name: ♻️ 自动选择
@@ -63,520 +48,493 @@ proxy-groups:
     include-all: true
     interval: 300
     tolerance: 50
-  - name: "\U0001F4F2 电报消息"
+  - name: 📲 电报消息
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F4AC Ai平台"
+  - name: 💬 Ai平台
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F4F9 油管视频"
+  - name: 📹 油管视频
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F3A5 奈飞视频"
+  - name: 🎥 奈飞视频
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-      - "\U0001F3A5 奈飞节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🎥 奈飞节点
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F4FA 巴哈姆特"
+  - name: 📺 巴哈姆特
     type: select
     proxies:
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F680 节点选择"
-      - "\U0001F680 手动切换"
+      - 🇨🇳 台湾节点
+      - 🚀 节点选择
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F4FA 哔哩哔哩"
+  - name: 📺 哔哩哔哩
     type: select
     proxies:
-      - "\U0001F3AF 全球直连"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-  - name: "\U0001F30D 国外媒体"
+      - 🎯 全球直连
+      - 🇨🇳 台湾节点
+      - 🇭🇰 香港节点
+  - name: 🌍 国外媒体
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
       - DIRECT
-  - name: "\U0001F30F 国内媒体"
+  - name: 🌏 国内媒体
     type: select
     proxies:
       - DIRECT
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F680 手动切换"
-  - name: "\U0001F4E2 谷歌FCM"
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📢 谷歌FCM
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - DIRECT
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
-  - name: "\U0001F34E 苹果服务"
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
-  - name: "\U0001F3AE 游戏平台"
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
-  - name: "\U0001F3B6 网易音乐"
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎶 网易音乐
     type: select
     include-all: true
     filter: (?i)网易|音乐|NetEase|Music
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-  - name: "\U0001F3AF 全球直连"
+  - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
-  - name: "\U0001F6D1 广告拦截"
+  - name: 🛑 广告拦截
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: "\U0001F343 应用净化"
+  - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: "\U0001F41F 漏网之鱼"
+  - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - "\U0001F680 节点选择"
+      - 🚀 节点选择
       - ♻️ 自动选择
       - DIRECT
-      - "\U0001F1ED\U0001F1F0 香港节点"
-      - "\U0001F1E8\U0001F1F3 台湾节点"
-      - "\U0001F1F8\U0001F1EC 狮城节点"
-      - "\U0001F1EF\U0001F1F5 日本节点"
-      - "\U0001F1FA\U0001F1F2 美国节点"
-      - "\U0001F1F0\U0001F1F7 韩国节点"
-      - "\U0001F680 手动切换"
-  - name: "\U0001F1ED\U0001F1F0 香港节点"
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F1EF\U0001F1F5 日本节点"
+  - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F1FA\U0001F1F2 美国节点"
+  - name: 🇺🇲 美国节点
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F1E8\U0001F1F3 台湾节点"
+  - name: 🇨🇳 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F1F8\U0001F1EC 狮城节点"
+  - name: 🇸🇬 狮城节点
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F1F0\U0001F1F7 韩国节点"
+  - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
     type: url-test
     interval: 300
     tolerance: 50
-  - name: "\U0001F3A5 奈飞节点"
+  - name: 🎥 奈飞节点
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
 rule-providers:
   LocalAreaNetwork:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   UnBan:
-    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list'
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
     path: ./ruleset/UnBan.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BanAD:
-    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list'
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
     path: ./ruleset/BanAD.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BanProgramAD:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
     path: ./ruleset/BanProgramAD.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GoogleFCM:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
     path: ./ruleset/GoogleFCM.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GoogleCN:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   SteamCN:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
     path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Bing:
-    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list'
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
     path: ./ruleset/Bing.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   OneDrive:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
     path: ./ruleset/OneDrive.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Microsoft:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
     path: ./ruleset/Microsoft.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Apple:
-    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list'
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
     path: ./ruleset/Apple.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Telegram:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   AI:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
     path: ./ruleset/AI.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   OpenAi:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   NetEaseMusic:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
     path: ./ruleset/NetEaseMusic.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Epic:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
     path: ./ruleset/Epic.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Origin:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
     path: ./ruleset/Origin.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Sony:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
     path: ./ruleset/Sony.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Steam:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
     path: ./ruleset/Steam.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Nintendo:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
     path: ./ruleset/Nintendo.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   YouTube:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
     path: ./ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Netflix:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
     path: ./ruleset/Netflix.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Bahamut:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
     path: ./ruleset/Bahamut.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BilibiliHMT:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
     path: ./ruleset/BilibiliHMT.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Bilibili:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
     path: ./ruleset/Bilibili.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaMedia:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
     path: ./ruleset/ChinaMedia.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ProxyMedia:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
     path: ./ruleset/ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ProxyGFWlist:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
     path: ./ruleset/ProxyGFWlist.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaDomain:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaCompanyIp:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Download:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
     path: ./ruleset/Download.list
     behavior: classical
     interval: 86400
     format: text
     type: http
 rules:
-  - "PROCESS-NAME,subs-check.exe,\U0001F3AF 全球直连"
-  - "PROCESS-NAME,subs-check,\U0001F3AF 全球直连"
-  - "RULE-SET,LocalAreaNetwork,\U0001F3AF 全球直连"
-  - "RULE-SET,UnBan,\U0001F3AF 全球直连"
-  - "RULE-SET,BanAD,\U0001F6D1 广告拦截"
-  - "RULE-SET,BanProgramAD,\U0001F343 应用净化"
-  - "RULE-SET,GoogleFCM,\U0001F4E2 谷歌FCM"
-  - "RULE-SET,GoogleCN,\U0001F3AF 全球直连"
-  - "RULE-SET,SteamCN,\U0001F3AF 全球直连"
-  - 'RULE-SET,Bing,Ⓜ️ 微软Bing'
-  - 'RULE-SET,OneDrive,Ⓜ️ 微软云盘'
-  - 'RULE-SET,Microsoft,Ⓜ️ 微软服务'
-  - "RULE-SET,Apple,\U0001F34E 苹果服务"
-  - "RULE-SET,Telegram,\U0001F4F2 电报消息"
-  - "RULE-SET,AI,\U0001F4AC Ai平台"
-  - "RULE-SET,NetEaseMusic,\U0001F3B6 网易音乐"
-  - "RULE-SET,Epic,\U0001F3AE 游戏平台"
-  - "RULE-SET,Origin,\U0001F3AE 游戏平台"
-  - "RULE-SET,Sony,\U0001F3AE 游戏平台"
-  - "RULE-SET,Steam,\U0001F3AE 游戏平台"
-  - "RULE-SET,Nintendo,\U0001F3AE 游戏平台"
-  - "RULE-SET,YouTube,\U0001F4F9 油管视频"
-  - "RULE-SET,Netflix,\U0001F3A5 奈飞视频"
-  - "RULE-SET,Bahamut,\U0001F4FA 巴哈姆特"
-  - "RULE-SET,BilibiliHMT,\U0001F4FA 哔哩哔哩"
-  - "RULE-SET,Bilibili,\U0001F4FA 哔哩哔哩"
-  - "RULE-SET,ChinaMedia,\U0001F30F 国内媒体"
-  - "RULE-SET,ProxyMedia,\U0001F30D 国外媒体"
-  - "RULE-SET,ProxyGFWlist,\U0001F680 节点选择"
-  - "RULE-SET,ChinaDomain,\U0001F3AF 全球直连"
-  - "RULE-SET,ChinaCompanyIp,\U0001F3AF 全球直连"
-  - "RULE-SET,Download,\U0001F3AF 全球直连"
-  - "GEOIP,CN,\U0001F3AF 全球直连"
-  - "MATCH,\U0001F41F 漏网之鱼"
+  - PROCESS-NAME,subs-check.exe,🎯 全球直连
+  - PROCESS-NAME,subs-check,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,BanAD,🛑 广告拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Bing,Ⓜ️ 微软Bing
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,AI,💬 Ai平台
+  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,Bahamut,📺 巴哈姆特
+  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
