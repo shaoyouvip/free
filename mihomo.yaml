@@ -1,32 +1,38 @@
 proxies:
-  - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-    name: 🇬🇧GB_1|2.6MB/s
-    password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_1|1.5MB/s
+    network: tcp
     port: 443
-    server: wopa8.api3-max.ru
-    skip-cert-verify: true
-    sni: wopa8.api3-max.ru
-    type: hysteria2
-    udp: true
-  - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-    name: 🇹🇷TR_1|2.2MB/s
-    password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-    port: 443
-    server: taga3.api3-max.ru
-    skip-cert-verify: true
-    sni: taga3.api3-max.ru
-    type: hysteria2
-    udp: true
-  - name: 🇰🇷KR_1|1.9MB/s
-    password: test.+
-    port: 30446
-    server: testkr3.ssv.vc
-    skip-cert-verify: true
+    reality-opts:
+      public-key: RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ
+      short-id: "de9719220a"
+    server: acat.astro-wall.online
     tls: true
-    type: http
+    type: vless
     udp: true
-    username: test
-    sni: testkr3.ssv.vc
+    uuid: 5aa5076c-beb6-425c-afed-d426df8c9148
+    xudp: true
+    packet-encoding: xudp
+    servername: acat.astro-wall.online
+  - client-fingerprint: chrome
+    encryption: none
+    name: 🇩🇪DE_2|1.2MB/s
+    network: xhttp
+    port: 443
+    server: biomaze.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: "@𝐕𝟐𝐗𝐍𝐄𝐓"
+    xhttp-opts:
+      host: youqp-ab9040c5d6-sss.apps.ir-central1.arvancaas.ir
+      mode: auto
+      path: /user
+      x-padding-bytes: 100-1000
+    xudp: true
+    packet-encoding: xudp
+    servername: youqp-ab9040c5d6-sss.apps.ir-central1.arvancaas.ir
 proxy-groups:
   - name: 🚀 节点选择
     type: select
