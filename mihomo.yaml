@@ -1,38 +1,79 @@
 proxies:
+  - auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    name: 🇰🇷KR_1|5.7MB/s
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    port: 443
+    server: vpn-kr-003.fastervpn.world
+    skip-cert-verify: true
+    sni: vpn-kr-003.fastervpn.world
+    type: hysteria2
+    udp: true
   - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇩🇪DE_1|1.5MB/s
+    name: 🇹🇼TW_1|1010KB/s
     network: tcp
-    port: 443
-    reality-opts:
-      public-key: RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ
-      short-id: "de9719220a"
-    server: acat.astro-wall.online
-    tls: true
-    type: vless
+    password: i99Cef
+    port: 28101
+    server: 209.248.32.115
+    skip-cert-verify: true
+    sni: download.windowsupdate.com
+    type: trojan
     udp: true
-    uuid: 5aa5076c-beb6-425c-afed-d426df8c9148
-    xudp: true
-    packet-encoding: xudp
-    servername: acat.astro-wall.online
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇩🇪DE_2|1.2MB/s
-    network: xhttp
+  - down: ""
+    fingerprint: ""
+    name: 🇹🇼TW_2|1.1MB/s
+    obfs: ""
+    obfs-password: ""
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
     port: 443
-    server: biomaze.ir
-    tls: true
-    type: vless
+    server: vpn-tw-002.fastervpn.world
+    skip-cert-verify: true
+    sni: vpn-tw-002.fastervpn.world
+    type: hysteria2
+    up: ""
     udp: true
-    uuid: "@𝐕𝟐𝐗𝐍𝐄𝐓"
-    xhttp-opts:
-      host: youqp-ab9040c5d6-sss.apps.ir-central1.arvancaas.ir
-      mode: auto
-      path: /user
-      x-padding-bytes: 100-1000
-    xudp: true
-    packet-encoding: xudp
-    servername: youqp-ab9040c5d6-sss.apps.ir-central1.arvancaas.ir
+  - cipher: aes-128-gcm
+    name: 🇭🇰HK_1|1.6MB/s
+    password: QHPy2u
+    plugin: obfs
+    plugin-opts:
+      host: 2fce243671.download.windowsupdate.com
+      mode: http
+    port: 8001
+    server: 260323.1.0.l3.unclemanco.com
+    type: ss
+    udp: true
+  - cipher: aes-128-gcm
+    name: 🇸🇨SC_1|1.9MB/s
+    password: ayucloud1
+    plugin: obfs
+    plugin-opts:
+      host: 2fce243671.download.windowsupdate.com
+      mode: http
+    port: 835
+    server: 260323.1.0.l3.unclemanco.com
+    type: ss
+    udp: true
+  - cipher: aes-128-gcm
+    name: 🇯🇵JP_1|2.2MB/s
+    password: QHPy2u
+    plugin: obfs
+    plugin-opts:
+      host: 2fce243671.download.windowsupdate.com
+      mode: http
+    port: 914
+    server: 260323.1.0.l3.unclemanco.com
+    type: ss
+    udp: true
+  - name: 🇰🇷KR_2|1.4MB/s
+    password: test.+
+    port: 30446
+    server: testkr3.ssv.vc
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: test
+    udp: true
+    sni: testkr3.ssv.vc
 proxy-groups:
   - name: 🚀 节点选择
     type: select
