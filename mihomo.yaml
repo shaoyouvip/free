@@ -1,21 +1,20 @@
 proxies:
-  - client-fingerprint: edge
-    flow: xtls-rprx-vision
-    name: 🇭🇰HK_1|4.5MB/s
-    network: tcp
-    port: 56444
-    reality-opts:
-      public-key: DR17bSi5Ekgozz98Fvjw9avipgrOxHUxeoFEpUjDhXE
-      short-id: "a1371e3f"
-    server: 3.112.61.18
-    tls: true
-    type: vless
+  - name: 🇩🇪DE_1|3.2MB/s
+    network: ws
+    password: 82dd5d38-1a65-42b9-835e-497b5b51eb84
+    port: 443
+    server: 172.67.78.22
+    skip-cert-verify: true
+    sni: kamonka.eu.org
+    type: trojan
     udp: true
-    uuid: cdedeffd-e447-4d4f-98be-61bde31bf405
-    servername: 16personalities.wwwnav.com
+    ws-opts:
+      headers:
+        Host: kamonka.eu.org
+      path: /
   - client-fingerprint: edge
     flow: xtls-rprx-vision
-    name: 🇭🇰HK_2|1009KB/s
+    name: 🇭🇰HK_1|4.3MB/s
     network: tcp
     port: 63574
     reality-opts:
@@ -25,23 +24,9 @@ proxies:
     tls: true
     type: vless
     udp: true
-    uuid: 15e5476b-12f3-42a7-9c70-a1400e83f4ef
+    uuid: d9c33eaf-a175-4902-b892-93ea6fdf2c99
     servername: 16personalities.wwwnav.com
-  - client-fingerprint: edge
-    flow: xtls-rprx-vision
-    name: 🇭🇰HK_3|2.9MB/s
-    network: tcp
-    port: 56444
-    reality-opts:
-      public-key: DR17bSi5Ekgozz98Fvjw9avipgrOxHUxeoFEpUjDhXE
-      short-id: "a1371e3f"
-    server: 3.112.61.18
-    tls: true
-    type: vless
-    udp: true
-    uuid: 15e5476b-12f3-42a7-9c70-a1400e83f4ef
-    servername: 16personalities.wwwnav.com
-  - name: 🇯🇵JP_1|5.4MB/s
+  - name: 🇯🇵JP_1|5.2MB/s
     password: ND91608427
     port: 443
     server: casual-bee.rooster465.autos
@@ -50,16 +35,7 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇯🇵JP_2|2.5MB/s
-    password: ND91608427
-    port: 443
-    server: definite-sturgeon.rooster465.autos
-    skip-cert-verify: true
-    sni: definite-sturgeon.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇯🇵JP_3|4.4MB/s
+  - name: 🇯🇵JP_2|4.7MB/s
     password: ND91608427
     port: 443
     server: tough-robin.rooster465.autos
@@ -68,25 +44,7 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇯🇵JP_4|5.7MB/s
-    password: ND91608427
-    port: 443
-    server: upright-impala.rooster465.autos
-    skip-cert-verify: true
-    sni: upright-impala.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇰🇷KR_1|1.3MB/s
-    password: ND91608427
-    port: 443
-    server: moved-meerkat.rooster465.autos
-    skip-cert-verify: true
-    sni: moved-meerkat.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇰🇷KR_2|4.5MB/s
+  - name: 🇰🇷KR_1|4.2MB/s
     password: ND91608427
     port: 443
     server: chief-bluegill.rooster465.autos
@@ -95,76 +53,199 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇸🇬SG_1|1.1MB/s
-    password: BxceQaOe
-    port: 9149
-    server: 16.162.22.218
-    skip-cert-verify: true
-    sni: t.me%25252Fripaojiedian
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇸🇬SG_2|3.0MB/s
-    password: BxceQaOe
-    port: 9149
-    server: 16.162.22.218
-    skip-cert-verify: true
-    sni: t.me%252Fripaojiedian
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇰🇷KR_3|4.6MB/s
-    password: ND91608427
+  - alpn:
+      - http/1.1
+    client-fingerprint: firefox
+    name: 🇺🇸US_1|2.3MB/s
+    network: ws
     port: 443
-    server: definite-malamute.rooster465.autos
+    server: 69.46.46.46
+    tls: true
+    type: vless
+    udp: true
+    uuid: 892438bf-07eb-406b-9ba9-dad35c3e7953
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/892438bf-07eb-406b-9ba9-dad35c3e7953
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - alpn:
+      - http/1.1
+    client-fingerprint: ios
+    name: 🇺🇸US_2|1.2MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.67
+    tls: true
+    type: vless
+    udp: true
+    uuid: b91b794a-3af9-4f8f-9803-2a60a2c4bceb
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/b91b794a-3af9-4f8f-9803-2a60a2c4bceb
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - name: 🇳🇱NL_1|1.0MB/s
+    network: ws
+    password: 87961f9d-bee1-4377-826b-e169e7891c4f
+    port: 443
+    server: 104.21.84.3
     skip-cert-verify: true
-    sni: definite-malamute.rooster465.autos
+    sni: yks-dd9.pages.dev
+    type: trojan
+    ws-opts:
+      headers:
+        Host: yks-dd9.pages.dev
+      path: /
+    udp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: firefox
+    name: 🇺🇸US_3|1015KB/s
+    network: ws
+    port: 443
+    server: 69.46.46.67
+    tls: true
+    type: vless
+    udp: true
+    uuid: 892438bf-07eb-406b-9ba9-dad35c3e7953
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/892438bf-07eb-406b-9ba9-dad35c3e7953
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - alpn:
+      - h3
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: 🇺🇸US_4|1.9MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.67
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - alpn:
+      - http/1.1
+    client-fingerprint: ios
+    name: 🇺🇸US_5|1.6MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.46
+    tls: true
+    type: vless
+    udp: true
+    uuid: b91b794a-3af9-4f8f-9803-2a60a2c4bceb
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/b91b794a-3af9-4f8f-9803-2a60a2c4bceb
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: 🇺🇸US_6|3.4MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.46
+    tls: true
+    type: vless
+    udp: true
+    uuid: f662c502-58ab-4271-a971-1eef118c61e0
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+      path: /ws/vless/f662c502-58ab-4271-a971-1eef118c61e0
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: web-production-d44e1.up.railway.app
+  - client-fingerprint: chrome
+    name: 🇷🇺RU_1|3.3MB/s
+    network: xhttp
+    port: 443
+    server: ru.node.sillyvpn.cc
+    tls: true
+    type: vless
+    udp: true
+    uuid: 26554985-427e-4dbc-907e-a8dc7b9052d2
+    xhttp-opts:
+      host: ru.node.sillyvpn.cc
+      mode: packet-up
+      path: /api/burmalda.json
+    servername: ru.node.sillyvpn.cc
+  - alpn:
+      - http/1.1
+    name: 🇺🇸US_7|3.0MB/s
+    network: ws
+    password: MiTiVPN
+    port: 443
+    server: 104.18.36.192
+    skip-cert-verify: true
+    sni: hk1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
     type: trojan
     udp: true
-    network: tcp
+    ws-opts:
+      headers:
+        Host: hk1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/HK---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+  - client-fingerprint: chrome
+    grpc-opts:
+      grpc-mode: gun
+      grpc-service-name: TunService
+    name: 🇹🇷TR_1|1.2MB/s
+    network: grpc
+    port: 8443
+    reality-opts:
+      public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+    server: 170.168.97.5
+    tls: true
+    type: vless
+    udp: true
+    uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
+    servername: download.nvidia.com
   - down: ""
     fingerprint: ""
-    name: 🇷🇺RU_1|1.9MB/s
+    name: 🇷🇺RU_2|1.8MB/s
     obfs: ""
     obfs-password: ""
     password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
     port: 443
-    server: 138.124.68.188
+    server: usa1.spectrumproxy.shop
     skip-cert-verify: false
     sni: usa1.spectrumproxy.shop
     type: hysteria2
     up: ""
     udp: true
+  - alterId: 0
+    cipher: auto
+    name: 🇺🇸US_8|1.9MB/s
+    port: 9028
+    server: select-us.ddnskunlun.com
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+    network: tcp
   - client-fingerprint: chrome
-    name: 🇰🇷KR_4|5.3MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: definite-malamute.rooster465.autos
-    skip-cert-verify: true
-    sni: definite-malamute.rooster465.autos
-    type: trojan
-    udp: true
-  - name: 🇰🇷KR_5|1.3MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: moved-meerkat.rooster465.autos
-    skip-cert-verify: true
-    sni: moved-meerkat.rooster465.autos
-    type: trojan
-    udp: true
-  - name: 🇯🇵JP_5|3.2MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: definite-sturgeon.rooster465.autos
-    skip-cert-verify: true
-    sni: definite-sturgeon.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_3|3.8MB/s
+    name: 🇸🇬SG_1|1.7MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -173,25 +254,15 @@ proxies:
     sni: sacred-treefrog.rooster465.autos
     type: trojan
     udp: true
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_4|4.3MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: tidy-gelding.rooster465.autos
-    skip-cert-verify: true
-    sni: tidy-gelding.rooster465.autos
-    type: trojan
-    udp: true
   - cipher: aes-256-cfb
-    name: 🇯🇵JP_6|5.8MB/s
+    name: 🇯🇵JP_3|5.7MB/s
     password: amazonskr05
     port: 443
     server: 52.194.190.172
     type: ss
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_7|3.9MB/s
+    name: 🇯🇵JP_4|4.2MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -201,7 +272,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_8|2.3MB/s
+    name: 🇯🇵JP_5|4.4MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -211,7 +282,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_9|4.2MB/s
+    name: 🇯🇵JP_6|5.3MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -221,7 +292,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_10|4.3MB/s
+    name: 🇯🇵JP_7|4.7MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -231,7 +302,17 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_11|5.4MB/s
+    name: 🇯🇵JP_8|5.8MB/s
+    network: tcp
+    password: ND91608427
+    port: 443
+    server: right-seahorse.rooster465.autos
+    skip-cert-verify: true
+    sni: right-seahorse.rooster465.autos
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇯🇵JP_9|4.1MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -241,7 +322,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_12|5.6MB/s
+    name: 🇯🇵JP_10|5.8MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -251,7 +332,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_13|3.1MB/s
+    name: 🇯🇵JP_11|3.6MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -261,7 +342,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_14|4.8MB/s
+    name: 🇯🇵JP_12|4.2MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -271,7 +352,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_15|2.3MB/s
+    name: 🇯🇵JP_13|4.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -281,7 +362,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_16|4.2MB/s
+    name: 🇯🇵JP_14|2.1MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -291,17 +372,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_17|2.7MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: upright-impala.rooster465.autos
-    skip-cert-verify: true
-    sni: upright-impala.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_18|5.4MB/s
+    name: 🇯🇵JP_15|5.4MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -311,17 +382,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_19|5.9MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: tough-robin.rooster465.autos
-    skip-cert-verify: true
-    sni: tough-robin.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_20|2.4MB/s
+    name: 🇯🇵JP_16|5.3MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -331,7 +392,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_21|4.7MB/s
+    name: 🇯🇵JP_17|2.6MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -341,7 +402,17 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_22|5.6MB/s
+    name: 🇯🇵JP_18|5.6MB/s
+    network: tcp
+    password: ND91608427
+    port: 443
+    server: happy-mutt.rooster465.autos
+    skip-cert-verify: true
+    sni: happy-mutt.rooster465.autos
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇯🇵JP_19|5.5MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -351,7 +422,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_23|3.3MB/s
+    name: 🇯🇵JP_20|5.4MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -361,7 +432,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_24|4.8MB/s
+    name: 🇯🇵JP_21|5.6MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -371,7 +442,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_25|4.9MB/s
+    name: 🇯🇵JP_22|5.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -381,7 +452,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_26|5.5MB/s
+    name: 🇯🇵JP_23|4.3MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -391,7 +462,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_27|2.6MB/s
+    name: 🇯🇵JP_24|5.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -401,7 +472,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_28|5.4MB/s
+    name: 🇯🇵JP_25|5.5MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -411,7 +482,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_29|4.7MB/s
+    name: 🇯🇵JP_26|4.4MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -421,7 +492,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_30|5.3MB/s
+    name: 🇯🇵JP_27|3.5MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -431,7 +502,7 @@ proxies:
     type: trojan
     udp: true
   - cipher: auto
-    name: 🇺🇸US_1|3.9MB/s
+    name: 🇺🇸US_9|1.4MB/s
     network: none
     port: 12012
     server: 154.36.135.84
@@ -440,7 +511,7 @@ proxies:
     uuid: d4ed01b4-bdaf-4909-d41e-5e6f8f6b5593
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_6|5.4MB/s
+    name: 🇰🇷KR_2|3.6MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -450,7 +521,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_7|4.3MB/s
+    name: 🇰🇷KR_3|4.6MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -460,7 +531,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_8|5.7MB/s
+    name: 🇰🇷KR_4|4.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -470,7 +541,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_9|2.1MB/s
+    name: 🇰🇷KR_5|4.3MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -480,17 +551,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_10|5.5MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: upward-puma.rooster465.autos
-    skip-cert-verify: true
-    sni: upward-puma.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇰🇷KR_11|3.8MB/s
+    name: 🇰🇷KR_6|5.2MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -500,7 +561,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_12|4.5MB/s
+    name: 🇰🇷KR_7|4.8MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -510,7 +571,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_13|3.5MB/s
+    name: 🇰🇷KR_8|5.2MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -520,7 +581,17 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_14|4.9MB/s
+    name: 🇰🇷KR_9|3.9MB/s
+    network: tcp
+    password: ND91608427
+    port: 443
+    server: intimate-moray.rooster465.autos
+    skip-cert-verify: true
+    sni: intimate-moray.rooster465.autos
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇰🇷KR_10|4.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -529,17 +600,18 @@ proxies:
     sni: pure-ram.rooster465.autos
     type: trojan
     udp: true
-  - auth: 68a93e46-d251-45a8-8148-cf3601451021
-    name: 🇯🇵JP_31|3.1MB/s
-    password: 68a93e46-d251-45a8-8148-cf3601451021
-    port: 22644
-    server: a6.mhlnf.cn
+  - client-fingerprint: chrome
+    name: 🇰🇷KR_11|2.8MB/s
+    network: tcp
+    password: ND91608427
+    port: 443
+    server: exotic-chow.rooster465.autos
     skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
+    sni: exotic-chow.rooster465.autos
+    type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_15|1.5MB/s
+    name: 🇰🇷KR_12|4.9MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -549,7 +621,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_16|1.8MB/s
+    name: 🇰🇷KR_13|5.0MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -558,26 +630,15 @@ proxies:
     sni: striking-maggot.rooster465.autos
     type: trojan
     udp: true
-  - client-fingerprint: random
-    encryption: none
-    name: 🇨🇦CA_1|2.0MB/s
-    network: ws
-    packet-encoding: xudp
+  - cipher: aes-256-cfb
+    name: 🇺🇸US_10|2.7MB/s
+    password: amazonskr05
     port: 443
-    server: saas.sin.fan
-    tls: true
-    type: vless
-    uuid: 5ca3a621-539f-490a-bb11-8c8ffffdd138
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: do-tor1.862400.xyz
-      max-early-data: 2048
-      path: /announcement
+    server: 98.93.33.57
+    type: ss
     udp: true
-    servername: do-tor1.862400.xyz
   - client-fingerprint: chrome
-    name: 🇯🇵JP_32|4.9MB/s
+    name: 🇯🇵JP_28|4.7MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -586,8 +647,17 @@ proxies:
     sni: stunning-mite.rooster465.autos
     type: trojan
     udp: true
+  - name: 🇺🇸US_11|1.1MB/s
+    password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+    port: 443
+    server: f04881e1-tcxds0-tqx9ef-1k0yf.sj.oshuawei.com
+    sni: f04881e1-tcxds0-tqx9ef-1k0yf.sj.oshuawei.com
+    tls: true
+    type: http
+    username: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+    udp: true
   - multiplexing: MULTIPLEXING_LOW
-    name: 🇺🇸US_2|1.1MB/s
+    name: 🇺🇸US_12|1.3MB/s
     password: dongtaiwang.com
     port: 34567
     server: 157.254.223.44
@@ -595,6 +665,256 @@ proxies:
     type: mieru
     username: dongtaiwang.com
     udp: true
+  - name: 🇺🇦UA_1|1.9MB/s
+    network: tcp
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    port: 20066
+    server: hkdcrtc-e.catcat321.com
+    skip-cert-verify: true
+    sni: hk.catxstar.com
+    type: trojan
+    udp: true
+  - name: 🇿🇦ZA_1|1.3MB/s
+    password: aa
+    port: 89
+    server: 160.124.240.188
+    type: http
+    username: aa
+    udp: true
+  - name: 🇳🇱NL_2|1.9MB/s
+    password: ""
+    port: 1080
+    server: 5.255.117.127
+    skip-cert-verify: true
+    type: socks5
+    udp: true
+    username: ""
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: 🇳🇱NL_3|2.4MB/s
+    network: ws
+    packet-encoding: xudp
+    port: 443
+    server: 69.46.46.58
+    tls: true
+    type: vless
+    uuid: cb9e3522-7eb4-5eb1-be6f-4d80a817b6e8
+    ws-opts:
+      headers:
+        Host: node-7293854676-54c283-production.up.railway.app
+      path: /ws/IRONYX VPN
+    udp: true
+    servername: node-7293854676-54c283-production.up.railway.app
+  - name: 🇭🇰HK_2|4.6MB/s
+    network: ws
+    password: 28789988-887e-4e41-83cd-27bbfb7999ad
+    port: 2053
+    server: cf.csdjhajkshdjkas.com
+    sni: a1.xunfastcdn.com
+    type: trojan
+    ws-opts:
+      headers:
+        Host: aa1.xunfastcdn.com
+      path: /api/v3/media/update
+    udp: true
+  - client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /43588/G43plZahWW
+    name: 🇳🇱NL_4|1.8MB/s
+    network: grpc
+    password: 32b2m2w7hsdd93z7
+    port: 443
+    server: titandarkness.mooo.com
+    skip-cert-verify: false
+    type: trojan
+    udp: true
+    sni: titandarkness.mooo.com
+  - client-fingerprint: chrome
+    name: 🇫🇷FR_1|2.5MB/s
+    password: QV31589740
+    port: 443
+    server: great-krill.rooster465.autos
+    skip-cert-verify: false
+    type: trojan
+    udp: true
+    network: tcp
+    sni: great-krill.rooster465.autos
+  - alpn:
+      - h3
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_13|1.1MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.24
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/49.0.2623.112 Safari/537.36
+      path: /ws/vless/1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    xudp: true
+    packet-encoding: xudp
+    servername: web-production-d44e1.up.railway.app
+  - alpn:
+      - h3
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_14|1.7MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.46
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/59.0.3071.115 Safari/537.36
+      path: /ws/vless/1677c228-186d-4bf0-a0a7-9d4fb9b7efb4
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    xudp: true
+    packet-encoding: xudp
+    servername: web-production-d44e1.up.railway.app
+  - client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    name: 🇷🇺RU_3|1.4MB/s
+    network: grpc
+    port: 7443
+    reality-opts:
+      public-key: P5eqN_q-Vq7M8YgrTIS_yZBgWLskGKQ9hAHhW__R6js
+      short-id: "89136b6e"
+    server: 193.233.74.57
+    tls: true
+    type: vless
+    udp: true
+    uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+    xudp: true
+    packet-encoding: xudp
+    servername: www.telekom.de
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_15|1.4MB/s
+    network: ws
+    port: 443
+    server: line-vpn-production.up.railway.app
+    tls: true
+    type: vless
+    udp: true
+    uuid: d0937cc7-fac6-efe4-f6fc-4b7564fc9065
+    ws-opts:
+      headers:
+        Host: ""
+        User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36
+          (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+      path: /ws/d0937cc7-fac6-efe4-f6fc-4b7564fc9065
+    xudp: true
+    packet-encoding: xudp
+    servername: line-vpn-production.up.railway.app
+  - client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: TunService
+    name: 🇹🇷TR_2|1.2MB/s
+    network: grpc
+    port: 8443
+    reality-opts:
+      public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+      short-id: ""
+    server: 170.168.97.3
+    tls: true
+    type: vless
+    udp: true
+    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+    xudp: true
+    packet-encoding: xudp
+    servername: download.nvidia.com
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_16|1.2MB/s
+    network: ws
+    port: 443
+    server: 69.46.46.67
+    tls: true
+    type: vless
+    udp: true
+    uuid: f662c502-58ab-4271-a971-1eef118c61e0
+    ws-opts:
+      headers:
+        Host: web-production-d44e1.up.railway.app
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/52.0.2743.116 Safari/537.36
+      path: /ws/vless/f662c502-58ab-4271-a971-1eef118c61e0
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    xudp: true
+    packet-encoding: xudp
+    servername: web-production-d44e1.up.railway.app
+  - encryption: none
+    http-opts:
+      headers:
+        Host:
+          - telewebion.ir
+      path:
+        - /
+    name: 🇺🇸US_17|1.3MB/s
+    network: http
+    port: 25239
+    server: u.cafeplusserver.ir
+    type: vless
+    udp: true
+    uuid: c998b565-38c7-4bee-a833-d8b479bf5180
+    xudp: true
+    packet-encoding: xudp
+  - client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_18|1.0MB/s
+    network: xhttp
+    port: 37789
+    reality-opts:
+      public-key: UkvgTlCFgSf2A2FtCJISg8r3hhRQbbfJIpQ6mSlL71k
+      short-id: "0dadb8f893"
+    server: second.shadydomain.qzz.io
+    tls: true
+    type: vless
+    udp: true
+    uuid: shady-vpn-shady-vpn-shady_vpn8
+    xhttp-opts:
+      mode: auto
+      path: /shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@
+      x-padding-bytes: 1-1000
+    xudp: true
+    packet-encoding: xudp
+    servername: www.cloudflare.com
+  - name: 🇰🇷KR_14|1.4MB/s
+    password: test.+
+    port: 30446
+    server: testkr3.ssv.vc
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: test
+    sni: testkr3.ssv.vc
 proxy-groups:
   - name: 🚀 节点选择
     type: select
