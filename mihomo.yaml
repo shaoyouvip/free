@@ -1,22 +1,74 @@
 proxies:
-  - client-fingerprint: chrome
-    name: 🇨🇳CN_1|1.0MB/s
-    network: xhttp
+  - auth: 2b0062f7b3a709c26248189c3f094725
+    name: 🇭🇰HK_1|1.0MB/s
+    password: 2b0062f7b3a709c26248189c3f094725
+    port: 40058
+    server: 82.152.161.144
+    skip-cert-verify: true
+    sni: www.amd.com
+    type: hysteria2
+    udp: true
+  - name: 🇯🇵JP_1|5.0MB/s
+    password: ND91608427
     port: 443
-    reality-opts:
-      public-key: wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk
-    server: 157.22.19.5
+    server: upright-impala.rooster465.autos
+    skip-cert-verify: true
+    sni: upright-impala.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇯🇵JP_2|5.6MB/s
+    password: ND91608427
+    port: 443
+    server: relaxing-bluebird.rooster465.autos
+    skip-cert-verify: true
+    sni: relaxing-bluebird.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇰🇷KR_1|1.1MB/s
+    password: ND91608427
+    port: 443
+    server: definite-malamute.rooster465.autos
+    skip-cert-verify: true
+    sni: definite-malamute.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇰🇷KR_2|4.7MB/s
+    password: ND91608427
+    port: 443
+    server: saving-octopus.rooster465.autos
+    skip-cert-verify: true
+    sni: saving-octopus.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇰🇷KR_3|5.6MB/s
+    password: ND91608427
+    port: 443
+    server: moved-meerkat.rooster465.autos
+    skip-cert-verify: true
+    sni: moved-meerkat.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - client-fingerprint: chrome
+    name: 🇳🇱NL_1|3.2MB/s
+    network: ws
+    port: 443
+    server: cf.off666.ccwu.cc
     tls: true
     type: vless
     udp: true
-    uuid: c97b2158-64c9-1f55-8167-72970d347288
-    xhttp-opts:
-      host: download.nvidia.com
-      mode: auto
+    uuid: 0c1c48ca-0b15-4558-84d9-82a1da312a19
+    ws-opts:
+      headers:
+        Host: cf.off666.ccwu.cc
       path: /
-    servername: download.nvidia.com
+    servername: cf.off666.ccwu.cc
   - auth: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-    name: 🇺🇸US_1|1.9MB/s
+    name: 🇺🇸US_1|3.7MB/s
     password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
     port: 443
     server: taga10.api3-max.ru
@@ -24,8 +76,17 @@ proxies:
     sni: taga10.api3-max.ru
     type: hysteria2
     udp: true
+  - auth: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+    name: 🇷🇺RU_1|2.8MB/s
+    password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+    port: 443
+    server: usa1.spectrumproxy.shop
+    skip-cert-verify: true
+    sni: usa1.spectrumproxy.shop
+    type: hysteria2
+    udp: true
   - multiplexing: MULTIPLEXING_LOW
-    name: 🇺🇸US_2|4.2MB/s
+    name: 🇺🇸US_2|2.7MB/s
     password: dongtaiwang.com
     port: 34567
     server: 157.254.223.44
@@ -33,24 +94,6 @@ proxies:
     type: mieru
     username: dongtaiwang.com
     udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: TunService
-    name: 🇹🇷TR_1|1.3MB/s
-    network: grpc
-    port: 8443
-    reality-opts:
-      public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-      short-id: ""
-    server: 170.168.97.3
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-    xudp: true
-    packet-encoding: xudp
-    servername: download.nvidia.com
   - client-fingerprint: chrome
     name: 🇸🇬SG_1|3.9MB/s
     network: tcp
@@ -62,60 +105,7 @@ proxies:
     udp: true
   - client-fingerprint: chrome
     encryption: none
-    name: 🇺🇸US_3|1.2MB/s
-    network: xhttp
-    port: 37789
-    reality-opts:
-      public-key: UkvgTlCFgSf2A2FtCJISg8r3hhRQbbfJIpQ6mSlL71k
-      short-id: "0dadb8f893"
-    server: second.shadydomain.qzz.io
-    tls: true
-    type: vless
-    udp: true
-    uuid: shady-vpn-shady-vpn-shady_vpn1
-    xhttp-opts:
-      mode: auto
-      path: /shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@shady_vpn@
-      x-padding-bytes: 1-1000
-    xudp: true
-    packet-encoding: xudp
-    servername: www.cloudflare.com
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇯🇵JP_1|3.3MB/s
-    network: tcp
-    port: 29855
-    reality-opts:
-      public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-      short-id: "bc8e3658db7d1323"
-    server: v2.cdn.yye837u1f6xg.jjxdns.net
-    tls: true
-    type: vless
-    udp: true
-    uuid: bd37d63b-c75d-3e48-acbf-1d5954fe9cdc
-    xudp: true
-    packet-encoding: xudp
-    servername: cdnjs.cloudflare.com
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇺🇸US_4|1007KB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-      short-id: ""
-    server: 2.26.79.32
-    tls: true
-    type: vless
-    udp: true
-    uuid: fdac0300-5963-4e68-adb6-fc89a2de99a2
-    xudp: true
-    packet-encoding: xudp
-    servername: pro-se.emrata.top
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇬🇧GB_1|1.9MB/s
+    name: 🇬🇧GB_1|1.4MB/s
     network: tcp
     port: 22012
     reality-opts:
@@ -129,7 +119,24 @@ proxies:
     xudp: true
     packet-encoding: xudp
     servername: login.yahoo.com
-  - name: 🇸🇬SG_2|4.7MB/s
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇸🇬SG_2|3.3MB/s
+    network: tcp
+    port: 31877
+    reality-opts:
+      public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+      short-id: "bc8e3658db7d1323"
+    server: v1.cdn.wj0zugpsmub2.jjxdns.net
+    tls: true
+    type: vless
+    udp: true
+    uuid: bd37d63b-c75d-3e48-acbf-1d5954fe9cdc
+    xudp: true
+    packet-encoding: xudp
+    servername: cdnjs.cloudflare.com
+  - name: 🇸🇬SG_3|3.6MB/s
     network: tcp
     password: BxceQaOe
     port: 9149
@@ -138,23 +145,7 @@ proxies:
     sni: t.me%252Fripaojiedian
     type: trojan
     udp: true
-  - alpn:
-      - http/1.1
-    name: 🇳🇱NL_1|1.5MB/s
-    network: ws
-    password: MiTiVPN
-    port: 443
-    server: 188.114.97.6
-    skip-cert-verify: true
-    sni: dde1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88r.ir
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/41.0.2272.76 Safari/537.36
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-  - name: 🇸🇬SG_3|1.1MB/s
+  - name: 🇸🇬SG_4|4.4MB/s
     password: BxceQaOe
     port: 9149
     server: 16.162.22.218
@@ -164,7 +155,7 @@ proxies:
     udp: true
     network: tcp
   - client-fingerprint: chrome
-    name: 🇸🇬SG_4|3.4MB/s
+    name: 🇸🇬SG_5|4.1MB/s
     password: BxceQaOe
     port: 9149
     server: 16.162.22.218
@@ -173,66 +164,33 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - down: ""
-    fingerprint: ""
-    name: 🇷🇺RU_1|1.6MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  - client-fingerprint: chrome
+    name: 🇯🇵JP_3|4.8MB/s
+    network: tcp
+    password: ND91608427
     port: 443
-    server: 138.124.68.188
-    skip-cert-verify: false
-    sni: usa1.spectrumproxy.shop
-    type: hysteria2
-    up: ""
-    udp: true
-  - name: 🇳🇱NL_2|1.5MB/s
-    password: ""
-    port: 1080
-    server: 5.255.117.127
+    server: definite-sturgeon.rooster465.autos
     skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: TunService
-    name: 🇹🇷TR_2|1.0MB/s
-    network: grpc
-    port: 8443
-    reality-opts:
-      public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-      short-id: ""
-    server: 170.168.97.5
-    tls: true
-    type: vless
-    udp: true
-    uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
-    xudp: true
-    packet-encoding: xudp
-    servername: download.nvidia.com
-  - cipher: chacha20-ietf-poly1305
-    name: 🇸🇨SC_1|3.4MB/s
-    password: 28789988-887e-4e41-83cd-27bbfb7999ad
-    port: 40003
-    server: xunlinknode.csdjhajkshdjkas.com
-    type: ss
-    udp: true
-  - client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /43588/G43plZahWW
-    name: 🇳🇱NL_3|1.5MB/s
-    network: grpc
-    password: 32b2m2w7hsdd93z7
-    port: 443
-    server: titandarkness.mooo.com
-    skip-cert-verify: false
+    sni: definite-sturgeon.rooster465.autos
     type: trojan
     udp: true
-    sni: titandarkness.mooo.com
   - client-fingerprint: chrome
-    name: 🇰🇷KR_1|5.1MB/s
+    name: 🇯🇵JP_4|3.1MB/s
+    network: ws
+    password: MiTiVPN
+    port: 443
+    server: 162.159.44.100
+    skip-cert-verify: true
+    sni: Flll-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88R.iR
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/fl---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+  - client-fingerprint: chrome
+    name: 🇰🇷KR_4|3.8MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -242,17 +200,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇰🇷KR_2|5.1MB/s
-    network: tcp
-    password: ND91608427
-    port: 443
-    server: definite-malamute.rooster465.autos
-    skip-cert-verify: true
-    sni: definite-malamute.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇰🇷KR_3|5.0MB/s
+    name: 🇰🇷KR_5|5.0MB/s
     network: tcp
     password: ND91608427
     port: 443
@@ -263,7 +211,7 @@ proxies:
     udp: true
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇲🇾MY_1|3.1MB/s
+    name: 🇲🇾MY_1|2.6MB/s
     network: tcp
     port: 29709
     reality-opts:
@@ -279,7 +227,7 @@ proxies:
     servername: cdnjs.cloudflare.com
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇯🇵JP_2|2.9MB/s
+    name: 🇯🇵JP_5|2.2MB/s
     network: tcp
     port: 39409
     reality-opts:
