@@ -1,7 +1,7 @@
 proxies:
   - alterId: 0
     cipher: auto
-    name: 🇭🇰HK_1|4.3MB/s
+    name: 🇭🇰HK_1|2.8MB/s
     network: ws
     port: 16632
     server: planb.mojcn.com.linuxlh.xin
@@ -14,7 +14,7 @@ proxies:
         Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
       path: /
     udp: true
-  - name: 🇭🇰HK_2|1.1MB/s
+  - name: 🇭🇰HK_2|1.0MB/s
     password: 2fd892b8-4f6c-4597-977e-85ec8a82c7a2
     port: 448
     server: 119.147.134.47
@@ -22,24 +22,7 @@ proxies:
     sni: ssp.vivo.com.cn
     type: anytls
     udp: true
-  - alpn:
-      - ""
-    alterId: 0
-    cipher: auto
-    name: 🇭🇰HK_3|1.6MB/s
-    network: ws
-    port: 16632
-    server: planb.mojcn.com.linuxlh.xin
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    udp: true
-    uuid: 0c657913-e593-4893-9555-f88478c33a4b
-    ws-opts:
-      headers:
-        Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-      path: /
-  - name: 🇸🇬SG_1|1.4MB/s
+  - name: 🇸🇬SG_1|3.3MB/s
     password: 13f0acfa-38c1-4e82-a758-583aa31740df
     port: 56277
     server: yzany01.jdoanst2026.com
@@ -47,27 +30,9 @@ proxies:
     sni: xjp03.ascwt179.com
     type: anytls
     udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: update
-    name: 🇭🇰HK_4|3.5MB/s
-    network: grpc
-    port: 10126
-    reality-opts:
-      public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-      short-id: "686c0ef0"
-    server: 95.40.100.129
-    tls: true
-    type: vless
-    udp: true
-    uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
-    xudp: true
-    packet-encoding: xudp
-    servername: s0.awsstatic.com
   - alterId: "0"
     cipher: auto
-    name: 🇭🇰HK_5|4.7MB/s
+    name: 🇭🇰HK_3|4.2MB/s
     network: ws
     port: 16632
     server: planb.mojcn.com.linuxlh.xin
@@ -82,8 +47,39 @@ proxies:
       path: /
     xudp: true
     packet-encoding: xudp
+  - alpn:
+      - h2
+    client-fingerprint: firefox
+    encryption: none
+    name: 🇺🇸US_1|1.7MB/s
+    network: xhttp
+    port: 443
+    server: api.ferrin.uk
+    tls: true
+    type: vless
+    udp: true
+    uuid: e7e90e6b-8069-4cb8-bad9-a3b364dd5d71
+    xhttp-opts:
+      mode: auto
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: e7e90e6b.ferrin.uk
+  - down: ""
+    fingerprint: ""
+    name: 🇺🇸US_2|3.5MB/s
+    obfs: ""
+    obfs-password: ""
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    port: 443
+    server: 18.226.172.222
+    skip-cert-verify: true
+    sni: vpn-us-003.fastervpn.world
+    type: hysteria2
+    up: ""
+    udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_6|1.2MB/s
+    name: 🇭🇰HK_4|2.8MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -94,7 +90,7 @@ proxies:
     type: ss
     udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_7|1.5MB/s
+    name: 🇭🇰HK_5|2.4MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -105,18 +101,7 @@ proxies:
     type: ss
     udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_8|1.6MB/s
-    password: passwd
-    plugin: obfs
-    plugin-opts:
-      host: 43309-nIao34iu.download.microsoft.com
-      mode: http
-    port: 8106
-    server: cn02.somethingstranges.com
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇵🇭PH_1|4.1MB/s
+    name: 🇵🇭PH_1|4.0MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -127,18 +112,7 @@ proxies:
     type: ss
     udp: true
   - cipher: chacha20-ietf
-    name: 🇵🇭PH_2|2.0MB/s
-    password: passwd
-    plugin: obfs
-    plugin-opts:
-      host: 43309-nIao34iu.download.microsoft.com
-      mode: http
-    port: 8233
-    server: cn06.somethingstranges.com
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_9|2.1MB/s
+    name: 🇭🇰HK_6|2.2MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -149,7 +123,7 @@ proxies:
     type: ss
     udp: true
   - cipher: chacha20-ietf
-    name: 🇺🇸US_1|2.5MB/s
+    name: 🇺🇸US_3|1.3MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -160,7 +134,7 @@ proxies:
     type: ss
     udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_10|1.6MB/s
+    name: 🇭🇰HK_7|1.2MB/s
     password: passwd
     plugin: obfs
     plugin-opts:
@@ -170,38 +144,150 @@ proxies:
     server: cn01.somethingstranges.com
     type: ss
     udp: true
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_8|1.8MB/s
+    password: passwd
+    plugin: obfs
+    plugin-opts:
+      host: 43309-nIao34iu.download.microsoft.com
+      mode: http
+    port: 8105
+    server: cn02.somethingstranges.com
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_9|1.9MB/s
+    password: passwd
+    plugin: obfs
+    plugin-opts:
+      host: 43309-nIao34iu.download.microsoft.com
+      mode: http
+    port: 8115
+    server: cn03.somethingstranges.com
+    type: ss
+    udp: true
   - name: 🇸🇬SG_2|4.9MB/s
     password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 45647
-    server: yazhouany02.twzq59.cc
-    sni: yazhou11ak.2uuzhe.com
+    port: 60572
+    server: sivp666.ipad1el.com
+    sni: yzhou015.jdvipkuai.cc
     type: anytls
     udp: true
-  - multiplexing: MULTIPLEXING_LOW
-    name: 🇺🇸US_2|1007KB/s
-    password: dongtaiwang.com
-    port: 34567
-    server: 157.254.223.44
-    transport: TCP
-    type: mieru
-    username: dongtaiwang.com
+  - cipher: aes-256-cfb
+    name: 🇫🇷FR_1|1.3MB/s
+    password: amazonskr05
+    port: 443
+    server: 15.237.189.197
+    type: ss
     udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇸🇬SG_3|1.2MB/s
+  - name: 🇺🇸US_4|1.0MB/s
+    port: 443
+    server: fullmanfirm.icu
+    skip-cert-verify: true
+    sni: fullmanfirm.icu
+    tls: true
+    type: http
+    udp: true
+  - name: 🇿🇦ZA_1|1.1MB/s
+    password: aa
+    port: 89
+    server: 160.124.240.188
+    type: http
+    username: aa
+    udp: true
+  - name: 🇸🇬SG_3|1.2MB/s
+    password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+    port: 2060
+    server: xjp4.mangshe.xyz
+    skip-cert-verify: true
+    sni: xjp4.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - name: 🇰🇷KR_1|2.4MB/s
+    password: test.+
+    port: 30446
+    server: testkr3.ssv.vc
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: test
+    sni: testkr3.ssv.vc
+  - alpn:
+      - h3
+    down: ""
+    fingerprint: ""
+    name: 🇩🇪DE_1|2.8MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+    port: 443
+    server: fr131.mechvpn.online
+    skip-cert-verify: true
+    sni: fr131.mechvpn.online
+    type: hysteria2
+    up: ""
+    udp: true
+  - name: 🇺🇸US_5|1.5MB/s
     network: tcp
-    port: 8686
-    reality-opts:
-      public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-      short-id: "628b3c90c98ead4f"
-    server: 13.214.172.59
+    port: 58011
+    server: us22.sofast.live
+    type: vless
+    udp: true
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    xudp: true
+    packet-encoding: xudp
+  - name: 🇺🇸US_6|1.4MB/s
+    network: tcp
+    port: 52683
+    server: jp.sofast.live
+    type: vless
+    udp: true
+    uuid: 399b6b23-cc40-4831-a494-61948e2df133
+    xudp: true
+    packet-encoding: xudp
+  - name: 🇺🇸US_7|1.2MB/s
+    network: tcp
+    port: 52683
+    server: jp.sofast.live
+    type: vless
+    udp: true
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    xudp: true
+    packet-encoding: xudp
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_8|1.1MB/s
+    network: ws
+    port: 443
+    server: service-5de701-e3e9b6-production.up.railway.app
     tls: true
     type: vless
     udp: true
-    uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+    uuid: 79ef15b5-9db5-48f1-aed4-da0e09ee6f57
+    ws-opts:
+      headers:
+        Host: service-5de701-e3e9b6-production.up.railway.app
+        User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
+          Chrome/v1.0.0 Safari/538.1
+      path: /ws/vless/79ef15b5-9db5-48f1-aed4-da0e09ee6f57
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
     xudp: true
     packet-encoding: xudp
-    servername: www.apple.com
+    servername: service-5de701-e3e9b6-production.up.railway.app
+  - fingerprint: ""
+    name: 🇭🇰HK_10|4.2MB/s
+    password: 13f0acfa-38c1-4e82-a758-583aa31740df
+    port: 24318
+    server: yzany01.jdoanst2026.com
+    skip-cert-verify: false
+    sni: hk08.alytest.cc
+    type: anytls
+    udp: true
+    username: 13f0acfa-38c1-4e82-a758-583aa31740df
 proxy-groups:
   - name: 🚀 节点选择
     type: select
