@@ -1,48 +1,27 @@
 proxies:
-  - auth: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
-    name: 🇩🇪DE_1|2.7MB/s
-    password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: 🇫🇷FR_1|1.8MB/s
+    network: tcp
     port: 8443
-    server: 194.180.188.21
-    skip-cert-verify: true
-    sni: keyhop-offshore.roxa.org
-    type: hysteria2
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    server: 152.228.215.219
+    tls: true
+    type: vless
     udp: true
-  - alpn:
-      - ""
-    alterId: 0
-    cipher: auto
-    name: 🇭🇰HK_1|4.2MB/s
-    network: ws
-    port: 16632
-    server: planb.mojcn.com.linuxlh.xin
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    udp: true
-    uuid: 0c657913-e593-4893-9555-f88478c33a4b
-    ws-opts:
-      headers:
-        Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-      path: /
-  - name: 🇭🇰HK_2|4.5MB/s
-    password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 33782
-    server: yzany01.jdoanst2026.com
-    skip-cert-verify: true
-    sni: hk06.nynet.shop
-    type: anytls
-    udp: true
-  - name: 🇯🇵JP_1|4.2MB/s
+    uuid: 5c22dd50-f75d-4cf5-ba53-721f91d8bfe1
+    servername: sellflow.org
+  - name: 🇫🇷FR_2|1.7MB/s
     password: PQ05174892
     port: 443
-    server: concise-guinea.rooster465.autos
+    server: lucky-marmot.rooster465.autos
     skip-cert-verify: true
     type: trojan
     udp: true
     network: tcp
-    sni: concise-guinea.rooster465.autos
-  - name: 🇰🇷KR_1|3.8MB/s
+    sni: lucky-marmot.rooster465.autos
+  - name: 🇰🇷KR_1|4.8MB/s
     password: PQ05174892
     port: 443
     server: regular-raptor.rooster465.autos
@@ -55,7 +34,7 @@ proxies:
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇰🇷KR_2|4.9MB/s
+    name: 🇰🇷KR_2|5.4MB/s
     network: grpc
     port: 10047
     reality-opts:
@@ -67,7 +46,7 @@ proxies:
     udp: true
     uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
     servername: s0.awsstatic.com
-  - name: 🇰🇷KR_3|5.3MB/s
+  - name: 🇰🇷KR_3|5.5MB/s
     password: PQ05174892
     port: 443
     server: precious-stag.rooster465.autos
@@ -76,33 +55,11 @@ proxies:
     udp: true
     network: tcp
     sni: precious-stag.rooster465.autos
-  - auth: 425e9e31-b017-4e32-bbd3-656473466d5e
-    name: 🇱🇹LT_1|3.7MB/s
-    password: 425e9e31-b017-4e32-bbd3-656473466d5e
-    port: 2443
-    server: latvia.koalaexpress.ru
-    skip-cert-verify: true
-    sni: latvia.koalaexpress.ru
-    type: hysteria2
-    udp: true
-  - client-fingerprint: firefox
-    name: 🇷🇺RU_1|1.4MB/s
-    network: xhttp
-    port: 443
-    server: 135.106.140.18
-    tls: true
-    type: vless
-    udp: true
-    uuid: abc2d099-3c30-45c1-a754-bc25aa95061b
-    xhttp-opts:
-      mode: auto
-      path: /assets/build/_app/immutable/chunks/stream-one/
-    servername: russia1.denverpresents.top
   - client-fingerprint: chrome
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇸🇬SG_1|4.6MB/s
+    name: 🇸🇬SG_1|5.3MB/s
     network: grpc
     port: 10036
     reality-opts:
@@ -114,7 +71,7 @@ proxies:
     udp: true
     uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
     servername: s0.awsstatic.com
-  - name: 🇸🇬SG_2|4.2MB/s
+  - name: 🇸🇬SG_2|3.8MB/s
     password: PQ05174892
     port: 443
     server: fleet-pony.rooster465.autos
@@ -123,17 +80,8 @@ proxies:
     udp: true
     network: tcp
     sni: fleet-pony.rooster465.autos
-  - auth: 90af65ff00ef2ff089d28d6a11fc10de
-    name: 🇺🇸US_1|2.3MB/s
-    password: 90af65ff00ef2ff089d28d6a11fc10de
-    port: 50160
-    server: 23-19-231-152.liao.kdns.fr
-    skip-cert-verify: true
-    sni: 23-19-231-152.liao.kdns.fr
-    type: hysteria2
-    udp: true
   - client-fingerprint: edge
-    name: 🇺🇸US_2|3.4MB/s
+    name: 🇺🇸US_1|4.1MB/s
     network: ws
     port: 443
     server: xmmct.130209.xyz
@@ -147,52 +95,63 @@ proxies:
       path: /cdn/packages/runtime-core.tar.gz
     servername: usa.811350.xyz
   - client-fingerprint: chrome
-    name: 🇸🇬SG_3|4.5MB/s
-    password: PQ05174892
-    port: 443
-    server: intense-monarch.rooster465.autos
-    skip-cert-verify: false
-    sni: intense-monarch.rooster465.autos
-    type: trojan
-    udp: true
+    name: 🇰🇷KR_4|5.5MB/s
     network: tcp
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_4|4.5MB/s
     password: PQ05174892
     port: 443
-    server: 52.220.98.46
-    skip-cert-verify: false
-    sni: pleased-albacore.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_2|3.1MB/s
-    password: PQ05174892
-    port: 443
-    server: champion-alien.rooster465.autos
+    server: regular-raptor.rooster465.autos
     skip-cert-verify: true
     type: trojan
     udp: true
-    network: tcp
-    sni: champion-alien.rooster465.autos
-  - cipher: 2022-blake3-aes-256-gcm
-    name: 🇭🇰HK_3|1.7MB/s
-    password: ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:NGUxZmQ1NWUtOTQ5MS00NDc3LWE3ODItYjM3OGIyNjU=
-    port: 65011
-    server: cccct.284.pics
-    type: ss
+    sni: regular-raptor.rooster465.autos
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_2|1.6MB/s
+    network: ws
+    port: 443
+    server: spider-panel-production-c21d.up.railway.app
+    tls: true
+    type: vless
     udp: true
+    uuid: 58019004-3577-479c-a9bb-bbddac9d9cb0
+    ws-opts:
+      headers:
+        Host: spider-panel-production-c21d.up.railway.app
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/45.0.2454.85 Safari/537.36
+      path: /ws/58019004-3577-479c-a9bb-bbddac9d9cb0
+    xudp: true
+    packet-encoding: xudp
+    servername: spider-panel-production-c21d.up.railway.app
   - cipher: 2022-blake3-aes-128-gcm
-    name: 🇭🇰HK_4|6.0MB/s
+    name: 🇭🇰HK_1|1.1MB/s
     password: gyKRDZaU7H9DXBVjEKDdAw==
     port: 62740
     server: idc-tunnel.xssx.win
     type: ss
     udp: true
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_3|4.5MB/s
+    password: PQ05174892
+    port: 443
+    server: 13.212.174.21
+    skip-cert-verify: false
+    sni: fleet-pony.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - cipher: 2022-blake3-aes-256-gcm
+    name: 🇭🇰HK_2|1.8MB/s
+    password: ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:NGUxZmQ1NWUtOTQ5MS00NDc3LWE3ODItYjM3OGIyNjU=
+    port: 65012
+    server: cccct.284.pics
+    type: ss
+    udp: true
   - alterId: 0
     cipher: auto
-    name: 🇭🇰HK_5|4.6MB/s
+    name: 🇭🇰HK_3|2.3MB/s
     network: ws
     port: 16632
     server: planb.mojcn.com.linuxlh.xin
@@ -208,65 +167,26 @@ proxies:
     xudp: true
     packet-encoding: xudp
   - cipher: 2022-blake3-aes-128-gcm
-    name: 🇸🇬SG_5|3.1MB/s
+    name: 🇦🇺AU_1|5.7MB/s
     password: gyKRDZaU7H9DXBVjEKDdAw==
-    port: 62750
+    port: 62780
     server: idc-tunnel.xssx.win
     type: ss
     udp: true
-  - cipher: 2022-blake3-aes-256-gcm
-    name: 🇭🇰HK_6|2.4MB/s
-    password: ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:NGUxZmQ1NWUtOTQ5MS00NDc3LWE3ODItYjM3OGIyNjU=
-    port: 65012
-    server: cccct.284.pics
-    type: ss
-    udp: true
-  - alpn:
-      - http/1.1
-      - h2
-      - h3
-    client-fingerprint: chrome
-    name: 🇫🇷FR_1|1.4MB/s
-    network: ws
-    password: humanity
+  - down: ""
+    fingerprint: ""
+    name: 🇺🇸US_3|3.3MB/s
+    obfs: ""
+    obfs-password: ""
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     port: 443
-    server: 198.41.223.96
-    skip-cert-verify: false
-    sni: www.ignitelimit.com
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/54.0.2840.71 Safari/537.36
-      path: /assignment
-  - down: ""
-    fingerprint: ""
-    name: 🇩🇪DE_2|1.3MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-    port: 2056
-    server: mg2.mangshe.xyz
+    server: vpn-us-002.fastervpn.world
     skip-cert-verify: true
-    sni: mg2.mangshe.xyz
+    sni: 127.0.0.1
     type: hysteria2
     up: ""
     udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇺🇸US_3|1.5MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 2630a66444286f47ce591752f28adf5e
-    port: 50160
-    server: 154-49-127-140.liao.kdns.fr
-    skip-cert-verify: true
-    sni: 154-49-127-140.liao.kdns.fr
-    type: hysteria2
-    up: ""
-    udp: true
-  - name: 🇰🇷KR_4|4.2MB/s
+  - name: 🇰🇷KR_5|5.6MB/s
     password: PQ05174892
     port: 443
     server: awake-redbird.rooster465.autos
@@ -275,34 +195,16 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇯🇵JP_3|5.6MB/s
+  - name: 🇰🇷KR_6|5.7MB/s
     password: PQ05174892
     port: 443
-    server: witty-duckling.rooster465.autos
+    server: regular-raptor.rooster465.autos
     skip-cert-verify: true
-    sni: witty-duckling.rooster465.autos
+    sni: regular-raptor.rooster465.autos
     type: trojan
     udp: true
     network: tcp
-  - name: 🇸🇬SG_6|4.6MB/s
-    password: PQ05174892
-    port: 443
-    server: vast-werewolf.rooster465.autos
-    skip-cert-verify: true
-    sni: vast-werewolf.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇸🇬SG_7|4.5MB/s
-    password: PQ05174892
-    port: 443
-    server: pleased-albacore.rooster465.autos
-    skip-cert-verify: true
-    sni: pleased-albacore.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇸🇬SG_8|5.5MB/s
+  - name: 🇸🇬SG_4|4.6MB/s
     password: PQ05174892
     port: 443
     server: amusing-grub.rooster465.autos
@@ -311,7 +213,16 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇸🇬SG_9|4.8MB/s
+  - name: 🇸🇬SG_5|2.5MB/s
+    password: PQ05174892
+    port: 443
+    server: intense-sole.rooster465.autos
+    skip-cert-verify: true
+    sni: intense-sole.rooster465.autos
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇸🇬SG_6|4.7MB/s
     password: PQ05174892
     port: 443
     server: welcome-monitor.rooster465.autos
@@ -320,7 +231,7 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇯🇵JP_4|4.7MB/s
+  - name: 🇯🇵JP_1|5.4MB/s
     password: PQ05174892
     port: 443
     server: sterling-vervet.rooster465.autos
@@ -329,120 +240,57 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇸🇬SG_10|4.7MB/s
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_7|4.0MB/s
+    network: tcp
     password: PQ05174892
     port: 443
-    server: fleet-pony.rooster465.autos
-    skip-cert-verify: true
+    server: 13.212.174.21
+    skip-cert-verify: false
     sni: fleet-pony.rooster465.autos
     type: trojan
     udp: true
-    network: tcp
   - client-fingerprint: chrome
-    name: 🇸🇬SG_11|4.0MB/s
+    name: 🇸🇬SG_8|3.7MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: 52.220.98.46
+    server: 54.169.228.116
     skip-cert-verify: false
-    sni: pleased-albacore.rooster465.autos
+    sni: amusing-grub.rooster465.autos
     type: trojan
     udp: true
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_12|4.4MB/s
-    network: tcp
-    password: PQ05174892
-    port: 443
-    server: intense-monarch.rooster465.autos
-    skip-cert-verify: false
-    sni: intense-monarch.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_13|4.6MB/s
-    network: tcp
-    password: PQ05174892
-    port: 443
-    server: pleased-albacore.rooster465.autos
-    skip-cert-verify: false
-    sni: pleased-albacore.rooster465.autos
-    type: trojan
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_7|4.6MB/s
-    obfs: plain
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 60612
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_8|3.1MB/s
-    obfs: plain
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 41181
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_9|3.6MB/s
-    obfs: plain
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 8479
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇹🇼TW_1|4.5MB/s
-    obfs: plain
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 7016
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: aes-256-cfb
-    name: 🇭🇰HK_10|3.0MB/s
-    obfs: tls1.2_ticket_auth
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 2106
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: rc4-md5
-    name: 🇸🇬SG_14|1.9MB/s
-    obfs: tls1.2_ticket_auth
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 28150
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - name: 🇸🇬SG_15|2.9MB/s
+  - name: 🇸🇬SG_9|3.8MB/s
     password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 45647
-    server: yazhouany02.twzq59.cc
-    sni: yazhou11ak.2uuzhe.com
+    port: 60572
+    server: sivp666.ipad1el.com
+    sni: yzhou015.jdvipkuai.cc
     type: anytls
     udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_11|2.3MB/s
+    name: 🇭🇰HK_4|1.2MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: 665203463.douyin.com
+    password: di15PV
+    port: 55962
+    protocol: auth_aes128_md5
+    protocol-param: 203463:YMo3sn
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_5|3.3MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: 665203463.douyin.com
+    password: di15PV
+    port: 19623
+    protocol: auth_aes128_md5
+    protocol-param: 203463:YMo3sn
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_6|2.7MB/s
     obfs: tls1.2_ticket_auth
     obfs-param: 99e144391.douyin.com
     password: di15PV
@@ -452,30 +300,8 @@ proxies:
     server: api.meituan88.com
     type: ssr
     udp: true
-  - cipher: aes-256-cfb
-    name: 🇭🇰HK_12|1.2MB/s
-    obfs: tls1.2_ticket_auth
-    obfs-param: 87c276924.douyin.com
-    password: di15PV
-    port: 2107
-    protocol: auth_aes128_md5
-    protocol-param: 276924:CPFGip
-    server: api.meituan88.com
-    type: ssr
-    udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_13|1.5MB/s
-    obfs: tls1.2_ticket_auth
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 7005
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_14|3.6MB/s
+    name: 🇭🇰HK_7|2.0MB/s
     obfs: tls1.2_ticket_auth
     obfs-param: 99e144391.douyin.com
     password: di15PV
@@ -485,60 +311,8 @@ proxies:
     server: api.meituan88.com
     type: ssr
     udp: true
-  - cipher: rc4-md5
-    name: 🇰🇷KR_5|1.8MB/s
-    obfs: plain
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 44593
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇭🇰HK_15|4.1MB/s
-    obfs: plain
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 7007
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: rc4-md5
-    name: 🇮🇩ID_1|1.7MB/s
-    obfs: plain
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 56274
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇸🇬SG_16|1.1MB/s
-    obfs: plain
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 3205
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - name: 🇷🇴RO_1|2.5MB/s
-    password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 51178
-    server: yzany01.jdoanst2026.com
-    skip-cert-verify: true
-    sni: hk09.alytest.cc
-    type: anytls
-    udp: true
   - cipher: aes-256-cfb
-    name: 🇭🇰HK_16|3.2MB/s
+    name: 🇭🇰HK_8|2.8MB/s
     obfs: tls1.2_ticket_auth
     obfs-param: 87c276924.douyin.com
     password: di15PV
@@ -548,45 +322,7 @@ proxies:
     server: api.meituan88.com
     type: ssr
     udp: true
-  - cipher: chacha20-ietf
-    name: 🇹🇼TW_2|1.5MB/s
-    obfs: tls1.2_ticket_auth
-    obfs-param: 665203463.douyin.com
-    password: di15PV
-    port: 61714
-    protocol: auth_aes128_md5
-    protocol-param: 203463:YMo3sn
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - auth: bc751c4c5c80f17dfbc05785c368b613
-    name: 🇯🇵JP_5|4.3MB/s
-    password: bc751c4c5c80f17dfbc05785c368b613
-    port: 50160
-    server: 154.31.115.179
-    sni: 154-31-115-179.liao.kdns.fr
-    type: hysteria2
-    udp: true
-  - name: 🇭🇰HK_17|4.9MB/s
-    password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 45883
-    server: yzany01.jdoanst2026.com
-    skip-cert-verify: true
-    sni: hk35.ascwt179.com
-    type: anytls
-    udp: true
-  - cipher: chacha20-ietf
-    name: 🇹🇼TW_3|4.1MB/s
-    obfs: plain
-    obfs-param: 87c276924.douyin.com
-    password: di15PV
-    port: 28198
-    protocol: auth_aes128_md5
-    protocol-param: 276924:CPFGip
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - name: 🇭🇰HK_18|4.1MB/s
+  - name: 🇭🇰HK_9|5.2MB/s
     password: 13f0acfa-38c1-4e82-a758-583aa31740df
     port: 24318
     server: yzany01.jdoanst2026.com
@@ -594,24 +330,101 @@ proxies:
     sni: hk08.alytest.cc
     type: anytls
     udp: true
-  - name: 🇺🇸US_4|2.0MB/s
+  - name: 🇺🇸US_4|3.1MB/s
     port: 443
-    server: efr-marktplatz.club
-    sni: efr-marktplatz.club
+    server: jgwynphotoarts.pro
+    sni: jgwynphotoarts.pro
     tls: true
     type: http
     udp: true
-  - name: 🇫🇷FR_2|1.3MB/s
-    password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-    port: 2056
-    server: flkf3.mangshe.xyz
+  - name: 🇺🇸US_5|2.8MB/s
+    port: 443
+    server: jewelscollecti.icu
     skip-cert-verify: true
-    sni: flkf3.mangshe.xyz
+    sni: jewelscollecti.icu
+    tls: true
+    type: http
+    udp: true
+  - client-fingerprint: edge
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_1|2.7MB/s
+    network: raw
+    port: 443
+    reality-opts:
+      public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
+      short-id: "e91da98020a38be9"
+    server: 138.124.255.20
+    tls: true
+    type: vless
+    udp: true
+    uuid: 423b1d79-08c4-0003-9d5e-c541f791b55f
+    xudp: true
+    packet-encoding: xudp
+    servername: russia.cendora.ru
+  - name: 🇨🇭CH_1|3.4MB/s
+    port: 9443
+    server: 37.120.213.210
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - cipher: aes-256-cfb
+    name: 🇭🇰HK_10|1.4MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: 87c276924.douyin.com
+    password: di15PV
+    port: 2105
+    protocol: auth_aes128_md5
+    protocol-param: 276924:CPFGip
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - auth: 3d7634af8cb2c6cb4bac1c0efad8b43d
+    name: 🇰🇷KR_7|1.6MB/s
+    password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+    port: 50160
+    server: 152.67.200.82
+    skip-cert-verify: true
+    sni: 152-67-200-82.liao.kdns.fr
     type: hysteria2
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇵🇱PL_1|2.5MB/s
+    name: 🇬🇧GB_1|3.2MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 133f76fc-a5ab-463e-b46d-9587d7137e55
+    port: 443
+    server: node3.vpnushka.lol
+    skip-cert-verify: false
+    sni: node3.vpnushka.lol
+    type: hysteria2
+    up: ""
+    udp: true
+  - name: 🇿🇦ZA_1|1.3MB/s
+    password: aa
+    port: 89
+    server: 160.124.240.188
+    type: http
+    username: aa
+    udp: true
+  - down: ""
+    fingerprint: ""
+    name: 🇸🇪SE_1|1.8MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+    port: 443
+    server: us65.mechvpn.online
+    skip-cert-verify: true
+    sni: us65.mechvpn.online
+    type: hysteria2
+    up: ""
+    udp: true
+  - down: ""
+    fingerprint: ""
+    name: 🇵🇱PL_1|2.4MB/s
     obfs: ""
     obfs-password: ""
     password: 707db87b-9cbf-438f-b4c7-9d984c8e944a
@@ -624,46 +437,7 @@ proxies:
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇺🇸US_5|2.2MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 76c1579d-e996-473c-b23f-2c8301082602
-    port: 11683
-    server: 40t1.wxgqlfx.vip
-    skip-cert-verify: true
-    sni: 204.44.74.220
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇮🇪IE_1|1.6MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-    port: 8443
-    server: 162.249.124.104
-    skip-cert-verify: true
-    sni: mercedes-grape.yyuyy.com
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇺🇸US_6|2.3MB/s
-    obfs: salamander
-    obfs-password: xK9mN2pLq5vR8wB3
-    password: B86A0475-AB74-44BE-8209-A67F85CBF52C
-    port: 443
-    server: us6.dexlos.com
-    skip-cert-verify: false
-    sni: us6.dexlos.com
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇷🇴RO_2|2.2MB/s
+    name: 🇷🇴RO_1|3.1MB/s
     obfs: ""
     obfs-password: ""
     password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
@@ -676,34 +450,7 @@ proxies:
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇧🇷BR_1|1.2MB/s
-    obfs: ""
-    obfs-password: ""
-    password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-    port: 443
-    server: admin.wwwinternetvideo.click
-    skip-cert-verify: true
-    sni: 127.0.0.1
-    type: hysteria2
-    up: ""
-    udp: true
-    disable-sni: true
-  - down: ""
-    fingerprint: ""
-    name: 🇳🇱NL_1|1.8MB/s
-    obfs: ""
-    obfs-password: ""
-    password: c4a4d98d-8d64-4e76-bc50-096b07d82382
-    port: 443
-    server: 139.28.98.26
-    skip-cert-verify: true
-    sni: nl-hysteria.boxypn.com
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇳🇱NL_2|2.9MB/s
+    name: 🇳🇱NL_1|3.0MB/s
     obfs: ""
     obfs-password: ""
     password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
@@ -714,55 +461,69 @@ proxies:
     type: hysteria2
     up: ""
     udp: true
-  - down: ""
-    fingerprint: 0d1a3bdb9ed6df1bdccf9745055822b46ae00b63150c73b5447e09447666745a
-    name: 🇨🇦CA_1|1.9MB/s
-    obfs: salamander
-    obfs-password: t-me-V2RayyNGvpn
-    password: IJMFOXhvbQ
-    port: 38871
-    server: 51.79.91.52
-    skip-cert-verify: true
-    sni: play.google.com
-    type: hysteria2
-    up: ""
+  - client-fingerprint: chrome
+    name: 🇫🇷FR_3|1.1MB/s
+    network: ws
+    port: 2053
+    server: 188.130.207.119
+    tls: true
+    type: vless
     udp: true
+    uuid: 6705ddbd-04cf-40f6-99b9-36846b08c2a9
+    ws-opts:
+      headers:
+        Host: kjgdksgghre466.pages.dev
+        User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
+          (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+      path: /fp=chrome
+    xudp: true
+    packet-encoding: xudp
+    servername: kjgdksgghre466.pages.dev
   - down: ""
     fingerprint: ""
-    name: 🇺🇸US_7|2.5MB/s
+    name: 🇺🇸US_6|3.2MB/s
     obfs: ""
     obfs-password: ""
-    password: 76c1579d-e996-473c-b23f-2c8301082602
-    port: 11683
-    server: 40t1.wxgqlfx.vip
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    port: 443
+    server: 16.148.5.63
     skip-cert-verify: true
-    sni: 127.0.0.1
+    sni: vpn-us-002.fastervpn.world
     type: hysteria2
     up: ""
     udp: true
-    disable-sni: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_17|1.2MB/s
+    name: 🇸🇬SG_10|4.8MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: 13.212.174.21
+    server: 13.229.204.224
     skip-cert-verify: false
-    sni: fleet-pony.rooster465.autos
+    sni: intense-sole.rooster465.autos
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_18|1.2MB/s
+    name: 🇰🇷KR_8|5.0MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: 13.212.91.165
-    skip-cert-verify: false
-    sni: composed-sheep.rooster465.autos
+    server: 43.203.240.219
+    skip-cert-verify: true
+    sni: precious-stag.rooster465.autos
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_19|1.2MB/s
+    name: 🇯🇵JP_2|2.8MB/s
+    network: tcp
+    password: PQ05174892
+    port: 443
+    server: 43.206.241.145
+    skip-cert-verify: false
+    sni: concise-guinea.rooster465.autos
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_11|5.0MB/s
     network: tcp
     password: PQ05174892
     port: 443
@@ -772,47 +533,47 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_20|5.2MB/s
+    name: 🇯🇵JP_3|5.3MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: 54.169.228.116
+    server: 52.196.139.154
     skip-cert-verify: false
-    sni: amusing-grub.rooster465.autos
+    sni: sterling-vervet.rooster465.autos
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_21|4.4MB/s
+    name: 🇰🇷KR_9|5.4MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: amusing-grub.rooster465.autos
+    server: 52.79.248.57
     skip-cert-verify: false
-    sni: amusing-grub.rooster465.autos
+    sni: awake-redbird.rooster465.autos
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇯🇵JP_6|1.8MB/s
-    network: raw
-    password: PQ05174892
-    port: 443
-    server: champion-alien.rooster465.autos
-    skip-cert-verify: false
-    type: trojan
-    udp: true
-    sni: champion-alien.rooster465.autos
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_22|2.0MB/s
+    name: 🇰🇷KR_10|5.2MB/s
     network: tcp
     password: PQ05174892
     port: 443
-    server: composed-sheep.rooster465.autos
+    server: 54.180.231.164
     skip-cert-verify: false
-    sni: composed-sheep.rooster465.autos
+    sni: regular-raptor.rooster465.autos
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_23|5.3MB/s
+    name: 🇯🇵JP_4|3.0MB/s
+    network: tcp
+    password: PQ05174892
+    port: 443
+    server: 54.238.100.160
+    skip-cert-verify: false
+    sni: witty-duckling.rooster465.autos
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_12|2.0MB/s
     network: tcp
     password: PQ05174892
     port: 443
@@ -822,17 +583,7 @@ proxies:
     type: trojan
     udp: true
   - client-fingerprint: chrome
-    name: 🇸🇬SG_24|3.6MB/s
-    password: PQ05174892
-    port: 443
-    server: intense-monarch.rooster465.autos
-    skip-cert-verify: false
-    type: trojan
-    udp: true
-    network: tcp
-    sni: intense-monarch.rooster465.autos
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_25|4.1MB/s
+    name: 🇸🇬SG_13|2.3MB/s
     network: tcp
     password: PQ05174892
     port: 443
@@ -841,160 +592,171 @@ proxies:
     sni: welcome-monitor.rooster465.autos
     type: trojan
     udp: true
-  - client-fingerprint: chrome
-    name: 🇭🇰HK_19|1.4MB/s
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_7|1.0MB/s
     network: ws
     port: 443
-    server: hk-vpn-binan520.taiaise.cn
+    server: spider-panel-production-d57c.up.railway.app
     tls: true
     type: vless
     udp: true
-    uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+    uuid: 016570cd-49dd-477e-9766-fd899532a602
     ws-opts:
       headers:
-        Host: hk-vpn-binan520.taiaise.cn
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.111 Safari/537.36
-      path: /hk07-vless
+        Host: spider-panel-production-d57c.up.railway.app
+        User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
+          Safari/537.36
+      path: /ws/016570cd-49dd-477e-9766-fd899532a602
     xudp: true
     packet-encoding: xudp
-    servername: hk-vpn-binan520.taiaise.cn
+    servername: spider-panel-production-d57c.up.railway.app
+  - name: 🇯🇵JP_5|1.7MB/s
+    network: tcp
+    port: 10000
+    server: 14.137.238.40
+    type: vless
+    udp: true
+    uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+    xudp: true
+    packet-encoding: xudp
   - client-fingerprint: firefox
-    encryption: none
     flow: xtls-rprx-vision
-    name: 🇦🇪AE_1|1.0MB/s
-    network: tcp
+    name: 🇩🇪DE_2|1.5MB/s
+    network: raw
     port: 443
     reality-opts:
-      public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
-      short-id: "635a76c25a4b1820"
-    server: 94.183.221.190
+      public-key: YkcQyTOh9YpZmilRob-eVxwoo4uwBAa9oHmURMTFzEM
+      short-id: "3f0a7e6b"
+    server: 2.26.71.73
     tls: true
     type: vless
     udp: true
-    uuid: 682102a3-9731-4562-ad28-04dc62bc8dee
+    uuid: 4e7eb9d5-022a-4b0a-ba37-2d1be458947b
     xudp: true
     packet-encoding: xudp
-    servername: www.amd.com
-  - client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: vless-grpc
-    name: 🇦🇪AE_2|1.1MB/s
-    network: grpc
-    port: 7771
-    reality-opts:
-      public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
-      short-id: "c4a9f1e2"
-    server: 94.183.206.53
-    tls: true
-    type: vless
-    udp: true
-    uuid: 707db87b-9cbf-438f-b4c7-9d984c8e944a
-    xudp: true
-    packet-encoding: xudp
-    servername: sun6-21.userapi.com
-  - client-fingerprint: firefox
-    encryption: none
-    name: 🇨🇿CZ_1|1018KB/s
-    network: tcp
-    port: 42321
-    reality-opts:
-      public-key: C8lo017EXpVnG_TxCYibs_NBzbgoW-61IQH4qZhHGmw
-      short-id: "3f080f861d7f"
-    server: 95.85.231.231
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7412605e-18de-4b34-af4e-82e9f544cc24
-    xudp: true
-    packet-encoding: xudp
-    servername: www.github.com
-  - client-fingerprint: firefox
-    encryption: none
-    grpc-opts:
-      grpc-service-name: grpc
-    name: 🇷🇺RU_2|1.1MB/s
-    network: grpc
-    port: 443
-    reality-opts:
-      public-key: J3W60M3AtU5k97dW435MfETjHX-DtfFqNrRUNoj2MXE
-      short-id: "a1b2c3d4"
-    server: 31.177.111.144
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8071f3cc-994f-4fe2-bb87-cdc79559cb56
-    xudp: true
-    packet-encoding: xudp
-    servername: ads.x5.ru
+    servername: www.cloudflare.com
   - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇭🇰HK_20|2.7MB/s
-    network: tcp
-    port: 32166
-    reality-opts:
-      public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-      short-id: "6c6c7c97"
-    server: 3696b38bsg.murphyweb.sbs
-    tls: true
-    type: vless
-    udp: true
-    uuid: c739bb1d-5fc7-4f45-acec-534267a1f1e7
-    xudp: true
-    packet-encoding: xudp
-    servername: buylite.music.apple.com
-  - client-fingerprint: firefox
     grpc-opts:
-      grpc-service-name: grpc
-    name: 🇱🇻LV_1|1.0MB/s
+      grpc-service-name: update
+    name: 🇸🇬SG_14|5.3MB/s
     network: grpc
-    port: 7443
+    port: 10039
     reality-opts:
-      public-key: 8XsSsJHS3-t2C497lP13JJNtknwSMWitJGYDvRJu3XE
-      short-id: "b66233e398c50da0"
-    server: 31.170.22.176
+      public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+      short-id: "686c0ef0"
+    server: 13.212.89.97
     tls: true
     type: vless
     udp: true
-    uuid: dbacac09-9ee8-400c-b53b-745a769c220a
+    uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+    servername: d1.awsstatic.com
+  - client-fingerprint: safari
+    encryption: none
+    grpc-opts:
+      grpc-service-name: 5post.gate.v1
+    name: 🇩🇪DE_3|1.1MB/s
+    network: grpc
+    port: 443
+    reality-opts:
+      public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+      short-id: "abcd"
+    server: 95.163.232.183
+    tls: true
+    type: vless
+    udp: true
+    uuid: c1902cb0-b6de-4d82-99b2-8e3d8ac19da0
     xudp: true
     packet-encoding: xudp
-    servername: tv.apple.com
+    servername: 5post-gate.x5.ru
+  - client-fingerprint: chrome
+    encryption: mlkem768x25519plus.native.0rtt.-WmKnXSAsxqNwTYtOqzD9LYJ2fuGzcudQLIYkDQ7FB8
+    name: 🇫🇮FI_1|1.2MB/s
+    network: ws
+    port: 443
+    server: 172.66.43.153
+    tls: true
+    type: vless
+    udp: true
+    uuid: cbcbae15-8b56-4508-a55c-364dbb527284
+    ws-opts:
+      headers:
+        Host: arvan.dearhossein-taktaz.ir
+        User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
+          Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: arvan.dearhossein-taktaz.ir
   - client-fingerprint: firefox
-    name: 🇩🇪DE_3|1.1MB/s
+    name: 🇩🇪DE_4|1.2MB/s
     network: xhttp
     port: 443
-    server: 85.117.243.15
+    server: 85.117.243.4
     tls: true
     type: vless
     udp: true
-    uuid: 74d346bf-768d-4804-bb23-936f5fa91594
+    uuid: 8b761240-0022-42ab-b549-5714d51e8011
     xhttp-opts:
+      mode: auto
       path: /assets/build/_app/immutable/chunks/stream-one/
+      reuse-settings:
+        c-max-reuse-times: "0"
+        h-keep-alive-period: 0
+        h-max-request-times: 600-900
+        h-max-reusable-secs: 1800-3000
+        max-connections: "3"
+      x-padding-bytes: 100-1000
     xudp: true
     packet-encoding: xudp
-    servername: de5.gracefultun.xyz
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇯🇵JP_7|1.3MB/s
-    network: ws
+    servername: de2.jailever.org
+  - client-fingerprint: firefox
+    name: 🇩🇪DE_5|1.0MB/s
+    network: xhttp
     port: 443
-    server: wangcai.cf.877774.xyz
+    server: 85.117.243.4
     tls: true
     type: vless
     udp: true
-    uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-    ws-opts:
-      headers:
-        Host: ex3r.qzz.io
-        User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/65.0.3325.181 Safari/537.36
-      path: /sg-orcl
+    uuid: ad4ff080-3c09-432c-a31b-70043b0925fe
+    xhttp-opts:
+      mode: auto
+      path: /assets/build/_app/immutable/chunks/stream-one/
+      reuse-settings:
+        c-max-reuse-times: "0"
+        h-keep-alive-period: 0
+        h-max-request-times: 600-900
+        h-max-reusable-secs: 1800-3000
+        max-connections: "3"
+      x-padding-bytes: 100-1000
     xudp: true
     packet-encoding: xudp
-    servername: ex3r.qzz.io
+    servername: de2.jailever.org
   - client-fingerprint: chrome
-    name: 🇸🇬SG_26|3.8MB/s
+    name: 🇸🇬SG_15|4.8MB/s
+    network: tcp
+    password: PQ05174892
+    port: 443
+    server: intense-sole.rooster465.autos
+    skip-cert-verify: false
+    sni: intense-sole.rooster465.autos
+    type: trojan
+    udp: true
+  - name: 🇳🇱NL_2|1.4MB/s
+    network: tcp
+    port: 62145
+    server: 150.230.23.187
+    type: vless
+    udp: true
+    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+    xudp: true
+    packet-encoding: xudp
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_16|4.3MB/s
     network: tcp
     password: PQ05174892
     port: 443
@@ -1003,68 +765,6 @@ proxies:
     type: trojan
     udp: true
     sni: stable-python.rooster465.autos
-  - alpn:
-      - h3
-    auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-    name: 🇩🇪DE_4|1.8MB/s
-    password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-    port: 443
-    server: de104.mechvpn.online
-    skip-cert-verify: true
-    sni: de104.mechvpn.online
-    type: hysteria2
-    udp: true
-  - auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    name: 🇷🇴RO_3|1.5MB/s
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    port: 8443
-    server: 85.204.107.167
-    skip-cert-verify: true
-    sni: grape-zet-ro-turbo.bumbleshrimp.com
-    type: hysteria2
-    udp: true
-  - client-fingerprint: chrome
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: update
-    name: 🇰🇷KR_6|5.0MB/s
-    network: grpc
-    port: 10046
-    reality-opts:
-      public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-      short-id: "686c0ef0"
-    server: kr1-r.link-t7.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-    servername: s0.awsstatic.com
-  - client-fingerprint: chrome
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: update
-    name: 🇸🇬SG_27|3.9MB/s
-    network: grpc
-    port: 10039
-    reality-opts:
-      public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-      short-id: "686c0ef0"
-    server: sg4-r.link-t7.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-    servername: d1.awsstatic.com
-  - fingerprint: ""
-    name: 🇸🇬SG_28|3.8MB/s
-    password: 13f0acfa-38c1-4e82-a758-583aa31740df
-    port: 60572
-    server: 47.129.8.234
-    skip-cert-verify: true
-    sni: yzhou015.jdvipkuai.cc
-    type: anytls
-    udp: true
-    username: 13f0acfa-38c1-4e82-a758-583aa31740df
 proxy-groups:
   - name: 🚀 节点选择
     type: select
