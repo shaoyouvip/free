@@ -1,13 +1,6 @@
 proxies:
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇩🇪DE_1|3.6MB/s
-    password: 4/4O8tTGmtVVsD2fk70j39adoR7JWg8u114Kfy15IAw=
-    port: 59924
-    server: 130.61.176.82
-    type: ss
-    udp: true
   - auth: 2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o
-    name: 🇦🇪AE_1|2.2MB/s
+    name: 🇦🇪AE_1|1.6MB/s
     password: 2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o
     port: 443
     server: pixelcast.wwwinternetvideo.click
@@ -15,124 +8,58 @@ proxies:
     sni: pixelcast.wwwinternetvideo.click
     type: hysteria2
     udp: true
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇳🇱NL_1|1.3MB/s
-    password: RtvGYtTX+eK3aU3Aqd8hICtNdXFUvRg0FWwdVF/WkCU=
-    port: 45819
-    server: 152.70.50.71
-    type: ss
-    udp: true
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇺🇸US_1|1.1MB/s
-    password: uSmnkPNBhrMCkZh9b7/PQ2EyebUYE73P5uBTZPxCZXE=
-    port: 50356
-    server: 137.131.21.240
-    type: ss
-    udp: true
   - alterId: 0
     cipher: auto
-    name: 🇺🇸US_2|2.8MB/s
+    name: 🇸🇬SG_1|4.0MB/s
     network: ws
     port: 443
     server: node.socks5.kdns.fr
     skip-cert-verify: true
     tls: true
     type: vmess
-    uuid: e1ed0569-bfe4-468f-aa9a-63819e8229ef
+    uuid: f683235c-54b0-4442-bf0d-812d3804946e
     ws-opts:
       headers:
-        Host: chest-own-llp-collections.trycloudflare.com
-      path: /e1ed0569-bfe4-468f-aa9a-63819e8229ef-vm
+        Host: ericsson-lab-managed-oem.trycloudflare.com
+      path: /f683235c-54b0-4442-bf0d-812d3804946e-vm
     udp: true
-    servername: chest-own-llp-collections.trycloudflare.com
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: mlkem768x25519plus.native.0rtt.Rj5Jm-uPO7iwO9TJV7j4zgDKBpEvUNxDQafm_8zRND4
-    name: 🇬🇧GB_1|1.0MB/s
-    network: xhttp
+    servername: ericsson-lab-managed-oem.trycloudflare.com
+  - client-fingerprint: chrome
+    name: 🇯🇵JP_1|1.1MB/s
+    network: ws
     port: 443
-    server: 188.114.97.8
+    server: cfyes.ziyoufly.xyz
     tls: true
     type: vless
     udp: true
-    uuid: "ID TEL : @V2XNET"
-    xhttp-opts:
-      host: allineedradiohead.dpdns.org
-      mode: auto
-      path: /
-      x-padding-bytes: 100-1000
-    xudp: true
-    packet-encoding: xudp
-    servername: allineedradiohead.dpdns.org
-  - cipher: aes-256-cfb
-    name: 🇯🇵JP_1|2.0MB/s
-    password: 7eadc6dbe2ae
-    port: 65443
-    server: 121.46.230.136
-    type: ss
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_2|5.9MB/s
-    network: tcp
-    password: AE62539071
+    uuid: fae482df-d9f1-491f-9f9e-1ee522d4560c
+    ws-opts:
+      headers:
+        Host: cf-uh-jp01.23523463.xyz
+      path: /ziyou
+    servername: cf-uh-jp01.23523463.xyz
+  - alpn:
+      - http/1.1
+      - h2
+      - h3
+    client-fingerprint: chrome
+    name: 🇫🇷FR_1|2.2MB/s
+    network: ws
+    password: humanity
     port: 443
-    server: climbing-frog.rooster465.autos
+    server: 198.41.223.96
     skip-cert-verify: false
-    sni: climbing-frog.rooster465.autos
+    sni: www.ignitelimit.com
     type: trojan
     udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_3|5.0MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: relevant-cicada.rooster465.autos
-    skip-cert-verify: false
-    sni: relevant-cicada.rooster465.autos
-    type: trojan
-    udp: true
-  - cipher: aes-256-cfb
-    name: 🇩🇪DE_2|1.1MB/s
-    password: amazonskr05
-    port: 443
-    server: 3.66.86.250
-    type: ss
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_4|5.8MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: 54.250.97.109
-    skip-cert-verify: false
-    sni: current-barnacle.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_5|5.2MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: 18.183.178.158
-    skip-cert-verify: false
-    sni: inviting-burro.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_6|4.4MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: 57.181.88.104
-    skip-cert-verify: false
-    sni: climbing-frog.rooster465.autos
-    type: trojan
-    udp: true
+    ws-opts:
+      headers:
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/32.0.1700.107 Safari/537.36
+      path: /assignment
   - down: ""
     fingerprint: ""
-    name: 🇸🇬SG_1|5.9MB/s
+    name: 🇸🇬SG_2|4.8MB/s
     obfs: ""
     obfs-password: ""
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
@@ -143,68 +70,16 @@ proxies:
     type: hysteria2
     up: ""
     udp: true
-  - name: 🇳🇱NL_2|3.3MB/s
-    port: 62145
-    server: 141.148.242.94
+  - name: 🇺🇸US_1|1.1MB/s
+    port: 443
+    server: jewelscollecti.icu
     skip-cert-verify: true
-    tls: false
-    type: vless
-    udp: true
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    network: tcp
-  - cipher: chacha20-ietf
-    name: 🇹🇼TW_1|2.5MB/s
-    obfs: plain
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 7016
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: rc4-md5
-    name: 🇰🇷KR_1|4.5MB/s
-    obfs: plain
-    obfs-param: 99e144391.douyin.com
-    password: di15PV
-    port: 44593
-    protocol: auth_aes128_md5
-    protocol-param: 144391:uBtVcY
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - cipher: 2022-blake3-aes-128-gcm
-    name: 🇸🇬SG_2|1.2MB/s
-    password: YTE1ZWU4ZTEyZjc3YmEzZA==:ZGYzOWJkMjMtMjk0YS00Ng==
-    plugin: gost-plugin
-    plugin-opts:
-      host: one.local
-      mode: websocket
-      mux: true
-      path: /home/video
-      tls: false
-    port: 28000
-    server: 67.159.52.56
-    type: ss
-    udp: true
-    udp-over-tcp: true
-    udp-over-tcp-version: 2
-  - down: ""
-    fingerprint: ""
-    name: 🇸🇬SG_3|1.8MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 9gWt2z3KdC9VI8kAQYVvvSvhT9e05CfI
-    port: 12645
-    server: vip-sg-1.hkd4fwmg.vip
-    skip-cert-verify: true
-    sni: vip-sg-1.hkd4fwmg.vip
-    type: hysteria2
-    up: ""
+    sni: jewelscollecti.icu
+    tls: true
+    type: http
     udp: true
   - multiplexing: MULTIPLEXING_LOW
-    name: 🇺🇸US_3|1.0MB/s
+    name: 🇺🇸US_2|1009KB/s
     password: dongtaiwang.com
     port: 34567
     server: 157.254.223.44
@@ -212,137 +87,24 @@ proxies:
     type: mieru
     username: dongtaiwang.com
     udp: true
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_3|1.7MB/s
-    network: ws
-    port: 443
-    server: irhub-production.up.railway.app
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5502dc8c-1939-aa92-9436-9b8d28bb48ee
-    ws-opts:
-      headers:
-        Host: ""
-        User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/51.0.2704.106 Safari/537.36
-      path: /ws/5502dc8c-1939-aa92-9436-9b8d28bb48ee
-    xudp: true
-    packet-encoding: xudp
-    servername: irhub-production.up.railway.app
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_7|4.4MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: 54.249.32.173
-    skip-cert-verify: false
-    sni: eager-camel.rooster465.autos
-    type: trojan
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_8|5.3MB/s
-    password: AE62539071
-    port: 443
-    server: climbing-frog.rooster465.autos
-    skip-cert-verify: false
-    type: trojan
-    udp: true
-    network: tcp
-    sni: climbing-frog.rooster465.autos
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_9|1.1MB/s
-    password: AE62539071
-    port: 443
-    server: easy-barnacle.rooster465.autos
-    skip-cert-verify: false
-    type: trojan
-    udp: true
-    network: tcp
-    sni: easy-barnacle.rooster465.autos
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_10|4.3MB/s
-    password: AE62539071
-    port: 443
-    server: inviting-burro.rooster465.autos
-    skip-cert-verify: false
-    type: trojan
-    udp: true
-    network: tcp
-    sni: inviting-burro.rooster465.autos
-  - client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    name: 🇳🇱NL_4|2.4MB/s
-    network: grpc
-    port: 2087
-    reality-opts:
-      public-key: rIli6ATH6ttPnQ7AqIaWMjnCGu7LPMH082Zg4so0O00
-      short-id: "86f058f5"
-    server: 176.117.75.143
-    tls: true
-    type: vless
-    udp: true
-    uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
-    xudp: true
-    packet-encoding: xudp
-    servername: www.cloudflare.com
-  - client-fingerprint: edge
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇪🇪EE_1|1.2MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
-      short-id: "7a3f9e2b1c8d4f6a"
-    server: ee.cdn-global.pro
-    tls: true
-    type: vless
-    udp: true
-    uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
-    xudp: true
-    packet-encoding: xudp
-    servername: ee.cdn-global.pro
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_11|5.4MB/s
-    network: tcp
-    password: AE62539071
-    port: 443
-    server: 13.231.24.177
-    skip-cert-verify: false
-    sni: easy-barnacle.rooster465.autos
-    type: trojan
-    udp: true
-  - cipher: aes-256-cfb
-    name: 🇫🇷FR_1|3.8MB/s
-    password: amazonskr05
-    port: 443
-    server: 13.38.30.165
-    type: ss
-    udp: true
-  - alpn:
-      - ""
-    alterId: "0"
+  - alterId: "0"
     cipher: auto
-    name: 🇺🇸US_4|3.2MB/s
+    name: 🇬🇧GB_1|2.3MB/s
     network: ws
-    port: 16648
-    server: planb.mojcn.com.linuxlh.xin
+    port: 443
+    server: node.socks5.kdns.fr
     skip-cert-verify: false
-    tls: false
+    tls: true
     type: vmess
     udp: true
-    uuid: b5f7ad86-9e40-4684-98f9-83f8136a1054
+    uuid: 36dba83c-5b10-48aa-aee3-6d85790a9bf3
     ws-opts:
       headers:
-        Host: eeee7339c9f412913069ff64b12fb71f.mobgslb.tbcache.com
-      path: /
+        Host: smaller-independently-ball-mil.trycloudflare.com
+      path: /36dba83c-5b10-48aa-aee3-6d85790a9bf3-vm
     xudp: true
     packet-encoding: xudp
+    servername: smaller-independently-ball-mil.trycloudflare.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
