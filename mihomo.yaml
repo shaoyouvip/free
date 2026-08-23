@@ -1,4 +1,11 @@
 proxies:
+  - cipher: aes-256-cfb
+    name: 🇯🇵JP_1|1.9MB/s
+    password: 7eadc6dbe2ae
+    port: 65443
+    server: 121.46.230.136
+    type: ss
+    udp: true
   - auth: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     name: 🇷🇴RO_1|1.8MB/s
     obfs: salamander
@@ -10,48 +17,16 @@ proxies:
     type: hysteria2
     udp: true
     sni: hy2.aspidnet.xyz
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_1|2.3MB/s
-    network: tcp
-    port: 443
-    server: 88.218.196.178
-    tls: true
-    type: vless
+  - cipher: aes-256-cfb
+    name: 🇰🇷KR_1|4.1MB/s
+    password: 7eadc6dbe2ae
+    port: 65443
+    server: 121.46.230.138
+    type: ss
     udp: true
-    uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-    servername: lapa4.api3-max.ru
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇺🇸US_1|1.2MB/s
-    network: tcp
-    port: 443
-    server: 143.246.136.78
-    tls: true
-    type: vless
-    udp: true
-    uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-    servername: wok1.api3-max.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇩🇪DE_1|1.1MB/s
-    network: tcp
-    port: 1234
-    reality-opts:
-      public-key: 4sT8gYkbYI1RUPlO-SFVpJENKfGgMWoYQpflbcfspkI
-      short-id: "4844fb0c077b20b7"
-    server: store16.vevluma.ir
-    tls: true
-    type: vless
-    udp: true
-    uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
-    xudp: true
-    packet-encoding: xudp
-    servername: updates.cdn-apple.com
   - down: ""
     fingerprint: ""
-    name: 🇷🇴RO_2|2.2MB/s
+    name: 🇷🇴RO_2|1.5MB/s
     obfs: salamander
     obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
     password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
@@ -64,7 +39,7 @@ proxies:
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇳🇱NL_1|1.6MB/s
+    name: 🇳🇱NL_1|1.3MB/s
     obfs: ""
     obfs-password: ""
     password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
@@ -75,62 +50,360 @@ proxies:
     type: hysteria2
     up: ""
     udp: true
-  - cipher: chacha20-ietf
-    name: 🇻🇳VN_1|2.6MB/s
-    obfs: plain
-    obfs-param: 14e116735.douyin.com
-    password: di15PV
-    port: 14048
-    protocol: auth_aes128_md5
-    protocol-param: 116735:zssrOQ
-    server: api.meituan88.com
-    type: ssr
-    udp: true
-  - name: 🇬🇧GB_1|1.1MB/s
+  - down: ""
+    fingerprint: ""
+    name: ❓Other_1|5.5MB/s
+    obfs: ""
+    obfs-password: ""
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     port: 443
-    server: 37.120.233.18
+    server: 13.212.75.123
+    skip-cert-verify: true
+    sni: vpn-sg-001.fastervpn.world
+    type: hysteria2
+    up: ""
+    udp: true
+  - alterId: "0"
+    cipher: auto
+    name: 🇭🇰HK_1|4.1MB/s
+    network: ws
+    port: 16632
+    server: t.cnmjcn.cyou
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d52b72b0-a509-490a-adae-23da2348d29c
+    ws-opts:
+      headers:
+        Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
+      path: /
+    xudp: true
+    packet-encoding: xudp
+  - name: 🇹🇼TW_1|1.3MB/s
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 1443
+    server: twmoon1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    sni: twmoon1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+    udp: true
+  - cipher: aes-256-cfb
+    name: 🇬🇧GB_1|1.6MB/s
+    password: amazonskr05
+    port: 443
+    server: 13.135.252.176
+    type: ss
+    udp: true
+  - name: 🇮🇩ID_1|3.0MB/s
+    network: tcp
+    password: a126f35c-e832-4115-8593-b723ade3f7be
+    port: 20056
+    server: kkvlvvq-a.catcat321.com
+    skip-cert-verify: true
+    sni: hk.catxstar.com
+    type: trojan
+    udp: true
+  - auth: github.com/Alvin9999-newpac/fanqiang
+    name: 🇫🇷FR_1|2.8MB/s
+    password: github.com/Alvin9999-newpac/fanqiang
+    port: 43115
+    server: 62.210.147.2
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    type: hysteria2
+    udp: true
+  - name: 🇬🇧GB_2|1.6MB/s
+    port: 443
+    server: 185.235.0.2
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_2|1.5MB/s
-    network: tcp
+  - auth: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+    name: 🇱🇻LV_1|3.3MB/s
+    password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+    port: 8443
+    server: hy2-netherlands.unlimited-access.ru
+    skip-cert-verify: true
+    sni: hy2-netherlands.unlimited-access.ru
+    type: hysteria2
+    udp: true
+  - name: 🇫🇷FR_2|1.0MB/s
+    password: None
+    port: 5060
+    server: 145.239.41.4
+    type: http
+    udp: true
+  - auth: e5gqbtu97umt992j
+    name: 🇩🇪DE_1|1.7MB/s
+    password: e5gqbtu97umt992j
+    port: 9443
+    server: 185.230.44.170
+    sni: 185.230.44.170
+    type: hysteria2
+    udp: true
+  - name: 🇮🇹IT_1|1006KB/s
     port: 443
-    server: 88.218.196.243
+    server: 185.183.105.130
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - alpn:
+      - h2
+      - http/1.1
+      - h3
+    client-fingerprint: chrome
+    encryption: mlkem768x25519plus.native.0rtt.8mYSI2mSW-DbxDiXo3Lc0pB-C1nwW6HgSQVebc0SWTs
+    name: 🇩🇪DE_2|1.0MB/s
+    network: xhttp
+    port: 443
+    server: 172.67.156.192
     tls: true
     type: vless
     udp: true
-    uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+    uuid: 1ab3d304-568e-4d0b-b347-24038012fc10
+    xhttp-opts:
+      host: daaailycoooonfigs.dodfun.ir.
+      mode: auto
+      path: /engineering/465426-self-healing-roman-concrete-featured
+      x-padding-bytes: 100-1000
     xudp: true
     packet-encoding: xudp
-    servername: lapa10.api3-max.ru
-  - cipher: aes-256-gcm
-    name: 🇺🇸US_2|4.6MB/s
-    password: b160be88-28c2-31bb-a153-8b050228f0c3
-    port: 20016
-    server: f.4.h.5.3.i.i.9.6.us02-ae5.entry.v51124-3a.qpon
+    servername: daaailycoooonfigs.dodfun.ir
+  - cipher: chacha20-ietf-poly1305
+    name: 🇩🇪DE_3|2.3MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21118
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇺🇸US_1|4.2MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21105
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇩🇪DE_4|4.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21118
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇯🇵JP_2|1.5MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21119
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇹🇭TH_1|3.3MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21123
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇫🇷FR_3|1.3MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21126
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇫🇷FR_4|2.1MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21126
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇺🇸US_2|4.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21108
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇳IN_1|2.9MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21125
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇸🇬SG_1|1.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21121
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇬🇧GB_3|3.6MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21117
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇱IL_1|1.5MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21116
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇹IT_2|3.6MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21120
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇸🇬SG_2|5.9MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21121
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇺🇸US_3|3.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21105
+    server: 211.91.158.26
     type: ss
     udp: true
   - client-fingerprint: firefox
-    name: 🇵🇱PL_1|1.3MB/s
-    network: ws
-    port: 8443
-    server: 50.7.249.218
+    grpc-opts:
+      grpc-service-name: grpc
+    name: 🇬🇧GB_4|1.1MB/s
+    network: grpc
+    port: 2054
+    reality-opts:
+      public-key: Re5uQKjLVnOpmsyTQKCiqh8LLJ-UAyZy0s3KO6PRtEY
+      short-id: "300580005a374a9f"
+    server: 85.137.249.157
     tls: true
     type: vless
     udp: true
-    uuid: 9ede262c-37f9-4363-82cd-9802dafe9e1f
-    ws-opts:
-      headers:
-        Host: ""
-        User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.117 Safari/537.36
-      path: /api/connect
+    uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
     xudp: true
     packet-encoding: xudp
-    servername: apkav-5.bosx.net
+    servername: max.ru
+  - cipher: chacha20-ietf-poly1305
+    name: 🇯🇵JP_3|1.2MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21119
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇬🇧GB_5|3.7MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21117
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇳IN_2|1.3MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21125
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇰🇷KR_2|1.3MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21114
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇰🇷KR_3|1.7MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21107
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇯🇵JP_4|3.6MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21109
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇹IT_3|1.2MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21113
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇰🇷KR_4|1.5MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21107
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇹IT_4|4.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21113
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇬🇧GB_6|1.9MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21104
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇳IN_3|4.9MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21103
+    server: 211.91.158.26
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇮🇳IN_4|1.5MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21103
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇰🇷KR_5|4.5MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21114
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇫🇷FR_5|1.4MB/s
+    password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+    port: 21122
+    server: 211.91.158.44
+    type: ss
+    udp: true
+  - name: 🇺🇸US_4|1.0MB/s
+    password: ""
+    port: 443
+    server: goedkoopgeluid.icu
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
+    udp: true
+    sni: goedkoopgeluid.icu
 proxy-groups:
   - name: 🚀 节点选择
     type: select
