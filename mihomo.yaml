@@ -3,7 +3,7 @@ proxies:
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇰🇷KR_1|3.5MB/s
+    name: 🇰🇷KR_1|2.8MB/s
     network: grpc
     port: 10050
     reality-opts:
@@ -19,7 +19,7 @@ proxies:
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇰🇷KR_2|5.2MB/s
+    name: 🇰🇷KR_2|5.3MB/s
     network: grpc
     port: 10049
     reality-opts:
@@ -35,7 +35,7 @@ proxies:
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇰🇷KR_3|5.8MB/s
+    name: 🇰🇷KR_3|3.2MB/s
     network: grpc
     port: 10046
     reality-opts:
@@ -47,18 +47,11 @@ proxies:
     udp: true
     uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
     servername: s0.awsstatic.com
-  - cipher: aes-256-cfb
-    name: 🇰🇷KR_4|5.8MB/s
-    password: 7eadc6dbe2ae
-    port: 65443
-    server: 121.46.230.138
-    type: ss
-    udp: true
   - client-fingerprint: chrome
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇰🇷KR_5|5.1MB/s
+    name: 🇰🇷KR_4|4.1MB/s
     network: grpc
     port: 10047
     reality-opts:
@@ -70,16 +63,7 @@ proxies:
     udp: true
     uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
     servername: s0.awsstatic.com
-  - auth: EkF2Yw0Lc7
-    name: 🇳🇱NL_1|3.1MB/s
-    password: EkF2Yw0Lc7
-    port: 443
-    server: hys34.wba-pn.ru
-    skip-cert-verify: true
-    sni: hys34.wba-pn.ru
-    type: hysteria2
-    udp: true
-  - name: 🇳🇱NL_2|1.1MB/s
+  - name: 🇳🇱NL_1|1.0MB/s
     network: tcp
     port: 62145
     server: 193.123.63.154
@@ -87,11 +71,26 @@ proxies:
     type: vless
     uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
     udp: true
+  - http-opts:
+      headers:
+        Host:
+          - zula.ir
+      method: GET
+      path:
+        - /
+    name: 🇳🇱NL_2|1.2MB/s
+    network: http
+    port: 29672
+    server: 45.76.39.145
+    tls: false
+    type: vless
+    udp: true
+    uuid: cd922ef2-6d9f-4f9d-acd5-9921da8be3b8
   - client-fingerprint: chrome
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: update
-    name: 🇸🇬SG_1|5.3MB/s
+    name: 🇸🇬SG_1|4.4MB/s
     network: grpc
     port: 10038
     reality-opts:
@@ -120,126 +119,50 @@ proxies:
     uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
     servername: s0.awsstatic.com
   - cipher: aes-256-cfb
-    name: 🇺🇸US_1|3.2MB/s
+    name: 🇺🇸US_1|3.3MB/s
     password: 7eadc6dbe2ae
     port: 65443
     server: 121.46.230.233
     type: ss
     udp: true
   - client-fingerprint: chrome
-    encryption: none
     flow: xtls-rprx-vision
-    name: 🇯🇵JP_1|3.4MB/s
-    network: tcp
-    port: 15007
+    name: 🇭🇰HK_1|1.3MB/s
+    port: 15003
     reality-opts:
-      public-key: qVNutDFjEp3v2wjeUl_Yy6l9TXawXfSjAsFj3iktmRA
-      short-id: "2c4d005b"
+      public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+      short-id: "4c517b9e"
     server: nian.001.url111.kcloud02.top
+    skip-cert-verify: true
     tls: true
     type: vless
     udp: true
     uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-    xudp: true
-    packet-encoding: xudp
-    servername: www.bing.com
-  - fingerprint: ""
-    name: 🇸🇬SG_3|5.1MB/s
-    password: 5b2012ba-d040-4281-b92c-4f005badd179
-    port: 7000
-    server: asg2.jueduibupao.top
+    network: tcp
+    servername: www.cloudflare.com
+  - name: 🇭🇰HK_2|4.8MB/s
+    password: 067bcf2d-0bf0-4ca6-ac86-2df9c8327ea3
+    port: 3601
+    server: in.bjnet3.org
     skip-cert-verify: true
-    sni: www.microsoft.com
+    sni: b.azure.com
     type: anytls
     udp: true
-    username: 5b2012ba-d040-4281-b92c-4f005badd179
-  - alterId: 0
-    cipher: auto
-    name: 🇭🇰HK_1|1.1MB/s
-    network: ws
-    port: 16632
-    server: t.cnmjcn.cyou
+  - name: 🇨🇿CZ_1|2.3MB/s
+    port: 443
+    server: 185.216.35.130
     skip-cert-verify: true
-    tls: false
-    type: vmess
+    tls: true
+    type: http
     udp: true
-    uuid: 62319519-82bc-46ff-99cd-237bd0882cef
-    ws-opts:
-      headers:
-        Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
-      path: /
+  - name: 🇵🇱PL_1|1.9MB/s
+    port: 443
+    server: 37.120.156.34
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
   - name: 🇺🇸US_2|2.1MB/s
-    network: ws
-    port: 2095
-    server: update.asshole.eu.cc
-    skip-cert-verify: true
-    tls: false
-    type: vless
-    udp: true
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    ws-opts:
-      headers:
-        Host: update.asshole.eu.cc
-      path: /
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇩🇪DE_1|1.0MB/s
-    password: t6L2d1ZjOdzQU4fn680FJUbIrKvpNzDdzNDnU1m1Z4k=
-    port: 59924
-    server: 130.61.81.43
-    type: ss
-    udp: true
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇩🇪DE_2|1.4MB/s
-    password: 0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=
-    port: 59924
-    server: 158.180.50.45
-    type: ss
-    udp: true
-  - auth: 7c5566a7-4b55-4659-975f-06507d32fd3f
-    name: 🇬🇧GB_1|1.3MB/s
-    password: 7c5566a7-4b55-4659-975f-06507d32fd3f
-    port: 443
-    server: ltu-01.node.lumixnet.com
-    skip-cert-verify: true
-    sni: ltu-01.node.lumixnet.com
-    type: hysteria2
-    udp: true
-  - name: 🇨🇿CZ_1|1.9MB/s
-    port: 443
-    server: 185.216.35.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_3|1.0MB/s
-    port: 443
-    server: berniesbodybla.fun
-    sni: berniesbodybla.fun
-    tls: true
-    type: http
-    udp: true
-  - alpn:
-      - h3
-    auth: EkF2Yw0Lc7
-    name: 🇳🇱NL_3|1.8MB/s
-    password: EkF2Yw0Lc7
-    port: 443
-    server: hys34.wba-pn.ru
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    sni: hys34.wba-pn.ru
-  - name: 🇺🇸US_4|1.6MB/s
-    password: ""
-    port: 443
-    server: mmgr.club
-    skip-cert-verify: true
-    sni: mmgr.club
-    tls: true
-    type: http
-    udp: true
-    username: ""
-  - name: 🇺🇸US_5|1.9MB/s
     password: 16955d72-1794-11f0-a035-f23c95b6f51d
     port: 443
     server: 87992eef-te9j40-teq7xb-dnss.fmtdc1.sghuawei.com
@@ -248,43 +171,19 @@ proxies:
     type: http
     username: 16955d72-1794-11f0-a035-f23c95b6f51d
     udp: true
-  - name: 🇺🇸US_6|1.3MB/s
+  - name: 🇺🇸US_3|1.3MB/s
+    port: 9002
+    server: 138.199.35.213
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_4|1.0MB/s
     port: 443
     server: tzoa.fun
     sni: tzoa.fun
     tls: true
     type: http
-    udp: true
-  - name: 🇬🇧GB_2|1.0MB/s
-    port: 443
-    server: 212.102.63.61
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇭🇰HK_2|3.1MB/s
-    network: raw
-    port: 15003
-    reality-opts:
-      public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
-      short-id: "4c517b9e"
-    server: nian.001.url111.kcloud02.top
-    tls: true
-    type: vless
-    udp: true
-    uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-    xudp: true
-    packet-encoding: xudp
-    servername: www.cloudflare.com
-  - cipher: 2022-blake3-chacha20-poly1305
-    name: 🇩🇪DE_3|1.1MB/s
-    password: kwwU9fwtA1cW+BCUvO0sabEQGskLfLt7B0aWHeJpdYo=
-    port: 59924
-    server: 79.76.100.14
-    type: ss
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
