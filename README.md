@@ -63,4 +63,5 @@ https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
 [CM大佬](https://d.zrf.me/github-cmliu)
 
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+<!-- Verified on DartNode: DNOS-A6E7FA35 -->
 
