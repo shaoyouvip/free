@@ -1,106 +1,70 @@
 proxies:
-  - name: 🇩🇪DE_1|2.9MB/s
-    obfs: salamander
-    obfs-password: Telegram@vpnjey
-    password: Telegram@vpnjey
-    port: 54759
-    server: 179.61.138.145
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-  - name: 🇺🇸US_1|1.4MB/s
-    password: github.com/Alvin9999-newpac/fanqiang
-    port: 19000
-    server: anytls2.864106.xyz
-    skip-cert-verify: true
-    sni: anytls2.864106.xyz
-    type: anytls
-    udp: true
-  - name: 🇵🇱PL_1|1.4MB/s
-    port: 443
-    server: 37.120.156.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇸🇪SE_1|1.2MB/s
-    password: None
-    port: 443
-    server: 146.70.242.146
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_1|1.6MB/s
-    password: None
-    port: 443
-    server: 149.102.245.65
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇮🇹IT_1|1.0MB/s
-    port: 443
-    server: 185.183.105.130
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇭CH_1|1.0MB/s
-    port: 443
-    server: 31.7.62.50
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇵🇹PT_1|2.2MB/s
-    port: 443
-    server: 149.22.86.1
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - alpn:
-      - h3
-      - h2
-      - http/1.1
-    client-fingerprint: ios
-    encryption: none
-    name: 🇳🇱NL_1|1.6MB/s
-    network: ws
-    port: 443
-    server: m2-production-2516.up.railway.app
-    tls: true
-    type: vless
-    udp: true
-    uuid: ec43c5d5-b6f9-4077-95cf-1450abf48441
-    ws-opts:
-      headers:
-        Host: ""
-        User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/41.0.2272.101 Safari/537.36
-      path: /vless
-    xudp: true
-    packet-encoding: xudp
-    servername: m2-production-2516.up.railway.app
-  - client-fingerprint: firefox
-    encryption: none
-    name: 🇫🇮FI_1|1.3MB/s
+  - client-fingerprint: qq
+    name: 🇱🇹LT_1|1.5MB/s
     network: xhttp
     port: 443
-    reality-opts:
-      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-      short-id: "f79448a30d"
-    server: 213.176.17.50
+    server: 188.72.103.3
     tls: true
     type: vless
     udp: true
-    uuid: eb0e3aec-f67f-4fa2-8577-b0bff0484e77
+    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
     xhttp-opts:
-      path: /assets/v2/pkg
-    xudp: true
-    packet-encoding: xudp
-    servername: sstats.vk-portal.net
+      mode: packet-up
+      path: /api/v75/uptodown/
+      seq-key: part_index
+      seq-placement: cookie
+      session-key: stream_auth
+      session-placement: cookie
+      uplink-data-placement: body
+      uplink-http-method: GET
+      x-padding-bytes: 96-1040
+      x-padding-header: X-Media-Token
+      x-padding-key: _t
+      x-padding-method: tokenish
+      x-padding-obfs-mode: true
+      x-padding-placement: queryInHeader
+    servername: cdnapiv2.streamru10.net
+  - name: 🇨🇿CZ_1|1.1MB/s
+    password: ""
+    port: 443
+    server: 185.216.35.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: ""
+  - name: 🇺🇸US_1|1.0MB/s
+    port: 443
+    server: mmgr.club
+    skip-cert-verify: true
+    sni: mmgr.club
+    tls: true
+    type: http
+    udp: true
+  - name: 🇦🇹AT_1|1.0MB/s
+    port: 443
+    server: 146.70.244.2
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_2|1.4MB/s
+    password: "null"
+    port: 443
+    server: jewelscollecti.icu
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+    sni: jewelscollecti.icu
+  - cipher: aes-256-cfb
+    name: 🇺🇸US_3|1.1MB/s
+    password: amazonskr05
+    port: 443
+    server: 3.144.113.215
+    type: ss
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
