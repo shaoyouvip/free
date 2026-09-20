@@ -1,106 +1,69 @@
 proxies:
-  - cipher: aes-256-cfb
-    name: 🇫🇷FR_1|1.6MB/s
-    password: amazonskr05
-    port: 443
-    server: 15.237.196.230
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_1|1.2MB/s
+    password: RQ/Pmz291j6t2nRAaCbztGTzWRjdPqP3WXIIbXO0BSM=
+    port: 59924
+    server: 130.61.84.223
     type: ss
     udp: true
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇭🇰HK_1|4.3MB/s
-    network: tcp
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_2|1.3MB/s
+    password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
+    port: 59924
+    server: 130.61.118.114
+    type: ss
+    udp: true
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_3|2.9MB/s
+    password: 6IpJJIUOKtVHjU8zrTJoScGDGLfBBvWobJgMFGDuvM0=
+    port: 59924
+    server: 130.61.181.162
+    type: ss
+    udp: true
+  - name: 🇯🇵JP_1|3.1MB/s
+    network: ws
+    password: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
     port: 443
-    reality-opts:
-      public-key: wjVcW5OqGoFbeqwEPiQHjf-uQTwRMBsOKlRnl5JmSzA
-      short-id: "1e5dd4542585"
-    server: agroup.hk2.ilovegairport.com
-    tls: true
-    type: vless
+    server: jp3.998998.best
+    skip-cert-verify: true
+    sni: nat11.outsidemyheart.space
+    type: trojan
+    ws-opts:
+      headers:
+        Host: nat11.outsidemyheart.space
+      path: /w4e5yh0p945y3
     udp: true
-    uuid: df2a259e-32cc-4b4d-bcca-3f8d8a28dc2a
-    servername: ap-east-1.console.aws.amazon.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇹🇼TW_1|2.8MB/s
-    network: tcp
-    port: 30000
-    reality-opts:
-      public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
-      short-id: "a8"
-    server: aws-jp.webprovider.top
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3180f311-16fb-445c-b129-4d946940c21a
-    servername: icloud.com
   - cipher: aes-256-cfb
-    name: 🇩🇪DE_1|1.3MB/s
+    name: 🇩🇪DE_4|1.8MB/s
     password: amazonskr05
     port: 443
     server: 63.176.107.205
     type: ss
     udp: true
-  - client-fingerprint: chrome
-    ech-opts:
-      enable: true
-      query-server-name: cloudflare-ech.com
-    name: 🇺🇸US_1|1.7MB/s
-    network: ws
-    port: 443
-    server: 172.64.79.57
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    ws-opts:
-      headers:
-        Host: cdn8848.776676.xyz
-      path: /dl
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: cdn8848.776676.xyz
-  - name: 🇦🇹AT_1|1011KB/s
-    password: None
-    port: 443
-    server: 146.70.244.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_1|2.0MB/s
-    password: None
-    port: 443
-    server: 212.102.63.31
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
   - cipher: chacha20-ietf
-    name: 🇭🇰HK_2|4.0MB/s
+    name: 🇭🇰HK_1|4.2MB/s
     obfs: plain
     obfs-param: 33f313723.douyin.com
     password: di15PV
-    port: 7016
+    port: 26774
     protocol: auth_aes128_md5
     protocol-param: 313723:dCwrni
     server: api.meituan88.com
     type: ssr
     udp: true
   - cipher: chacha20-ietf
-    name: 🇹🇼TW_2|4.3MB/s
-    obfs: tls1.2_ticket_auth
+    name: 🇭🇰HK_2|4.2MB/s
+    obfs: plain
     obfs-param: 33f313723.douyin.com
     password: di15PV
-    port: 61714
+    port: 7007
     protocol: auth_aes128_md5
     protocol-param: 313723:dCwrni
     server: api.meituan88.com
     type: ssr
     udp: true
   - cipher: chacha20-ietf
-    name: 🇹🇼TW_3|1.4MB/s
+    name: 🇹🇼TW_1|1.8MB/s
     obfs: plain
     obfs-param: 33f313723.douyin.com
     password: di15PV
@@ -110,16 +73,110 @@ proxies:
     server: api.meituan88.com
     type: ssr
     udp: true
-  - name: 🇭🇰HK_3|3.2MB/s
-    password: dCwrni
-    port: 7008
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_3|4.1MB/s
+    obfs: plain
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 7016
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
     server: api.meituan88.com
-    skip-cert-verify: true
-    sni: globalnetworktraffic.com
-    type: anytls
+    type: ssr
     udp: true
+  - client-fingerprint: chrome
+    ech-opts:
+      enable: true
+      query-server-name: cloudflare-ech.com
+    name: 🇯🇵JP_2|1.2MB/s
+    network: ws
+    port: 443
+    server: 45.76.206.46
+    skip-cert-verify: true
+    tls: true
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    ws-opts:
+      headers:
+        Host: cdn8848.776676.xyz
+      path: /tags/go/groups
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: cdn8848.776676.xyz
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇸🇬SG_1|1.6MB/s
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
+      short-id: "1dd8558159ecd0"
+    server: sg4.miyazono-kaori.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+    servername: www.changiairport.com
+  - cipher: chacha20-ietf
+    name: 🇹🇼TW_2|4.0MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 61714
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇯🇵JP_3|5.0MB/s
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
+      short-id: "f75fbd5b"
+    server: jp4.miyazono-kaori.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+    servername: www.bandainamcoent.co.jp
+  - cipher: chacha20-ietf
+    name: 🇯🇵JP_4|2.0MB/s
+    obfs: plain
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 7012
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_5|3.2MB/s
+    password: UpeZLBSVADf64wezj0K1CcapVO6MLWWPYtMJue7gxqE=
+    port: 59924
+    server: 130.61.116.110
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇰🇷KR_1|3.4MB/s
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+      short-id: "c8af1462debbc1"
+    server: kr2.miyazono-kaori.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+    servername: www.coway.com
   - cipher: rc4-md5
-    name: 🇰🇷KR_1|2.4MB/s
+    name: 🇰🇷KR_2|3.6MB/s
     obfs: plain
     obfs-param: 33f313723.douyin.com
     password: di15PV
@@ -129,85 +186,162 @@ proxies:
     server: api.meituan88.com
     type: ssr
     udp: true
-  - name: 🇩🇪DE_2|2.6MB/s
-    port: 443
-    server: 149.36.50.1
-    skip-cert-verify: true
-    tls: true
-    type: http
+  - cipher: chacha20-ietf
+    name: 🇸🇬SG_2|3.0MB/s
+    obfs: plain
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 18566
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
+    server: api.meituan88.com
+    type: ssr
     udp: true
-  - name: 🇪🇸ES_1|1.0MB/s
-    port: 443
-    server: 82.102.17.178
-    skip-cert-verify: true
-    tls: true
-    type: http
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_6|2.0MB/s
+    password: 1RmIsogd2wO+AKg9dt+4v9PGoeuLhLSAztfnuapH+VI=
+    port: 59924
+    server: 130.61.148.193
+    type: ss
     udp: true
-  - name: 🇩🇪DE_3|1.3MB/s
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_7|3.0MB/s
+    password: r0wobeAeafo7jTihelLSR2OBQpYXd5k0CtpAPHaZWew=
+    port: 59924
+    server: 130.61.83.227
+    type: ss
+    udp: true
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇳🇱NL_1|1.9MB/s
+    password: j/XVzpdoi1LCmI5DBgSrc5AG92EcvDkLPMdrEczt30Y=
+    port: 45819
+    server: 158.101.207.81
+    type: ss
+    udp: true
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇳🇱NL_2|1019KB/s
+    password: CY6yzdXMv0dk3DReTOh+bj0cmSdf9VtjLLyGmB9S8Rc=
+    port: 45819
+    server: 92.5.205.98
+    type: ss
+    udp: true
+  - name: 🇩🇪DE_8|1.1MB/s
     port: 443
     server: 149.36.50.157
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇷GR_1|1.1MB/s
-    password: None
-    port: 443
-    server: 149.22.85.78
+  - name: 🇭🇰HK_4|1.9MB/s
+    password: dCwrni
+    port: 7008
+    server: api.meituan88.com
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: globalnetworktraffic.com
+    type: anytls
     udp: true
-  - name: 🇨🇿CZ_1|1.1MB/s
-    port: 443
-    server: 185.216.35.66
+  - auth: fcc91034-a05d-4da1-ab38-422b21987ff9
+    name: 🇺🇸US_1|2.9MB/s
+    password: fcc91034-a05d-4da1-ab38-422b21987ff9
+    port: 50848
+    server: 108.181.5.1
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: www.bing.com
+    type: hysteria2
     udp: true
-  - name: 🇱🇻LV_1|1.6MB/s
-    password: None
-    port: 443
-    server: 109.248.147.66
+  - auth: fcc91034-a05d-4da1-ab38-422b21987ff9
+    name: 🇺🇸US_2|3.6MB/s
+    password: fcc91034-a05d-4da1-ab38-422b21987ff9
+    port: 50979
+    server: 108.181.8.138
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: api.push.apple.com
+    type: hysteria2
     udp: true
-  - name: 🇦🇹AT_2|1.3MB/s
-    port: 443
-    server: 146.70.244.2
+  - auth: fcc91034-a05d-4da1-ab38-422b21987ff9
+    name: 🇺🇸US_3|2.5MB/s
+    password: fcc91034-a05d-4da1-ab38-422b21987ff9
+    port: 51849
+    server: 108.181.8.122
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: www.bing.com
+    type: hysteria2
     udp: true
-  - name: 🇪🇸ES_2|1.6MB/s
-    port: 443
-    server: 130.195.250.18
-    skip-cert-verify: true
-    tls: true
-    type: http
+  - cipher: chacha20-ietf
+    name: 🇹🇼TW_3|3.5MB/s
+    obfs: plain
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 7018
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
+    server: api.meituan88.com
+    type: ssr
     udp: true
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_1|1.0MB/s
-    network: ws
+  - cipher: chacha20-ietf
+    name: 🇭🇰HK_5|4.2MB/s
+    obfs: plain
+    obfs-param: 33f313723.douyin.com
+    password: di15PV
+    port: 7001
+    protocol: auth_aes128_md5
+    protocol-param: 313723:dCwrni
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇳🇱NL_3|1.6MB/s
+    network: tcp
     port: 443
-    server: soliconf.dpdns.org
+    reality-opts:
+      public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
+      short-id: "69cc4c0d5e"
+    server: nl2.miyazono-kaori.com
     tls: true
     type: vless
     udp: true
-    uuid: af11a901-92bb-a9d2-a17c-f9a38c4fd33b
+    uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
+    servername: www.philips.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇭🇰HK_6|2.1MB/s
+    port: 54030
+    reality-opts:
+      public-key: 1kifGOu6PhqrZmV4gK1XEmnKsq1Gcr9sqJYw4SQxujY
+    server: 103.143.81.60
+    tls: true
+    type: vless
+    uuid: 322c0364-b447-45c2-a27c-250376170dc0
+    udp: true
+    network: tcp
+    servername: www.ebay.com
+  - alterId: "0"
+    cipher: auto
+    name: 🇹🇼TW_4|1.0MB/s
+    network: ws
+    port: 443
+    server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+    skip-cert-verify: false
+    tls: true
+    type: vmess
+    udp: true
+    uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
     ws-opts:
       headers:
-        Host: soliconf.dpdns.org
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.106 Safari/537.36
-      path: /ws/af11a901-92bb-a9d2-a17c-f9a38c4fd33b
+        Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+      path: /
     xudp: true
     packet-encoding: xudp
-    servername: soliconf.dpdns.org
+    servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  - name: 🇨🇳CN_1|5.5MB/s
+    password: T2c9PTpPZz09
+    port: 1080
+    server: 103.210.161.8
+    skip-cert-verify: true
+    type: socks5
+    username: T2c9PTpPZz09
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
