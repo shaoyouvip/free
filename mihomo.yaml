@@ -1,4 +1,45 @@
 proxies:
+  - client-fingerprint: chrome
+    name: 🇩🇪DE_1|1.3MB/s
+    network: ws
+    port: 443
+    server: 172.67.79.81
+    tls: true
+    type: vless
+    udp: true
+    uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+    ws-opts:
+      headers:
+        Host: shephe.dpdns.org
+      path: /
+    servername: shephe.dpdns.org
+  - client-fingerprint: chrome
+    name: 🇩🇪DE_2|3.1MB/s
+    network: ws
+    port: 443
+    server: 5.45.111.195
+    tls: true
+    type: vless
+    uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+    ws-opts:
+      headers:
+        Host: shephe.dpdns.org
+      path: /
+    udp: true
+    servername: shephe.dpdns.org
+  - client-fingerprint: firefox
+    grpc-opts:
+      grpc-mode: gun
+      grpc-service-name: vless-grpc
+    name: 🇫🇮FI_1|1.0MB/s
+    network: grpc
+    port: 443
+    server: 153.52.117.131
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+    servername: fi.astrafic.ru
   - auth: 6c077487-06af-4fb1-9e46-d485d98f0a31
     name: 🇯🇵JP_1|1.9MB/s
     password: 6c077487-06af-4fb1-9e46-d485d98f0a31
@@ -8,25 +49,86 @@ proxies:
     sni: www.bing.com
     type: hysteria2
     udp: true
-  - auth: cloud:Wz8cE3yFhL9dXoSp
-    name: 🇺🇸US_1|2.6MB/s
-    password: cloud:Wz8cE3yFhL9dXoSp
-    port: 8443
-    server: ss.marmount.space
-    skip-cert-verify: true
-    type: hysteria2
+  - client-fingerprint: random
+    flow: xtls-rprx-vision
+    name: 🇺🇸US_1|3.4MB/s
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 8i7j9_b2KyQC8iR-jEMGl-d2whPkeKt36mutUkZr9ng
+      short-id: "3477a74403cf4af9"
+    server: 154.64.235.117
+    tls: true
+    type: vless
     udp: true
-    sni: ss.marmount.space
-  - auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    name: 🇺🇸US_2|2.5MB/s
+    uuid: 82C94E17-B27E-4356-82C1-2F9C79B0CF6D
+    servername: gateway.icloud.com
+  - down: ""
+    fingerprint: ""
+    name: 🇯🇵JP_2|1.3MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+    port: 52454
+    server: 45.88.43.116
+    skip-cert-verify: true
+    sni: 45.88.43.116
+    type: hysteria2
+    up: ""
+    udp: true
+  - down: ""
+    fingerprint: ""
+    name: 🇫🇷FR_1|3.6MB/s
+    obfs: ""
+    obfs-password: ""
     password: H7mP2xY9kJ4nQ8wR5tF6vB3z
     port: 443
-    server: vpn-us-006.fastervpn.world
+    server: vpn-fr-002.fastervpn.world
     skip-cert-verify: true
-    sni: vpn-us-006.fastervpn.world
+    sni: 127.0.0.1
     type: hysteria2
+    up: ""
     udp: true
-  - name: 🇨🇭CH_1|1.1MB/s
+  - down: ""
+    fingerprint: ""
+    name: 🇺🇸US_2|2.2MB/s
+    obfs: ""
+    obfs-password: ""
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    port: 443
+    server: vpn-us-003.fastervpn.world
+    skip-cert-verify: true
+    sni: 127.0.0.1
+    type: hysteria2
+    up: ""
+    udp: true
+  - down: ""
+    fingerprint: ""
+    name: 🇸🇬SG_1|2.1MB/s
+    obfs: ""
+    obfs-password: ""
+    password: f87376e17da040ed04c9665ce8972930
+    port: 50160
+    server: 138.2.73.238
+    skip-cert-verify: true
+    sni: 138.2.73.238
+    type: hysteria2
+    up: ""
+    udp: true
+  - down: ""
+    fingerprint: ""
+    name: 🇰🇷KR_1|3.2MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 9cfc9458e48c028ec03ff86ebc71c744
+    port: 50160
+    server: 150-230-252-217.liao.kdns.fr
+    skip-cert-verify: false
+    sni: 150-230-252-217.liao.kdns.fr
+    type: hysteria2
+    up: ""
+    udp: true
+  - name: 🇨🇭CH_1|1.9MB/s
     password: None
     port: 9443
     server: 37.120.213.210
@@ -34,32 +136,248 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_3|2.9MB/s
-    port: 443
-    server: 107.167.18.122
-    type: http
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇺🇸US_4|2.6MB/s
-    obfs: ""
-    obfs-password: ""
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    port: 443
-    server: vpn-us-004.fastervpn.world
-    skip-cert-verify: true
-    sni: vpn-us-004.fastervpn.world
-    type: hysteria2
-    up: ""
-    udp: true
-  - name: 🇦🇹AT_1|1.0MB/s
+  - name: 🇩🇪DE_3|3.1MB/s
     password: None
     port: 443
-    server: 146.70.244.2
+    server: 149.36.50.129
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
+  - name: 🇱🇻LV_1|1.5MB/s
+    port: 443
+    server: 109.248.147.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇨🇳CN_1|4.8MB/s
+    password: Og
+    port: 1080
+    server: 103.210.161.8
+    type: socks5
+    udp: true
+    username: Og
+  - client-fingerprint: chrome
+    ech-opts:
+      enable: true
+      query-server-name: cloudflare-ech.com
+    name: 🇺🇸US_3|1.8MB/s
+    network: ws
+    port: 443
+    server: cdn.8211992.xyz
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    ws-opts:
+      headers:
+        Host: mao.mao114514.kdns.fr
+      path: /glasspanel/guest000_0_5de14443985f/
+    servername: mao.mao114514.kdns.fr
+  - name: 🇬🇧GB_1|1.1MB/s
+    password: None
+    port: 9443
+    server: 37.120.233.34
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇺RU_1|1.0MB/s
+    port: 443
+    server: 82.147.71.46
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: 🇸🇬SG_2|2.0MB/s
+    network: ws
+    port: 2096
+    server: 104.17.70.206
+    tls: true
+    type: vless
+    udp: true
+    uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+    ws-opts:
+      headers:
+        Host: free-server.techsonic.dev
+      path: /free-server.techsonic.dev
+    servername: free-server.techsonic.dev
+  - name: 🇷🇺RU_2|2.5MB/s
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    port: 2060
+    server: els.mangshe.xyz
+    skip-cert-verify: true
+    sni: els.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - name: 🇺🇸US_4|1.2MB/s
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    port: 2060
+    server: mg.mangshe.xyz
+    skip-cert-verify: true
+    sni: mg.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇺🇸US_5|2.6MB/s
+    network: ws
+    port: 443
+    server: 45.59.131.33
+    tls: true
+    type: vless
+    uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+    ws-opts:
+      headers:
+        Host: shephe.dpdns.org
+      path: /
+    udp: true
+    servername: shephe.dpdns.org
+  - name: 🇸🇬SG_3|2.7MB/s
+    password: 19f72087-4591-4d72-930b-2697078ec2be
+    port: 18333
+    server: sg1.xiaoliyu.cyou
+    skip-cert-verify: true
+    sni: sg1.xiaoliyu.cyou
+    type: hysteria2
+    udp: true
+  - name: 🇬🇧GB_2|2.5MB/s
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    port: 2060
+    server: yg.mangshe.xyz
+    skip-cert-verify: true
+    sni: yg.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - name: 🇺🇸US_6|1.7MB/s
+    port: 443
+    server: 107.167.18.122
+    type: http
+    udp: true
+  - name: 🇺🇸US_7|1.1MB/s
+    port: 443
+    server: 12.202.180.10
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇨🇦CA_1|1.3MB/s
+    port: 443
+    server: 206.223.161.47
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇪🇸ES_1|2.2MB/s
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    port: 2060
+    server: xby.mangshe.xyz
+    skip-cert-verify: true
+    sni: xby.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - name: 🇸🇬SG_4|2.7MB/s
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    port: 2060
+    server: xjp2.mangshe.xyz
+    skip-cert-verify: true
+    sni: xjp2.mangshe.xyz
+    type: hysteria2
+    udp: true
+  - name: 🇨🇭CH_2|1.9MB/s
+    port: 443
+    server: 31.7.62.50
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_8|3.8MB/s
+    port: 8443
+    server: 154.81.36.92
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇦🇱AL_1|1008KB/s
+    password: None
+    port: 443
+    server: 87.120.103.226
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_4|1.2MB/s
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 3w1RLb2hE9qftafimJKcoWTRbLcCvAj7-Ub4fY-lTS0
+      short-id: "f3f6de03370d26d3"
+    server: 8.211.15.144
+    tls: true
+    type: vless
+    udp: true
+    uuid: 808d44f6-faaf-48b6-93b2-47a1a2d497b5
+    xudp: true
+    packet-encoding: xudp
+    servername: www.apple.com
+  - client-fingerprint: chrome
+    encryption: none
+    name: 🇩🇪DE_5|1.3MB/s
+    network: ws
+    port: 443
+    server: 64.188.118.137
+    tls: true
+    type: vless
+    udp: true
+    uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+    ws-opts:
+      headers:
+        Host: shephe.dpdns.org
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: shephe.dpdns.org
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇵🇱PL_1|1.4MB/s
+    network: tcp
+    port: 443
+    server: polka-dot.failspace.top
+    tls: true
+    type: vless
+    udp: true
+    uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+    xudp: true
+    packet-encoding: xudp
+    servername: polka-dot.failspace.top
+  - client-fingerprint: safari
+    encryption: none
+    grpc-opts:
+      grpc-service-name: grpce5bb9e71
+    name: 🇸🇪SE_1|1.4MB/s
+    network: grpc
+    port: 2053
+    reality-opts:
+      public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+      short-id: "d0ea1847066af5a6"
+    server: 62.60.159.81
+    tls: true
+    type: vless
+    udp: true
+    uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+    xudp: true
+    packet-encoding: xudp
+    servername: www.samsung.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
