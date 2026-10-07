@@ -1,45 +1,28 @@
 proxies:
-  - name: 🇩🇪DE_1|1.1MB/s
-    network: ws
-    port: 2052
-    server: 172.64.229.129
-    tls: false
-    type: vless
-    udp: true
-    uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-    ws-opts:
-      headers:
-        Host: eu02.123450908.xyz
-      path: /rain1226
-  - client-fingerprint: chrome
-    encryption: mlkem768x25519plus.native.0rtt.Obr5RkpXcciyoYhSOWoBu-rPy23XTh96VbZGM95Lpic
-    flow: xtls-rprx-vision
-    name: 🇩🇪DE_2|3.7MB/s
-    network: tcp
-    port: 59719
-    reality-opts:
-      public-key: cWI4RpOZJqkX1HE9pQIZQ8eNeLWGX8UEzECyRehQnlQ
-      short-id: "6e6f9fa5decc02"
-    server: 189.24.108.152
-    tls: true
-    type: vless
-    udp: true
-    uuid: cd55b3ae-6833-4eff-be18-55bd92164071
-    servername: www.sony.lu
-  - name: 🇫🇷FR_1|1.2MB/s
-    password: github.com/Alvin9999-newpac/fanqiang
-    port: 30099
-    server: ip5.934618.xyz
+  - auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+    name: 🇩🇪DE_1|1.9MB/s
+    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+    port: 8443
+    server: 162.249.126.39
     skip-cert-verify: true
-    sni: ip5.934618.xyz
-    type: anytls
+    sni: hop-germany-september.dynuddns.com
+    type: hysteria2
+    udp: true
+  - auth: d402d4c0b8354a90b70bb2566dce9a08
+    name: 🇫🇮FI_1|2.4MB/s
+    password: d402d4c0b8354a90b70bb2566dce9a08
+    port: 8443
+    server: i.wareznet.ru
+    skip-cert-verify: true
+    sni: i.wareznet.ru
+    type: hysteria2
     udp: true
   - alpn:
       - h3
       - h2
     client-fingerprint: chrome
     encryption: none
-    name: 🇯🇵JP_1|5.3MB/s
+    name: 🇯🇵JP_1|4.6MB/s
     network: ws
     port: 443
     server: saas.sin.fan
@@ -50,143 +33,47 @@ proxies:
     ws-opts:
       headers:
         Host: snip.edgeoneai.cc.cd
-        User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-          (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/63.0.3239.132 Safari/537.36
       path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     xudp: true
     packet-encoding: xudp
     servername: snip.edgeoneai.cc.cd
-  - name: 🇫🇷FR_2|1.2MB/s
-    port: 9443
-    server: 138.199.47.247
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇷🇴RO_1|1.3MB/s
+  - name: 🇺🇸US_1|1.2MB/s
     port: 443
-    server: 185.163.110.194
+    server: 121.127.34.82
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇵🇱PL_1|1.4MB/s
-    port: 443
-    server: 37.120.156.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_1|2.5MB/s
+  - name: 🇨🇭CH_1|1015KB/s
     password: None
-    port: 9002
-    server: 138.199.35.202
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_2|1.8MB/s
-    port: 443
-    server: zebpay.site
-    skip-cert-verify: false
-    tls: true
-    type: http
-    udp: true
-    sni: zebpay.site
-  - name: 🇺🇸US_3|1.6MB/s
-    port: 443
-    server: 148.135.10.80
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇧🇪BE_1|2.1MB/s|R002-260618
-    password: None
-    port: 443
-    server: 146.70.176.242
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_4|1013KB/s
-    port: 443
-    server: 167.88.60.242
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_5|1.4MB/s
-    port: 443
-    server: 12.202.180.10
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇪🇸ES_1|1.2MB/s
-    port: 443
-    server: 130.195.250.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_6|1.3MB/s
     port: 9443
-    server: 149.88.21.140
+    server: 37.120.213.210
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_7|1.2MB/s
-    port: 443
-    server: 45.63.38.134
+  - name: 🇺🇸US_2|3.5MB/s
+    password: ""
+    port: 8885
+    server: 38.79.114.43
     skip-cert-verify: true
-    tls: true
-    type: http
+    type: socks5
+    username: ""
     udp: true
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇬🇧GB_1|1.3MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
-      short-id: "ee169e93d3c277a1"
-    server: 193.202.113.5
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6f756511-7fc3-41ba-874b-8cdc8e1b225f
-    xudp: true
-    packet-encoding: xudp
-    servername: edge-uk2.mystatic-cdn.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇩🇪DE_3|1.1MB/s
-    network: tcp
-    port: 443
-    server: 31.131.251.17
-    tls: true
-    type: vless
-    udp: true
-    uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
-    xudp: true
-    packet-encoding: xudp
-    servername: quatro.lmstream.org
-  - name: 🇯🇵JP_2|1.6MB/s
+  - name: 🇬🇧GB_1|1.1MB/s
     password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
     port: 443
-    server: d8359bdc-tdsv40-tf8z9r-1pr35.jp4.oshuawei.com
+    server: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
     tls: true
     type: http
     username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
     udp: true
-    sni: d8359bdc-tdsv40-tf8z9r-1pr35.jp4.oshuawei.com
-  - name: 🇭🇰HK_1|2.9MB/s
+    sni: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
+  - name: 🇭🇰HK_1|1.2MB/s
     password: <password>
     port: 8443
     server: 61711f60-tdups0-tf8z9r-1pr35.hkt.cdnhuawei.com
