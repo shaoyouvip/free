@@ -1,70 +1,63 @@
 proxies:
-  - client-fingerprint: qq
-    flow: xtls-rprx-vision
-    name: 🇦🇹AT_1|1.2MB/s
-    network: tcp
+  - client-fingerprint: random
+    name: 🇺🇸US_1|4.3MB/s
+    network: ws
     port: 443
-    reality-opts:
-      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-      short-id: "a8"
-    server: api.mediapereval.cc
+    server: ct.877774.xyz
     tls: true
     type: vless
     udp: true
-    uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-    servername: api.mediapereval.cc
-  - name: 🇨🇿CZ_1|1.1MB/s
-    port: 443
-    server: 185.216.35.130
+    uuid: efb58f99-af9e-48da-ac0d-cbac9c1f9200
+    ws-opts:
+      headers:
+        Host: us-lax.862400.xyz
+      path: /announcement
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    servername: us-lax.862400.xyz
+  - name: 🇨🇭CH_1|1.0MB/s
+    port: 9443
+    server: 149.88.27.33
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇪🇸ES_1|3.3MB/s
+  - name: 🇪🇸ES_1|1.2MB/s
     port: 443
     server: 130.195.250.18
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_1|2.8MB/s
+  - name: 🇨🇭CH_2|1.3MB/s
+    port: 9443
+    server: 149.88.27.46
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇱🇻LV_1|2.9MB/s
     port: 443
-    server: 121.127.34.82
+    server: 109.248.147.66
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_1|3.4MB/s
-    port: 9002
-    server: 84.17.47.125
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_1|1007KB/s
+  - name: 🇫🇷FR_1|1.6MB/s
     port: 9443
     server: 213.139.9.142
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇭🇺HU_1|2.7MB/s
-    password: None
-    port: 443
-    server: 146.70.203.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇦🇱AL_1|1.1MB/s|K001-260618
+  - name: 🇩🇰DK_1|2.8MB/s
     port: 9443
-    server: 31.171.155.210
+    server: 185.245.84.50
     skip-cert-verify: true
-    sub_tag: K001-260618
     tls: true
     type: http
     udp: true
-  - name: 🇪🇸ES_2|2.6MB/s
+  - name: 🇪🇸ES_2|2.3MB/s
     password: None
     port: 443
     server: 130.195.250.34
@@ -72,193 +65,108 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇨🇦CA_1|1.2MB/s
+  - name: 🇺🇸US_2|1000KB/s
     port: 443
-    server: 206.223.161.47
+    server: 68.235.56.51
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇸🇪SE_1|2.8MB/s
-    port: 443
-    server: 149.50.216.65
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇾CY_1|1.3MB/s
-    port: 443
-    server: 213.207.130.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇳🇱NL_2|1.7MB/s
-    port: 443
-    server: 161.129.60.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_1|1003KB/s
-    port: 443
-    server: 79.127.156.177
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_2|2.0MB/s
+  - name: 🇩🇪DE_1|2.6MB/s
     port: 443
     server: 87.249.132.97
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇮🇹IT_1|1.8MB/s
-    port: 443
-    server: 185.183.105.130
+  - name: 🇳🇱NL_1|2.0MB/s
+    port: 9443
+    server: 149.36.51.157
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_1|2.0MB/s|R002-260618
-    password: None
+  - name: 🇺🇸US_3|1.7MB/s
+    password: ""
+    port: 9443
+    server: 38.95.111.226
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: ""
+  - name: 🇮🇪IE_1|1006KB/s
     port: 443
-    server: 37.120.233.18
+    server: 149.88.96.1
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇩🇪DE_2|1.2MB/s
+    port: 443
+    server: 149.36.50.157
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇨🇭CH_3|1.0MB/s|R002-260618
+    port: 9443
+    server: 37.120.213.210
     skip-cert-verify: true
     sub_tag: R002-260618
     tls: true
     type: http
     udp: true
-  - name: 🇱🇺LU_1|1.3MB/s
+  - name: 🇺🇸US_4|1.6MB/s
     port: 443
-    server: 185.221.132.242
+    server: 12.221.146.147
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_3|1.1MB/s
-    port: 443
-    server: 149.36.50.1
+  - name: 🇺🇸US_5|2.3MB/s
+    port: 9443
+    server: 198.44.138.27
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇿CZ_2|1.7MB/s
-    port: 443
-    server: 185.216.35.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇱🇻LV_1|1.3MB/s
-    port: 443
-    server: 185.219.159.16
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_2|1.3MB/s
-    port: 443
-    server: 167.88.60.242
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇧🇦BA_1|1.3MB/s
-    port: 443
-    server: 185.164.35.16
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇷🇺RU_1|2.3MB/s
-    port: 1446
-    server: 46.29.166.134
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇵🇱PL_1|2.5MB/s
-    password: None
+  - name: 🇵🇱PL_1|1.8MB/s
     port: 443
     server: 37.120.156.34
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_3|1.8MB/s
-    port: 443
-    server: 12.202.180.118
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_4|2.3MB/s
-    port: 9443
-    server: 198.44.135.19
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_2|1.6MB/s
-    port: 9443
-    server: 138.199.47.247
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇭🇺HU_2|1.4MB/s
-    port: 443
-    server: 146.70.203.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_2|1.1MB/s
-    password: None
-    port: 443
-    server: 212.102.63.61
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇦CA_2|1.2MB/s
-    port: 443
-    server: 206.223.183.16
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_3|1.3MB/s
-    port: 9443
-    server: 84.17.50.129
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_4|1.3MB/s
+  - name: 🇩🇪DE_3|1.1MB/s
     port: 443
     server: 149.36.50.129
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇪🇪EE_1|1.8MB/s
+  - name: 🇪🇪EE_1|1016KB/s
     port: 9443
     server: 95.153.31.66
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇱🇺LU_2|1.2MB/s
+  - name: 🇦🇱AL_1|2.8MB/s
+    port: 443
+    server: 87.120.103.226
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇱🇺LU_1|1.9MB/s
     port: 443
     server: 185.221.132.226
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇸🇪SE_2|1.3MB/s
+  - name: 🇸🇪SE_1|1.2MB/s
     password: None
     port: 443
     server: 146.70.242.130
@@ -266,60 +174,67 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_5|2.7MB/s
-    port: 443
-    server: 213.177.229.161
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇮🇪IE_1|1.1MB/s
+  - name: 🇮🇪IE_2|1.5MB/s
     port: 443
     server: 149.88.96.12
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_5|1009KB/s
+  - name: 🇺🇸US_6|2.3MB/s
     port: 443
-    server: 148.135.10.80
+    server: 68.235.56.59
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇸🇪SE_3|1.8MB/s
-    password: None
+  - name: 🇵🇹PT_1|1.1MB/s
     port: 443
-    server: 79.142.77.63
+    server: 149.22.86.14
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇧🇪BE_1|2.3MB/s|R002-260618
-    password: None
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: mlkem768x25519plus.native.0rtt.L6G2zwZS1EgA-7P5IbUp3JNSAmApF6oHDkvW0_1_ZUs
+    name: 🇳🇱NL_2|1.6MB/s
+    network: ws
     port: 443
-    server: 146.70.176.242
-    skip-cert-verify: true
-    sub_tag: R002-260618
+    server: 188.114.97.6
     tls: true
-    type: http
+    type: vless
     udp: true
-  - name: 🇨🇦CA_3|2.8MB/s
-    password: ""
-    port: 1080
-    server: 149.248.18.106
-    skip-cert-verify: true
-    type: socks5
-    username: ""
+    uuid: 6d489ff1-ecbb-4f8e-9ca6-b3633aaac1f9
+    ws-opts:
+      headers:
+        Host: alexagent19a.de5.net
+        User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
+          wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
+          Chrome/62.0.3202.84 Mobile Safari/537.36
+      path: /ws
+    xudp: true
+    packet-encoding: xudp
+    servername: alexagent19a.de5.net
+  - client-fingerprint: chrome
+    encryption: none
+    name: 🇩🇪DE_4|1.6MB/s
+    network: xhttp
+    port: 443
+    server: tamiiiiz.aryan-sport.ir
+    tls: true
+    type: vless
     udp: true
-  - name: 🇸🇬SG_1|4.2MB/s
-    password: "1234"
-    port: 2080
-    server: 54.255.133.243
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
+    uuid: 9f9a0bdf-fa7b-4cdc-a8a3-44578cb5054b
+    xhttp-opts:
+      host: s16.aryan-sport.ir.
+      mode: auto
+      path: /
+      x-padding-bytes: 100-1000
+    xudp: true
+    packet-encoding: xudp
+    servername: s20.aryan-sport.ir
 proxy-groups:
   - name: 🚀 节点选择
     type: select
