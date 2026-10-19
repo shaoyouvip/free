@@ -1,79 +1,39 @@
 proxies:
-  - client-fingerprint: chrome
-    name: 🇬🇧GB_1|1009KB/s
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: 🇫🇷FR_1|2.9MB/s
     network: ws
-    port: 2083
-    server: 134.122.111.219
+    port: 8443
+    server: speedtest.org
     tls: true
     type: vless
     udp: true
-    uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
+    uuid: c3571d81-38bd-44a8-9b75-5af8a125fc42
     ws-opts:
       headers:
-        Host: nvl-edge-dr-141026.pages.dev
-      path: /proxyip=ProxyIP.GB.CMLiussss.Net
-    servername: nvl-edge-dr-141026.pages.dev
-  - client-fingerprint: chrome
-    name: 🇰🇷KR_1|1.3MB/s
-    network: ws
+        Host: pbsjv.megalionzone-vexina.sbs
+      path: /bala
+    servername: pbsjv.megalionzone-vexina.sbs
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_1|3.2MB/s
+    network: tcp
     port: 443
-    server: 144.24.90.178
+    server: de3.brightmetric.trade
     tls: true
     type: vless
     udp: true
-    uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-    ws-opts:
-      headers:
-        Host: nvl-edge-dr-141026.pages.dev
-      path: /proxyip=ProxyIP.KR.CMLiussss.Net
-    servername: nvl-edge-dr-141026.pages.dev
-  - http-opts:
-      headers:
-        Host:
-          - play.googleapis.com
-      method: GET
-      path:
-        - /
-    name: 🇰🇷KR_2|5.1MB/s
-    network: http
-    port: 443
-    server: 43.202.6.222
-    tls: false
-    type: vless
-    udp: true
-    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  - client-fingerprint: chrome
-    name: 🇺🇸US_1|1.5MB/s
-    network: xhttp
-    port: 443
-    server: vless-colo.whuiy.xyz
-    tls: true
-    type: vless
-    udp: true
-    uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
-    xhttp-opts:
-      host: vless-colo.whuiy.xyz
-      mode: auto
-      path: /xhttp-us
-    servername: vless-colo.whuiy.xyz
-  - http-opts:
-      headers:
-        Host:
-          - play.googleapis.com
-      method: GET
-      path:
-        - /
-    name: 🇺🇸US_2|5.0MB/s
-    network: http
-    port: 443
-    server: 44.251.76.224
-    tls: false
-    type: vless
-    udp: true
-    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+    xudp: true
+    packet-encoding: xudp
+    servername: de3.brightmetric.trade
   - client-fingerprint: chrome
     encryption: none
-    name: 🇳🇱NL_1|1.3MB/s
+    name: 🇳🇱NL_1|2.2MB/s
     network: xhttp
     port: 61374
     reality-opts:
@@ -94,106 +54,45 @@ proxies:
     xudp: true
     packet-encoding: xudp
     servername: nl-s-2.pythonmakemigreat.wiki
-  - alterId: "2"
-    cipher: auto
-    name: 🇺🇸US_3|4.3MB/s
+  - client-fingerprint: chrome
+    name: 🇸🇬SG_1|2.5MB/s
+    password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+    port: 8886
+    server: 139.180.146.200
+    skip-cert-verify: true
+    type: trojan
+    udp: true
     network: tcp
-    port: 30829
-    server: v29.hdacd.com
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    xudp: true
-    packet-encoding: xudp
-  - alterId: 2
-    cipher: auto
-    name: 🇺🇸US_4|3.4MB/s
-    network: tcp
-    port: 30829
-    server: v29.hdacd.com
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    xudp: true
-    packet-encoding: xudp
-    servername: v29.hdacd.com
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    name: 🇩🇪DE_1|1.5MB/s
-    network: ws
-    port: 443
-    server: 172.67.118.45
-    tls: true
-    type: vless
-    udp: true
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    ws-opts:
-      headers:
-        Host: snip.edgeoneai.cc.cd
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: /fdip#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    packet-encoding: xudp
-    servername: snip.edgeoneai.cc.cd
-  - alpn:
-      - h2
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_2|3.6MB/s
-    network: xhttp
-    port: 443
-    server: reg.gosru.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5de6a0ad-7d73-410b-ad50-a2bb5d47b93c
-    xhttp-opts:
-      host: reg.gosru.com
-      mode: packet-up
-      path: /assets/c8d953ad90f3a3efe3816c6557c1e596/
-      reuse-settings:
-        max-concurrency: "0"
-        max-connections: "2"
-      x-padding-bytes: 128-768
-      x-padding-header: X-Request-Context
-      x-padding-key: request_context
-      x-padding-method: tokenish
-      x-padding-obfs-mode: true
-      x-padding-placement: header
-    xudp: true
-    packet-encoding: xudp
-    servername: reg.gosru.com
-  - name: 🇸🇪SE_1|1.5MB/s
+  - name: 🇸🇪SE_1|1.2MB/s
     port: 443
     server: 79.142.77.63
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇭CH_1|2.7MB/s
+  - name: 🇷🇸RS_1|2.3MB/s
     password: None
-    port: 9443
-    server: 37.120.213.210
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_5|2.4MB/s
     port: 443
-    server: 121.127.34.82
+    server: 146.70.221.34
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇱🇺LU_1|3.2MB/s|K001-260618
+  - name: 🇦🇹AT_1|2.8MB/s
+    port: 443
+    server: 146.70.244.2
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇪🇪EE_1|2.4MB/s
+    port: 9443
+    server: 95.153.31.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇱🇺LU_1|2.3MB/s|K001-260618
     port: 443
     server: 185.221.132.226
     skip-cert-verify: true
@@ -201,36 +100,36 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇦🇹AT_1|2.7MB/s
+  - name: 🇬🇧GB_1|3.4MB/s
+    port: 443
+    server: 212.102.63.31
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_2|2.5MB/s
+    port: 9443
+    server: 149.36.51.157
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇩🇰DK_1|3.2MB/s
     password: None
     port: 443
-    server: 146.70.244.18
+    server: 185.245.84.50
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇭CH_2|2.0MB/s
+  - name: 🇪🇸ES_1|3.9MB/s
     port: 443
-    server: 31.7.62.50
+    server: 130.195.250.34
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_6|1.8MB/s
-    port: 443
-    server: 12.221.146.147
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_2|4.2MB/s
-    port: 443
-    server: 185.164.138.156
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇸🇪SE_2|4.0MB/s
+  - name: 🇸🇪SE_2|2.2MB/s
     password: None
     port: 443
     server: 146.70.242.130
@@ -238,29 +137,43 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_3|3.2MB/s
+  - name: 🇨🇦CA_1|2.2MB/s
+    port: 443
+    server: 206.223.161.47
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇨🇦CA_2|2.0MB/s
+    port: 443
+    server: 23.169.224.34
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_3|1.7MB/s
     password: None
-    port: 443
-    server: 212.102.63.1
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_7|2.5MB/s
-    port: 443
-    server: 148.135.10.80
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇳🇱NL_3|3.2MB/s
     port: 9002
     server: 84.17.47.125
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_4|1.9MB/s
+  - name: 🇳🇱NL_4|1.4MB/s
+    port: 9002
+    server: 84.17.47.150
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_5|3.7MB/s
+    port: 9002
+    server: 84.17.47.148
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_6|2.6MB/s
     password: None
     port: 9002
     server: 84.17.47.148
@@ -268,23 +181,37 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_2|2.1MB/s
+  - name: 🇷🇴RO_1|3.0MB/s
     port: 9002
-    server: 158.173.154.4
+    server: 193.176.84.20
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_5|1.9MB/s
+  - name: 🇺🇸US_1|1.5MB/s
+    port: 9002
+    server: 138.199.35.198
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_2|2.5MB/s
+    network: tcp
     port: 443
-    server: 185.238.168.20
-    skip-cert-verify: true
+    reality-opts:
+      public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+      short-id: "2c9a2790ad5900b2"
+    server: ge-s-1.pythonmakemigreat.wiki
     tls: true
-    type: http
+    type: vless
     udp: true
-  - name: 🇳🇱NL_6|3.1MB/s
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    servername: ge-s-1.pythonmakemigreat.wiki
+  - name: 🇩🇪DE_3|3.2MB/s
     port: 9002
-    server: 84.17.47.147
+    server: 158.173.154.2
     skip-cert-verify: true
     tls: true
     type: http
@@ -296,7 +223,7 @@ proxies:
       method: GET
       path:
         - /
-    name: 🇺🇸US_8|4.5MB/s
+    name: 🇺🇸US_2|4.3MB/s
     network: http
     port: 443
     server: 100.54.27.217
@@ -306,40 +233,109 @@ proxies:
     udp: true
     uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
     servername: play.googleapis.com
-  - alterId: 2
-    cipher: auto
-    name: 🇺🇸US_9|1.6MB/s
-    port: 30829
-    server: v29.hdacd.com
+  - name: 🇺🇸US_3|2.0MB/s
+    port: 9002
+    server: 138.199.35.214
     skip-cert-verify: true
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    network: tcp
-  - name: 🇸🇬SG_1|3.8MB/s
-    password: "1234"
-    port: 2080
-    server: 47.129.155.166
-    skip-cert-verify: true
+    tls: true
     type: http
-    username: "1234"
     udp: true
-  - name: 🇩🇪DE_3|2.2MB/s
+  - name: 🇺🇸US_4|3.2MB/s
+    password: None
+    port: 9002
+    server: 138.199.35.209
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇩🇪DE_4|3.7MB/s
+    network: raw
     port: 443
-    server: 149.36.50.129
-    skip-cert-verify: true
+    reality-opts:
+      public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+      short-id: "2c9a2790ad5900b2"
+    server: ge-s-1.pythonmakemigreat.wiki
     tls: true
-    type: http
+    type: vless
     udp: true
-  - name: 🇳🇱NL_7|1.5MB/s
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    xudp: true
+    packet-encoding: xudp
+    servername: ge-s-1.pythonmakemigreat.wiki
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇺🇸US_5|1.6MB/s
+    network: ws
+    port: 443
+    server: 104.17.148.22
+    tls: true
+    type: vless
+    udp: true
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    ws-opts:
+      headers:
+        Host: snip.edgeoneai.cc.cd
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/45.0.2454.93 Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: snip.edgeoneai.cc.cd
+  - name: 🇸🇬SG_2|2.6MB/s
     port: 9443
-    server: 149.36.51.161
+    server: 152.233.9.239
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_8|1.5MB/s
+  - name: 🇩🇪DE_5|1.8MB/s
+    port: 443
+    server: 149.36.50.1
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇩🇪DE_6|3.1MB/s
+    port: 443
+    server: 79.127.156.177
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇨🇭CH_1|3.6MB/s
+    port: 9443
+    server: 37.120.213.210
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_7|4.3MB/s
+    port: 19362
+    server: 51.159.225.197
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_8|2.0MB/s
+    port: 443
+    server: 185.246.153.28
+    skip-cert-verify: true
+    sni: 4a8c2906c96058315dffbc2b0e7ff19b-0c66a58858a795df.apache-iv.com
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_9|3.0MB/s
+    port: 443
+    server: 149.36.51.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_10|1.6MB/s
     port: 443
     server: 185.140.209.235
     skip-cert-verify: true
@@ -347,71 +343,60 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇮🇪IE_1|3.5MB/s
+  - name: 🇮🇪IE_1|3.2MB/s
     port: 443
     server: 34.249.214.108
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇿CZ_1|1.7MB/s
+  - name: 🇩🇪DE_7|2.3MB/s
     port: 443
-    server: 185.216.35.66
+    server: 79.76.126.155
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_4|2.5MB/s
-    port: 9443
-    server: 37.120.233.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_10|3.2MB/s
+  - name: 🇺🇸US_6|2.4MB/s
     port: 9002
-    server: 138.199.35.199
+    server: 138.199.35.217
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇫🇮FI_1|3.1MB/s
-    port: 8443
-    server: 185.209.31.2
+  - name: 🇬🇧GB_2|2.1MB/s|R002-260618
+    password: None
+    port: 443
+    server: 37.120.233.18
     skip-cert-verify: true
+    sub_tag: R002-260618
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_11|1.8MB/s
-    port: 9002
-    server: 138.199.35.204
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_12|3.0MB/s
+  - name: 🇺🇸US_7|2.6MB/s
     port: 443
     server: 129.153.93.183
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_9|1.3MB/s
+  - name: 🇷🇸RS_2|3.0MB/s
     port: 443
-    server: 152.53.107.196
+    server: 146.70.221.18
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_13|3.0MB/s
-    password: None
+  - name: 🇺🇸US_8|3.7MB/s
+    password: "null"
     port: 9002
-    server: 138.199.35.207
+    server: 138.199.35.212
     skip-cert-verify: true
     tls: true
     type: http
+    username: "null"
     udp: true
-  - name: 🇺🇸US_14|3.2MB/s
+  - name: 🇺🇸US_9|3.2MB/s
     password: "null"
     port: 9002
     server: 138.199.35.220
@@ -420,14 +405,16 @@ proxies:
     type: http
     username: "null"
     udp: true
-  - name: 🇩🇪DE_4|1.1MB/s
-    port: 443
-    server: 87.106.223.158
+  - name: 🇺🇸US_10|1.4MB/s
+    password: "null"
+    port: 9002
+    server: 138.199.35.209
     skip-cert-verify: true
     tls: true
     type: http
+    username: "null"
     udp: true
-  - name: 🇺🇸US_15|1.6MB/s
+  - name: 🇺🇸US_11|2.0MB/s
     password: ""
     port: 9443
     server: 38.95.111.226
@@ -436,7 +423,7 @@ proxies:
     type: http
     udp: true
     username: ""
-  - name: 🇮🇹IT_1|2.1MB/s
+  - name: 🇮🇹IT_1|2.3MB/s
     password: None
     port: 443
     server: 185.183.105.130
@@ -444,106 +431,121 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_10|3.5MB/s
-    port: 443
-    server: 51.158.243.91
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_16|3.3MB/s
+  - name: 🇺🇸US_12|2.5MB/s
     port: 8443
     server: 44.248.167.117
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇲🇾MY_1|2.5MB/s
+  - name: 🇺🇸US_13|1.3MB/s
+    password: None
+    port: 9002
+    server: 138.199.35.202
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_11|2.9MB/s
+    port: 9002
+    server: 84.17.47.124
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇲🇾MY_1|1.0MB/s
     port: 9443
     server: 152.233.3.14
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇧🇦BA_1|1010KB/s
-    port: 9443
-    server: 185.164.35.16
+  - name: 🇳🇱NL_12|3.5MB/s
+    port: 9002
+    server: 84.17.47.123
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇰DK_1|2.0MB/s
+  - name: 🇷🇴RO_2|3.4MB/s
+    password: ""
+    port: 9002
+    server: 193.176.84.16
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: ""
+  - name: 🇺🇸US_14|2.9MB/s
     port: 443
-    server: 185.245.84.50
+    server: 38.247.141.135
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇱🇻LV_1|1.3MB/s
+  - name: 🇸🇪SE_3|1.2MB/s
     port: 443
-    server: 185.219.159.16
+    server: 146.70.242.146
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_5|3.9MB/s
+  - name: 🇩🇪DE_8|4.3MB/s
     port: 443
     server: 213.109.163.119
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_17|3.6MB/s
+  - name: 🇺🇸US_15|1.7MB/s
     port: 443
-    server: 64.98.50.100
+    server: 193.239.236.134
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇿CZ_2|1.1MB/s
-    password: None
-    port: 443
-    server: 185.216.35.130
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇱🇻LV_2|1.4MB/s
+  - name: 🇱🇻LV_1|2.1MB/s
     port: 443
     server: 185.219.159.15
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇮🇹IT_2|2.5MB/s
-    port: 443
-    server: 94.177.163.156
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_5|2.1MB/s
+  - name: 🇬🇧GB_3|2.5MB/s
     port: 443
     server: 37.120.233.50
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇦🇱AL_1|2.8MB/s
+  - name: 🇪🇸ES_2|3.1MB/s
     port: 443
-    server: 31.171.154.66
+    server: 82.102.17.178
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_6|1.7MB/s
-    port: 443
-    server: 37.120.233.18
+  - name: ❓Other_1|1.3MB/s
+    port: 1080
+    server: 52.128.241.109
+    skip-cert-verify: true
+    type: socks5
+    udp: true
+  - name: 🇷🇺RU_1|2.3MB/s
+    port: 1446
+    server: 46.29.166.134
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇪🇸ES_1|3.0MB/s
+  - name: 🇺🇸US_16|1.5MB/s
+    port: 443
+    server: 12.202.180.118
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇪🇸ES_3|2.8MB/s
     password: None
     port: 443
     server: 130.195.250.18
@@ -551,199 +553,165 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_6|2.2MB/s
-    password: None
-    port: 9443
-    server: 87.249.132.97
+  - name: 🇳🇱NL_13|2.2MB/s
+    password: "null"
+    port: 23856
+    server: 51.159.225.196
     skip-cert-verify: true
+    sni: 51.159.225.196
     tls: true
     type: http
+    username: "null"
     udp: true
-  - name: 🇺🇸US_18|1.7MB/s
+  - name: 🇺🇸US_17|2.5MB/s
     port: 9443
     server: 198.44.135.19
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇦CA_1|3.0MB/s
+  - name: 🇬🇧GB_4|2.6MB/s
     port: 9443
-    server: 198.44.157.19
+    server: 84.17.50.129
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_7|1.6MB/s
-    port: 443
-    server: 84.17.50.193
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_19|2.4MB/s
-    port: 443
-    server: 68.235.56.51
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇷🇴RO_1|2.0MB/s
+  - name: 🇷🇴RO_3|2.9MB/s
     port: 443
     server: 185.163.110.194
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇦CA_2|2.3MB/s
-    port: 9443
-    server: 149.88.98.81
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇮🇸IS_1|1.6MB/s
+  - name: 🇮🇸IS_1|1.8MB/s
     port: 9443
     server: 185.165.170.1
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇦CA_3|3.0MB/s
-    port: 9443
-    server: 23.169.224.34
+  - name: 🇨🇦CA_3|2.4MB/s
+    port: 443
+    server: 206.223.183.16
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_20|3.0MB/s
-    port: 9443
-    server: 154.47.25.78
+  - name: 🇷🇴RO_4|1.2MB/s
+    password: None
+    port: 9002
+    server: 193.176.84.17
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇫🇷FR_1|2.4MB/s
+  - name: 🇷🇴RO_5|2.1MB/s
+    password: None
+    port: 9002
+    server: 193.176.84.37
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇫🇷FR_2|2.5MB/s
     port: 9443
     server: 138.199.47.247
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_8|1.6MB/s
-    password: ""
+  - name: 🇳🇱NL_14|2.8MB/s
+    password: None
     port: 443
-    server: 212.102.63.61
+    server: 5.255.118.82
     skip-cert-verify: true
     tls: true
     type: http
-    username: ""
     udp: true
-  - name: 🇬🇧GB_9|2.7MB/s
+  - name: 🇬🇧GB_5|2.3MB/s
     port: 443
     server: 212.102.63.1
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇦🇱AL_2|2.7MB/s
-    password: None
+  - name: 🇨🇦CA_4|1.7MB/s
     port: 443
-    server: 87.120.103.242
+    server: 206.223.183.13
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇴NO_1|2.1MB/s
-    port: 9443
-    server: 146.70.170.210
+  - name: 🇫🇷FR_3|3.0MB/s
+    port: 6103
+    server: 87.98.174.157
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇮🇪IE_2|3.2MB/s
+  - name: 🇵🇹PT_1|2.4MB/s
+    port: 443
+    server: 149.22.86.1
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇮🇱IL_1|2.1MB/s
+    port: 443
+    server: 62.90.77.30
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇮🇪IE_2|1.4MB/s
     port: 443
     server: 149.88.96.12
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇷🇴RO_2|1.1MB/s
-    port: 9002
-    server: 193.176.84.21
-    skip-cert-verify: true
-    sni: www.bing.com
-    tls: true
-    type: http
-    udp: true
-  - name: 🇦🇱AL_3|1.5MB/s
-    port: 443
-    server: 87.120.103.226
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_2|4.5MB/s
+  - name: 🇫🇷FR_4|2.4MB/s
     port: 443
     server: 82.66.235.221
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_7|2.4MB/s
-    port: 443
-    server: 185.232.70.11
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_21|2.2MB/s
+  - name: 🇳🇱NL_15|2.6MB/s
     password: e4b72b531a2d10900519
     port: 443
-    server: 147.182.216.4
-    sni: 93b6d804.acsnet.co
+    server: 82.196.9.7
+    sni: 52c40907.acsnet.co
     tls: true
     type: http
     username: testuser1
     udp: true
-  - name: 🇧🇪BE_1|2.9MB/s
+  - name: 🇩🇪DE_9|1.7MB/s
     port: 443
-    server: 146.70.176.242
+    server: 152.233.20.206
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇷🇴RO_3|2.4MB/s
+  - name: 🇷🇴RO_6|2.8MB/s
     port: 9443
     server: 135.136.1.2
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_22|1.0MB/s
-    port: 443
-    server: 216.107.139.82
-    skip-cert-verify: true
-    sni: 991cc80f13caf81d3426ddebb2da7f49-92ff472ddc24e5b7.apache-iv.com
-    tls: true
-    type: http
-    udp: true
-  - name: 🇺🇸US_23|3.3MB/s
-    port: 8443
-    server: 129.212.181.253
+  - name: 🇳🇱NL_16|2.3MB/s
+    port: 9443
+    server: 161.129.60.66
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇾CY_1|2.8MB/s
+  - name: 🇦🇱AL_1|2.4MB/s
+    password: None
     port: 443
-    server: 213.207.130.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇪GE_1|1.1MB/s
-    port: 443
-    server: 195.54.178.210
+    server: 87.120.103.226
     skip-cert-verify: true
     tls: true
     type: http
@@ -755,161 +723,118 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_24|2.8MB/s
+  - name: ❓Other_2|2.3MB/s
     port: 443
-    server: 149.88.21.140
+    server: 103.86.117.202
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_11|3.2MB/s
+  - name: 🇨🇦CA_5|1.2MB/s
     port: 443
-    server: 161.129.60.66
+    server: 206.223.183.21
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_8|3.1MB/s
-    password: ""
-    port: 3129
-    server: 89.58.42.118
+  - name: 🇷🇴RO_7|3.1MB/s
+    port: 9002
+    server: 193.176.84.31
     skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇳🇱NL_12|3.6MB/s
-    network: tcp
-    port: 8443
-    server: s-lili-nl6.outdoor-fishing.org
+    sni: www.bing.com
     tls: true
-    type: vless
+    type: http
     udp: true
-    uuid: 7c941273-b86f-4037-b63b-58db91130342
-    xudp: true
-    packet-encoding: xudp
-    servername: s-lili-nl6.outdoor-fishing.org
-  - alpn:
-      - http/1.1
-      - h2
-    client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇳🇱NL_13|2.0MB/s
-    network: tcp
-    port: 8443
-    server: star-nl7.open-fields.org
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7c941273-b86f-4037-b63b-58db91130342
-    xudp: true
-    packet-encoding: xudp
-    servername: star-nl7.open-fields.org
-  - name: 🇫🇷FR_3|3.3MB/s
-    password: ""
+  - cipher: rc4-md5
+    name: 🇸🇬SG_3|1.3MB/s
+    password: 14fFPrbezE3HDZzsMOr6
     port: 8080
-    server: 109.199.115.190
-    skip-cert-verify: true
-    type: socks5
-    username: ""
+    server: 128.1.186.73
+    type: ss
     udp: true
-  - name: 🇬🇧GB_10|2.9MB/s
+  - name: 🇸🇬SG_4|1.0MB/s
+    password: "1234"
+    port: 2080
+    server: 13.212.190.30
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇳🇱NL_17|2.2MB/s
     password: ""
-    port: 1080
-    server: 57.129.182.181
-    skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - name: 🇺🇸US_25|1.0MB/s
-    password: ""
-    port: 1080
-    server: 43.166.153.83
-    skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - name: 🇬🇧GB_11|1.6MB/s
-    password: ""
-    port: 9000
-    server: 149.248.213.249
-    skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - client-fingerprint: chrome
-    name: 🇸🇬SG_2|1.0MB/s
-    password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-    port: 8886
-    server: 139.180.146.200
-    skip-cert-verify: true
-    type: trojan
-    udp: true
-    network: tcp
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇬🇧GB_12|2.8MB/s
-    network: ws
-    port: 2053
-    server: 134.209.185.10
-    tls: true
-    type: vless
-    udp: true
-    uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-    ws-opts:
-      headers:
-        Host: nvl-edge-dr-141026.pages.dev
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/37.0.2062.120 Safari/537.36
-      path: /proxyip=ProxyIP.GB.CMLiussss.Net
-    xudp: true
-    packet-encoding: xudp
-    servername: nvl-edge-dr-141026.pages.dev
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇰🇷KR_3|1018KB/s
-    network: ws
     port: 443
-    server: 131.186.26.94
+    server: 157.22.183.72
+    skip-cert-verify: true
     tls: true
-    type: vless
+    type: http
+    username: ""
     udp: true
-    uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-    ws-opts:
-      headers:
-        Host: nvl-edge-dr-141026.pages.dev
-        User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile
-          Safari/537.36
-      path: /proxyip=ProxyIP.KR.CMLiussss.Net
-    xudp: true
-    packet-encoding: xudp
-    servername: nvl-edge-dr-141026.pages.dev
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🇰🇷KR_4|2.1MB/s
-    network: ws
-    port: 443
-    server: 193.122.119.241
+  - name: 🇺🇸US_18|1.2MB/s
+    password: ""
+    port: 8018
+    server: 146.190.60.147
+    skip-cert-verify: true
+    type: http
+    username: ""
+    udp: true
+  - name: ❓Other_3|1.2MB/s
+    password: ""
+    port: 999
+    server: 138.118.203.152
+    skip-cert-verify: true
+    type: http
+    username: ""
+    udp: true
+  - name: 🇺🇸US_19|1.6MB/s
+    password: ""
+    port: 9002
+    server: 138.199.35.197
+    skip-cert-verify: true
     tls: true
-    type: vless
+    type: http
+    username: ""
     udp: true
-    uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-    ws-opts:
-      headers:
-        Host: nvl-edge-dr-141026.pages.dev
-        User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.102 Safari/537.36
-      path: /proxyip=ProxyIP.KR.CMLiussss.Net
-    xudp: true
-    packet-encoding: xudp
-    servername: nvl-edge-dr-141026.pages.dev
+  - name: 🇷🇴RO_8|1.9MB/s
+    password: None
+    port: 9002
+    server: 193.176.84.29
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+  - name: 🇷🇴RO_9|3.3MB/s
+    port: 9002
+    server: 193.176.84.34
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇴RO_10|1.2MB/s
+    port: 9002
+    server: 193.176.84.24
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇴RO_11|2.3MB/s
+    port: 9002
+    server: 193.176.84.23
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇴RO_12|1.0MB/s
+    port: 9002
+    server: 193.176.84.20
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
