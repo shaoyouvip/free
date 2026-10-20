@@ -1,156 +1,128 @@
 proxies:
-  - client-fingerprint: chrome
+  - alpn:
+      - h2
+    client-fingerprint: chrome
     encryption: none
-    name: 🇳🇱NL_1|1.7MB/s
+    name: 🇳🇱NL_1|1010KB/s
     network: xhttp
-    port: 61374
-    reality-opts:
-      public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-      short-id: ""
-    server: nl-s-2.pythonmakemigreat.wiki
+    port: 443
+    server: reg.gosru.com
     tls: true
     type: vless
     udp: true
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    uuid: 5de6a0ad-7d73-410b-ad50-a2bb5d47b93c
     xhttp-opts:
-      host: nl-s-1.pythonmakemigreat.wiki
+      host: reg.gosru.com
       mode: packet-up
-      path: /
+      path: /assets/c8d953ad90f3a3efe3816c6557c1e596/
       reuse-settings:
-        max-connections: "3"
-      x-padding-bytes: 100-500
+        max-concurrency: "0"
+        max-connections: "2"
+      x-padding-bytes: 128-768
+      x-padding-header: X-Request-Context
+      x-padding-key: request_context
+      x-padding-method: tokenish
+      x-padding-obfs-mode: true
+      x-padding-placement: header
     xudp: true
     packet-encoding: xudp
-    servername: nl-s-2.pythonmakemigreat.wiki
+    servername: reg.gosru.com
   - name: 🇬🇧GB_1|2.0MB/s
-    port: 9443
-    server: 84.17.50.214
+    port: 443
+    server: 212.102.63.31
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇫🇷FR_1|1.5MB/s
-    port: 9443
-    server: 213.139.9.142
+  - name: 🇷🇸RS_1|1.2MB/s
+    port: 443
+    server: 146.70.221.18
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇿CZ_1|1.2MB/s
+  - name: 🇧🇦BA_1|1.5MB/s
+    port: 443
+    server: 185.164.35.16
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_1|1.4MB/s
+    port: 443
+    server: 167.88.60.242
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_2|1.1MB/s
     password: None
     port: 443
-    server: 185.216.35.130
+    server: 5.255.118.82
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇸🇬SG_1|3.7MB/s
-    network: ws
-    port: 443
-    server: markmonitor.com
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
-    ws-opts:
-      headers:
-        Host: i5be.fbk.hhll.vavava.kdns.fr
-      path: /?auto=1
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: i5be.fbk.hhll.vavava.kdns.fr
-  - name: 🇸🇬SG_2|3.7MB/s
-    network: ws
-    port: 443
-    server: ahrefs.com
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
-    ws-opts:
-      headers:
-        Host: i5be.fbk.hhll.vavava.kdns.fr
-      path: /?auto=1
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: i5be.fbk.hhll.vavava.kdns.fr
-  - name: 🇸🇬SG_3|4.5MB/s
-    network: ws
-    port: 443
-    server: www.blibli.com
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
-    ws-opts:
-      headers:
-        Host: i5be.fbk.hhll.vavava.kdns.fr
-      path: /?auto=1
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: i5be.fbk.hhll.vavava.kdns.fr
-  - name: 🇸🇬SG_4|1.0MB/s
-    network: ws
-    port: 443
-    server: 172.64.159.65
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
-    ws-opts:
-      headers:
-        Host: i5be.fbk.hhll.vavava.kdns.fr
-      path: /?auto=1
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: i5be.fbk.hhll.vavava.kdns.fr
-  - name: 🇩🇪DE_1|1.9MB/s
-    port: 443
-    server: 149.36.50.129
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇷🇸RS_1|1.9MB/s
-    port: 443
-    server: 146.70.221.34
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇭🇺HU_1|1005KB/s
-    port: 443
-    server: 146.70.203.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇦🇱AL_1|1009KB/s
-    password: None
-    port: 443
-    server: 87.120.103.242
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇭🇷HR_1|1.8MB/s
-    port: 443
-    server: 154.47.29.174
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇸🇬SG_5|3.9MB/s
+  - name: 🇸🇬SG_1|4.2MB/s
     password: "1234"
     port: 2080
-    server: 13.212.190.30
+    server: 47.129.235.22
     skip-cert-verify: true
     type: http
     username: "1234"
+    udp: true
+  - name: 🇸🇬SG_2|1.6MB/s
+    password: "1234"
+    port: 2080
+    server: 13.229.89.107
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇨🇿CZ_1|1.2MB/s
+    port: 443
+    server: 185.216.35.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇱🇻LV_1|1.6MB/s
+    password: None
+    port: 443
+    server: 109.248.147.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇬🇧GB_2|1.2MB/s
+    port: 443
+    server: 84.17.50.193
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇴NO_1|2.3MB/s
+    port: 9443
+    server: 146.70.170.210
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_2|1.0MB/s
+    password: ""
+    port: 1080
+    server: 52.128.241.107
+    skip-cert-verify: true
+    type: socks5
+    username: ""
+    udp: true
+  - name: 🇯🇵JP_1|3.2MB/s
+    password: ""
+    port: 7000
+    server: 58.32.16.138
+    skip-cert-verify: true
+    type: socks5
+    username: ""
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
