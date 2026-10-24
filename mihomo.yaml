@@ -1,55 +1,14 @@
 proxies:
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇷🇺RU_1|1.8MB/s
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    server: 45.9.118.177
-    tls: true
-    type: vless
-    uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  - name: 🇸🇬SG_1|3.6MB/s
+    password: "1234"
+    port: 2080
+    server: 13.212.87.168
+    skip-cert-verify: true
+    type: http
+    username: "1234"
     udp: true
-    servername: apple.com
-  - alpn:
-      - h3
-      - h2
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇸🇬SG_1|3.6MB/s
-    network: ws
-    port: 443
-    server: 172.64.154.211
-    tls: true
-    type: vless
-    udp: true
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    ws-opts:
-      headers:
-        Host: snip.edgeoneai.cc.cd
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/52.0.2743.116 Safari/537.36
-      path: /
-    xudp: true
-    packet-encoding: xudp
-    servername: snip.edgeoneai.cc.cd
-  - alterId: 2
-    cipher: auto
-    name: 🇳🇱NL_1|1.9MB/s
-    network: tcp
-    port: 30829
-    server: v29.hdacd.com
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    xudp: true
-    packet-encoding: xudp
-    servername: v29.hdacd.com
   - cipher: chacha20-ietf-poly1305
-    name: 🇸🇬SG_2|3.6MB/s
+    name: 🇸🇬SG_2|2.3MB/s
     password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
     plugin: obfs
     plugin-opts:
@@ -59,58 +18,7 @@ proxies:
     server: 18.143.63.164
     type: ss
     udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: 🇸🇬SG_3|5.0MB/s
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    plugin: obfs
-    plugin-opts:
-      host: 817aa69.default.nintendo.com:112719
-      mode: tls
-    port: 2377
-    server: 13.215.227.70
-    type: ss
-    udp: true
-  - name: 🇸🇬SG_4|3.2MB/s
-    password: "1234"
-    port: 2080
-    server: 13.229.54.109
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇸🇬SG_5|3.4MB/s
-    password: "1234"
-    port: 2080
-    server: 13.212.207.226
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇸🇬SG_6|3.4MB/s
-    password: "1234"
-    port: 2080
-    server: 52.221.234.145
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: ❓Other_1|4.9MB/s
-    password: "1234"
-    port: 2080
-    server: 13.212.55.110
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇸🇬SG_7|2.1MB/s
-    password: "1234"
-    port: 2080
-    server: 18.143.176.211
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇸🇬SG_8|4.5MB/s
+  - name: 🇸🇬SG_3|1.6MB/s
     password: "1234"
     port: 2080
     server: 13.212.90.38
@@ -118,31 +26,15 @@ proxies:
     type: http
     username: "1234"
     udp: true
-  - name: 🇸🇬SG_9|3.0MB/s
+  - name: 🇸🇬SG_4|4.2MB/s
     password: "1234"
     port: 2080
-    server: 18.143.144.220
-    skip-cert-verify: true
-    type: http
-    udp: true
-    username: "1234"
-  - name: 🇸🇬SG_10|3.9MB/s
-    password: "1234"
-    port: 2080
-    server: 13.212.249.115
+    server: 18.143.167.6
     skip-cert-verify: true
     type: http
     username: "1234"
     udp: true
-  - name: 🇸🇬SG_11|4.1MB/s
-    password: "1234"
-    port: 2080
-    server: 47.129.155.166
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇸🇬SG_12|4.5MB/s
+  - name: 🇸🇬SG_5|4.8MB/s
     password: "1234"
     port: 2080
     server: 13.212.190.30
@@ -150,146 +42,99 @@ proxies:
     type: http
     username: "1234"
     udp: true
-  - name: 🇮🇳IN_1|1.7MB/s
+  - name: 🇮🇳IN_1|1.2MB/s
     port: 52200
     server: 120.232.204.58
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇭CH_1|2.1MB/s
-    password: ""
-    port: 9443
-    server: 149.88.27.46
-    skip-cert-verify: true
-    tls: true
-    type: http
+  - cipher: chacha20-ietf
+    name: 🇺🇸US_1|2.8MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: f7d23929.douyin.com
+    password: di15PV
+    port: 29790
+    protocol: auth_aes128_md5
+    protocol-param: 23929:563537032
+    server: api.meituan88.com
+    type: ssr
     udp: true
-    username: ""
-  - name: 🇮🇪IE_1|1.1MB/s
-    port: 9443
-    server: 149.88.96.12
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_1|1.4MB/s
-    port: 443
-    server: 84.17.50.193
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇺🇸US_1|3.9MB/s
-    network: tcp
+  - name: 🇺🇸US_2|3.7MB/s
     port: 8443
-    reality-opts:
-      public-key: ozguNbRK0BghbZv0n6a164gmotQ-EI-VR9iXgGlfuXg
-      short-id: ""
-    server: 154.17.5.16
+    server: 154.81.36.92
+    skip-cert-verify: true
     tls: true
-    type: vless
+    type: http
     udp: true
-    uuid: 3d116251-c919-4cf7-bc61-3a90d91aa80b
-    xudp: true
-    packet-encoding: xudp
-    servername: updates.cdn-apple.com
-  - alpn:
-      - http/1.1
-    client-fingerprint: unsafe
-    encryption: none
-    name: 🇩🇪DE_1|1.7MB/s
-    network: ws
-    port: 443
-    server: 45.147.48.28
-    tls: true
-    type: vless
-    udp: true
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    ws-opts:
-      headers:
-        Host: snip.edgeoneai.cc.cd
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/63.0.3239.132 Safari/537.36
-      path: /-
-    xudp: true
-    packet-encoding: xudp
-    servername: snip.edgeoneai.cc.cd
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇷🇺RU_2|1008KB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 147.45.47.76
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-    xudp: true
-    packet-encoding: xudp
-    servername: abuse.ozon.ru
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_1|2.2MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 45.151.71.147
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-    xudp: true
-    packet-encoding: xudp
-    servername: abuse.ozon.ru
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_2|1.4MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 113.30.154.237
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-    xudp: true
-    packet-encoding: xudp
-    servername: ozon.ru
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇬🇧GB_2|1.9MB/s
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 54.37.5.203
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-    xudp: true
-    packet-encoding: xudp
-    servername: ozon.ru
-  - name: 🇸🇬SG_13|4.8MB/s
+  - name: 🇸🇬SG_6|3.9MB/s
     password: "1234"
     port: 2080
-    server: 13.229.89.107
+    server: 54.151.160.36
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇫🇷FR_1|2.0MB/s
+    network: ws
+    password: humanity
+    port: 443
+    server: 162.159.36.20
+    skip-cert-verify: false
+    sni: www.calmlunch.com
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
+          Safari/537.36
+      path: /assignment
+  - name: 🇸🇬SG_7|4.0MB/s
+    password: "1234"
+    port: 2080
+    server: 54.251.149.207
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_8|4.5MB/s
+    password: "1234"
+    port: 2080
+    server: 13.212.14.88
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_9|4.3MB/s
+    password: "1234"
+    port: 2080
+    server: 13.229.91.101
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_10|4.1MB/s
+    password: "1234"
+    port: 2080
+    server: 13.250.6.249
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_11|4.1MB/s
+    password: "1234"
+    port: 2080
+    server: 13.250.8.222
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_12|4.5MB/s
+    password: "1234"
+    port: 2080
+    server: 13.212.235.123
     skip-cert-verify: true
     type: http
     username: "1234"
@@ -297,13 +142,13 @@ proxies:
   - client-fingerprint: firefox
     encryption: none
     flow: xtls-rprx-vision
-    name: 🇷🇺RU_3|1.5MB/s
+    name: 🇷🇺RU_1|1.3MB/s
     network: tcp
     port: 443
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
       short-id: ""
-    server: 193.223.104.120
+    server: 45.9.118.207
     tls: true
     type: vless
     udp: true
@@ -311,40 +156,6 @@ proxies:
     xudp: true
     packet-encoding: xudp
     servername: ozon.ru
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇷🇺RU_4|2.6MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 45.9.118.182
-    tls: true
-    type: vless
-    udp: true
-    uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-    xudp: true
-    packet-encoding: xudp
-    servername: ozon.ru
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_3|1.3MB/s
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 147.45.47.95
-    tls: true
-    type: vless
-    udp: true
-    uuid: df549242-dc8e-482c-9dd5-eb3518583099
-    xudp: true
-    packet-encoding: xudp
-    servername: apple.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
