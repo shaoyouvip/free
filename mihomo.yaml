@@ -1,256 +1,33 @@
 proxies:
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇬🇧GB_1|1.1MB/s
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    server: 51.89.231.124
-    tls: true
-    type: vless
-    udp: true
-    uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-    servername: ozon.ru
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇬🇧GB_2|1.9MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    server: 45.151.71.174
-    tls: true
-    type: vless
-    udp: true
-    uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-    servername: gb.ozon.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇫🇷FR_1|1.1MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 193.160.140.109
-    tls: true
-    type: vless
-    udp: true
-    uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-    xudp: true
-    packet-encoding: xudp
-    servername: abuse.ozon.ru
-  - alterId: "2"
-    cipher: auto
-    name: 🇳🇱NL_1|3.5MB/s
-    network: tcp
-    port: 30829
-    server: v29.hdacd.com
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    xudp: true
-    packet-encoding: xudp
-  - name: 🇬🇧GB_3|2.0MB/s
-    password: None
-    port: 443
-    server: 212.102.63.61
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_1|2.6MB/s|R002-260618
-    password: None
-    port: 443
-    server: 87.249.132.97
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-  - name: 🇵🇹PT_1|1.0MB/s
-    password: None
-    port: 443
-    server: 149.22.86.14
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_2|1.0MB/s
-    password: None
-    port: 9443
-    server: 213.139.9.142
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: edge
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: api
-    name: 🇩🇪DE_2|1.2MB/s
-    network: grpc
-    port: 2053
-    reality-opts:
-      public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-      short-id: "afee962d"
-    server: nl3.mycloud1.org
-    tls: true
-    type: vless
-    udp: true
-    uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-    servername: nl3.mycloud1.org
-  - name: 🇺🇸US_1|1.6MB/s
-    port: 443
-    server: 68.235.56.51
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: 🇸🇬SG_1|5.1MB/s
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    plugin: obfs
-    plugin-opts:
-      host: 817aa69.default.nintendo.com:112719
-      mode: tls
-    port: 2377
-    server: 13.215.227.70
-    type: ss
-    udp: true
-  - name: 🇸🇬SG_2|1.7MB/s
-    password: "1234"
-    port: 2080
-    server: 54.255.133.243
+  - name: 🇺🇸US_1|1.2MB/s
+    port: 22222
+    server: 64.118.155.2
     skip-cert-verify: true
     type: http
-    username: "1234"
     udp: true
-  - name: 🇸🇬SG_3|1.4MB/s
-    password: "1234"
-    port: 2080
-    server: 52.221.234.145
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - name: 🇺🇸US_2|1.6MB/s
+  - name: 🇺🇸US_2|3.7MB/s
     port: 8443
     server: 154.81.36.92
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇫🇷FR_3|1.3MB/s
-    port: 9443
-    server: 138.199.47.247
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇰DK_1|1020KB/s
-    port: 9443
-    server: 185.245.84.50
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇷GR_1|1012KB/s
-    password: None
-    port: 443
-    server: 149.22.85.65
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇳🇴NO_1|1.1MB/s
-    password: None
-    port: 9443
-    server: 146.70.170.210
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
   - client-fingerprint: firefox
-    encryption: none
-    name: 🇱🇹LT_1|1.1MB/s
-    network: xhttp
-    port: 443
-    server: 139.28.233.89
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-    xhttp-opts:
-      host: lqjndcrkxp.hat.onl
-      mode: auto
-      path: /live/995aao-4ccr8w
-    xudp: true
-    packet-encoding: xudp
-    servername: lqjndcrkxp.hat.onl
-  - name: 🇸🇬SG_4|1.2MB/s
-    password: "1234"
-    port: 2080
-    server: 13.250.8.222
-    skip-cert-verify: true
-    type: http
-    username: "1234"
-    udp: true
-  - client-fingerprint: firefox
-    encryption: none
-    name: 🇵🇱PL_1|2.0MB/s
-    network: xhttp
-    port: 443
-    server: 13.143.191.6
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-    xhttp-opts:
-      host: u4ptwtfg7mam.hat.onl
-      mode: auto
-      path: /vod/rlkwv8ggui/chunks
-    xudp: true
-    packet-encoding: xudp
-    servername: u4ptwtfg7mam.hat.onl
-  - client-fingerprint: chrome
-    encryption: none
     flow: xtls-rprx-vision
-    name: 🇷🇺RU_1|1.1MB/s
+    name: 🇷🇺RU_1|1.2MB/s
     network: tcp
     port: 443
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
       short-id: ""
-    server: 193.160.140.118
+    server: 193.160.141.8
+    skip-cert-verify: false
+    tfo: false
     tls: true
     type: vless
     udp: true
     uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-    xudp: true
-    packet-encoding: xudp
     servername: ozon.ru
-  - client-fingerprint: safari
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇬🇧GB_4|1.5MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    server: 37.235.249.14
-    tls: true
-    type: vless
-    udp: true
-    uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-    xudp: true
-    packet-encoding: xudp
-    servername: ai.ozon.ru
 proxy-groups:
   - name: 🚀 节点选择
     type: select
