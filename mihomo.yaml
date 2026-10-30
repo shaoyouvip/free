@@ -1,62 +1,129 @@
 proxies:
-  - name: 🇺🇸US_1|1.0MB/s|K001-260618
-    password: None
-    port: 443
-    server: 148.135.10.80
-    skip-cert-verify: true
-    sub_tag: K001-260618
-    tls: true
-    type: http
-    udp: true
-    username: ""
-  - name: 🇬🇧GB_1|1.1MB/s
-    password: None
-    port: 443
-    server: 185.164.138.156
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇦🇹AT_1|1.2MB/s
-    port: 443
-    server: 146.70.244.2
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_2|1.0MB/s
-    password: None
-    port: 443
-    server: 212.102.63.61
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇰🇷KR_1|1.1MB/s
-    password: ""
-    port: 1080
-    server: 43.155.143.227
-    skip-cert-verify: true
-    type: socks5
-    username: ""
-    udp: true
-  - client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: neurex
-    name: 🇳🇱NL_1|1.4MB/s
-    network: grpc
-    port: 443
+  - client-fingerprint: chrome
+    name: 🇫🇮FI_1|1.6MB/s
+    network: xhttp
+    port: 61374
     reality-opts:
-      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-      short-id: "27350908de933e09"
-    server: 5.149.248.151
+      public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
+    server: se-2.pythonsetupbib.online
     tls: true
     type: vless
     udp: true
-    uuid: 7aad73a9-a0ff-4fad-9142-4f5c7c6bb2c1
-    xudp: true
-    packet-encoding: xudp
-    servername: nla.kosmosapp.net
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    xhttp-opts:
+      host: se-2.pythonsetupbib.online
+      mode: packet-up
+      path: /
+      x-padding-bytes: 100-500
+    servername: se-2.pythonsetupbib.online
+  - name: 🇨🇭CH_1|1.1MB/s
+    password: None
+    port: 9443
+    server: 37.120.213.210
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇸🇬SG_1|4.4MB/s
+    password: "1234"
+    port: 2080
+    server: 47.129.174.248
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - name: 🇸🇬SG_2|4.0MB/s
+    password: "1234"
+    port: 2080
+    server: 54.151.242.187
+    skip-cert-verify: true
+    type: http
+    username: "1234"
+    udp: true
+  - alpn:
+      - h3
+    congestion-controller: bbr
+    disable-sni: false
+    fingerprint: 84c855b4a09bba0ff518c778c0540da87acb9871dd3ae6dc5e8f78423e7ede05
+    name: 🇲🇾MY_1|3.7MB/s
+    password: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    port: 52892
+    reduce-rtt: false
+    server: 85.211.249.193
+    skip-cert-verify: false
+    sni: www.bing.com
+    type: tuic
+    udp-relay-mode: native
+    uuid: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    udp: true
+    version: 5
+  - alpn:
+      - h3
+    congestion-controller: bbr
+    disable-sni: false
+    fingerprint: 84c855b4a09bba0ff518c778c0540da87acb9871dd3ae6dc5e8f78423e7ede05
+    name: 🇰🇷KR_1|1.3MB/s
+    password: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    port: 52892
+    reduce-rtt: false
+    server: kr.91b30040-0142-4050-a005-142dc68a5ba8.e0fb388f.demo-chat-airport.com
+    skip-cert-verify: false
+    sni: www.bing.com
+    type: tuic
+    udp-relay-mode: native
+    uuid: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    udp: true
+    version: 5
+  - alpn:
+      - h3
+    congestion-controller: bbr
+    disable-sni: false
+    fingerprint: 84c855b4a09bba0ff518c778c0540da87acb9871dd3ae6dc5e8f78423e7ede05
+    name: 🇸🇬SG_3|4.5MB/s
+    password: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    port: 52892
+    reduce-rtt: false
+    server: sg.173a00e1-f7e7-4018-9d07-3850d2ca48ad.ba93f54e.demo-chat-airport.com
+    skip-cert-verify: false
+    sni: www.bing.com
+    type: tuic
+    udp-relay-mode: native
+    uuid: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+    udp: true
+    version: 5
+  - cipher: rc4-md5
+    name: 🇺🇸US_1|1.4MB/s
+    obfs: tls1.2_ticket_auth
+    obfs-param: 6f5218522.douyin.com
+    password: di15PV
+    port: 43694
+    protocol: auth_aes128_md5
+    protocol-param: 218522:0hfCJk
+    server: api.meituan88.com
+    type: ssr
+    udp: true
+  - name: 🇺🇸US_2|3.1MB/s
+    port: 8443
+    server: 45.150.164.18
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇮🇹IT_1|1.0MB/s
+    password: None
+    port: 443
+    server: 185.183.105.130
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇸RS_1|1.1MB/s
+    port: 443
+    server: 146.70.221.18
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
