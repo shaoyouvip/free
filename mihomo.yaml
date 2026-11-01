@@ -1,38 +1,41 @@
 proxies:
-  - client-fingerprint: firefox
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: neurex
-    name: 🇳🇱NL_1|1.1MB/s
-    network: grpc
-    port: 443
-    reality-opts:
-      public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-      short-id: "27350908de933e09"
-    server: 79.141.164.81
+  - alterId: "1"
+    cipher: auto
+    name: 🇯🇵JP_1|1.4MB/s
+    network: tcp
+    port: 28788
+    server: wo6ah0f-g06.jp06-jz-vm0.entry.fr0528.art
+    skip-cert-verify: false
     tls: true
-    type: vless
+    type: vmess
     udp: true
-    uuid: c1b0398a-a1a7-40ae-8d14-3f271c4b8f76
-    servername: nla.kosmosapp.net
-  - name: 🇬🇧GB_1|2.2MB/s|R002-260618
+    uuid: a3b5a6fc-0b92-3b66-beda-eb2a49361a21
+    xudp: true
+    packet-encoding: xudp
+    servername: wo6ah0f-g06.jp06-jz-vm0.entry.fr0528.art
+  - alterId: "1"
+    cipher: auto
+    name: 🇯🇵JP_2|4.9MB/s
+    network: tcp
+    port: 28786
+    server: ou44bxs-g04.jp06-jz-vm0.entry.fr0528.art
+    skip-cert-verify: false
+    tls: true
+    type: vmess
+    udp: true
+    uuid: d687b024-a5cf-3433-8d06-1c99e2e28821
+    xudp: true
+    packet-encoding: xudp
+    servername: ou44bxs-g04.jp06-jz-vm0.entry.fr0528.art
+  - name: 🇪🇸ES_1|2.7MB/s
     password: None
     port: 443
-    server: 37.120.233.18
+    server: 130.195.250.34
     skip-cert-verify: true
-    sub_tag: R002-260618
     tls: true
     type: http
     udp: true
-  - name: 🇬🇧GB_2|1.0MB/s
-    password: None
-    port: 443
-    server: 84.17.50.193
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_1|1.9MB/s
+  - name: 🇩🇪DE_1|1.0MB/s
     password: None
     port: 9443
     server: 213.177.229.161
@@ -40,90 +43,56 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇯🇵JP_1|1.4MB/s
-    port: 40583
-    server: 120.232.204.58
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇭CH_1|1018KB/s
-    port: 9443
-    server: 37.120.213.210
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇭CH_2|1.9MB/s
+  - name: 🇨🇾CY_1|1001KB/s
     port: 443
-    server: 31.7.62.50
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇭🇷HR_1|2.1MB/s
-    password: None
-    port: 443
-    server: 154.47.29.161
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇱🇻LV_1|1.1MB/s
-    port: 443
-    server: 109.248.147.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇪🇪EE_1|1.2MB/s
-    port: 9443
-    server: 95.153.31.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇪🇪EE_2|1.1MB/s
-    port: 9443
-    server: 192.159.101.174
+    server: 213.207.130.34
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
   - client-fingerprint: chrome
     encryption: none
-    flow: xtls-rprx-vision
-    name: 🇨🇭CH_3|3.0MB/s
-    network: tcp
-    port: 443
+    name: 🇫🇮FI_1|1.8MB/s
+    network: xhttp
+    port: 61374
     reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: "8718c58d3d51db59"
-    server: 179.43.170.84
+      public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
+      short-id: ""
+    server: se-2.pythonsetupbib.online
     tls: true
     type: vless
     udp: true
-    uuid: 8007dda2-aed2-4514-8299-6e3edbdb015b
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    xhttp-opts:
+      host: se-2.pythonsetupbib.online
+      mode: packet-up
+      path: /
+      reuse-settings:
+        max-connections: "3"
+      x-padding-bytes: 100-500
     xudp: true
     packet-encoding: xudp
-    servername: si2.greenzone12.com
-  - client-fingerprint: qq
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇵🇱PL_1|1.0MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: UW2KCNPSvGsHK2UXmcFveOY17nWWo3CoCk8ydVT7A3s
-      short-id: "953e2426ac9a7c0e"
-    server: 185.50.202.4
+    servername: se-2.pythonsetupbib.online
+  - alterId: 1
+    cipher: auto
+    name: 🇯🇵JP_3|4.4MB/s
+    port: 21581
+    server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
+    skip-cert-verify: true
     tls: true
-    type: vless
+    type: vmess
     udp: true
-    uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-    xudp: true
-    packet-encoding: xudp
-    servername: media2.usicloid.my
+    uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+    network: tcp
+    servername: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
+  - name: 🇧🇩BD_1|1.5MB/s
+    password: ""
+    port: 1080
+    server: 47.245.99.1
+    skip-cert-verify: true
+    type: socks5
+    username: ""
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
