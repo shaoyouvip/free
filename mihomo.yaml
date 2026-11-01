@@ -1,23 +1,38 @@
 proxies:
-  - name: 🇳🇱NL_1|2.3MB/s
+  - name: 🇭🇰HK_1|3.7MB/s
     password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 38963
+    port: 43638
     server: ench-snet-app.w-ctrip.cn
     skip-cert-verify: true
     sni: cm.g.doubleclick.net
     type: trojan
     udp: true
     network: tcp
-  - name: 🇯🇵JP_1|2.8MB/s
+  - name: 🇸🇬SG_1|1.2MB/s
     password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 24133
+    port: 42338
     server: ench-snet-app.w-ctrip.cn
     skip-cert-verify: true
     sni: cm.g.doubleclick.net
     type: trojan
     udp: true
     network: tcp
-  - name: 🇰🇷KR_1|3.9MB/s
+  - name: 🇬🇧GB_1|1.2MB/s
+    password: None
+    port: 443
+    server: 37.120.233.50
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇭🇰HK_2|2.5MB/s
+    port: 3128
+    server: 119.28.24.235
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇰🇷KR_1|1.5MB/s
     password: b17e9b52db9623bd6c16eea3d7adb5b3
     port: 29628
     server: ench-snet-app.w-ctrip.cn
@@ -26,25 +41,7 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇸🇬SG_1|3.5MB/s
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 15589
-    server: ench-snet-app.w-ctrip.cn
-    skip-cert-verify: true
-    sni: cm.g.doubleclick.net
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇹🇼TW_1|4.6MB/s
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 22003
-    server: ench-snet-app.w-ctrip.cn
-    skip-cert-verify: true
-    sni: cm.g.doubleclick.net
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇹🇼TW_2|3.8MB/s
+  - name: ❓Other_1|1.9MB/s
     password: b17e9b52db9623bd6c16eea3d7adb5b3
     port: 45502
     server: ench-snet-app.w-ctrip.cn
@@ -53,68 +50,24 @@ proxies:
     type: trojan
     udp: true
     network: tcp
-  - name: 🇹🇼TW_3|4.1MB/s
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 54815
-    server: ench-snet-app.w-ctrip.cn
-    skip-cert-verify: true
-    sni: cm.g.doubleclick.net
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇺🇸US_1|3.4MB/s
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    port: 26429
-    server: ench-snet-app.w-ctrip.cn
-    skip-cert-verify: true
-    sni: cm.g.doubleclick.net
-    type: trojan
-    udp: true
-    network: tcp
-  - name: 🇵🇹PT_1|1.1MB/s
+  - name: 🇺🇸US_1|1.1MB/s
+    password: 16955d72-1794-11f0-a035-f23c95b6f51d
     port: 443
-    server: 149.22.86.1
-    skip-cert-verify: true
+    server: 87992eef-te9j40-teq7xb-dnss.fmtdc1.sghuawei.com
     tls: true
     type: http
+    username: 16955d72-1794-11f0-a035-f23c95b6f51d
     udp: true
-  - name: 🇵🇹PT_2|2.2MB/s
-    password: None
+    sni: 87992eef-te9j40-teq7xb-dnss.fmtdc1.sghuawei.com
+  - name: 🇫🇷FR_1|1.1MB/s
+    password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
     port: 443
-    server: 149.22.86.14
-    skip-cert-verify: true
+    server: 8a7d3033-ta1og0-ta5i1s-1j61y.fr.oshuawei.com
     tls: true
     type: http
+    username: f13f964e-f06c-11ec-a858-f23c91cfbbc9
     udp: true
-  - name: 🇪🇸ES_1|1.8MB/s
-    port: 443
-    server: 130.195.250.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_1|2.8MB/s
-    port: 9443
-    server: 138.199.47.247
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_1|1015KB/s
-    password: None
-    port: 443
-    server: 152.233.20.206
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇳🇴NO_1|1.3MB/s
-    port: 9443
-    server: 146.70.170.210
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
+    sni: 8a7d3033-ta1og0-ta5i1s-1j61y.fr.oshuawei.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
