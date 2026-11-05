@@ -1,103 +1,38 @@
 proxies:
-    - name: "\U0001F1EF\U0001F1F5JP_1|3.6MB/s"
-      password: "null"
-      port: 40583
-      server: 120.232.204.58
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: "null"
-    - name: "\U0001F1E8\U0001F1EDCH_1|1.1MB/s"
-      password: None
-      port: 9443
-      server: 37.120.213.210
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: null
-    - name: "\U0001F1EE\U0001F1F9IT_1|1.1MB/s"
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: firefox
+      name: "\U0001F1F5\U0001F1F1PL_1|1.5MB/s"
+      network: xhttp
       port: 443
-      server: 185.183.105.146
-      skip-cert-verify: true
+      server: cdn-ya.shamanapp.online
+      servername: cdn-ya.shamanapp.online
       tls: true
-      type: http
-    - name: "\U0001F1EC\U0001F1F7GR_1|1.5MB/s"
-      password: None
+      type: vless
+      uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
+      xhttp-opts:
+        host: cdn-ya.shamanapp.online
+        mode: packet-up
+        no-grpc-header: true
+        path: /media/hls/720p/
+        sc-max-each-post-bytes: 20000
+        sc-min-posts-interval-ms: 5
+        seq-key: page
+        seq-placement: query
+        uplink-chunk-size: 20000
+        uplink-data-key: X-Request-Id
+        uplink-data-placement: header
+        uplink-http-method: GET
+        x-padding-bytes: 100-1000
+        x-padding-header: X-Cache
+        x-padding-key: _dc
+        x-padding-method: tokenish
+        x-padding-obfs-mode: true
+        x-padding-placement: header
+    - name: "\U0001F1F8\U0001F1EASE_1|1.3MB/s"
       port: 443
-      server: 149.22.85.65
+      server: 79.142.77.63
       skip-cert-verify: true
       tls: true
       type: http
-      username: null
-    - name: "\U0001F1F8\U0001F1EASE_1|1.6MB/s"
-      port: 443
-      server: 146.70.242.130
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1F8\U0001F1EASE_2|1.0MB/s"
-      password: None
-      port: 443
-      server: 146.70.242.146
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: null
-    - name: "\U0001F1E9\U0001F1EADE_1|1.3MB/s|R002-260618"
-      password: None
-      port: 443
-      server: 87.249.132.97
-      skip-cert-verify: true
-      sub_tag: R002-260618
-      tls: true
-      type: http
-      udp: true
-    - name: "\U0001F1F3\U0001F1F4NO_1|1.7MB/s"
-      password: null
-      port: 9443
-      server: 146.70.170.210
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: null
-    - name: "\U0001F1F1\U0001F1FALU_1|2.2MB/s"
-      password: None
-      port: 9443
-      server: 185.221.132.226
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1F1\U0001F1FALU_2|1.4MB/s"
-      port: 443
-      server: 185.221.132.242
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1E9\U0001F1EADE_2|1.3MB/s"
-      password: None
-      port: 443
-      server: 172.64.68.89
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1F5\U0001F1F1PL_1|1.1MB/s"
-      password: null
-      port: 443
-      server: 37.120.156.18
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: null
-    - name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
-      port: 443
-      server: 12.202.180.118
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1E9\U0001F1EADE_3|1.6MB/s"
-      password: ""
-      port: "12345"
-      server: 141.147.19.47
-      skip-cert-verify: true
-      type: http
-      username: ""
