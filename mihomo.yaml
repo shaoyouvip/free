@@ -1,19 +1,34 @@
 proxies:
-  - name: 🇷🇸RS_1|1.1MB/s
+  - alpn:
+      - h3
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    down: "55"
+    name: 🇺🇸US_1|1.2MB/s
+    password: github.com/Alvin9999-newpac/fanqiang
+    port: 22335
+    server: 198.200.57.142
+    servername: bing.com
+    skip-cert-verify: true
+    sni: bing.com
+    type: hysteria
+    up: "11"
+    udp: true
+  - name: 🇮🇹IT_1|1.0MB/s
     port: 443
-    server: 146.70.221.34
+    server: 185.183.105.146
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_1|1.5MB/s
+  - name: 🇱🇺LU_1|2.0MB/s
+    password: None
     port: 443
-    server: 121.127.34.82
+    server: 185.221.132.242
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇸🇪SE_1|1.7MB/s
+  - name: 🇸🇪SE_1|1.2MB/s
     password: None
     port: 443
     server: 146.70.242.146
@@ -21,69 +36,39 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇩🇰DK_1|1.0MB/s
+  - name: 🇬🇧GB_1|1015KB/s
     password: None
     port: 443
-    server: 185.245.84.50
+    server: 84.17.50.193
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇪🇸ES_1|1.4MB/s
-    port: 443
-    server: 130.195.250.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: firefox
-    name: 🇵🇱PL_1|2.7MB/s
-    network: xhttp
-    port: 443
-    server: cdn-ya.shamanapp.online
-    tls: true
-    type: vless
-    uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
-    xhttp-opts:
-      host: cdn-ya.shamanapp.online
-      mode: packet-up
-      no-grpc-header: true
-      path: /media/hls/720p/
-      sc-max-each-post-bytes: 20000
-      sc-min-posts-interval-ms: 5
-      seq-key: page
-      seq-placement: query
-      uplink-chunk-size: 20000
-      uplink-data-key: X-Request-Id
-      uplink-data-placement: header
-      uplink-http-method: GET
-      x-padding-bytes: 100-1000
-      x-padding-header: X-Cache
-      x-padding-key: _dc
-      x-padding-method: tokenish
-      x-padding-obfs-mode: true
-      x-padding-placement: header
-    udp: true
-    servername: cdn-ya.shamanapp.online
-  - name: 🇬🇧GB_1|1012KB/s
-    port: 443
-    server: 185.164.138.156
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇭CH_1|1.0MB/s
+  - name: 🇳🇴NO_1|2.1MB/s
     password: None
     port: 9443
-    server: 37.120.213.210
+    server: 146.70.170.210
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_1|1.1MB/s
+  - name: 🇪🇪EE_1|1.8MB/s
+    port: 9443
+    server: 95.153.32.2
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇷🇸RS_1|2.5MB/s
+    password: ""
+    port: 443
+    server: 146.70.221.18
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
+    udp: true
+  - name: 🇳🇱NL_1|2.2MB/s
     password: None
     port: 443
     server: 149.36.51.129
@@ -91,44 +76,74 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇧🇪BE_1|1.3MB/s|R002-260618
+  - name: 🇸🇪SE_2|2.3MB/s
+    port: 443
+    server: 146.70.242.130
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇭🇺HU_1|1.1MB/s
     password: None
     port: 443
-    server: 146.70.176.242
+    server: 146.70.203.18
     skip-cert-verify: true
-    sub_tag: R002-260618
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_1|1.2MB/s
+  - name: 🇬🇧GB_2|2.8MB/s
     port: 443
-    server: 172.64.69.89
+    server: 212.102.63.61
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇧🇬BG_1|1.1MB/s
+  - name: 🇬🇧GB_3|1.1MB/s
     port: 443
-    server: 185.94.192.210
+    server: 212.102.63.31
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_2|1.7MB/s
+  - name: 🇨🇿CZ_1|3.1MB/s
+    password: ""
+    port: 443
+    server: 185.216.35.66
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: ""
+  - name: 🇪🇪EE_2|1.3MB/s
     password: None
-    port: 443
-    server: 167.88.60.242
+    port: 9443
+    server: 95.153.31.66
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇨🇦CA_1|1.1MB/s
-    password: None
-    port: 443
-    server: 206.223.183.13
+  - down: ""
+    fingerprint: ""
+    name: 🇩🇪DE_1|4.1MB/s
+    obfs: ""
+    obfs-password: ""
+    password: mhsl
+    port: 14444
+    server: 88.99.213.222
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: 88.99.213.222
+    type: hysteria2
+    up: ""
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇺🇸US_2|3.5MB/s
+    network: tcp
+    password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+    port: 443
+    server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+    skip-cert-verify: true
+    sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+    type: trojan
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
