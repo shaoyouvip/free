@@ -1,12 +1,57 @@
 proxies:
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: firefox
+      name: "\U0001F1F5\U0001F1F1PL_1|1.1MB/s"
+      network: xhttp
+      port: 443
+      server: cdn-ya.shamanapp.online
+      servername: cdn-ya.shamanapp.online
+      tls: true
+      type: vless
+      uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
+      xhttp-opts:
+        host: cdn-ya.shamanapp.online
+        mode: packet-up
+        no-grpc-header: true
+        path: /media/hls/720p/
+        sc-max-each-post-bytes: 20000
+        sc-min-posts-interval-ms: 5
+        seq-key: page
+        seq-placement: query
+        uplink-chunk-size: 20000
+        uplink-data-key: X-Request-Id
+        uplink-data-placement: header
+        uplink-http-method: GET
+        x-padding-bytes: 100-1000
+        x-padding-header: X-Cache
+        x-padding-key: _dc
+        x-padding-method: tokenish
+        x-padding-obfs-mode: true
+        x-padding-placement: header
+    - name: "\U0001F1EC\U0001F1E7GB_1|1.2MB/s"
+      password: None
+      port: 443
+      server: 185.164.138.156
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1FA\U0001F1F8US_1|1.1MB/s"
+      password: None
+      port: 443
+      server: 167.88.60.242
+      skip-cert-verify: true
+      tls: true
+      type: http
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_1|1017KB/s"
+      name: "\U0001F1E9\U0001F1EADE_1|1.0MB/s"
       port: 2094
       reality-opts:
         public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
         short-id: 55986a94e2228791
-      server: 213.152.165.200
+      server: 213.152.165.205
       servername: www.apple.com
       skip-cert-verify: false
       sni: www.apple.com
@@ -14,17 +59,52 @@ proxies:
       type: vless
       udp: true
       uuid: b7d28421-b7f8-43af-ad2a-da2da9ca6520
-    - name: "\U0001F1F7\U0001F1F8RS_1|1.0MB/s"
+    - name: "\U0001F1E7\U0001F1EABE_1|1.5MB/s|R002-260618"
+      password: None
       port: 443
-      server: 146.70.221.34
+      server: 146.70.176.242
       skip-cert-verify: true
+      sub_tag: R002-260618
       tls: true
       type: http
-    - name: "\U0001F1E9\U0001F1EADE_2|1.6MB/s"
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8US_2|1.7MB/s"
       password: null
       port: 443
-      server: 87.249.132.97
+      server: 68.235.56.59
       skip-cert-verify: true
       tls: true
       type: http
       username: null
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EADE_2|1.9MB/s"
+      network: tcp
+      port: "2094"
+      reality-opts:
+        public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+        short-id: 55986a94e2228791
+      server: 213.152.165.205
+      servername: www.apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: b7d28421-b7f8-43af-ad2a-da2da9ca6520
+      xudp: true
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1E9\U0001F1EADE_3|1.0MB/s"
+      network: tcp
+      port: "2094"
+      reality-opts:
+        public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+        short-id: 55986a94e2228791
+      server: 213.152.165.201
+      servername: www.apple.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: b7d28421-b7f8-43af-ad2a-da2da9ca6520
+      xudp: true
