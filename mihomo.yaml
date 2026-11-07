@@ -1,49 +1,19 @@
 proxies:
-  - name: 🇩🇪DE_1|1.9MB/s
-    port: 12345
-    server: 141.147.19.47
-    skip-cert-verify: true
-    type: http
-    udp: true
-  - name: 🇳🇱NL_1|1.2MB/s
-    port: 9443
-    server: 149.36.51.157
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇳🇱NL_2|1.3MB/s
+  - name: 🇳🇱NL_1|1010KB/s
     password: None
+    port: 443
+    server: 149.36.51.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇬🇧GB_1|1.3MB/s
     port: 9443
-    server: 149.36.51.157
+    server: 84.17.50.129
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇦🇹AT_1|1.4MB/s
-    port: 443
-    server: 146.70.244.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇨🇭CH_1|1.4MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-      short-id: "428ef87fd47a3a32"
-    server: 179.43.166.190
-    tls: true
-    type: vless
-    udp: true
-    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-    xudp: true
-    packet-encoding: xudp
-    servername: perevodchiki.su
 proxy-groups:
   - name: 🚀 节点选择
     type: select
