@@ -1,113 +1,19 @@
 proxies:
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: firefox
-    name: 🇵🇱PL_1|1.0MB/s
-    network: xhttp
+  - name: 🇩🇪DE_1|1.1MB/s
     port: 443
-    server: cdn-ya.shamanapp.online
+    server: 149.36.50.1
+    skip-cert-verify: true
     tls: true
-    type: vless
-    uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
-    xhttp-opts:
-      host: cdn-ya.shamanapp.online
-      mode: packet-up
-      no-grpc-header: true
-      path: /media/hls/720p/
-      sc-max-each-post-bytes: 20000
-      sc-min-posts-interval-ms: 5
-      seq-key: page
-      seq-placement: query
-      uplink-chunk-size: 20000
-      uplink-data-key: X-Request-Id
-      uplink-data-placement: header
-      uplink-http-method: GET
-      x-padding-bytes: 100-1000
-      x-padding-header: X-Cache
-      x-padding-key: _dc
-      x-padding-method: tokenish
-      x-padding-obfs-mode: true
-      x-padding-placement: header
+    type: http
     udp: true
-    servername: cdn-ya.shamanapp.online
-  - name: 🇬🇧GB_1|1.0MB/s
+  - name: 🇷🇸RS_1|1.0MB/s
     password: None
-    port: 9443
-    server: 84.17.50.214
+    port: 443
+    server: 146.70.221.34
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇳🇱NL_1|1.0MB/s
-    port: 1080
-    server: 5.255.113.177
-    type: socks5
-    udp: true
-  - name: 🇨🇿CZ_1|1.0MB/s
-    password: ""
-    port: 443
-    server: 185.216.35.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-    username: ""
-  - name: 🇬🇧GB_2|2.2MB/s
-    port: 443
-    server: 212.102.63.1
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇺🇸US_1|3.1MB/s
-    obfs: ""
-    obfs-password: ""
-    password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-    port: 443
-    server: 99ae88c3-tmm5c0-truoje-1uni.los.hyhuawei.com
-    skip-cert-verify: false
-    sni: 127.0.0.1
-    type: hysteria2
-    up: ""
-    udp: true
-    disable-sni: true
-  - name: 🇺🇸US_2|3.9MB/s
-    password: ""
-    port: 58764
-    server: 118.184.140.90
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ""
-    udp: true
-  - name: 🇯🇵JP_1|1.2MB/s
-    password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    port: 443
-    server: c5f5a67c-tdups0-tf8z9r-1pr35.jp.oshuawei.com
-    sni: c5f5a67c-tdups0-tf8z9r-1pr35.jp.oshuawei.com
-    tls: true
-    type: http
-    username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    udp: true
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇩🇪DE_1|1.1MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-      short-id: "2c9a2790ad5900b2"
-    server: 64.188.66.181
-    tls: true
-    type: vless
-    udp: true
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-    xudp: true
-    packet-encoding: xudp
-    servername: ge-s-1.pythonmakemigreat.wiki
 proxy-groups:
   - name: 🚀 节点选择
     type: select
