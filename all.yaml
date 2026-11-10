@@ -1,72 +1,105 @@
 proxies:
+    - cipher: aes-256-cfb
+      name: "\U0001F1EB\U0001F1F7FR_1|1.5MB/s"
+      password: amazonskr05
+      port: 443
+      server: 13.36.165.6
+      type: ss
+      udp: true
     - auth: 64c05afc-ce81-4ba0-b697-afa04da1427e
-      name: "\U0001F1FA\U0001F1F8US_1|1.9MB/s"
+      name: "\U0001F1FA\U0001F1F8US_1|1.0MB/s"
       password: 64c05afc-ce81-4ba0-b697-afa04da1427e
       port: 44443
       server: 104.168.6.236
       skip-cert-verify: true
       sni: bing.com
       type: hysteria2
-    - name: "\U0001F1E8\U0001F1EDCH_1|1.1MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_1|2.8MB/s"
+      password: None
       port: 443
-      server: 31.7.62.50
+      server: 172.64.68.89
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1F3\U0001F1F1NL_1|1.2MB/s"
-      port: 9443
-      server: 149.36.51.157
+    - client-fingerprint: chrome
+      name: "\U0001F1F5\U0001F1F1PL_1|2.6MB/s"
+      network: ws
+      port: 443
+      server: 3.169.9.125
+      servername: d2ex4nxd2e01ub.cloudfront.net
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+      ws-opts:
+        headers:
+            Host: d2ex4nxd2e01ub.cloudfront.net
+        path: /
+    - name: "\U0001F1FA\U0001F1F8US_2|1.1MB/s"
+      password: None
+      port: 443
+      server: 12.202.180.10
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1ED\U0001F1F0HK_1|1.1MB/s"
+    - name: "\U0001F1E8\U0001F1FFCZ_1|3.0MB/s"
+      port: 443
+      server: 185.216.35.66
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1ED\U0001F1F0HK_1|1.4MB/s"
       password: None
       port: 31343
       server: 120.232.204.58
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1E8\U0001F1EDCH_2|1.1MB/s"
+    - name: "\U0001F1EC\U0001F1E7GB_1|2.4MB/s"
+      password: null
       port: 9443
-      server: 149.88.27.46
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1F8\U0001F1EASE_1|1.2MB/s"
-      password: None
-      port: 443
-      server: 146.70.242.146
+      server: 37.120.233.34
       skip-cert-verify: true
       tls: true
       type: http
       username: null
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_2|2.1MB/s"
-      network: xhttp
-      port: "443"
-      server: www.codex2api.com
-      servername: b4d1f0des220.kuback.top
+    - name: "\U0001F1EB\U0001F1F7FR_2|1.2MB/s"
+      password: None
+      port: 9443
+      server: 213.139.9.142
+      skip-cert-verify: true
       tls: true
-      type: vless
-      udp: true
-      uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-      xhttp-opts:
-        host: b4d1f0des220.kuback.top
-        path: d0dd77efdda074f25b595d9ea8ee5c64
-        x-padding-bytes: 100-1000
-        x-padding-header: X-Forwarded-Uri
-        x-padding-key: _
-        x-padding-method: tokenish
-        x-padding-obfs-mode: true
-        x-padding-placement: queryInHeader
-      xudp: true
+      type: http
+    - name: "\U0001F1FA\U0001F1F8US_3|1.5MB/s"
+      password: null
+      port: 443
+      server: 198.44.135.27
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: null
+    - name: "\U0001F1FA\U0001F1F8US_4|1001KB/s"
+      password: null
+      port: 443
+      server: 149.88.21.129
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: null
+    - name: "\U0001F1E9\U0001F1F0DK_1|1.7MB/s"
+      password: null
+      port: 9443
+      server: 185.245.84.50
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: null
     - client-fingerprint: safari
       flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1ECSG_1|3.5MB/s"
+      name: "\U0001F1F8\U0001F1ECSG_1|4.1MB/s"
       network: tcp
       port: "46105"
       reality-opts:
@@ -79,11 +112,26 @@ proxies:
       udp: true
       uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
       xudp: true
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "\U0001F1F9\U0001F1EDTH_1|3.7MB/s"
+      network: tcp
+      port: "11802"
+      reality-opts:
+        public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+        short-id: 6c84fbac2d
+      server: zfapi.zalolink.com
+      servername: psstatic.cdn.bcebos.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      xudp: true
     - alpn:
         - http/1.1
       client-fingerprint: chrome
       encryption: none
-      name: "\U0001F1EB\U0001F1F7FR_1|2.6MB/s"
+      name: "\U0001F1EB\U0001F1F7FR_3|1.1MB/s"
       network: ws
       port: "443"
       server: 3.169.9.125
@@ -95,6 +143,21 @@ proxies:
       ws-opts:
         headers:
             Host: dkfsoyk9ju2as.cloudfront.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+            User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
         path: /
+      xudp: true
+    - client-fingerprint: firefox
+      flow: xtls-rprx-vision
+      name: "\U0001F1FA\U0001F1F8US_5|2.7MB/s"
+      network: raw
+      port: "443"
+      reality-opts:
+        public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+        short-id: 051f20c2344a2dfd
+      server: 104.225.239.235
+      servername: portal.citygrainla.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
       xudp: true
