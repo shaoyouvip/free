@@ -1,101 +1,120 @@
 proxies:
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_1|1.7MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: 19999
-      server: 202.50.253.54
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_1|1.1MB/s"
-      network: xhttp
-      port: "443"
-      reality-opts:
-        public-key: dtO7khFLUkpFDQOtNzo4Th4hJKLoPSY2VtD_9k4Hgiw
-        short-id: 7b2b1a14a6e0630d
-      server: 9.247.54.228
-      servername: fc82dfx.nl8.h1clayd.click
+    - alpn:
+        - h2
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-mode: gun
+        grpc-service-name: qi8ws15c7jv5q2fa
+      name: "\U0001F1EB\U0001F1F7FR_1|1.7MB/s"
+      network: grpc
+      port: 443
+      server: 200.102.183.50
+      servername: f2hbck5x3c0g8pl7.cdn.cachefleet.com
       tls: true
       type: vless
       udp: true
-      uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-      xhttp-opts:
-        mode: auto
-        path: /0616f2d729aa
-      xudp: true
+      uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
     - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_2|1.5MB/s"
+      name: "\U0001F1EE\U0001F1F9IT_1|2.1MB/s"
       password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
       port: "19999"
-      server: 202.50.253.27
+      server: 202.50.253.72
       type: ss
       udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F9\U0001F1F7TR_1|2.2MB/s"
-      password: d7563108-615c-4338-a7bd-77f359869a4a
-      port: "20028"
-      server: sclass-b1.catcat321.com
-      skip-cert-verify: true
-      sni: hk.catxstar.com
-      type: trojan
+    - alpn:
+        - h2
+        - http/1.1
+        - h3
+      client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1FA\U0001F1F8US_1|1.2MB/s"
+      network: xhttp
+      port: "2053"
+      server: usa.amosh.sbs
+      servername: usa.amosh.sbs
+      tls: true
+      type: vless
       udp: true
-    - name: "\U0001F1FA\U0001F1F8US_1|2.4MB/s"
+      uuid: 901c1ed2-be44-4c97-843e-7bcdcce28e04
+      xhttp-opts:
+        host: usa.amosh.sbs
+        mode: auto
+        path: /
+        x-padding-bytes: 100-1000
+      xudp: true
+    - name: "\U0001F1E9\U0001F1F0DK_1|1.8MB/s"
       password: None
       port: 443
-      server: 167.88.60.242
+      server: 185.245.84.50
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1E9\U0001F1EADE_1|1.3MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_1|1.8MB/s"
       password: None
       port: 443
       server: 172.64.68.89
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1F3\U0001F1F4NO_1|1.8MB/s"
+    - name: "\U0001F1E7\U0001F1ECBG_1|1.8MB/s"
+      password: None
+      port: 443
+      server: 185.94.192.210
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F3\U0001F1F4NO_1|3.3MB/s"
       password: None
       port: 9443
       server: 146.70.170.210
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1ED\U0001F1FAHU_1|1.1MB/s"
-      port: 443
-      server: 146.70.203.18
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1F3\U0001F1F1NL_2|1.5MB/s|K001-260618"
-      password: None
-      port: 9443
-      server: 149.36.51.161
-      skip-cert-verify: true
-      sub_tag: K001-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1E8\U0001F1E6CA_1|1.3MB/s|P002-260618"
+    - name: "\U0001F1EC\U0001F1E7GB_1|1007KB/s|P002-260618"
       password: None
       port: 443
-      server: 206.223.183.16
+      server: 212.102.63.31
       skip-cert-verify: true
       sub_tag: P002-260618
       tls: true
       type: http
       udp: true
-      x-toolall-mihomo: true
+    - name: "\U0001F1E6\U0001F1F9AT_1|1.0MB/s"
+      port: 443
+      server: 146.70.244.2
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1EC\U0001F1E7GB_2|1.3MB/s"
+      password: None
+      port: 9443
+      server: 84.17.50.129
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E8\U0001F1FFCZ_1|1.9MB/s"
+      password: None
+      port: 9443
+      server: 152.233.16.174
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1EB\U0001F1F7FR_2|1.7MB/s"
+      port: 443
+      server: 149.102.245.65
+      skip-cert-verify: true
+      tls: true
+      type: http
     - alpn:
         - http/1.1
       client-fingerprint: qq
-      encryption: none
-      name: "\U0001F1F5\U0001F1F1PL_1|2.3MB/s"
+      name: "\U0001F1F5\U0001F1F1PL_1|1.1MB/s"
       network: ws
       port: 443
       server: 3.169.9.125
       servername: d2ex4nxd2e01ub.cloudfront.net
+      skip-cert-verify: true
+      sni: d2ex4nxd2e01ub.cloudfront.net
       tls: true
       type: vless
       udp: true
@@ -103,22 +122,75 @@ proxies:
       ws-opts:
         headers:
             Host: d2ex4nxd2e01ub.cloudfront.net
-            User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36
         path: /
-      x-toolall-mihomo: true
-      xudp: true
-    - name: "\U0001F1EE\U0001F1F3IN_1|4.3MB/s"
-      password: ""
-      port: "3128"
-      server: 15.207.138.141
+    - name: "\U0001F1E9\U0001F1EADE_2|1.0MB/s|R002-260618"
+      password: None
+      port: 443
+      server: 87.249.132.97
       skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
       type: http
-      username: ""
-    - name: "\U0001F1FA\U0001F1F8US_2|1.6MB/s"
-      password: ""
-      port: "443"
-      server: 12.202.180.118
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1FFCZ_2|1.2MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 185.216.35.130
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E7\U0001F1EABE_1|2.3MB/s"
+      port: 443
+      server: 146.70.123.98
       skip-cert-verify: true
       tls: true
       type: http
-      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_2|1.9MB/s|R002-260618"
+      password: None
+      port: 443
+      server: 149.34.248.65
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F5\U0001F1F9PT_1|1.5MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 149.22.86.1
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F5\U0001F1F9PT_2|1.3MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 149.22.86.14
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - client-fingerprint: ios
+      flow: xtls-rprx-vision
+      name: "\U0001F1F9\U0001F1EDTH_1|2.8MB/s"
+      network: tcp
+      port: "11802"
+      reality-opts:
+        public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+        short-id: 6c84fbac2d
+      server: zfapi.zalolink.com
+      servername: psstatic.cdn.bcebos.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      xudp: true
