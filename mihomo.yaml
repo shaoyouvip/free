@@ -1,22 +1,15 @@
 proxies:
-  - name: 🇨🇦CA_1|1.0MB/s
-    password: None
-    port: 9443
-    server: 149.88.98.81
-    skip-cert-verify: true
-    tls: true
-    type: http
+  - client-fingerprint: chrome
+    name: 🇹🇷TR_1|1.3MB/s
+    network: tcp
+    password: d7563108-615c-4338-a7bd-77f359869a4a
+    port: 20028
+    server: sclass-b1.catcat321.com
+    skip-cert-verify: false
+    sni: hk.catxstar.com
+    type: trojan
     udp: true
-  - name: 🇸🇪SE_1|1.6MB/s|R002-260618
-    port: 9443
-    server: 146.70.242.146
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇨🇭CH_1|1.7MB/s|K001-260618
+  - name: 🇨🇭CH_1|2.5MB/s|K001-260618
     port: 9443
     server: 149.88.27.33
     skip-cert-verify: true
@@ -25,29 +18,29 @@ proxies:
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇫🇷FR_1|1.9MB/s
-    port: 443
-    server: 149.102.245.65
+  - name: 🇳🇴NO_1|1.7MB/s|P002-260618
+    password: None
+    port: 9443
+    server: 146.70.170.210
     skip-cert-verify: true
+    sub_tag: P002-260618
     tls: true
     type: http
     udp: true
-  - ip: 172.16.0.2/32
-    ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-    mtu: 1280
-    name: 🇨🇳CN_1|2.1MB/s
-    port: 4198
-    private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    reserved:
-      - 0
-      - 0
-      - 0
-    server: 8.6.112.200
-    type: wireguard
+    x-toolall-mihomo: true
+  - client-fingerprint: chrome
+    name: 🇹🇷TR_2|2.4MB/s
+    password: d7563108-615c-4338-a7bd-77f359869a4a
+    port: 20028
+    server: sclass-b1.catcat321.com
+    servername: hk.catxstar.com
+    skip-cert-verify: true
+    sni: hk.catxstar.com
+    type: trojan
     udp: true
+    network: tcp
   - cipher: chacha20-ietf-poly1305
-    name: 🇯🇵JP_1|5.1MB/s
+    name: 🇯🇵JP_1|2.5MB/s
     password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
     plugin: obfs
     plugin-opts:
@@ -58,7 +51,7 @@ proxies:
     type: ss
     x-toolall-mihomo: true
     udp: true
-  - name: 🇩🇪DE_1|1.2MB/s|R002-260618
+  - name: 🇩🇪DE_1|1.1MB/s|R002-260618
     port: 443
     server: 172.64.68.89
     skip-cert-verify: true
@@ -67,110 +60,7 @@ proxies:
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇨🇿CZ_1|1.2MB/s
-    password: ""
-    port: 443
-    server: 185.216.35.66
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-    username: ""
-    x-toolall-mihomo: true
-  - name: 🇬🇧GB_1|1.8MB/s|R002-260618
-    port: 443
-    server: 37.120.233.18
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇬🇧GB_2|1.5MB/s|R002-260618
-    port: 443
-    server: 84.17.50.193
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇺🇸US_1|1.7MB/s
-    port: 443
-    server: 12.202.180.118
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    name: 🇩🇪DE_2|1.4MB/s
-    network: grpc
-    port: 2087
-    reality-opts:
-      public-key: lN4gxtu1uZUH0d-RFC35FHoAwKZ6bNGV7I68JCAbGF4
-      short-id: "c0e1f54d"
-    server: 77.90.0.22
-    tls: true
-    type: vless
-    udp: true
-    uuid: ead4a562-edf2-40cf-ad33-13ae98546226
-    xudp: true
-    packet-encoding: xudp
-    servername: dl.google.com
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: firefox
-    encryption: none
-    name: 🇫🇮FI_1|1.1MB/s
-    network: xhttp
-    port: 443
-    server: 188.72.112.1
-    tls: true
-    type: vless
-    udp: true
-    uuid: d8d9d99e-6622-4620-92dc-23ac2b6d30f6
-    xhttp-opts:
-      host: shop07.gruzit.my
-      mode: packet-up
-      path: /api/orders/track/
-      reuse-settings:
-        c-max-reuse-times: "0"
-        max-concurrency: 16-32
-        max-connections: "0"
-      uplink-data-key: ref
-      uplink-data-placement: header
-      uplink-http-method: HEAD
-      x-padding-bytes: 8-32
-      x-padding-header: X-Signature
-      x-padding-key: _token
-      x-padding-method: tokenish
-      x-padding-obfs-mode: true
-      x-padding-placement: queryInHeader
-    xudp: true
-    packet-encoding: xudp
-    servername: shop07.gruzit.my
-  - client-fingerprint: chrome
-    name: 🇺🇸US_2|1.1MB/s
-    network: ws
-    port: 443
-    server: 104.16.80.1
-    tls: true
-    type: vless
-    udp: true
-    uuid: 462f23ba-3286-4601-813d-878bf26b4fcb
-    ws-opts:
-      headers:
-        Host: nmdx.ccwu.cc
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/65.0.3325.181 Safari/537.36
-      path: /proxyip=proxyip.oracle.cmliussss.net
-    xudp: true
-    packet-encoding: xudp
-    servername: nmdx.ccwu.cc
-  - name: 🇺🇸US_3|3.6MB/s
+  - name: 🇺🇸US_1|2.9MB/s
     password: ""
     port: 58764
     server: 118.184.140.90
