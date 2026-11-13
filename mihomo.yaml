@@ -1,46 +1,59 @@
 proxies:
   - client-fingerprint: chrome
-    name: 🇹🇷TR_1|1.3MB/s
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇸🇬SG_1|2.3MB/s
     network: tcp
-    password: d7563108-615c-4338-a7bd-77f359869a4a
-    port: 20028
-    server: sclass-b1.catcat321.com
-    skip-cert-verify: false
-    sni: hk.catxstar.com
-    type: trojan
-    udp: true
-  - name: 🇨🇭CH_1|2.5MB/s|K001-260618
-    port: 9443
-    server: 149.88.27.33
-    skip-cert-verify: true
-    sub_tag: K001-260618
+    port: 30322
+    reality-opts:
+      public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+      short-id: "6a60e7e382d6"
+    server: zfapi.zalolink.com
     tls: true
-    type: http
+    type: vless
     udp: true
-    x-toolall-mihomo: true
-  - name: 🇳🇴NO_1|1.7MB/s|P002-260618
-    password: None
-    port: 9443
-    server: 146.70.170.210
-    skip-cert-verify: true
-    sub_tag: P002-260618
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    xudp: true
+    packet-encoding: xudp
+    servername: psstatic.cdn.bcebos.com
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇩🇪DE_1|1.0MB/s
+    network: xhttp
+    port: 443
+    server: static.nlomasterpanel.ru
     tls: true
-    type: http
+    type: vless
     udp: true
-    x-toolall-mihomo: true
-  - client-fingerprint: chrome
-    name: 🇹🇷TR_2|2.4MB/s
-    password: d7563108-615c-4338-a7bd-77f359869a4a
-    port: 20028
-    server: sclass-b1.catcat321.com
-    servername: hk.catxstar.com
-    skip-cert-verify: true
-    sni: hk.catxstar.com
-    type: trojan
-    udp: true
-    network: tcp
+    uuid: 981e728f-d403-4fef-a1ff-6ba9ebe0e702
+    xhttp-opts:
+      host: static.nlomasterpanel.ru
+      mode: packet-up
+      path: /api/v1/parts
+      reuse-settings:
+        c-max-reuse-times: "0"
+        h-keep-alive-period: 0
+        h-max-request-times: 600-900
+        h-max-reusable-secs: 1800-3000
+        max-concurrency: "0"
+        max-connections: "3"
+      sc-min-posts-interval-ms: 150
+      uplink-data-key: X-Data
+      uplink-data-placement: header
+      uplink-http-method: GET
+      x-padding-header: X-Client-Data
+      x-padding-key: _dc
+      x-padding-method: tokenish
+      x-padding-obfs-mode: true
+      x-padding-placement: queryInHeader
+    xudp: true
+    packet-encoding: xudp
+    servername: static.nlomasterpanel.ru
   - cipher: chacha20-ietf-poly1305
-    name: 🇯🇵JP_1|2.5MB/s
+    name: 🇯🇵JP_1|2.7MB/s
     password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
     plugin: obfs
     plugin-opts:
@@ -51,16 +64,15 @@ proxies:
     type: ss
     x-toolall-mihomo: true
     udp: true
-  - name: 🇩🇪DE_1|1.1MB/s|R002-260618
-    port: 443
-    server: 172.64.68.89
+  - name: 🇯🇵JP_2|1.5MB/s
+    password: ""
+    port: 3001
+    server: 43.133.21.24
     skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
+    type: socks5
+    username: ""
     udp: true
-    x-toolall-mihomo: true
-  - name: 🇺🇸US_1|2.9MB/s
+  - name: 🇺🇸US_1|3.3MB/s
     password: ""
     port: 58764
     server: 118.184.140.90
