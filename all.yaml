@@ -1,41 +1,185 @@
 proxies:
+    - client-fingerprint: chrome
+      name: "\U0001F1F5\U0001F1F1PL_1|1.6MB/s"
+      network: xhttp
+      port: 4443
+      server: bl1.nexfile.net
+      servername: bl1.nexfile.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+      xhttp-opts:
+        host: bl1.nexfile.net
+        mode: auto
+        path: /api/v1/sync/
+    - client-fingerprint: chrome
+      name: "\U0001F1E9\U0001F1EADE_1|2.1MB/s"
+      network: xhttp
+      port: 443
+      server: 3.174.189.0
+      servername: d1b9pmaut2v26v.cloudfront.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 2e69b088-6ef3-417f-8247-125cf257fafd
+      xhttp-opts:
+        host: d1b9pmaut2v26v.cloudfront.net
+        mode: auto
+        path: /cf
     - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_1|3.0MB/s"
+      name: "\U0001F1EE\U0001F1F9IT_1|2.9MB/s"
       password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
       port: 19999
-      server: 202.50.253.99
+      server: 202.50.253.36
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1EE\U0001F1F9IT_2|2.4MB/s"
+      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+      port: 19999
+      server: 202.50.253.27
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1EE\U0001F1F9IT_3|3.4MB/s"
+      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+      port: 19999
+      server: 202.50.253.18
       type: ss
       udp: true
     - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_1|3.5MB/s"
+      encryption: mlkem768x25519plus.native.0rtt.Q87mgMmTfbfB0W6gBMUjZGuHSPmo8Ot7-obrW5-BD3o
+      name: "\U0001F1FA\U0001F1F8US_1|1.9MB/s"
       network: tcp
-      port: "8443"
+      port: 50769
       reality-opts:
-        public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-        short-id: 4ad2e4e660550e43
-      server: 156.229.167.109
-      servername: github.githubassets.com
+        public-key: 7Q09Z_KU9vXvif4-pLfVc_Zwil-X4k41Iesv-HCk4wI
+        short-id: 7f3d68ed44
+      server: 217.217.47.140
+      servername: ops.gx.nvidia.com
       tls: true
       type: vless
       udp: true
-      uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+      uuid: 6f6318b1-3ba5-4106-9365-8a8e19f04bd3
+    - client-fingerprint: chrome
+      encryption: none
+      fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+      name: "\U0001F1EC\U0001F1E7GB_1|2.2MB/s"
+      network: ws
+      port: "443"
+      server: 146.75.59.186
+      servername: cdn.akamai.steamstatic.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+      ws-opts:
+        headers:
+            Host: ukoijji.global.ssl.fastly.net
+            User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+        path: /
       xudp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_1|2.0MB/s"
+      name: "\U0001F1F8\U0001F1ECSG_1|1.0MB/s"
       network: tcp
-      port: "33068"
+      port: "46957"
       reality-opts:
-        public-key: R6ikLAKWuvM4UxkaMchaOe3pOMUsjghIW_w7McCY9Hc
-        short-id: 39b10242
-      server: sijiache.hief.store
-      servername: iosapps.itunes.apple.com
+        public-key: 1SefqLQXrqkiUdf7cTMF53hrMZyo684_uneRC8-qTxI
+        short-id: 8f6683a234d3
+      server: zfapi.zalolink.com
+      servername: psstatic.cdn.bcebos.com
       tls: true
       type: vless
       udp: true
-      uuid: 3012a26e-0f9e-41d9-a64d-5a5b736f8d99
+      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
       xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F9\U0001F1F7TR_1|2.0MB/s"
+      network: tcp
+      password: d7563108-615c-4338-a7bd-77f359869a4a
+      port: "20028"
+      server: sclass-b1.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - cipher: 2022-blake3-chacha20-poly1305
+      name: "\U0001F1E9\U0001F1EADE_2|1.5MB/s"
+      password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+      port: "443"
+      server: 47.254.169.3
+      type: ss
+      udp: true
+    - cipher: aes-256-gcm
+      name: "\U0001F1EE\U0001F1F9IT_4|3.2MB/s"
+      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+      port: "19999"
+      server: 202.50.253.90
+      type: ss
+      udp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      http-opts:
+        headers:
+            Host:
+                - https://www.cloudflare.com
+        path:
+            - /
+      name: "\U0001F1E9\U0001F1EADE_3|2.3MB/s"
+      network: http
+      port: "58804"
+      server: 91.98.221.107
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: aa3e4b64-c119-44be-b0f3-f88293705e37
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_1|3.7MB/s"
+      network: tcp
+      port: "16113"
+      server: zfd-hkv1.kunlun01dns.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+      xudp: true
+    - alpn:
+        - ""
+      alterId: "0"
+      cipher: auto
+      http-opts:
+        headers:
+            Host:
+                - www.tno.nl
+        path:
+            - /
+      name: "\U0001F1EB\U0001F1EEFI_1|3.1MB/s"
+      network: http
+      port: "8880"
+      server: free3.familysharing.ir
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 04cacf0a-46d5-81b3-874d-460d7a36c036
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1F9\U0001F1F7TR_2|1.5MB/s"
+      password: d7563108-615c-4338-a7bd-77f359869a4a
+      port: "20027"
+      server: sclass-b1.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
     - alpn:
         - h2
         - http/1.1
@@ -62,118 +206,55 @@ proxies:
         sc-min-posts-interval-ms: 30
         x-padding-bytes: 100-1000
       xudp: true
-    - cipher: aes-256-gcm
-      name: "\U0001F1EE\U0001F1F9IT_2|2.5MB/s"
-      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-      port: "19999"
-      server: 202.50.253.63
-      type: ss
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F9\U0001F1F7TR_1|1.6MB/s"
-      password: d7563108-615c-4338-a7bd-77f359869a4a
-      port: "20028"
-      server: sclass-b1.catcat321.com
-      skip-cert-verify: false
-      sni: hk.catxstar.com
-      type: trojan
-      udp: true
-    - client-fingerprint: chrome
-      name: "\U0001F1F9\U0001F1F7TR_2|1.9MB/s"
-      network: tcp
-      password: d7563108-615c-4338-a7bd-77f359869a4a
-      port: "20027"
-      server: sclass-b1.catcat321.com
-      skip-cert-verify: false
-      sni: hk.catxstar.com
-      type: trojan
-      udp: true
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5JP_1|5.6MB/s"
-      port: 43149
-      reality-opts:
-        public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-        short-id: 15aa0ad4
-      server: zfapi.zalolink.com
-      servername: psstatic.cdn.bcebos.com
-      skip-cert-verify: false
-      sni: psstatic.cdn.bcebos.com
-      tls: true
-      type: vless
-      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    - name: "\U0001F1E8\U0001F1EDCH_1|2.6MB/s"
+    - name: "\U0001F1E8\U0001F1EDCH_1|1.7MB/s"
       port: 443
       server: 31.7.62.50
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1E9\U0001F1EADE_2|2.3MB/s"
+    - name: "\U0001F1FA\U0001F1F8US_2|2.4MB/s"
+      port: 58764
+      server: 118.184.140.90
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F8\U0001F1ECSG_2|2.4MB/s"
+      password: Z5lvhmLqSc
+      port: 48994
+      server: matrix.phonicsindia.mobi
+      skip-cert-verify: true
+      sni: m.microsoft.com
+      type: trojan
+      udp: true
+    - name: "\U0001F1E9\U0001F1EADE_4|1.1MB/s"
       port: 443
-      server: 172.64.69.89
+      server: 213.109.163.119
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1E8\U0001F1E6CA_1|2.5MB/s|K001-260618"
-      password: None
-      port: 443
-      server: 206.223.183.13
-      skip-cert-verify: true
-      sub_tag: K001-260618
-      tls: true
-      type: http
       udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1F3\U0001F1F4NO_1|3.0MB/s|P002-260618"
-      password: None
-      port: 9443
-      server: 146.70.170.210
-      skip-cert-verify: true
-      sub_tag: P002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_2|1010KB/s"
-      network: xhttp
-      port: 8443
-      server: 104.18.162.1
-      servername: 3m.818567.xyz
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1662f377-776b-4e49-90d6-dd5b2c7920c8
-      xhttp-opts:
-        mode: packet-up
-        path: /v-stream
-      xudp: true
-    - name: "\U0001F1E9\U0001F1EADE_3|3.1MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_5|3.1MB/s"
       port: 9002
       server: 158.173.154.5
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
-    - name: "\U0001F1E9\U0001F1EADE_4|2.5MB/s"
-      port: 9002
-      server: 158.173.154.1
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_1|4.5MB/s"
+    - name: "\U0001F1F3\U0001F1F1NL_1|3.4MB/s"
       port: 19362
       server: 51.159.225.197
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_2|2.6MB/s"
+    - name: "\U0001F1EB\U0001F1F7FR_1|1.6MB/s"
+      port: 8090
+      server: 83.206.1.225
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1F3\U0001F1F1NL_2|4.7MB/s"
       password: "null"
       port: 23856
       server: 51.159.225.196
@@ -182,44 +263,14 @@ proxies:
       type: http
       udp: true
       username: "null"
-    - name: "\U0001F1F3\U0001F1F1NL_3|4.4MB/s"
+    - name: "\U0001F1F3\U0001F1F1NL_3|2.2MB/s"
       port: 23856
       server: 51.159.225.196
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
-    - name: "\U0001F1EE\U0001F1EAIE_1|1.4MB/s"
-      port: 443
-      server: 34.249.214.108
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-    - name: "\U0001F1F1\U0001F1FBLV_1|3.1MB/s"
-      port: 443
-      server: 185.219.159.15
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_4|1.8MB/s"
-      password: "null"
-      port: 443
-      server: 103.97.88.154
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: "null"
-    - name: "\U0001F1F3\U0001F1F1NL_5|3.7MB/s"
-      port: 9002
-      server: 84.17.47.124
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_6|3.8MB/s"
+    - name: "\U0001F1F3\U0001F1F1NL_4|3.1MB/s"
       password: None
       port: 9002
       server: 84.17.47.148
@@ -227,92 +278,70 @@ proxies:
       tls: true
       type: http
       udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_7|3.4MB/s"
+    - name: "\U0001F1F3\U0001F1F1NL_5|1.1MB/s"
+      password: None
       port: 9002
-      server: 84.17.47.125
+      server: 84.17.47.149
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
-    - name: "\U0001F1F3\U0001F1F1NL_8|3.1MB/s"
-      password: None
-      port: 9002
-      server: 84.17.47.123
+    - name: "\U0001F1FA\U0001F1F8US_3|2.5MB/s"
+      port: 8443
+      server: 44.248.167.117
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
-    - alpn:
-        - h3
-      auth-str: dongtaiwang.com
-      auth_str: dongtaiwang.com
-      down: 50
-      name: "\U0001F1EB\U0001F1F7FR_1|2.8MB/s"
-      port: 24667
-      server: 62.210.70.191
+    - encryption: mlkem768x25519plus.native.0rtt.GlIc2LFlqBQ3itRnw8zoo3tfD7MSknWWmmLVDdr88jE
+      name: "\U0001F1E9\U0001F1EADE_6|2.2MB/s"
+      network: ws
+      port: 80
+      server: 104.18.43.144
+      tls: false
+      type: vless
+      udp: true
+      uuid: MiMiTDL
+      ws-opts:
+        headers:
+            Host: erosan.seminar-irani.ir
+        path: /MiMiTDL
+        v2ray-http-upgrade: true
+    - name: "\U0001F1F3\U0001F1F1NL_6|2.9MB/s"
+      password: ""
+      port: 443
+      server: 149.36.51.129
       skip-cert-verify: true
-      type: hysteria
-      up: 10
-    - name: "\U0001F1F7\U0001F1FARU_1|3.4MB/s|K001-260618"
-      password: None
-      port: 1446
-      server: 46.29.166.134
-      skip-cert-verify: true
-      sub_tag: K001-260618
       tls: true
       type: http
       udp: true
       username: ""
       x-toolall-mihomo: true
-    - name: "\U0001F1E9\U0001F1EADE_5|1.6MB/s|R002-260618"
+    - name: "\U0001F1ED\U0001F1FAHU_1|3.0MB/s"
       port: 443
-      server: 87.106.223.158
+      server: 146.70.203.18
       skip-cert-verify: true
-      sub_tag: R002-260618
       tls: true
       type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_3|3.8MB/s|R002-260618"
-      port: 9002
-      server: 138.199.35.218
-      skip-cert-verify: true
-      sni: 138.199.35.218
-      sub_tag: R002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1F7\U0001F1F4RO_1|1.5MB/s"
+    - name: "\U0001F1F7\U0001F1F4RO_1|1.8MB/s"
       port: 9002
       server: 193.176.84.26
       skip-cert-verify: true
       sni: www.bing.com
       tls: true
       type: http
-    - name: "\U0001F1FA\U0001F1F8US_4|2.4MB/s|R002-260618"
-      password: "null"
+    - name: "\U0001F1F7\U0001F1F4RO_2|3.2MB/s|P002-260618"
+      password: None
       port: 9002
-      server: 138.199.35.197
+      server: 193.176.84.27
       skip-cert-verify: true
-      sub_tag: R002-260618
+      sub_tag: P002-260618
       tls: true
       type: http
       udp: true
-      username: "null"
-      x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_5|2.4MB/s"
-      password: ""
-      port: 9002
-      server: 138.199.35.197
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: ""
       x-toolall-mihomo: true
     - client-fingerprint: chrome
-      name: "\U0001F1FA\U0001F1F8US_6|2.2MB/s"
+      name: "\U0001F1FA\U0001F1F8US_4|2.3MB/s"
       port: 8443
       reality-opts:
         public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
@@ -324,54 +353,21 @@ proxies:
       udp: true
       uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
       x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_7|1.7MB/s"
+    - name: "\U0001F1F7\U0001F1F4RO_3|1.2MB/s"
+      port: 9002
+      server: 193.176.84.39
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F3\U0001F1F1NL_7|3.6MB/s"
       password: "null"
       port: 9002
-      server: 138.199.35.220
+      server: 84.17.47.146
       skip-cert-verify: true
       tls: true
       type: http
       username: "null"
-    - name: "\U0001F1E8\U0001F1EDCH_2|2.0MB/s"
-      password: ""
-      port: 9443
-      server: 149.88.27.46
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: ""
-      x-toolall-mihomo: true
-    - name: "\U0001F1F1\U0001F1FALU_1|2.7MB/s|P002-260618"
-      password: None
-      port: 9443
-      server: 185.221.132.226
-      skip-cert-verify: true
-      sub_tag: P002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_8|2.4MB/s"
-      password: ""
-      port: 9002
-      server: 138.199.35.212
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: ""
-      x-toolall-mihomo: true
-    - name: "\U0001F1F3\U0001F1F1NL_9|3.6MB/s|R002-260618"
-      port: 9002
-      server: 84.17.47.126
-      skip-cert-verify: true
-      sub_tag: R002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1F3\U0001F1F1NL_10|2.9MB/s|P002-260618"
+    - name: "\U0001F1F3\U0001F1F1NL_8|1.0MB/s|P002-260618"
       password: None
       port: 9443
       server: 149.36.51.157
@@ -381,13 +377,43 @@ proxies:
       type: http
       udp: true
       x-toolall-mihomo: true
-    - name: "\U0001F1E6\U0001F1F9AT_1|3.2MB/s"
+    - name: "\U0001F1E6\U0001F1F9AT_1|4.0MB/s"
       port: 443
       server: 146.70.244.2
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1FA\U0001F1F8US_9|2.8MB/s|P002-260618"
+    - name: "\U0001F1F3\U0001F1F1NL_9|3.3MB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 84.17.47.126
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_5|3.0MB/s|P002-260618"
+      password: None
+      port: 9002
+      server: 138.199.35.216
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_6|3.5MB/s"
+      password: ""
+      port: 9002
+      server: 138.199.35.201
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_7|3.8MB/s|P002-260618"
       password: "null"
       port: 9002
       server: 138.199.35.215
@@ -398,22 +424,33 @@ proxies:
       udp: true
       username: "null"
       x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_10|3.2MB/s"
-      password: "null"
-      port: 9002
-      server: 138.199.35.198
+    - name: "\U0001F1F5\U0001F1F1PL_2|2.9MB/s|R002-260618"
+      port: 443
+      server: 37.120.156.18
       skip-cert-verify: true
-      sni: 138.199.35.198
+      sub_tag: R002-260618
       tls: true
       type: http
-      username: "null"
-    - name: "\U0001F1F5\U0001F1F1PL_1|1.2MB/s"
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_8|2.5MB/s|K001-260618"
+      password: None
+      port: 9443
+      server: 198.44.135.19
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F5\U0001F1F1PL_3|3.3MB/s"
       port: 443
       server: 37.120.156.34
       skip-cert-verify: true
       tls: true
       type: http
-    - name: "\U0001F1E8\U0001F1FFCZ_1|2.5MB/s"
+    - name: "\U0001F1E8\U0001F1FFCZ_1|2.0MB/s"
       port: 443
       server: 185.216.35.66
       skip-cert-verify: true
@@ -425,23 +462,25 @@ proxies:
         - h3
       auth-str: dongtaiwang.com
       down: "55"
-      name: "\U0001F1EB\U0001F1F7FR_2|1.2MB/s"
+      name: "\U0001F1EB\U0001F1F7FR_2|1.0MB/s"
       port: 36699
       server: 163.172.117.163
       skip-cert-verify: true
       type: hysteria
       up: "11"
       x-toolall-mihomo: true
-    - name: "\U0001F1E9\U0001F1F0DK_1|3.7MB/s|R002-260618"
+    - name: "\U0001F1EB\U0001F1F7FR_3|4.1MB/s|K001-260618"
+      password: None
       port: 443
-      server: 185.245.84.50
+      server: 82.66.235.221
       skip-cert-verify: true
-      sub_tag: R002-260618
+      sub_tag: K001-260618
       tls: true
       type: http
       udp: true
+      username: ""
       x-toolall-mihomo: true
-    - name: "\U0001F1F8\U0001F1EASE_1|3.9MB/s|R002-260618"
+    - name: "\U0001F1F8\U0001F1EASE_1|2.9MB/s|R002-260618"
       port: 9443
       server: 146.70.242.146
       skip-cert-verify: true
@@ -450,62 +489,75 @@ proxies:
       type: http
       udp: true
       x-toolall-mihomo: true
-    - name: "\U0001F1E8\U0001F1FFCZ_2|3.8MB/s|P002-260618"
-      password: None
-      port: 443
-      server: 185.216.35.130
-      skip-cert-verify: true
-      sub_tag: P002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1F3\U0001F1F1NL_11|3.0MB/s"
+    - name: "\U0001F1F3\U0001F1F1NL_10|1.8MB/s"
       password: "null"
       port: 9002
-      server: 84.17.47.147
+      server: 84.17.47.126
       skip-cert-verify: true
-      sni: 84.17.47.147
       tls: true
       type: http
       username: "null"
-    - name: "\U0001F1EC\U0001F1EAGE_1|1.9MB/s|P002-260618"
-      password: None
-      port: 443
-      server: 195.54.178.210
+    - name: "\U0001F1EB\U0001F1F7FR_4|3.5MB/s"
+      password: "null"
+      port: 6103
+      server: 87.98.174.157
       skip-cert-verify: true
-      sub_tag: P002-260618
       tls: true
       type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1E7\U0001F1ECBG_2|3.3MB/s|R002-260618"
-      port: 9443
-      server: 169.150.237.1
+      username: "null"
+    - name: "\U0001F1F7\U0001F1F4RO_4|1.8MB/s"
+      password: "null"
+      port: 9002
+      server: 193.176.84.19
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1E9\U0001F1EADE_7|3.8MB/s|R002-260618"
+      port: 9002
+      server: 158.173.154.2
       skip-cert-verify: true
       sub_tag: R002-260618
       tls: true
       type: http
       udp: true
       x-toolall-mihomo: true
-    - name: "\U0001F1EC\U0001F1F7GR_1|1.9MB/s"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1F3\U0001F1F1NL_11|2.3MB/s"
+      password: dongtaiwang.com
+      port: 54177
+      server: 5.83.129.90
+      servername: apple.com
+      skip-cert-verify: true
+      sni: apple.com
+      tls: true
+      type: hysteria
+      up: "11"
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_9|2.8MB/s"
       password: ""
       port: 443
-      server: 149.22.85.78
+      server: 149.88.21.129
       skip-cert-verify: true
       tls: true
       type: http
       udp: true
       username: ""
       x-toolall-mihomo: true
-    - name: "\U0001F1F7\U0001F1F4RO_2|3.3MB/s"
-      port: 9002
-      server: 193.176.84.37
+    - name: "\U0001F1EA\U0001F1E8EC_1|1.9MB/s"
+      password: ""
+      port: 9443
+      server: 38.165.231.71
       skip-cert-verify: true
-      sni: www.bing.com
       tls: true
       type: http
-    - name: "\U0001F1EC\U0001F1F7GR_2|2.5MB/s"
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1EC\U0001F1F7GR_1|2.8MB/s"
       password: ""
       port: 443
       server: 149.22.85.65
@@ -515,20 +567,10 @@ proxies:
       udp: true
       username: ""
       x-toolall-mihomo: true
-    - name: "\U0001F1ED\U0001F1F7HR_1|2.9MB/s|P002-260618"
-      password: None
-      port: 443
-      server: 154.47.29.161
-      skip-cert-verify: true
-      sub_tag: P002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
     - client-fingerprint: firefox
       grpc-opts:
         grpc-service-name: 204adda7e3da
-      name: "\U0001F1F3\U0001F1F1NL_12|3.4MB/s"
+      name: "\U0001F1F3\U0001F1F1NL_12|1.6MB/s"
       network: grpc
       port: 443
       reality-opts:
@@ -540,7 +582,17 @@ proxies:
       type: vless
       uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
       x-toolall-mihomo: true
-    - name: "\U0001F1E8\U0001F1E6CA_2|1.4MB/s|P002-260618"
+    - name: "\U0001F1E7\U0001F1ECBG_2|2.8MB/s|R002-260618"
+      password: None
+      port: 443
+      server: 185.94.192.210
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1E6CA_1|2.3MB/s|P002-260618"
       password: None
       port: 443
       server: 206.223.183.16
@@ -550,7 +602,7 @@ proxies:
       type: http
       udp: true
       x-toolall-mihomo: true
-    - name: "\U0001F1EC\U0001F1E7GB_1|2.8MB/s|R002-260618"
+    - name: "\U0001F1EC\U0001F1E7GB_2|3.3MB/s|R002-260618"
       port: 9443
       server: 84.233.178.33
       skip-cert-verify: true
@@ -559,128 +611,92 @@ proxies:
       type: http
       udp: true
       x-toolall-mihomo: true
-    - name: "\U0001F1F8\U0001F1EASE_2|1.9MB/s|R002-260618"
+    - name: "\U0001F1F8\U0001F1ECSG_3|2.0MB/s"
       port: 443
-      server: 79.142.77.63
+      server: 154.26.139.24
       skip-cert-verify: true
-      sub_tag: R002-260618
       tls: true
       type: http
-      udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1EF\U0001F1F5JP_2|1.0MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 443
-      server: jpgmo102-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - name: "\U0001F1ED\U0001F1F0HK_1|2.1MB/s"
-      password: pLBgZ2mOWDopvTI6CUWu5ZkI
-      port: 31003
-      server: 2.26.204.46
-      type: socks5
-      username: socks
-    - name: "\U0001F1E9\U0001F1EADE_6|3.6MB/s|P002-260618"
-      password: None
-      port: 9002
-      server: 158.173.154.2
-      skip-cert-verify: true
-      sub_tag: P002-260618
-      tls: true
-      type: http
-      udp: true
-      x-toolall-mihomo: true
-    - client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1F3\U0001F1F1NL_13|1.3MB/s"
-      network: xhttp
-      port: "443"
-      reality-opts:
-        public-key: dtO7khFLUkpFDQOtNzo4Th4hJKLoPSY2VtD_9k4Hgiw
-        short-id: 7b2b1a14a6e0630d
-      server: 196.196.148.63
-      servername: fc82dfx.nl8.h1clayd.click
-      tls: true
-      type: vless
-      udp: true
-      uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-      xhttp-opts:
-        mode: auto
-        path: /0616f2d729aa
-      xudp: true
     - alpn:
         - h3
-      auth_str: dongtaiwang.com
+      auth-str: dongtaiwang.com
       down: "55"
-      name: "\U0001F1F3\U0001F1F1NL_14|1.3MB/s"
-      obfs: ""
-      port: "26691"
-      protocol: ""
-      server: 5.83.129.143
-      skip-cert-verify: true
-      sni: ""
-      type: hysteria
-      up: "11"
-    - down: ""
-      fingerprint: ""
-      name: "\U0001F1F5\U0001F1F1PL_2|3.7MB/s"
-      obfs: ""
-      obfs-password: ""
-      password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-      port: "4444"
-      server: bl1.nexfile.net
-      skip-cert-verify: false
-      sni: bl1.nexfile.net
-      type: hysteria2
-      up: ""
-    - alpn:
-        - h3
-      auth-str: github.com/Alvin9999-newpac/fanqiang
-      down: "55"
-      name: "\U0001F1FA\U0001F1F8US_11|1.0MB/s"
-      password: github.com/Alvin9999-newpac/fanqiang
-      port: 22335
-      server: 198.200.57.142
+      name: "\U0001F1EB\U0001F1F7FR_5|2.4MB/s"
+      password: dongtaiwang.com
+      port: 24667
+      server: 62.210.28.175
       servername: bing.com
       skip-cert-verify: true
       sni: bing.com
       tls: true
       type: hysteria
       up: "11"
-    - ip: 172.16.0.2/32
-      mtu: 1380
-      name: "\U0001F1E8\U0001F1F3CN_1|1.7MB/s"
-      password: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
-      port: 2371
-      private-key: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 225
-        - 17
-        - 205
-      server: 162.159.195.4
-      skip-cert-verify: false
-      tls: false
-      type: wireguard
+      x-toolall-mihomo: true
+    - client-fingerprint: firefox
+      name: "\U0001F1F3\U0001F1F1NL_13|1.7MB/s"
+      network: tcp
+      packet-encoding: xudp
+      port: 443
+      reality-opts:
+        public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+        short-id: 361d0dd59c70516f
+      server: 196.196.148.85
+      servername: 5d0319t.nl7.h1clayd.click
+      tls: true
+      type: vless
+      uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+      x-toolall-mihomo: true
+    - name: "\U0001F1EE\U0001F1F9IT_5|1.8MB/s"
+      password: JdFlrZhqHP
+      port: 1080
+      server: 69.16.157.244
+      type: socks5
+      username: ufCobhydz4Wd
+    - alpn:
+        - h3
+      auth_str: github.com/Alvin9999-newpac/fanqiang
+      down: "55"
+      name: "\U0001F1FA\U0001F1F8US_10|1.0MB/s"
+      obfs: ""
+      port: "22335"
+      protocol: ""
+      server: 198.200.57.142
+      skip-cert-verify: true
+      sni: bing.com
+      type: hysteria
+      up: "11"
+    - name: "\U0001F1FA\U0001F1F8US_11|1.2MB/s"
+      password: test123
+      port: "1080"
+      server: 104.168.249.36
+      skip-cert-verify: true
+      type: socks5
+      username: test123
+    - name: "\U0001F1FA\U0001F1F8US_12|1008KB/s"
+      password: ""
+      port: "44499"
+      server: 45.61.188.134
+      skip-cert-verify: true
+      type: socks5
+      username: ""
     - ip: 172.16.0.2/32
       ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
       mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_2|1013KB/s"
-      port: 4198
+      name: "\U0001F1E8\U0001F1F3CN_1|1.5MB/s"
+      port: 8742
       private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
       public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
       reserved:
         - 0
         - 0
         - 0
-      server: 8.6.112.200
+      server: 8.6.112.207
       type: wireguard
       udp: true
     - ip: 172.16.0.2/32
       ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
       mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_3|2.4MB/s"
+      name: "\U0001F1E8\U0001F1F3CN_2|1.1MB/s"
       port: 928
       private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
       public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
@@ -692,104 +708,25 @@ proxies:
       type: wireguard
       udp: true
     - ip: 172.16.0.2/32
-      ipv6: 2606:4700:110:87d9:118e:a4cc:8d4d:f827/128
-      mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_4|3.2MB/s"
-      port: 1387
-      private-key: x54c2sqnoNG/zWZxtShcWQqc9qMbPrp0bZw1TehnbaY=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 0
-        - 0
-        - 0
-      server: 8.6.112.251
-      type: wireguard
-      udp: true
-    - ip: 172.16.0.2/32
-      ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-      mtu: 1280
-      name: ❓Other_1|1.3MB/s
-      port: 908
-      private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 0
-        - 0
-        - 0
-      server: 8.6.112.58
-      type: wireguard
-      udp: true
-    - ip: 172.16.0.2/32
-      ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-      mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_5|1.9MB/s"
-      port: 955
-      private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 0
-        - 0
-        - 0
-      server: 8.6.112.100
-      type: wireguard
-      udp: true
-    - ip: 172.16.0.2/32
-      ipv6: 2606:4700:110:8af2:447b:a9b9:b420:ebff/128
-      mtu: 1420
-      name: ❓Other_2|3.0MB/s
-      port: 3476
-      private-key: eGpcqvonUvA7/m1lcaERbf2opGESbp375ieSliLc3WU=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      server: 8.6.112.141
-      type: wireguard
-      udp: true
-    - ip: 172.16.0.2/32
       keepalive: "5"
       mtu: 1280
-      name: ❓Other_3|1.4MB/s
+      name: "\U0001F1E8\U0001F1F3CN_3|3.5MB/s"
       persistent-keepalive: "5"
-      port: 500
-      private-key: SLQM1iGPVovYSVkSPiyHJo7for5BfVoXBdhB+mPFxUE=
+      port: 4500
+      private-key: AF2nx4tmsO5yJFZHnTkUxGAcnWMhKUWrhfCgJJ79Ylg=
       public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
       reserved:
-        - 220
-        - 50
-        - 126
-      server: 162.159.192.5
+        - 4
+        - 150
+        - 196
+      server: 162.159.192.3
       type: wireguard
       udp: true
       wnoise: quic
       wnoisecount: "5"
       wnoisedelay: "5"
       wpayloadsize: 40-90
-    - name: "\U0001F1FA\U0001F1F8US_12|3.0MB/s"
-      password: 1b609740-eec2-11ef-8543-f23c93136cb3
-      port: 443
-      server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-      sni: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-      tls: true
-      type: http
-      username: 1b609740-eec2-11ef-8543-f23c93136cb3
-    - ip: 172.16.0.2/32
-      keepalive: "5"
-      mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_6|1.1MB/s"
-      persistent-keepalive: "5"
-      port: 500
-      private-key: mHj04J164X9hgzAVq4BlB0hc/SK3QPbgl7JF+/anXU0=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 99
-        - 166
-        - 252
-      server: 162.159.192.6
-      type: wireguard
-      udp: true
-      wnoise: quic
-      wnoisecount: "5"
-      wnoisedelay: "5"
-      wpayloadsize: 40-90
-    - name: "\U0001F1FA\U0001F1F8US_13|1.3MB/s"
+    - name: "\U0001F1FA\U0001F1F8US_13|2.6MB/s"
       password: 1b609740-eec2-11ef-8543-f23c93136cb3
       port: 5443
       server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
@@ -797,101 +734,86 @@ proxies:
       tls: true
       type: http
       username: 1b609740-eec2-11ef-8543-f23c93136cb3
-    - ip: 172.16.0.2/32
-      keepalive: "5"
-      mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_7|1.6MB/s"
-      persistent-keepalive: "5"
-      port: 4500
-      private-key: EH18t6hUfxFfP5cUXKBNGXgLS9wTgQ/iMNSTOlBCDHs=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 114
-        - 58
-        - 245
-      server: 162.159.192.4
-      type: wireguard
-      udp: true
-      wnoise: quic
-      wnoisecount: "5"
-      wnoisedelay: "5"
-      wpayloadsize: 40-90
-    - ip: 172.16.0.2/32
-      keepalive: "5"
-      mtu: 1280
-      name: "\U0001F1E8\U0001F1F3CN_8|2.5MB/s"
-      persistent-keepalive: "5"
-      port: 4500
-      private-key: 2DpN1E4RZmiBm7x2vlr6vFcIkjixfcTYZtGMlKYPZEM=
-      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-      reserved:
-        - 125
-        - 168
-        - 120
-      server: 162.159.192.7
-      type: wireguard
-      udp: true
-      wnoise: quic
-      wnoisecount: "5"
-      wnoisedelay: "5"
-      wpayloadsize: 40-90
-    - client-fingerprint: firefox
+    - alpn:
+        - h2
+        - http/1.1
+      client-fingerprint: firefox
       encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_7|3.1MB/s"
-      network: tcp
-      port: "8444"
-      reality-opts:
-        public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-        short-id: 1a2b3c4d
-      server: 5.175.171.30
-      servername: www.volkswagen.de
+      name: "\U0001F1E7\U0001F1ECBG_3|1.8MB/s"
+      network: xhttp
+      port: "8443"
+      server: 46.243.232.178
+      servername: earlytrain.net
       tls: true
       type: vless
       udp: true
-      uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+      uuid: 37af0181-5598-4aad-a040-d926bcb65757
+      xhttp-opts:
+        host: earlytrain.net
+        mode: auto
+        path: /api/v1/upload
+        reuse-settings:
+            c-max-reuse-times: 64-128
+            h-keep-alive-period: 0
+            h-max-request-times: "0"
+            h-max-reusable-secs: "0"
+            max-concurrency: 16-32
+            max-connections: "0"
+        session-length: "0"
+        x-padding-bytes: 100-1000
+        x-padding-obfs-mode: false
       xudp: true
-    - client-fingerprint: firefox
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_8|1.5MB/s"
-      network: tcp
-      port: "443"
-      reality-opts:
-        public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-        short-id: 1a2b3c4d
-      server: 5.175.171.30
-      servername: assets-v2.porsche.com
-      tls: true
-      type: vless
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1F8\U0001F1ECSG_4|3.9MB/s"
+      password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+      plugin: obfs
+      plugin-opts:
+        host: ffbf920:68447
+        mode: tls
+      port: "2377"
+      server: 18.141.181.229
+      type: ss
       udp: true
-      uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8US_14|1.7MB/s"
+    - name: "\U0001F1F0\U0001F1F7KR_1|3.7MB/s"
+      password: ""
+      port: "80"
+      server: 211.188.53.248
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1ED\U0001F1F0HK_2|1.3MB/s"
+      password: ""
+      port: "3128"
+      server: 119.12.161.248
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1F8\U0001F1ECSG_5|2.3MB/s"
+      password: None
+      port: "9090"
+      server: 152.42.170.187
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1FA\U0001F1F8US_14|3.0MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: lvu_1f46c9c7e44bef3f9974936d87ee4f44_1f900674c11bcad65b09ef1f77502ea5:np2.1.z9PBCLlUfCKIMqYEuafOnTLQIjz8lGsSRofhhXAlFdc
+      port: "11443"
+      server: 89.125.42.149
+      skip-cert-verify: false
+      sni: n37.neproxy.net
+      type: hysteria2
+      up: ""
+    - name: "\U0001F1FA\U0001F1F8US_15|1.0MB/s"
       password: ""
       port: "9480"
       server: 104.129.203.85
       skip-cert-verify: true
       type: http
       username: ""
-    - alpn:
-        - h2
-        - http/1.1
-      client-fingerprint: chrome
-      encryption: none
-      name: "\U0001F1FA\U0001F1F8US_15|3.3MB/s"
-      network: xhttp
-      port: "8443"
-      server: 104.16.160.8
-      servername: 3m.818567.xyz
-      tls: true
-      type: vless
-      udp: true
-      uuid: 1662f377-776b-4e49-90d6-dd5b2c7920c8
-      xhttp-opts:
-        mode: packet-up
-        path: /v-stream
-      xudp: true
     - name: "\U0001F1FA\U0001F1F8US_16|2.1MB/s"
       password: ""
       port: "9443"
@@ -899,14 +821,27 @@ proxies:
       skip-cert-verify: true
       type: http
       username: ""
-    - name: "\U0001F1FA\U0001F1F8US_17|3.5MB/s"
+    - alpn:
+        - http/1.1
+      client-fingerprint: chrome
+      name: "\U0001F1F3\U0001F1F1NL_14|1.2MB/s"
+      network: tcp
+      port: "443"
+      server: 194.60.228.97
+      servername: base.hosamobenl.co.uk
+      tls: true
+      type: vless
+      udp: true
+      uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+      xudp: true
+    - name: "\U0001F1F0\U0001F1F7KR_2|4.6MB/s"
       password: ""
-      port: "8800"
-      server: 104.129.203.244
+      port: "80"
+      server: 211.188.60.84
       skip-cert-verify: true
       type: http
       username: ""
-    - name: "\U0001F1FA\U0001F1F8US_18|3.1MB/s"
+    - name: "\U0001F1FA\U0001F1F8US_17|3.7MB/s"
       password: 1b609740-eec2-11ef-8543-f23c93136cb3
       port: "443"
       server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
@@ -914,40 +849,21 @@ proxies:
       tls: true
       type: http
       username: 1b609740-eec2-11ef-8543-f23c93136cb3
-    - client-fingerprint: safari
-      encryption: none
-      flow: xtls-rprx-vision
-      name: "\U0001F1F3\U0001F1F1NL_15|2.7MB/s"
-      network: tcp
-      port: "444"
-      reality-opts:
-        public-key: JvrsvxDALJiQMTpnb7a2mfb9uprMpInl7QO8jylTPA4
-        short-id: 24ba24f812ad1f22
-      server: 93.152.206.113
-      servername: nl.vrsvpn.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: cdf4bc13-31e6-4bff-962c-05fe9151c593
-      xudp: true
-    - alterId: "0"
-      cipher: auto
-      name: "\U0001F1ED\U0001F1F0HK_2|1021KB/s"
-      network: ws
-      port: "443"
-      server: grab-assistance-crawford-capital.trycloudflare.com
-      servername: grab-assistance-crawford-capital.trycloudflare.com
-      skip-cert-verify: false
-      tls: true
-      type: vmess
-      udp: true
-      uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
-      ws-opts:
-        headers:
-            Host: grab-assistance-crawford-capital.trycloudflare.com
-        path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
-      xudp: true
-    - name: "\U0001F1FA\U0001F1F8US_19|2.6MB/s"
+    - name: "\U0001F1F0\U0001F1F7KR_3|2.8MB/s"
+      password: ""
+      port: "80"
+      server: 211.188.55.218
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1E6\U0001F1F9AT_2|4.3MB/s"
+      password: ""
+      port: "8080"
+      server: 159.195.110.240
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_18|3.6MB/s"
       password: ""
       port: "3128"
       server: 172.235.147.5
@@ -955,35 +871,81 @@ proxies:
       type: http
       username: ""
     - client-fingerprint: chrome
-      name: "\U0001F1EB\U0001F1EEFI_1|3.9MB/s"
+      encryption: none
+      name: "\U0001F1EB\U0001F1F7FR_6|3.3MB/s"
       network: xhttp
       port: "443"
-      server: 108.156.65.62
-      servername: d1ivx1xk58pr8u.cloudfront.net
+      server: 151.101.36.2
+      servername: accounts.fastly.com
       tls: true
       type: vless
       udp: true
-      uuid: 2e69b088-6ef3-417f-8247-125cf257fafd
+      uuid: ad9a885d-93bb-48e3-9937-57f1116b64e3
       xhttp-opts:
-        host: d1ivx1xk58pr8u.cloudfront.net
-        path: /cf
+        host: oh4.global.ssl.fastly.net
+        mode: auto
+        no-grpc-header: true
+        path: /
+        reuse-settings:
+            c-max-reuse-times: "0"
+            h-keep-alive-period: 0
+            h-max-request-times: 600-900
+            h-max-reusable-secs: 1800-3000
+            max-connections: "16"
+        x-padding-bytes: 100-1000
       xudp: true
-    - client-fingerprint: ios
-      flow: xtls-rprx-vision
-      name: "\U0001F1E9\U0001F1EADE_9|1.9MB/s"
+    - client-fingerprint: chrome
+      encryption: none
+      name: "\U0001F1EA\U0001F1EAEE_1|1.4MB/s"
       network: tcp
-      port: "33068"
+      port: "443"
       reality-opts:
-        public-key: R6ikLAKWuvM4UxkaMchaOe3pOMUsjghIW_w7McCY9Hc
-        short-id: 39b10242
-      server: sijiache.hief.store
-      servername: iosapps.itunes.apple.com
+        public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+        short-id: a91531ad58c8611c
+      server: d58daft.plp1.h1cloud.net
+      servername: d58daft.plp1.h1cloud.net
       tls: true
       type: vless
       udp: true
-      uuid: 77720551-467e-4faa-825f-0241acee371e
+      uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
       xudp: true
-    - name: "\U0001F1FA\U0001F1F8US_20|2.8MB/s"
+    - client-fingerprint: firefox
+      encryption: none
+      name: "\U0001F1EA\U0001F1EAEE_2|2.8MB/s"
+      network: tcp
+      port: "443"
+      reality-opts:
+        public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+        short-id: a91531ad58c8611c
+      server: 185.255.115.87
+      servername: d58daft.plp1.h1cloud.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+      xudp: true
+    - name: "\U0001F1F0\U0001F1F7KR_4|1.5MB/s"
+      password: ""
+      port: "80"
+      server: 211.188.59.191
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_19|1.9MB/s"
+      password: ""
+      port: "9480"
+      server: 104.129.203.244
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1F0\U0001F1F7KR_5|2.4MB/s"
+      password: ""
+      port: "80"
+      server: 211.188.38.254
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_20|3.2MB/s"
       password: 1b609740-eec2-11ef-8543-f23c93136cb3
       port: "5443"
       server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
@@ -991,31 +953,50 @@ proxies:
       tls: true
       type: http
       username: 1b609740-eec2-11ef-8543-f23c93136cb3
-    - name: "\U0001F1E9\U0001F1EADE_10|3.4MB/s"
-      password: "null"
+    - name: "\U0001F1F0\U0001F1F7KR_6|4.6MB/s"
+      password: ""
+      port: "80"
+      server: 211.188.69.153
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_21|3.4MB/s"
+      password: None
       port: "9002"
-      server: 158.173.154.5
+      server: 138.199.35.217
       skip-cert-verify: true
       tls: true
       type: http
       username: "null"
-    - name: "\U0001F1F5\U0001F1F1PL_3|2.1MB/s"
-      password: ""
-      port: "443"
-      server: 91.92.250.33
+    - name: "\U0001F1F2\U0001F1FDMX_1|1.9MB/s"
+      password: DJy1T0dt
+      port: "42000"
+      server: 144.225.47.161
       skip-cert-verify: true
+      type: socks5
+      username: Tek2x6av
+    - name: "\U0001F1EF\U0001F1F5JP_1|4.2MB/s"
+      password: EGJDy5Kg
+      port: "42000"
+      server: 103.248.150.50
+      skip-cert-verify: true
+      type: socks5
+      username: paZFN3JA
+    - name: "\U0001F1F7\U0001F1F4RO_5|1.6MB/s"
+      port: 9002
+      server: 193.176.84.40
+      skip-cert-verify: true
+      sni: www.bing.com
       tls: true
       type: http
-      username: ""
-    - name: "\U0001F1F1\U0001F1F9LT_1|2.2MB/s"
-      password: ""
-      port: "443"
-      server: 89.124.11.9
+    - name: "\U0001F1F7\U0001F1F4RO_6|1.0MB/s"
+      port: 9002
+      server: 193.176.84.39
       skip-cert-verify: true
+      sni: www.bing.com
       tls: true
       type: http
-      username: ""
-    - name: "\U0001F1FA\U0001F1F8US_21|2.3MB/s"
+    - name: "\U0001F1FA\U0001F1F8US_22|1.1MB/s"
       password: ""
       port: "9002"
       server: 138.199.35.215
@@ -1023,43 +1004,3 @@ proxies:
       tls: true
       type: http
       username: ""
-    - name: "\U0001F1FB\U0001F1F3VN_1|2.3MB/s"
-      password: ""
-      port: "8443"
-      server: 14.225.71.128
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: ""
-    - name: "\U0001F1F3\U0001F1F1NL_16|2.8MB/s"
-      password: ""
-      port: "9002"
-      server: 84.17.47.148
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: ""
-    - name: "\U0001F1EE\U0001F1F9IT_3|1011KB/s"
-      password: ""
-      port: "443"
-      server: 95.229.15.89
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: ""
-    - name: "\U0001F1E9\U0001F1EADE_11|2.2MB/s"
-      password: ""
-      port: "443"
-      server: 37.203.35.27
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: ""
-    - name: "\U0001F1E9\U0001F1EADE_12|2.8MB/s"
-      password: "null"
-      port: "9002"
-      server: 158.173.154.3
-      skip-cert-verify: true
-      tls: true
-      type: http
-      username: "null"
