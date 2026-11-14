@@ -1,20 +1,92 @@
 proxies:
-    - client-fingerprint: firefox
-      flow: xtls-rprx-vision
-      name: "\U0001F1EF\U0001F1F5JP_1|1.1MB/s"
-      port: 43149
-      reality-opts:
-        public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-        short-id: 15aa0ad4
-      server: zfapi.zalolink.com
-      servername: psstatic.cdn.bcebos.com
-      skip-cert-verify: false
-      sni: psstatic.cdn.bcebos.com
+    - client-fingerprint: chrome
+      grpc-opts:
+        grpc-mode: gun
+        grpc-service-name: qi8ws15c7jv5q2fa
+      name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
+      network: grpc
+      port: 80
+      server: 200.102.183.226
+      servername: 68r2nrw6avta71yq.cdn.cachefleet.com
       tls: true
       type: vless
-      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      udp: true
+      uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
+    - name: "\U0001F1FA\U0001F1F8US_1|1.0MB/s"
+      password: ""
+      port: "7070"
+      server: 20.83.154.79
+      skip-cert-verify: true
+      type: socks5
+      username: ""
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1F3\U0001F1F1NL_1|1.3MB/s"
+      password: dongtaiwang.com
+      port: 26691
+      server: 5.83.129.143
+      skip-cert-verify: true
+      tls: true
+      type: hysteria
+      up: "11"
+    - name: "\U0001F1E8\U0001F1EDCH_1|2.2MB/s"
+      port: 443
+      server: 31.7.62.50
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E9\U0001F1EADE_1|2.2MB/s"
+      port: 443
+      server: 172.64.69.89
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E9\U0001F1EADE_2|1.0MB/s|R002-260618"
+      port: 443
+      server: 172.64.68.89
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1E6CA_1|1.5MB/s|K001-260618"
+      password: None
+      port: 443
+      server: 206.223.183.13
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_2|3.6MB/s"
+      port: 58764
+      server: 118.184.140.90
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F3\U0001F1F4NO_1|1.3MB/s|P002-260618"
+      password: None
+      port: 9443
+      server: 146.70.170.210
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1F3\U0001F1F1NL_2|1.1MB/s"
+      port: 9002
+      server: 84.17.47.124
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
     - encryption: mlkem768x25519plus.native.0rtt.GlIc2LFlqBQ3itRnw8zoo3tfD7MSknWWmmLVDdr88jE
-      name: "\U0001F1E9\U0001F1EADE_1|3.0MB/s"
+      name: "\U0001F1E9\U0001F1EADE_3|2.7MB/s"
       network: ws
       port: 80
       server: 104.18.43.144
@@ -27,9 +99,186 @@ proxies:
             Host: erosan.seminar-irani.ir
         path: /MiMiTDL
         v2ray-http-upgrade: true
+    - name: "\U0001F1F3\U0001F1F1NL_3|1019KB/s"
+      password: ""
+      port: 443
+      server: 149.36.51.129
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1ED\U0001F1FAHU_1|1.0MB/s"
+      port: 443
+      server: 146.70.203.18
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E9\U0001F1EADE_4|1000KB/s"
+      password: None
+      port: 443
+      server: 172.64.68.89
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F3\U0001F1F1NL_4|2.5MB/s|R002-260618"
+      port: 9002
+      server: 84.17.47.126
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E6\U0001F1F9AT_1|2.6MB/s"
+      port: 443
+      server: 146.70.244.2
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1FA\U0001F1F8US_3|3.0MB/s"
+      password: ""
+      port: 9002
+      server: 138.199.35.201
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1E9\U0001F1F0DK_1|1.0MB/s|R002-260618"
+      port: 9443
+      server: 185.245.84.50
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_4|1.3MB/s|K001-260618"
+      password: None
+      port: 9443
+      server: 198.44.135.19
+      skip-cert-verify: true
+      sub_tag: K001-260618
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1F5\U0001F1F1PL_1|2.1MB/s"
+      port: 443
+      server: 37.120.156.34
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E8\U0001F1FFCZ_1|1.7MB/s"
+      port: 443
+      server: 185.216.35.66
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1EB\U0001F1F7FR_2|1001KB/s"
+      port: 36699
+      server: 163.172.117.163
+      skip-cert-verify: true
+      type: hysteria
+      up: "11"
+      x-toolall-mihomo: true
+    - name: "\U0001F1F8\U0001F1EASE_1|2.6MB/s|R002-260618"
+      port: 9443
+      server: 146.70.242.146
+      skip-cert-verify: true
+      sub_tag: R002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_5|1.1MB/s"
+      password: ""
+      port: 9443
+      server: 38.95.111.226
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1E8\U0001F1FFCZ_2|1.3MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 185.216.35.130
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1E9\U0001F1EADE_5|1.0MB/s"
+      port: 443
+      server: 213.177.229.161
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1EC\U0001F1EAGE_1|1.5MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 195.54.178.210
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - name: "\U0001F1FA\U0001F1F8US_6|2.8MB/s"
+      password: ""
+      port: 443
+      server: 149.88.21.129
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+      username: ""
+      x-toolall-mihomo: true
+    - name: "\U0001F1EA\U0001F1EAEE_1|1.4MB/s"
+      port: 9443
+      server: 95.153.31.66
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1E8\U0001F1E6CA_2|1.5MB/s|P002-260618"
+      password: None
+      port: 443
+      server: 206.223.183.16
+      skip-cert-verify: true
+      sub_tag: P002-260618
+      tls: true
+      type: http
+      udp: true
+      x-toolall-mihomo: true
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1F3\U0001F1F1NL_5|1.1MB/s"
+      obfs: ""
+      port: "26691"
+      protocol: ""
+      server: 5.83.129.143
+      skip-cert-verify: true
+      sni: ""
+      type: hysteria
+      up: "11"
     - down: ""
       fingerprint: ""
-      name: "\U0001F1F5\U0001F1F1PL_1|1.0MB/s"
+      name: "\U0001F1F5\U0001F1F1PL_2|3.2MB/s"
       obfs: ""
       obfs-password: ""
       password: a35c508f-4d5d-4531-842e-6e9d43c762c0
@@ -39,3 +288,161 @@ proxies:
       sni: bl1.nexfile.net
       type: hysteria2
       up: ""
+    - alpn:
+        - h3
+      auth-str: github.com/Alvin9999-newpac/fanqiang
+      down: "55"
+      name: "\U0001F1FA\U0001F1F8US_7|1018KB/s"
+      password: github.com/Alvin9999-newpac/fanqiang
+      port: 22335
+      server: 198.200.57.142
+      servername: bing.com
+      skip-cert-verify: true
+      sni: bing.com
+      tls: true
+      type: hysteria
+      up: "11"
+    - ip: 172.16.0.2/32
+      ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
+      mtu: 1280
+      name: ❓Other_1|2.2MB/s
+      port: 8742
+      private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
+      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+      reserved:
+        - 0
+        - 0
+        - 0
+      server: 8.6.112.207
+      type: wireguard
+      udp: true
+    - ip: 172.16.0.2/32
+      ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
+      mtu: 1280
+      name: ❓Other_2|1.3MB/s
+      port: 4198
+      private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
+      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+      reserved:
+        - 0
+        - 0
+        - 0
+      server: 8.6.112.200
+      type: wireguard
+      udp: true
+    - ip: 172.16.0.2/32
+      keepalive: "5"
+      mtu: 1280
+      name: "\U0001F1E8\U0001F1F3CN_1|1.2MB/s"
+      persistent-keepalive: "5"
+      port: 500
+      private-key: 6MOHNyxgcVe2ohk/L50VCvNoAD1dKsVQ+DO/r0GLgk8=
+      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+      reserved:
+        - 228
+        - 192
+        - 229
+      server: 162.159.192.4
+      type: wireguard
+      udp: true
+      wnoise: quic
+      wnoisecount: "5"
+      wnoisedelay: "5"
+      wpayloadsize: 40-90
+    - name: "\U0001F1FA\U0001F1F8US_8|3.0MB/s"
+      password: 1b609740-eec2-11ef-8543-f23c93136cb3
+      port: 443
+      server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      sni: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      tls: true
+      type: http
+      username: 1b609740-eec2-11ef-8543-f23c93136cb3
+    - ip: 172.16.0.2/32
+      keepalive: "5"
+      mtu: 1280
+      name: "\U0001F1E8\U0001F1F3CN_2|1.3MB/s"
+      persistent-keepalive: "5"
+      port: 987
+      presharedkey: ""
+      private-key: GJTd46xB/fjfi6vyJmpxUiNrNdjZTW0Qhi7b0PkER1Y=
+      public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+      reserved:
+        - 175
+        - 93
+        - 41
+      server: 188.114.97.6
+      type: wireguard
+      udp: true
+      wnoise: quic
+      wnoisecount: "15"
+      wnoisedelay: 1-2
+      wpayloadsize: 5-10
+    - name: "\U0001F1FA\U0001F1F8US_9|2.6MB/s"
+      password: 1b609740-eec2-11ef-8543-f23c93136cb3
+      port: 5443
+      server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      sni: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      tls: true
+      type: http
+      username: 1b609740-eec2-11ef-8543-f23c93136cb3
+    - name: "\U0001F1FA\U0001F1F8US_10|1.1MB/s"
+      password: ""
+      port: "8800"
+      server: 104.129.203.244
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - name: "\U0001F1FA\U0001F1F8US_11|1.9MB/s"
+      password: 1b609740-eec2-11ef-8543-f23c93136cb3
+      port: "443"
+      server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: 1b609740-eec2-11ef-8543-f23c93136cb3
+    - client-fingerprint: safari
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1F5\U0001F1F1PL_3|1.0MB/s"
+      network: tcp
+      port: "444"
+      reality-opts:
+        public-key: kwxHjH-aN-LBMcfkTs5CD0QEWpPjCJGjhSDhkuLpmAQ
+        short-id: 14ba51f812ad1f22
+      server: 191.217.211.145
+      servername: pl1.vrsvpn.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: cdf4bc13-31e6-4bff-962c-05fe9151c593
+      xudp: true
+    - client-fingerprint: chrome
+      name: "\U0001F1EB\U0001F1EEFI_1|1.1MB/s"
+      network: xhttp
+      port: "443"
+      server: 108.156.65.62
+      servername: d1ivx1xk58pr8u.cloudfront.net
+      tls: true
+      type: vless
+      udp: true
+      uuid: 2e69b088-6ef3-417f-8247-125cf257fafd
+      xhttp-opts:
+        host: d1ivx1xk58pr8u.cloudfront.net
+        path: /cf
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8US_12|3.0MB/s"
+      password: 1b609740-eec2-11ef-8543-f23c93136cb3
+      port: "5443"
+      server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: 1b609740-eec2-11ef-8543-f23c93136cb3
+    - name: "\U0001F1E9\U0001F1EADE_6|1.4MB/s"
+      password: "null"
+      port: "443"
+      server: 172.64.68.89
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
