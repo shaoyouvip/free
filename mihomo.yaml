@@ -1,38 +1,36 @@
 proxies:
-  - client-fingerprint: chrome
-    encryption: none
-    grpc-opts:
-      grpc-service-name: qi8ws15c7jv5q2fa
-    name: 🇫🇷FR_1|1.3MB/s
-    network: grpc
-    port: 80
-    server: 200.102.183.226
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: 🇯🇵JP_1|1.1MB/s
+    port: 43149
+    reality-opts:
+      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+      short-id: "15aa0ad4"
+    server: zfapi.zalolink.com
+    skip-cert-verify: false
     tls: true
     type: vless
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
     udp: true
-    uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
-    xudp: true
-    packet-encoding: xudp
-    servername: 68r2nrw6avta71yq.cdn.cachefleet.com
-  - name: 🇺🇸US_1|3.8MB/s
-    port: 58764
-    server: 118.184.140.90
-    skip-cert-verify: true
-    tls: true
-    type: http
+    network: tcp
+    servername: psstatic.cdn.bcebos.com
+  - encryption: mlkem768x25519plus.native.0rtt.GlIc2LFlqBQ3itRnw8zoo3tfD7MSknWWmmLVDdr88jE
+    name: 🇩🇪DE_1|3.0MB/s
+    network: ws
+    port: 80
+    server: 104.18.43.144
+    tls: false
+    type: vless
     udp: true
-  - name: 🇬🇧GB_1|1.5MB/s|R002-260618
-    port: 9443
-    server: 84.233.178.33
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
+    uuid: MiMiTDL
+    ws-opts:
+      headers:
+        Host: erosan.seminar-irani.ir
+      path: /MiMiTDL
+      v2ray-http-upgrade: true
   - down: ""
     fingerprint: ""
-    name: 🇵🇱PL_1|2.7MB/s
+    name: 🇵🇱PL_1|1.0MB/s
     obfs: ""
     obfs-password: ""
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
