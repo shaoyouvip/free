@@ -1,145 +1,51 @@
 proxies:
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_1|1.2MB/s
-    network: ws
-    port: 443
-    server: subgift1.fly.dev
-    tls: true
-    type: vless
+  - auth: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    name: 🇵🇱PL_1|1.8MB/s
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    port: 4444
+    server: bl1.nexfile.net
+    skip-cert-verify: true
+    sni: bl1.nexfile.net
+    type: hysteria2
     udp: true
-    uuid: fd8198de-3c32-5cca-f640-606416d11b90
-    ws-opts:
-      headers:
-        Host: subgift1.fly.dev
-        User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /ws/fd8198de-3c32-5cca-f640-606416d11b90
-    xudp: true
-    packet-encoding: xudp
-    servername: subgift1.fly.dev
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_2|2.2MB/s
-    network: ws
-    port: 443
-    server: subgift1.fly.dev
-    tls: true
-    type: vless
-    udp: true
-    uuid: bc79b7e0-eda4-a056-a7b4-c7d16ed0d658
-    ws-opts:
-      headers:
-        Host: subgift1.fly.dev
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: /ws/bc79b7e0-eda4-a056-a7b4-c7d16ed0d658
-    xudp: true
-    packet-encoding: xudp
-    servername: subgift1.fly.dev
   - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|2.0MB/s
+    name: 🇮🇹IT_1|1.3MB/s
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.18
     type: ss
     udp: true
   - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_3|1.3MB/s
-    network: ws
+      - ""
+    alterId: "0"
+    cipher: auto
+    name: 🇯🇵JP_1|5.2MB/s
+    network: tcp
     port: 443
-    server: subgift1.fly.dev
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0af50c04-eb2c-ddfa-f5dc-31ed33826d22
-    ws-opts:
-      headers:
-        Host: subgift1.fly.dev
-        User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: /ws/0af50c04-eb2c-ddfa-f5dc-31ed33826d22
-    xudp: true
-    packet-encoding: xudp
-    servername: subgift1.fly.dev
-  - alpn:
-      - h3
-      - h2
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇳🇱NL_4|1.0MB/s
-    network: xhttp
-    port: 443
-    server: subgift1.fly.dev
-    tls: true
-    type: vless
-    udp: true
-    uuid: d2b860da-1a84-7047-68c4-b1da1cbbbf89
-    xhttp-opts:
-      host: subgift1.fly.dev
-      mode: stream-up
-      path: /xhttp-siz10/stream-up/d2b860da-1a84-7047-68c4-b1da1cbbbf89
-    xudp: true
-    packet-encoding: xudp
-    servername: subgift1.fly.dev
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: 🇩🇪DE_1|1.1MB/s
-    network: ws
-    port: 8443
-    server: 104.17.70.206
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-    ws-opts:
-      headers:
-        Host: free.sahanwickramasinghe.com
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: /
-    xudp: true
-    packet-encoding: xudp
-    servername: free.sahanwickramasinghe.com
-  - name: 🇩🇪DE_2|2.8MB/s
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_3|1.0MB/s
-    password: None
-    port: 443
-    server: 172.64.68.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇵🇱PL_1|1.6MB/s
-    obfs: ""
-    obfs-password: ""
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    port: 4444
-    server: bl1.nexfile.net
+    server: 47.99.219.144
     skip-cert-verify: false
-    sni: bl1.nexfile.net
-    type: hysteria2
-    up: ""
+    tls: false
+    type: vmess
     udp: true
-  - name: 🇩🇪DE_4|2.5MB/s
+    uuid: 291b5d4a-19ee-4f22-91df-4dc43850b970
+    xudp: true
+    packet-encoding: xudp
+  - client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    name: 🇯🇵JP_2|2.2MB/s
+    port: 43149
+    reality-opts:
+      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+      short-id: "15aa0ad4"
+    server: zfapi.zalolink.com
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    udp: true
+    network: tcp
+    servername: psstatic.cdn.bcebos.com
+  - name: 🇩🇪DE_1|1.5MB/s
     password: "null"
     port: 443
     server: 172.64.68.89
@@ -148,25 +54,6 @@ proxies:
     type: http
     username: "null"
     udp: true
-  - name: 🇱🇺LU_1|1.6MB/s|R002-260618
-    port: 443
-    server: 185.221.132.242
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇬🇧GB_1|1.6MB/s|P002-260618
-    password: None
-    port: 9443
-    server: 84.17.50.129
-    skip-cert-verify: true
-    sub_tag: P002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
