@@ -1,161 +1,63 @@
 proxies:
-  - client-fingerprint: firefox
-    name: 🇫🇮FI_1|1.2MB/s
-    network: xhttp
-    port: 443
-    reality-opts:
-      public-key: zd4L59ejBo94N8N9GQtZMox2eBBF9TQf2TLyIgpwlCg
-      short-id: "fd7624659f1e7d66"
-    server: 191.217.205.175
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0b22812b-4a79-42b1-93ec-5b157b0f2f7f
-    xhttp-opts:
-      host: fin.krabvpn.pro
-      mode: auto
-      path: /assets/246a109dceaa6b7832a98d17
-    servername: fin.krabvpn.pro
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|1.7MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.36
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_2|1.6MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.99
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_3|1.1MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.81
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_4|1.1MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.45
-    type: ss
-    udp: true
   - client-fingerprint: chrome
+    encryption: none
     flow: xtls-rprx-vision
-    name: 🇯🇵JP_1|2.4MB/s
+    name: 🇺🇸US_1|1.3MB/s
     network: tcp
-    port: 43149
-    reality-opts:
-      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-      short-id: "15aa0ad4"
-    server: zfapi.zalolink.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: psstatic.cdn.bcebos.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇦🇺AU_1|3.3MB/s
-    network: raw
-    port: 54528
-    reality-opts:
-      public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-      short-id: "54cca3c1c1c7"
-    server: win2loxfde0202.gggrelay.org
-    tls: true
-    type: vless
-    udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: www.apple.com
-  - name: 🇷🇺RU_1|2.2MB/s|R002-260618
-    port: 1446
-    server: 46.29.166.134
-    skip-cert-verify: true
-    sub_tag: R002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇬🇧GB_1|1.2MB/s|P002-260618
-    password: None
-    port: 9443
-    server: 84.17.50.129
-    skip-cert-verify: true
-    sub_tag: P002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇨🇦CA_1|1.0MB/s|P002-260618
-    port: 9443
-    server: 198.44.142.27
-    skip-cert-verify: true
-    sub_tag: P002-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - client-fingerprint: safari
-    flow: xtls-rprx-vision
-    name: 🇺🇸US_1|1.0MB/s
     port: 47691
     reality-opts:
       public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
       short-id: "2905326a"
     server: zfapi.zalolink.com
-    skip-cert-verify: true
     tls: true
     type: vless
     udp: true
     uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    network: tcp
+    xudp: true
+    packet-encoding: xudp
     servername: m.media-amazon.com
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇻🇳VN_1|4.3MB/s
+    name: ❓Other_1|2.1MB/s
+    network: tcp
     port: 55688
     reality-opts:
       public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
       short-id: "865c1b2c"
     server: zfapi.zalolink.com
-    skip-cert-verify: true
     tls: true
     type: vless
     udp: true
     uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    network: tcp
+    xudp: true
+    packet-encoding: xudp
     servername: bilibili-vn.biliimg.com
-  - alterId: 0
+  - alpn:
+      - ""
+    alterId: "0"
     cipher: auto
-    http-opts:
-      method: GET
-      path:
-        - /
-    name: 🇺🇸US_2|1.3MB/s
-    network: http
-    port: 44441
-    server: 104.225.148.201
+    name: 🇺🇸US_2|1.7MB/s
+    network: ws
+    port: 80
+    server: www.speedtest.net
+    skip-cert-verify: false
     tls: false
     type: vmess
-    uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
-    x-toolall-mihomo: true
     udp: true
+    uuid: 6fa9def2-edcb-4348-b012-6622c959a620
+    ws-opts:
+      headers:
+        Host: prairie-formats-holland-bundle.trycloudflare.com
+      path: /@ferdolans7
+    xudp: true
+    packet-encoding: xudp
   - alterId: 0
     cipher: auto
     http-opts:
       method: GET
       path:
         - /
-    name: 🇺🇸US_3|1.9MB/s
+    name: 🇺🇸US_3|1.2MB/s
     network: http
     port: 9983
     server: 104.225.148.201
@@ -164,53 +66,47 @@ proxies:
     uuid: 09e2eb90-14c7-4b79-bac7-f7b6f3f78054
     x-toolall-mihomo: true
     udp: true
-  - name: 🇩🇰DK_1|2.6MB/s
-    port: 9443
-    server: 185.245.84.50
+  - name: 🇩🇪DE_1|1.2MB/s
+    password: None
+    port: 443
+    server: 172.64.68.89
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇺🇸US_4|3.6MB/s
-    password: ozbqjztv
-    port: 8000
-    server: 192.220.47.85
-    type: http
-    username: ozbqjztv
-    udp: true
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇺🇸US_5|2.9MB/s
-    network: raw
-    port: 47691
+    name: 🇯🇵JP_1|1.0MB/s
+    port: 43149
     reality-opts:
-      public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
-      short-id: "2905326a"
+      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+      short-id: "15aa0ad4"
     server: zfapi.zalolink.com
+    skip-cert-verify: true
     tls: true
     type: vless
-    udp: true
     uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: m.media-amazon.com
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇻🇳VN_2|4.0MB/s
-    network: raw
-    port: 42120
-    reality-opts:
-      public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-      short-id: "bb82c8"
-    server: zfapi.zalolink.com
-    tls: true
-    type: vless
+    x-toolall-mihomo: true
     udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: www.tesla.com
-  - name: 🇩🇪DE_1|1.2MB/s|R002-260618
+    network: tcp
+    servername: psstatic.cdn.bcebos.com
+  - alpn:
+      - h3
+    auth_str: dongtaiwang.com
+    down: "50"
+    name: 🇫🇷FR_1|1.3MB/s
+    obfs: ""
+    port: 24667
+    protocol: ""
+    server: 62.210.70.191
+    skip-cert-verify: true
+    sni: 62.210.70.191
+    type: hysteria
+    up: "10"
+    udp: true
+    disable-sni: true
+    auth-str: dongtaiwang.com
+  - name: 🇩🇪DE_2|1.0MB/s|R002-260618
     port: 443
     server: 172.64.68.89
     skip-cert-verify: true
