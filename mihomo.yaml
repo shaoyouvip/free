@@ -1,120 +1,73 @@
 proxies:
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇺🇸US_1|1.3MB/s
-    network: tcp
-    port: 47691
-    reality-opts:
-      public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
-      short-id: "2905326a"
-    server: zfapi.zalolink.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: m.media-amazon.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: ❓Other_1|2.1MB/s
-    network: tcp
-    port: 55688
-    reality-opts:
-      public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
-      short-id: "865c1b2c"
-    server: zfapi.zalolink.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: bilibili-vn.biliimg.com
-  - alpn:
-      - ""
-    alterId: "0"
-    cipher: auto
-    name: 🇺🇸US_2|1.7MB/s
-    network: ws
-    port: 80
-    server: www.speedtest.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: 6fa9def2-edcb-4348-b012-6622c959a620
-    ws-opts:
-      headers:
-        Host: prairie-formats-holland-bundle.trycloudflare.com
-      path: /@ferdolans7
-    xudp: true
-    packet-encoding: xudp
-  - alterId: 0
-    cipher: auto
-    http-opts:
-      method: GET
-      path:
-        - /
-    name: 🇺🇸US_3|1.2MB/s
-    network: http
-    port: 9983
-    server: 104.225.148.201
-    tls: false
-    type: vmess
-    uuid: 09e2eb90-14c7-4b79-bac7-f7b6f3f78054
-    x-toolall-mihomo: true
-    udp: true
-  - name: 🇩🇪DE_1|1.2MB/s
-    password: None
-    port: 443
-    server: 172.64.68.89
+  - name: 🇺🇸US_1|3.5MB/s
+    port: 58764
+    server: 118.184.140.90
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇯🇵JP_1|1.0MB/s
-    port: 43149
-    reality-opts:
-      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-      short-id: "15aa0ad4"
-    server: zfapi.zalolink.com
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    x-toolall-mihomo: true
-    udp: true
-    network: tcp
-    servername: psstatic.cdn.bcebos.com
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: "50"
-    name: 🇫🇷FR_1|1.3MB/s
-    obfs: ""
-    port: 24667
-    protocol: ""
-    server: 62.210.70.191
-    skip-cert-verify: true
-    sni: 62.210.70.191
-    type: hysteria
-    up: "10"
-    udp: true
-    disable-sni: true
-    auth-str: dongtaiwang.com
-  - name: 🇩🇪DE_2|1.0MB/s|R002-260618
+  - name: 🇦🇹AT_1|1.1MB/s|R002-260618
     port: 443
-    server: 172.64.68.89
+    server: 146.70.244.2
     skip-cert-verify: true
     sub_tag: R002-260618
     tls: true
     type: http
     udp: true
     x-toolall-mihomo: true
+  - name: 🇺🇸US_2|1.1MB/s
+    password: l1tlrdx52v
+    port: 62000
+    server: 66.253.2.69
+    type: socks5
+    username: u_rb1dba2
+    udp: true
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      method: GET
+      path:
+        - /ABCDE
+    name: 🇺🇸US_3|1.1MB/s
+    network: http
+    port: 52402
+    server: 104.225.148.201
+    tls: false
+    type: vmess
+    uuid: 0542f509-4368-4ee3-be54-0557fed80f6b
+    x-toolall-mihomo: true
+    udp: true
+  - name: 🇩🇪DE_1|1.3MB/s
+    password: "null"
+    port: 443
+    server: 172.64.68.89
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+  - name: 🇺🇸US_4|2.7MB/s
+    password: ozbqjztv
+    port: 8000
+    server: 192.220.47.85
+    type: http
+    username: ozbqjztv
+    udp: true
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      method: GET
+      path:
+        - /
+    name: 🇺🇸US_5|3.1MB/s
+    network: http
+    port: 44441
+    server: 192.220.47.85
+    tls: false
+    type: vmess
+    uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
+    x-toolall-mihomo: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
