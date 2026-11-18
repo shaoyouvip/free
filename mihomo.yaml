@@ -1,76 +1,78 @@
 proxies:
   - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|1.9MB/s
+    name: 🇮🇹IT_1|1.1MB/s
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
-    server: 202.50.253.81
+    server: 202.50.253.36
     type: ss
     udp: true
-  - client-fingerprint: chrome
+  - name: 🇦🇹AT_1|1.7MB/s|R002-260618
+    port: 443
+    server: 146.70.244.2
+    skip-cert-verify: true
+    sub_tag: R002-260618
+    tls: true
+    type: http
+    udp: true
+    x-toolall-mihomo: true
+  - client-fingerprint: firefox
     flow: xtls-rprx-vision
-    name: 🇸🇬SG_1|2.6MB/s
-    network: tcp
-    port: 30322
+    name: 🇯🇵JP_1|2.3MB/s
+    port: 43149
     reality-opts:
-      public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
-      short-id: "6a60e7e382d6"
-    server: win2loxfde0202.gggrelay.org
+      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+      short-id: "15aa0ad4"
+    server: zfapi.zalolink.com
+    skip-cert-verify: false
     tls: true
     type: vless
     udp: true
     uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: psstatic.cdn.bcebos.com
-  - alterId: "0"
-    cipher: auto
-    name: 🇭🇰HK_1|4.1MB/s
     network: tcp
-    port: 21020
-    server: dog-hk.kunlun01dns.com
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-    xudp: true
-    packet-encoding: xudp
-  - name: 🇺🇸US_1|3.1MB/s
-    password: l1tlrdx52v
-    port: 62000
-    server: 66.253.2.69
-    type: socks5
-    username: u_rb1dba2
-    udp: true
-  - name: 🇩🇪DE_1|3.0MB/s
-    password: "null"
+    servername: psstatic.cdn.bcebos.com
+  - name: 🇵🇱PL_1|1.1MB/s|R002-260618
     port: 443
-    server: 172.64.68.89
+    server: 37.120.156.34
     skip-cert-verify: true
+    sub_tag: R002-260618
     tls: true
     type: http
-    username: "null"
     udp: true
-  - name: 🇩🇪DE_2|1.6MB/s
+    x-toolall-mihomo: true
+  - down: ""
+    fingerprint: ""
+    name: 🇭🇰HK_1|2.6MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
     port: 443
-    server: 172.64.68.89
+    server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
     skip-cert-verify: true
-    sni: 172.64.68.89
-    tls: true
-    type: http
+    sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
+    type: hysteria2
+    up: ""
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇳🇱NL_1|2.4MB/s
-    obfs: salamander
-    obfs-password: HATATEAYA
-    password: HATATEAYA
-    port: 8964
-    server: 77.90.15.183
+    name: 🇺🇸US_1|1.4MB/s
+    obfs: ""
+    obfs-password: ""
+    password: 3a17ce52-4547-45aa-9820-a7d03ad5faca
+    port: 443
+    server: 45.86.74.193
     skip-cert-verify: false
-    sni: ganlanc.at
+    sni: media.embrofree.org
     type: hysteria2
     up: ""
+    udp: true
+  - name: 🇩🇪DE_1|1.3MB/s
+    password: ""
+    port: 443
+    server: 172.64.69.89
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
