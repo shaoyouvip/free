@@ -1,40 +1,45 @@
 proxies:
-    - name: "\U0001F1FA\U0001F1F8US_1|3.5MB/s"
-      port: 58764
-      server: 118.184.140.90
-      skip-cert-verify: true
-      tls: true
-      type: http
-    - name: "\U0001F1E6\U0001F1F9AT_1|1.1MB/s|R002-260618"
-      port: 443
-      server: 146.70.244.2
-      skip-cert-verify: true
-      sub_tag: R002-260618
-      tls: true
-      type: http
+    - cipher: aes-256-gcm
+      name: "\U0001F1EE\U0001F1F9IT_1|1.9MB/s"
+      password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+      port: "19999"
+      server: 202.50.253.81
+      type: ss
       udp: true
-      x-toolall-mihomo: true
-    - name: "\U0001F1FA\U0001F1F8US_2|1.1MB/s"
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1F8\U0001F1ECSG_1|2.6MB/s"
+      network: tcp
+      port: "30322"
+      reality-opts:
+        public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+        short-id: 6a60e7e382d6
+      server: win2loxfde0202.gggrelay.org
+      servername: psstatic.cdn.bcebos.com
+      tls: true
+      type: vless
+      udp: true
+      uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      xudp: true
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1ED\U0001F1F0HK_1|4.1MB/s"
+      network: tcp
+      port: 21020
+      server: dog-hk.kunlun01dns.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+      xudp: true
+    - name: "\U0001F1FA\U0001F1F8US_1|3.1MB/s"
       password: l1tlrdx52v
       port: 62000
       server: 66.253.2.69
       type: socks5
       username: u_rb1dba2
-    - alterId: 0
-      cipher: auto
-      http-opts:
-        method: GET
-        path:
-            - /ABCDE
-      name: "\U0001F1FA\U0001F1F8US_3|1.1MB/s"
-      network: http
-      port: 52402
-      server: 104.225.148.201
-      tls: false
-      type: vmess
-      uuid: 0542f509-4368-4ee3-be54-0557fed80f6b
-      x-toolall-mihomo: true
-    - name: "\U0001F1E9\U0001F1EADE_1|1.3MB/s"
+    - name: "\U0001F1E9\U0001F1EADE_1|3.0MB/s"
       password: "null"
       port: 443
       server: 172.64.68.89
@@ -42,23 +47,22 @@ proxies:
       tls: true
       type: http
       username: "null"
-    - name: "\U0001F1FA\U0001F1F8US_4|2.7MB/s"
-      password: ozbqjztv
-      port: 8000
-      server: 192.220.47.85
+    - name: "\U0001F1E9\U0001F1EADE_2|1.6MB/s"
+      port: 443
+      server: 172.64.68.89
+      skip-cert-verify: true
+      sni: 172.64.68.89
+      tls: true
       type: http
-      username: ozbqjztv
-    - alterId: 0
-      cipher: auto
-      http-opts:
-        method: GET
-        path:
-            - /
-      name: "\U0001F1FA\U0001F1F8US_5|3.1MB/s"
-      network: http
-      port: 44441
-      server: 192.220.47.85
-      tls: false
-      type: vmess
-      uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
-      x-toolall-mihomo: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F3\U0001F1F1NL_1|2.4MB/s"
+      obfs: salamander
+      obfs-password: HATATEAYA
+      password: HATATEAYA
+      port: "8964"
+      server: 77.90.15.183
+      skip-cert-verify: false
+      sni: ganlanc.at
+      type: hysteria2
+      up: ""
