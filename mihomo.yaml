@@ -1,44 +1,22 @@
 proxies:
   - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|2.3MB/s
+    name: 🇮🇹IT_1|1.3MB/s
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.18
     type: ss
     udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_2|1.2MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.36
-    type: ss
-    udp: true
-  - name: 🇺🇸US_1|4.5MB/s
-    password: 23c82941-70f4-4381-90db-bd28e9a902e9
-    port: 443
-    server: steel7.hadsvpn.com
-    type: hysteria2
-    udp: true
-    sni: steel7.hadsvpn.com
-  - name: 🇩🇪DE_1|1.2MB/s
-    password: "null"
-    port: 443
-    server: 172.64.68.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: "null"
-    udp: true
-  - name: 🇫🇷FR_1|1.0MB/s|R002-260618
+  - name: 🇫🇷FR_1|1013KB/s|P002-260618
+    password: None
     port: 9443
-    server: 213.139.9.142
+    server: 138.199.47.247
     skip-cert-verify: true
-    sub_tag: R002-260618
+    sub_tag: P002-260618
     tls: true
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇩🇪DE_2|2.9MB/s
+  - name: 🇩🇪DE_1|1.1MB/s
     port: 443
     server: 172.64.68.89
     skip-cert-verify: true
@@ -46,7 +24,16 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_3|1.5MB/s|P002-260618
+  - name: 🇦🇹AT_1|1.1MB/s|R002-260618
+    port: 443
+    server: 146.70.244.2
+    skip-cert-verify: true
+    sub_tag: R002-260618
+    tls: true
+    type: http
+    udp: true
+    x-toolall-mihomo: true
+  - name: 🇩🇪DE_2|1.2MB/s|P002-260618
     password: None
     port: 443
     server: 149.36.50.1
@@ -56,7 +43,7 @@ proxies:
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇨🇿CZ_1|2.0MB/s
+  - name: 🇨🇿CZ_1|1.6MB/s
     port: 443
     server: 185.216.35.66
     skip-cert-verify: true
@@ -64,7 +51,70 @@ proxies:
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇩🇪DE_4|1.2MB/s
+  - name: 🇺🇸US_1|1.1MB/s
+    port: 443
+    server: 149.88.21.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    x-toolall-mihomo: true
+  - name: 🇳🇱NL_1|1.2MB/s
+    port: 443
+    server: 149.36.51.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    x-toolall-mihomo: true
+  - client-fingerprint: firefox
+    name: 🇩🇪DE_3|1.7MB/s
+    network: xhttp
+    port: 8443
+    reality-opts:
+      public-key: 1SldfhWqqF_Rg9QlPKQqufcHi5GhkxwcEV5HGyOy4Qg
+      short-id: "64ad711102f56ca2"
+    server: 2.27.14.122
+    tls: true
+    type: vless
+    udp: true
+    uuid: 67864856-8730-40cc-9e1a-a0df697d912b
+    xhttp-opts:
+      host: de.krabvpn.pro
+      mode: auto
+      path: /assets/6c0f3ad762cb7ff51b454076
+    servername: de.krabvpn.pro
+  - client-fingerprint: random
+    encryption: none
+    name: 🇸🇬SG_1|1.0MB/s
+    network: ws
+    port: 443
+    server: freev2.cloudflare.182682.xyz
+    tls: true
+    type: vless
+    udp: true
+    uuid: d38b03c3-ff14-4ee0-80de-cd089f84ee38
+    ws-opts:
+      headers:
+        Host: ap-south.862400.xyz
+        User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      path: /announcement
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    xudp: true
+    packet-encoding: xudp
+    servername: ap-south.862400.xyz
+  - name: 🇩🇪DE_4|1.5MB/s
+    password: ""
+    port: 443
+    server: 172.64.69.89
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
+    udp: true
+  - name: 🇩🇪DE_5|1.0MB/s
     password: "null"
     port: 443
     server: 172.64.69.89
@@ -73,7 +123,7 @@ proxies:
     type: http
     username: "null"
     udp: true
-  - name: 🇨🇭CH_1|1.1MB/s
+  - name: 🇨🇭CH_1|2.8MB/s
     password: ""
     port: 9443
     server: 37.120.213.210
