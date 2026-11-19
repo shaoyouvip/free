@@ -1,23 +1,20 @@
 proxies:
-  - name: 🇩🇪DE_1|1.3MB/s
-    password: "null"
+  - alpn:
+      - h3
+    auth: b7f20af6-7523-11f1-a6a1-f23c913c8d2b
+    down: 200 Mbps
+    name: 🇭🇰HK_1|1.4MB/s
+    password: b7f20af6-7523-11f1-a6a1-f23c913c8d2b
     port: 443
-    server: 172.64.68.89
+    server: 906512ec-tovmo0-tou0p4-1ji20.hk3.hyhuawei.com
     skip-cert-verify: true
-    tls: true
-    type: http
-    username: "null"
+    type: hysteria2
     udp: true
-  - name: 🇹🇭TH_1|1.1MB/s
-    password: YlRoWvE0dL_cUqS94wPeKnA4
-    port: 62000
-    server: 87.84.49.140
-    type: socks5
-    username: ks878449260d
-    udp: true
+    up: 50 Mbps
+    sni: 906512ec-tovmo0-tou0p4-1ji20.hk3.hyhuawei.com
   - client-fingerprint: random
     encryption: none
-    name: 🇺🇸US_1|4.0MB/s
+    name: 🇺🇸US_1|3.5MB/s
     network: ws
     port: 443
     server: ct.877774.xyz
@@ -28,7 +25,7 @@ proxies:
     ws-opts:
       headers:
         Host: us-lax.862400.xyz
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
           Gecko) Chrome/70.0.3538.102 Safari/537.36
       path: /announcement
       early-data-header-name: Sec-WebSocket-Protocol
@@ -36,53 +33,10 @@ proxies:
     xudp: true
     packet-encoding: xudp
     servername: us-lax.862400.xyz
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_1|4.4MB/s
-    network: ws
-    port: 443
-    server: saas.sin.fan
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-    ws-opts:
-      headers:
-        Host: v2n1.11676767.xyz
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/54.0.2840.99 Safari/537.36
-      path: /static/cart
-    xudp: true
-    packet-encoding: xudp
-    servername: v2n1.11676767.xyz
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇸🇬SG_1|1.5MB/s
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 78bt3ShDWt49Or4tOPcnRytLYuHe_If72VypCknoWGc
-      short-id: "e83463997bc7"
-    server: bgroup.sg3.ilovegairport.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3587fe6b-850e-4fba-98d9-db113b416891
-    xudp: true
-    packet-encoding: xudp
-    servername: ap-southeast-1.console.aws.amazon.com
-  - name: 🇩🇪DE_2|2.6MB/s
+  - name: 🇺🇸US_2|3.8MB/s
     password: ""
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ""
-    udp: true
-  - name: 🇨🇭CH_1|1.4MB/s
-    password: ""
-    port: 9443
-    server: 37.120.213.210
+    port: 58764
+    server: 118.184.140.90
     skip-cert-verify: true
     tls: true
     type: http
