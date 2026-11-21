@@ -1,74 +1,40 @@
 proxies:
   - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|1.1MB/s
+    name: 🇮🇹IT_1|1.2MB/s
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
-    server: 202.50.253.18
+    server: 202.50.253.81
     type: ss
     udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_2|1.8MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.54
+  - cipher: 2022-blake3-aes-256-gcm
+    name: 🇸🇬SG_1|1.7MB/s
+    password: ClzJLvRzIxivCXbf5X5jnSU0pLg5ffCEUL2AZoeLg94=
+    port: 8388
+    server: 43.160.213.146
     type: ss
     udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_3|1.7MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.36
-    type: ss
-    udp: true
-  - alterId: 64
-    cipher: auto
-    name: 🇺🇸US_1|1.1MB/s
-    network: ws
-    port: 30004
-    server: 192.74.236.148
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    ws-opts:
-      headers:
-        Host: www.91334565.xyz
-      path: /path/1733477783705
-    servername: www.91334565.xyz
-  - name: 🇩🇪DE_1|1.8MB/s
+    x-toolall-mihomo: true
+  - name: 🇩🇪DE_1|2.5MB/s
+    password: "null"
     port: 443
     server: 172.64.68.89
     skip-cert-verify: true
-    sni: 172.64.68.89
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_2|1.1MB/s
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇫🇷FR_1|1.2MB/s|P002-260618
-    password: None
-    port: 9443
-    server: 138.199.47.247
-    skip-cert-verify: true
-    sub_tag: P002-260618
-    tls: true
-    type: http
-    udp: true
+    username: "null"
     x-toolall-mihomo: true
-  - name: 🇩🇪DE_3|2.5MB/s
-    port: 9002
-    server: 158.173.154.1
+  - name: 🇳🇱NL_1|1.6MB/s
+    password: ""
+    port: 443
+    server: 149.36.51.129
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_4|1.5MB/s|P002-260618
+    username: ""
+    x-toolall-mihomo: true
+  - name: 🇩🇪DE_2|2.5MB/s|P002-260618
     password: None
     port: 443
     server: 149.36.50.1
@@ -78,61 +44,31 @@ proxies:
     type: http
     udp: true
     x-toolall-mihomo: true
-  - name: 🇺🇸US_2|1.7MB/s
-    password: l1tlrdx52v
-    port: 62000
-    server: 66.253.2.69
-    type: socks5
-    username: u_rb1dba2
-    udp: true
-  - name: 🇫🇷FR_2|1.2MB/s|R002-260618
-    port: 443
-    server: 149.102.245.65
+  - name: 🇨🇿CZ_1|1.1MB/s|K001-260618
+    password: None
+    port: 9443
+    server: 152.233.16.174
     skip-cert-verify: true
-    sub_tag: R002-260618
+    sub_tag: K001-260618
     tls: true
     type: http
     udp: true
+    username: ""
     x-toolall-mihomo: true
-  - name: 🇮🇹IT_4|1.3MB/s
-    password: JdFlrZhqHP
-    port: 1080
-    server: 69.16.157.244
-    skip-cert-verify: true
-    type: socks5
-    username: ufCobhydz4Wd
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇯🇵JP_1|1.1MB/s
+    network: tcp
+    port: 443
+    server: 23.27.11.86
+    tls: true
+    type: vless
     udp: true
-  - alterId: 0
-    cipher: auto
-    http-opts:
-      headers: {}
-      path:
-        - /3x
-    name: 🇺🇸US_3|1.1MB/s
-    network: http
-    port: 2053
-    server: 192.204.58.87
-    type: vmess
-    udp: true
-    uuid: 286a45bc-f3aa-4a2d-8e6e-21fb824d9eeb
+    uuid: e8a346c2-e14c-4f82-876f-367dc19ee541
     xudp: true
     packet-encoding: xudp
-  - name: 🇩🇪DE_5|1.6MB/s
-    password: "null"
-    port: 443
-    server: 193.233.75.115
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: "null"
-    udp: true
-  - name: 🇦🇹AT_1|1.1MB/s
-    port: 443
-    server: 146.70.244.18
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
+    servername: jp.burmy.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
