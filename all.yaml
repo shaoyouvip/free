@@ -1,44 +1,58 @@
 proxies:
-    - name: "\U0001F1E9\U0001F1EADE_1|1.7MB/s"
-      password: "null"
+    - name: "\U0001F1E9\U0001F1EADE_1|1.2MB/s"
       port: 443
       server: 172.64.68.89
       skip-cert-verify: true
+      sni: 172.64.68.89
       tls: true
       type: http
-      udp: true
-      username: "null"
-      x-toolall-mihomo: true
-    - name: "\U0001F1ED\U0001F1F0HK_1|2.7MB/s"
-      password: ""
-      port: 8443
-      server: 38.76.140.254
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: ""
-      x-toolall-mihomo: true
-    - name: "\U0001F1EC\U0001F1E7GB_1|1.1MB/s|R002-260618"
+    - name: "\U0001F1E9\U0001F1EADE_2|1.1MB/s|P002-260618"
+      password: None
       port: 443
-      server: 84.17.50.193
+      server: 172.64.68.89
       skip-cert-verify: true
-      sub_tag: R002-260618
+      sub_tag: P002-260618
       tls: true
       type: http
       udp: true
       x-toolall-mihomo: true
-    - encryption: none
-      name: "\U0001F1EB\U0001F1F7FR_1|1.1MB/s"
-      network: ws
-      port: "2083"
-      server: 54.36.102.152
+    - name: "\U0001F1E9\U0001F1EADE_3|1.0MB/s"
+      password: "null"
+      port: 443
+      server: 172.64.69.89
+      skip-cert-verify: true
+      tls: true
+      type: http
+      username: "null"
+    - name: "\U0001F1ED\U0001F1F0HK_1|1.3MB/s"
+      password: ""
+      port: "3128"
+      server: 45.205.18.25
+      skip-cert-verify: true
+      type: http
+      username: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1ED\U0001F1F0HK_2|2.5MB/s"
+      obfs: salamander
+      obfs-password: 9veAh9pTbrAfDwM1fIYI
+      password: hAUdd15a7YGHUSgiPOUz
+      port: "443"
+      server: 43.103.2.53
+      skip-cert-verify: true
+      sni: ""
+      type: hysteria2
+      up: ""
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "\U0001F1EF\U0001F1F5JP_1|2.4MB/s"
+      network: tcp
+      port: "443"
+      server: 23.27.11.86
+      servername: jp.burmy.xyz
+      tls: true
       type: vless
       udp: true
-      uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
-      ws-opts:
-        headers:
-            Host: ""
-            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-        path: /vless-kulo
+      uuid: e8a346c2-e14c-4f82-876f-367dc19ee541
       xudp: true
