@@ -1,20 +1,5 @@
 proxies:
-    - alpn:
-        - h3
-      auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-      down: 200
-      name: "\U0001F1ED\U0001F1F0HK_1|1.4MB/s"
-      obfs: salamander
-      obfs-password: o5qgnpl75wayhkn5
-      password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-      port: 443
-      server: nb2hk.hikigo.com
-      skip-cert-verify: true
-      sni: nb2hk.hikigo.com
-      type: hysteria2
-      udp: true
-      up: 100
-    - name: "\U0001F1EF\U0001F1F5JP_1|4.8MB/s"
+    - name: "\U0001F1EF\U0001F1F5JP_1|5.4MB/s"
       password: 57beeeb0-03fc-4fc9-94da-7604488a7134
       port: 34745
       server: win2loxfde0303.gggrelay.org
@@ -22,46 +7,89 @@ proxies:
       sni: nu3rb.supertoolify.com
       type: trojan
       udp: true
-    - name: "\U0001F1FA\U0001F1F8US_1|1007KB/s"
-      password: "null"
+    - alpn:
+        - h3
+      auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      down: 200
+      name: "\U0001F1EF\U0001F1F5JP_2|1.5MB/s"
+      obfs: salamander
+      obfs-password: e3ymhs6gbzptjysj
+      password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      port: 443
+      server: dg3rb.ianai.it.com
+      skip-cert-verify: true
+      sni: dg3rb.ianai.it.com
+      type: hysteria2
+      udp: true
+      up: 100
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5JP_3|5.0MB/s"
+      network: tcp
+      password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      port: "34745"
+      server: win2loxfde0303.gggrelay.org
+      skip-cert-verify: true
+      sni: nu3rb.supertoolify.com
+      type: trojan
+      udp: true
+    - alterId: "0"
+      cipher: auto
+      name: "\U0001F1FA\U0001F1F8US_1|4.1MB/s"
+      network: ws
+      port: "16648"
+      server: d1eyz.xiaoyan.io
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 904f0569-8695-466f-97cf-0de2face1b46
+      ws-opts:
+        headers:
+            Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+        path: /
+      xudp: true
+    - name: "\U0001F1E9\U0001F1EADE_1|2.4MB/s"
+      port: 443
+      server: 172.64.68.89
+      skip-cert-verify: true
+      sni: 172.64.68.89
+      tls: true
+      type: http
+    - name: "\U0001F1E9\U0001F1EADE_2|2.4MB/s"
+      password: None
+      port: 443
+      server: 149.36.50.1
+      skip-cert-verify: true
+      tls: true
+      type: http
+      udp: true
+    - name: "\U0001F1FA\U0001F1F8US_2|2.5MB/s"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 443
+      server: usgp1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      udp: true
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "\U0001F1E9\U0001F1EADE_3|2.0MB/s"
       port: 443
       server: 172.64.69.89
       skip-cert-verify: true
       tls: true
       type: http
-      username: "null"
-    - name: "\U0001F1EC\U0001F1E7GB_1|1.1MB/s"
-      port: 443
-      server: 212.102.63.31
+      udp: true
+    - name: "\U0001F1E8\U0001F1EDCH_1|1.1MB/s"
+      port: 9443
+      server: 37.120.213.210
       skip-cert-verify: true
       tls: true
       type: http
-      udp: true
-    - name: "\U0001F1E9\U0001F1EADE_1|2.0MB/s"
-      password: "null"
+    - name: "\U0001F1E8\U0001F1EDCH_2|1.9MB/s|P002-260618"
+      password: None
       port: 443
-      server: 172.64.68.89
+      server: 31.7.62.50
       skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: "null"
-      x-toolall-mihomo: true
-    - name: "\U0001F1ED\U0001F1F0HK_2|1.0MB/s"
-      password: ""
-      port: 8443
-      server: 38.76.140.254
-      skip-cert-verify: true
-      tls: true
-      type: http
-      udp: true
-      username: ""
-      x-toolall-mihomo: true
-    - name: "\U0001F1EC\U0001F1E7GB_2|1.2MB/s|R002-260618"
-      port: 443
-      server: 84.17.50.193
-      skip-cert-verify: true
-      sub_tag: R002-260618
+      sub_tag: P002-260618
       tls: true
       type: http
       udp: true
