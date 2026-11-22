@@ -1,22 +1,28 @@
 proxies:
+  - name: 🇯🇵JP_1|1.3MB/s
+    password: czxPueuXQB1wUfMU
+    port: 36835
+    server: 45.192.203.110
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: anytls
+    udp: true
   - alpn:
       - h3
     auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
     down: 200
-    name: 🇯🇵JP_1|2.0MB/s
+    name: 🇸🇬SG_1|1.0MB/s
     obfs: salamander
-    obfs-password: yhlbhcysaba0wtn1
+    obfs-password: sj1awrdwnn5lbuno
     password: 57beeeb0-03fc-4fc9-94da-7604488a7134
     port: 443
-    server: nb5rb.hikigo.com
+    server: bgsg2.hikigo.com
     skip-cert-verify: true
-    sni: nb5rb.hikigo.com
+    sni: bgsg2.hikigo.com
     type: hysteria2
     udp: true
     up: 100
-  - client-fingerprint: chrome
-    name: 🇯🇵JP_2|5.2MB/s
-    network: tcp
+  - name: 🇯🇵JP_2|1.4MB/s
     password: 57beeeb0-03fc-4fc9-94da-7604488a7134
     port: 34745
     server: win2loxfde0303.gggrelay.org
@@ -24,43 +30,12 @@ proxies:
     sni: nu3rb.supertoolify.com
     type: trojan
     udp: true
-  - name: 🇭🇰HK_1|1.7MB/s
-    port: 8443
-    server: 38.76.140.254
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - down: ""
-    fingerprint: ""
-    name: 🇺🇸US_1|2.4MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 713142c9-ad09-4894-b35c-645423f3f6c9
-    port: 443
-    server: 152.234.245.52
-    skip-cert-verify: false
-    sni: media.embrofree.org
-    type: hysteria2
-    up: ""
-    udp: true
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 🇸🇬SG_1|4.3MB/s
     network: tcp
-    port: 64006
-    reality-opts:
-      public-key: aHbpNgKYJssDDzN0faQYKh9CzzrEnsCRpB4qpMiv5Ug
-      short-id: "49170ca81691d962"
-    server: win2loxfde0203.gggrelay.org
-    tls: true
-    type: vless
+  - name: 🇰🇷KR_1|3.0MB/s
+    port: 1080
+    server: 183.106.215.208
+    type: socks5
     udp: true
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    xudp: true
-    packet-encoding: xudp
-    servername: www.lamer.com.sg
 proxy-groups:
   - name: 🚀 节点选择
     type: select
