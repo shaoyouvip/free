@@ -1,50 +1,57 @@
 proxies:
-  - client-fingerprint: edge
+  - alpn:
+      - ""
+    alterId: 0
+    cipher: auto
+    name: 🇨🇦CA_1|2.7MB/s
+    network: ws
+    port: 16641
+    server: p6-olduser.linuxlh.xin
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 904f0569-8695-466f-97cf-0de2face1b46
+    ws-opts:
+      headers:
+        Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      path: /
+  - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇻🇳VN_1|4.3MB/s
+    name: 🇭🇰HK_1|1.0MB/s
     network: tcp
-    packet-encoding: xudp
-    port: 46074
+    port: 10540
     reality-opts:
-      public-key: Zpe4RNze71UGv-T9y55k31k9BtY7gS7uvRV5aA7eiWQ
-      short-id: "367e3031"
-    server: hsaia.connainho.lol
+      public-key: pRZJDZgN_twRpO_4NJTiVp_IiSgU4-XLI9hoXfgUzXo
+    server: xjc02.clkhd.quest
     tls: true
     type: vless
-    uuid: c74a51bc-0e10-43e5-b6a8-9395c40f3f54
     udp: true
-    servername: www.apple.com
-  - name: 🇬🇧GB_1|1004KB/s|R002-260618
-    port: 443
-    server: 84.17.50.193
-    skip-cert-verify: true
-    sub_tag: R002-260618
+    uuid: d46c9fec-1416-4a5a-a181-84a59df421cf
+    servername: itunes.apple.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: 🇭🇰HK_2|4.7MB/s
+    network: tcp
+    port: 10540
+    reality-opts:
+      public-key: pRZJDZgN_twRpO_4NJTiVp_IiSgU4-XLI9hoXfgUzXo
+    server: xjc02.clkhd.quest
     tls: true
-    type: http
+    type: vless
     udp: true
-    x-toolall-mihomo: true
-  - name: 🇨🇿CZ_1|1.1MB/s
-    password: None
-    port: 9443
-    server: 152.233.16.174
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇷🇸RS_1|1.1MB/s|K001-260618
-    password: None
-    port: 443
-    server: 146.70.221.18
-    skip-cert-verify: true
-    sub_tag: K001-260618
-    tls: true
-    type: http
-    udp: true
-    x-toolall-mihomo: true
-  - name: 🇰🇷KR_1|2.0MB/s
-    password: ""
+    uuid: d4797a42-9b2e-4a1e-b865-8d7877069ce4
+    servername: itunes.apple.com
+  - name: 🇰🇷KR_1|1.7MB/s
     port: 1080
     server: 59.11.209.162
+    skip-cert-verify: true
+    type: socks5
+    udp: true
+  - name: 🇰🇷KR_2|1.9MB/s
+    password: ""
+    port: 1080
+    server: 183.106.215.208
     skip-cert-verify: true
     type: socks5
     username: ""
