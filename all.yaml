@@ -1,14 +1,21 @@
 proxies:
-    - name: "\U0001F1F0\U0001F1F7KR_1|3.4MB/s"
+    - name: "\U0001F1F0\U0001F1F7KR_1|2.3MB/s"
       port: 1080
       server: 59.11.209.162
       skip-cert-verify: true
       type: socks5
-    - name: "\U0001F1FA\U0001F1F8US_1|1.0MB/s"
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 443
-      server: usgp1-cdn-route.couldflare-cdn.com
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "\U0001F1FB\U0001F1F3VN_1|2.3MB/s"
+      network: tcp
+      port: "46074"
+      reality-opts:
+        public-key: Zpe4RNze71UGv-T9y55k31k9BtY7gS7uvRV5aA7eiWQ
+        short-id: 367e3031
+      server: hsaia.connainho.lol
+      servername: www.apple.com
       tls: true
-      type: http
+      type: vless
       udp: true
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
+      uuid: c74a51bc-0e10-43e5-b6a8-9395c40f3f54
+      xudp: true
