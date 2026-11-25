@@ -1,9 +1,9 @@
 proxies:
   - client-fingerprint: chrome
-    name: 🇭🇰HK_1|1.4MB/s
+    name: 🇭🇰HK_1|3.2MB/s
     network: ws
-    port: 8443
-    server: 154.26.190.226
+    port: 443
+    server: 131.143.180.19
     tls: true
     type: vless
     udp: true
@@ -14,10 +14,10 @@ proxies:
       path: /487e07e6-2930-4e71-99b3-6792e5909f16
     servername: hkg.kkp.us.ci
   - client-fingerprint: chrome
-    name: 🇭🇰HK_2|2.2MB/s
+    name: 🇭🇰HK_2|1.5MB/s
     network: ws
-    port: 8443
-    server: 179.253.233.41
+    port: 443
+    server: 152.175.9.55
     tls: true
     type: vless
     udp: true
@@ -27,42 +27,19 @@ proxies:
         Host: hkg.kkp.us.ci
       path: /487e07e6-2930-4e71-99b3-6792e5909f16
     servername: hkg.kkp.us.ci
-  - cipher: aes-256-gcm
-    name: 🇰🇷KR_1|1.0MB/s
-    password: dXP0rIi4TPrbqxR938oQDw==
-    port: 4434
-    server: 119.28.150.131
-    type: ss
-    udp: true
-  - name: 🇰🇷KR_2|1.3MB/s
-    port: 1080
-    server: 59.11.209.162
-    skip-cert-verify: true
-    type: socks5
-    udp: true
-  - name: 🇩🇪DE_1|1.5MB/s
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
+  - client-fingerprint: firefox
+    name: 🇺🇸US_1|3.5MB/s
+    network: tcp
+    port: 10001
+    reality-opts:
+      public-key: 7AqAdnGRTolgqNAC_ZPTmWux3TRTatBAmIey_DSrv1Y
+      short-id: "ec584974fff0"
+    server: 141.193.154.34
     tls: true
-    type: http
+    type: vless
     udp: true
-  - name: 🇬🇧GB_1|1.5MB/s
-    port: 443
-    server: 212.102.63.31
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_2|1.8MB/s
-    password: ""
-    port: 443
-    server: 172.64.68.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ""
-    udp: true
+    uuid: 21a54f58-b362-444f-b834-fdfa9602fce8
+    servername: cloudflare.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
