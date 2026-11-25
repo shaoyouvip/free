@@ -1,34 +1,67 @@
 proxies:
-  - alpn:
-      - h3
-    auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    name: 🇩🇪DE_1|1.8MB/s
-    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    port: 13337
-    server: uk-tube-01.stre4m.net
-    skip-cert-verify: true
-    sni: mother-earth.fyi
-    type: hysteria2
+  - client-fingerprint: chrome
+    name: 🇭🇰HK_1|1.4MB/s
+    network: ws
+    port: 8443
+    server: 154.26.190.226
+    tls: true
+    type: vless
     udp: true
-  - name: 🇰🇷KR_1|1.5MB/s
+    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
+    ws-opts:
+      headers:
+        Host: hkg.kkp.us.ci
+      path: /487e07e6-2930-4e71-99b3-6792e5909f16
+    servername: hkg.kkp.us.ci
+  - client-fingerprint: chrome
+    name: 🇭🇰HK_2|2.2MB/s
+    network: ws
+    port: 8443
+    server: 179.253.233.41
+    tls: true
+    type: vless
+    udp: true
+    uuid: aff1b196-478c-425a-9403-7ea15d9aafdf
+    ws-opts:
+      headers:
+        Host: hkg.kkp.us.ci
+      path: /487e07e6-2930-4e71-99b3-6792e5909f16
+    servername: hkg.kkp.us.ci
+  - cipher: aes-256-gcm
+    name: 🇰🇷KR_1|1.0MB/s
+    password: dXP0rIi4TPrbqxR938oQDw==
+    port: 4434
+    server: 119.28.150.131
+    type: ss
+    udp: true
+  - name: 🇰🇷KR_2|1.3MB/s
     port: 1080
     server: 59.11.209.162
     skip-cert-verify: true
     type: socks5
     udp: true
-  - name: 🇩🇪DE_2|1.5MB/s
-    password: None
+  - name: 🇩🇪DE_1|1.5MB/s
     port: 443
-    server: 149.36.50.1
+    server: 172.64.69.89
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇯🇵JP_1|1.6MB/s
-    port: 3001
-    server: 43.133.21.24
+  - name: 🇬🇧GB_1|1.5MB/s
+    port: 443
+    server: 212.102.63.31
     skip-cert-verify: true
-    type: socks5
+    tls: true
+    type: http
+    udp: true
+  - name: 🇩🇪DE_2|1.8MB/s
+    password: ""
+    port: 443
+    server: 172.64.68.89
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
