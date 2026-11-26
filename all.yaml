@@ -1,17 +1,10 @@
 proxies:
-    - auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-      name: "\U0001F1E9\U0001F1EADE_1|1.7MB/s"
-      password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-      port: 13337
-      server: 128.254.186.57
-      skip-cert-verify: true
-      sni: mother-earth.fyi
-      type: hysteria2
-    - client-fingerprint: chrome
+    - client-fingerprint: firefox
       flow: xtls-rprx-vision
-      name: "\U0001F1F8\U0001F1ECSG_1|3.6MB/s"
+      name: "\U0001F1F8\U0001F1ECSG_1|4.3MB/s"
       network: tcp
-      port: "37998"
+      packet-encoding: xudp
+      port: 37998
       reality-opts:
         public-key: j7lihAdLvNKWg67WMGQsRSM8WFbaUK5dAi7D2R7iXHM
         short-id: d5a01375
@@ -19,12 +12,10 @@ proxies:
       servername: www.apple.com
       tls: true
       type: vless
-      udp: true
       uuid: d235ad20-8f30-441e-871e-ee2695e4c430
-      xudp: true
     - client-fingerprint: chrome
       flow: xtls-rprx-vision
-      name: "\U0001F1ED\U0001F1F0HK_1|2.8MB/s"
+      name: "\U0001F1ED\U0001F1F0HK_1|1.9MB/s"
       network: tcp
       port: "38101"
       reality-opts:
@@ -37,8 +28,81 @@ proxies:
       udp: true
       uuid: d235ad20-8f30-441e-871e-ee2695e4c430
       xudp: true
-    - name: "\U0001F1F0\U0001F1F7KR_1|1.7MB/s"
+    - auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+      name: "\U0001F1E9\U0001F1EADE_1|1.9MB/s"
+      password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+      port: 13337
+      server: 128.254.186.57
+      skip-cert-verify: true
+      sni: mother-earth.fyi
+      tls: false
+      type: hysteria2
+    - name: "\U0001F1E9\U0001F1EADE_2|1.4MB/s"
+      password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+      port: 13337
+      server: uk-tube-01.stre4m.net
+      skip-cert-verify: true
+      sni: mother-earth.fyi
+      tls: false
+      type: hysteria2
+    - name: "\U0001F1F0\U0001F1F7KR_1|2.0MB/s"
       port: 1080
       server: 59.11.209.162
       skip-cert-verify: true
       type: socks5
+    - name: "\U0001F1F0\U0001F1F7KR_2|1018KB/s"
+      password: ""
+      port: "1080"
+      server: 183.106.215.208
+      skip-cert-verify: true
+      type: socks5
+      username: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F0\U0001F1FFKZ_1|1.4MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
+      port: "15443"
+      server: 194.87.224.137
+      skip-cert-verify: false
+      sni: n9.neproxy.net
+      type: hysteria2
+      up: ""
+    - cipher: chacha20-ietf-poly1305
+      name: "\U0001F1EE\U0001F1F9IT_1|1.1MB/s"
+      password: 034b5d9404b79a2df62fcb77a49cf748306765448d8b5e93
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: italy.astroapps.io
+        mode: websocket
+        path: /b5cba947dfef6a5494b25d76
+        tls: true
+      port: "443"
+      server: italy.astroapps.io
+      type: ss
+      udp: true
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1FA\U0001F1F8US_1|1.3MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
+      port: "14443"
+      server: 194.87.224.137
+      skip-cert-verify: false
+      sni: n37.neproxy.net
+      type: hysteria2
+      up: ""
+    - down: ""
+      fingerprint: ""
+      name: "\U0001F1F3\U0001F1F1NL_1|2.3MB/s"
+      obfs: ""
+      obfs-password: ""
+      password: ad80d93f-8b35-4b0e-861d-128813efc7d1
+      port: "30443"
+      server: 31.58.234.101
+      skip-cert-verify: false
+      sni: sync46.lernkino.online
+      type: hysteria2
+      up: ""
