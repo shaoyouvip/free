@@ -1,7 +1,50 @@
 proxies:
+  - cipher: chacha20-ietf-poly1305
+    name: 🇭🇰HK_1|4.0MB/s
+    password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
+    port: 28014
+    server: waic.pro.main.sys-metric-report.com
+    type: ss
+    udp: true
+  - name: 🇭🇰HK_2|1.8MB/s
+    password: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+    port: 43120
+    server: dddz-1-x.473221.xyz
+    skip-cert-verify: true
+    sni: v1-dy.ixigua.com
+    type: anytls
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇮🇹IT_1|1.4MB/s
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.72
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇮🇹IT_2|1.4MB/s
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.81
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇮🇹IT_3|1.1MB/s
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.54
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇮🇹IT_4|2.4MB/s
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.63
+    type: ss
+    udp: true
   - client-fingerprint: firefox
     flow: xtls-rprx-vision
-    name: 🇸🇬SG_1|4.3MB/s
+    name: 🇸🇬SG_1|2.5MB/s
     network: tcp
     packet-encoding: xudp
     port: 37998
@@ -14,24 +57,73 @@ proxies:
     uuid: d235ad20-8f30-441e-871e-ee2695e4c430
     udp: true
     servername: www.apple.com
-  - client-fingerprint: chrome
+  - client-fingerprint: edge
     flow: xtls-rprx-vision
-    name: 🇭🇰HK_1|1.9MB/s
+    name: 🇸🇬SG_2|3.9MB/s
     network: tcp
-    port: 38101
+    packet-encoding: xudp
+    port: 43113
     reality-opts:
-      public-key: j7lihAdLvNKWg67WMGQsRSM8WFbaUK5dAi7D2R7iXHM
-      short-id: "d5a01375"
-    server: vl-x2.qz10086.top
+      public-key: EK3prcfF8VKm3CoTXWQguRj67LxGbkPIpKmEUKsMKGs
+      short-id: "ff2c978a0b"
+    server: dddz-1-x.473221.xyz
+    tls: true
+    type: vless
+    uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+    udp: true
+    servername: v1-dy.ixigua.com
+  - name: 🇺🇸US_1|1.9MB/s
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    port: 443
+    server: 66.163.114.114
+    skip-cert-verify: true
+    type: trojan
+    udp: true
+    network: tcp
+  - name: 🇺🇸US_2|1.0MB/s
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    port: 443
+    server: 66.163.114.166
+    skip-cert-verify: true
+    sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+    type: trojan
+    udp: true
+    network: tcp
+  - cipher: 2022-blake3-chacha20-poly1305
+    name: 🇩🇪DE_1|1.1MB/s
+    password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+    port: 443
+    server: 47.254.167.157
+    type: ss
+    udp: true
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇸🇪SE_1|1.0MB/s
+    network: tcp
+    port: 443
+    server: sw6.yndx-game.com
     tls: true
     type: vless
     udp: true
-    uuid: d235ad20-8f30-441e-871e-ee2695e4c430
+    uuid: eb83b44c-ad8c-4658-9923-313e59bb4d5e
     xudp: true
     packet-encoding: xudp
-    servername: www.apple.com
+    servername: sw6.yndx-game.com
+  - name: 🇩🇪DE_2|3.9MB/s
+    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+    port: 13337
+    server: uk-tube-01.stre4m.net
+    servername: mother-earth.fyi
+    skip-cert-verify: true
+    sni: mother-earth.fyi
+    type: hysteria2
+    udp: true
   - auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    name: 🇩🇪DE_1|1.9MB/s
+    name: 🇩🇪DE_3|3.6MB/s
     password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
     port: 13337
     server: 128.254.186.57
@@ -39,7 +131,7 @@ proxies:
     sni: mother-earth.fyi
     type: hysteria2
     udp: true
-  - name: 🇩🇪DE_2|1.4MB/s
+  - name: 🇩🇪DE_4|3.8MB/s
     password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
     port: 13337
     server: uk-tube-01.stre4m.net
@@ -47,23 +139,234 @@ proxies:
     sni: mother-earth.fyi
     type: hysteria2
     udp: true
-  - name: 🇰🇷KR_1|2.0MB/s
-    port: 1080
-    server: 59.11.209.162
+  - auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+    name: 🇩🇪DE_5|4.0MB/s
+    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+    port: 13337
+    server: 128.254.186.190
     skip-cert-verify: true
-    type: socks5
+    sni: mother-earth.fyi
+    type: hysteria2
     udp: true
-  - name: 🇰🇷KR_2|1018KB/s
+  - name: 🇨🇿CZ_1|1.6MB/s
+    password: None
+    port: 9443
+    server: 152.233.16.174
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_1|2.4MB/s
+    port: 443
+    server: 149.36.51.129
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇩🇪DE_6|2.8MB/s
+    port: 443
+    server: 172.64.69.89
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇧🇪BE_1|1.5MB/s
+    port: 443
+    server: 146.70.123.98
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇬🇧GB_1|3.1MB/s
+    port: 443
+    server: 212.102.63.31
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇮🇪IE_1|3.5MB/s
+    port: 443
+    server: 18.200.158.139
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇳🇱NL_2|3.8MB/s
+    password: "null"
+    port: 9002
+    server: 84.17.47.125
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: "null"
+  - name: 🇳🇱NL_3|3.4MB/s
+    password: None
+    port: 9002
+    server: 84.17.47.148
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+  - name: 🇺🇸US_3|3.2MB/s
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 443
+    server: usgp1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    udp: true
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+    sni: usgp1-cdn-route.couldflare-cdn.com
+  - name: 🇷🇴RO_1|1.5MB/s
+    password: "null"
+    port: 9002
+    server: 193.176.84.23
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+  - name: 🇷🇴RO_2|1.9MB/s
+    password: "null"
+    port: 9002
+    server: 193.176.84.19
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+  - name: 🇺🇸US_4|2.3MB/s
     password: ""
-    port: 1080
-    server: 183.106.215.208
+    port: 9002
+    server: 138.199.35.207
+    skip-cert-verify: true
+    tls: true
+    type: http
+    udp: true
+    username: ""
+    x-toolall-mihomo: true
+  - name: 🇺🇸US_5|1.4MB/s
+    password: l1tlrdx52v
+    port: 62000
+    server: 66.253.2.69
+    type: socks5
+    username: u_rb1dba2
+    udp: true
+  - alpn:
+      - h3
+    auth_str: dongtaiwang.com
+    down: "55"
+    name: 🇫🇷FR_1|2.6MB/s
+    obfs: ""
+    port: 24667
+    protocol: ""
+    server: 62.210.28.175
+    skip-cert-verify: true
+    sni: bing.com
+    type: hysteria
+    up: "11"
+    udp: true
+    auth-str: dongtaiwang.com
+  - name: 🇲🇽MX_1|1.7MB/s
+    password: VvUAFi2E
+    port: 62000
+    server: 72.57.228.30
     skip-cert-verify: true
     type: socks5
-    username: ""
+    username: UBXich0K
+    udp: true
+  - alpn:
+      - h3
+    auth_str: github.com/Alvin9999-newpac/fanqiang
+    down: "55"
+    name: 🇺🇸US_6|1.1MB/s
+    obfs: ""
+    port: 22335
+    protocol: ""
+    server: 198.200.57.142
+    skip-cert-verify: true
+    sni: bing.com
+    type: hysteria
+    up: "11"
+    udp: true
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+  - name: 🇮🇹IT_5|1.3MB/s
+    password: JdFlrZhqHP
+    port: 1080
+    server: 69.16.157.244
+    skip-cert-verify: true
+    type: socks5
+    username: ufCobhydz4Wd
+    udp: true
+  - name: 🇹🇭TH_1|2.2MB/s
+    password: VAwyJQX0iKMJiyCw5UVK9wGH
+    port: 42000
+    server: 103.14.164.202
+    skip-cert-verify: true
+    type: socks5
+    username: route164JIa2CBPxfy
+    udp: true
+  - alpn:
+      - h3
+    auth_str: dongtaiwang.com
+    down: "50"
+    name: 🇫🇷FR_2|1.5MB/s
+    obfs: ""
+    port: 24667
+    protocol: ""
+    server: 62.210.70.191
+    skip-cert-verify: true
+    sni: 62.210.70.191
+    type: hysteria
+    up: "10"
+    udp: true
+    disable-sni: true
+    auth-str: dongtaiwang.com
+  - ip: 172.16.0.2/32
+    ipv6: 2606:4700:110:87d9:118e:a4cc:8d4d:f827/128
+    mtu: 1280
+    name: 🇨🇳CN_1|1.9MB/s
+    port: 1387
+    private-key: x54c2sqnoNG/zWZxtShcWQqc9qMbPrp0bZw1TehnbaY=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    reserved:
+      - 0
+      - 0
+      - 0
+    server: 8.6.112.251
+    type: wireguard
+    udp: true
+  - ip: 172.16.0.2/32
+    ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
+    mtu: 1280
+    name: 🇨🇳CN_2|1.3MB/s
+    port: 955
+    private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    reserved:
+      - 0
+      - 0
+      - 0
+    server: 8.6.112.100
+    type: wireguard
+    udp: true
+  - ip: 172.16.0.2/32
+    mtu: 1380
+    name: 🇨🇳CN_3|1.1MB/s
+    port: 2371
+    presharedkey: ""
+    private-key: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    reserved:
+      - 225
+      - 17
+      - 205
+    server: 162.159.195.4
+    type: wireguard
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇰🇿KZ_1|1.4MB/s
+    name: 🇰🇿KZ_1|2.3MB/s
     obfs: ""
     obfs-password: ""
     password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
@@ -75,34 +378,21 @@ proxies:
     up: ""
     udp: true
   - cipher: chacha20-ietf-poly1305
-    name: 🇮🇹IT_1|1.1MB/s
-    password: 034b5d9404b79a2df62fcb77a49cf748306765448d8b5e93
+    name: 🇩🇰DK_1|2.5MB/s
+    password: c917b96e084ea67a0f21031f1284f9ee9e1d837321ce6362
     plugin: v2ray-plugin
     plugin-opts:
-      host: italy.astroapps.io
+      host: denmark.astroapps.io
       mode: websocket
-      path: /b5cba947dfef6a5494b25d76
+      path: /ad37249091fe1c6ac69e8c23
       tls: true
     port: 443
-    server: italy.astroapps.io
+    server: denmark.astroapps.io
     type: ss
     udp: true
   - down: ""
     fingerprint: ""
-    name: 🇺🇸US_1|1.3MB/s
-    obfs: ""
-    obfs-password: ""
-    password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
-    port: 14443
-    server: 194.87.224.137
-    skip-cert-verify: false
-    sni: n37.neproxy.net
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇳🇱NL_1|2.3MB/s
+    name: 🇳🇱NL_4|4.0MB/s
     obfs: ""
     obfs-password: ""
     password: ad80d93f-8b35-4b0e-861d-128813efc7d1
@@ -112,6 +402,103 @@ proxies:
     sni: sync46.lernkino.online
     type: hysteria2
     up: ""
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    name: 🇭🇰HK_3|1.5MB/s
+    password: f8256fdf607a8015a02b46df1563c2f35ebaff0d56f2923a
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: hongkong.astroapps.io
+      mode: websocket
+      path: /ba91191d41f96668df6fe14b
+      tls: true
+    port: 443
+    server: hongkong.astroapps.io
+    type: ss
+    udp: true
+  - client-fingerprint: safari
+    encryption: none
+    name: 🇪🇪EE_1|1.0MB/s
+    network: xhttp
+    port: 443
+    server: 165.231.177.60
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+    xhttp-opts:
+      mode: auto
+    xudp: true
+    packet-encoding: xudp
+    servername: cab-6b07048f.ferrin.uk
+  - cipher: chacha20-ietf-poly1305
+    name: 🇧🇪BE_2|3.7MB/s
+    password: c40d60d1c847e63098058c7524680f349c9042f932d8e79c
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: belgium.astroapps.io
+      mode: websocket
+      path: /7a0f74508333399db96164d7
+      tls: true
+    port: 443
+    server: belgium.astroapps.io
+    type: ss
+    udp: true
+  - name: 🇦🇱AL_1|2.1MB/s
+    password: ""
+    port: 443
+    server: 87.120.103.242
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ""
+    udp: true
+  - name: 🇺🇸US_7|3.3MB/s
+    password: "null"
+    port: 9002
+    server: 138.199.35.211
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: "null"
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇺🇸US_8|2.4MB/s
+    network: tcp
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    port: 443
+    server: 66.163.114.114
+    skip-cert-verify: false
+    sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
+    type: trojan
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇺🇸US_9|1.8MB/s
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    port: 443
+    server: 66.163.114.114
+    skip-cert-verify: false
+    sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
+    type: trojan
+    udp: true
+    network: tcp
+  - client-fingerprint: chrome
+    name: 🇺🇸US_10|2.2MB/s
+    network: tcp
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    port: 443
+    server: 66.163.114.166
+    skip-cert-verify: false
+    sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+    type: trojan
+    udp: true
+  - name: 🇷🇴RO_3|3.4MB/s
+    port: 9002
+    server: 193.176.84.25
+    skip-cert-verify: true
+    sni: www.bing.com
+    tls: true
+    type: http
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
