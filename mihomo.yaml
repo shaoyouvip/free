@@ -1,24 +1,8 @@
 proxies:
   - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: edge
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: grpc
-    name: 🇳🇱NL_1|1.4MB/s
-    network: grpc
-    port: 443
-    server: 216.86.70.132
-    tls: true
-    type: vless
-    udp: true
-    uuid: 379b1f28-8109-43bc-9317-8f1f24cdc85b
-    servername: nl18.plus-hit.ru
-  - alpn:
       - h3
     auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    name: 🇩🇪DE_1|4.4MB/s
+    name: 🇩🇪DE_1|2.3MB/s
     password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
     port: 13337
     server: uk-tube-01.stre4m.net
@@ -26,63 +10,27 @@ proxies:
     sni: mother-earth.fyi
     type: hysteria2
     udp: true
-  - name: 🇭🇰HK_1|1.0MB/s
-    password: 2902c46c8493
-    port: 443
-    server: ibsdsf.df6h451rh.xin
+  - alpn:
+      - h3
+    auth: AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT
+    name: 🇳🇱NL_1|1.9MB/s
+    obfs: salamander
+    obfs-password: 5wnhum8v8a5f8m9z
+    password: AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT
+    port: 8445
+    server: nemazu.grandserver8.ir
     skip-cert-verify: true
-    sni: docs.microsoft.com
-    type: anytls
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|1.5MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.63
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_2|1.2MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.81
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_3|2.1MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.18
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_4|2.3MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.90
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_5|1.9MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.99
-    type: ss
+    sni: donige.grandserver8.ir
+    type: hysteria2
     udp: true
   - cipher: chacha20-ietf-poly1305
-    name: 🇮🇹IT_6|1.0MB/s
-    password: 034b5d9404b79a2df62fcb77a49cf748306765448d8b5e93
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: italy.astroapps.io
-      mode: websocket
-      path: /b5cba947dfef6a5494b25d76
-      tls: true
-    port: 443
-    server: italy.astroapps.io
+    name: 🇭🇰HK_1|2.2MB/s
+    password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
+    port: 28014
+    server: waic.pro.main.sys-metric-report.com
     type: ss
     udp: true
-  - name: 🇩🇪DE_2|2.3MB/s
+  - name: 🇩🇪DE_2|1.7MB/s
     password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
     port: 13337
     server: uk-tube-01.stre4m.net
@@ -91,148 +39,24 @@ proxies:
     sni: mother-earth.fyi
     type: hysteria2
     udp: true
-  - name: 🇰🇷KR_1|1.9MB/s
+  - name: 🇰🇷KR_1|2.2MB/s
     port: 1080
     server: 59.11.209.162
     skip-cert-verify: true
     type: socks5
     udp: true
-  - name: 🇳🇱NL_2|1.5MB/s
+  - name: 🇬🇧GB_1|2.2MB/s
     port: 443
-    server: 149.36.51.129
+    server: 212.102.63.31
     skip-cert-verify: true
     tls: true
     type: http
     udp: true
-  - name: 🇩🇪DE_3|1.7MB/s
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇧🇪BE_1|1.9MB/s
-    port: 443
-    server: 146.70.123.98
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇩🇪DE_4|1.4MB/s
-    password: None
-    port: 443
-    server: 149.36.50.1
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇷GR_1|1.7MB/s
-    port: 443
-    server: 149.22.85.65
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇮🇹IT_7|2.0MB/s
-    port: 443
-    server: 185.183.105.130
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇬🇧GB_1|1.0MB/s
-    port: 9443
-    server: 84.17.50.214
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇨🇭CH_1|1.0MB/s
-    port: 9443
-    server: 149.88.27.33
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - client-fingerprint: edge
-    flow: xtls-rprx-vision
-    name: 🇸🇬SG_1|3.9MB/s
-    port: 43113
-    reality-opts:
-      public-key: EK3prcfF8VKm3CoTXWQguRj67LxGbkPIpKmEUKsMKGs
-      short-id: "ff2c978a0b"
-    server: dddz-1-x.473221.xyz
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
-    network: tcp
-    servername: v1-dy.ixigua.com
-  - alpn:
-      - h2
-    client-fingerprint: firefox
-    encryption: none
-    flow: xtls-rprx-vision
-    name: 🇳🇱NL_3|2.1MB/s
-    network: tcp
-    port: 8443
-    server: nl.alpheratzz.org
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    xudp: true
-    packet-encoding: xudp
-    servername: api-v1-6b07048f.vmagnum.win
-  - client-fingerprint: edge
-    grpc-opts:
-      grpc-service-name: livestreamcontent
-    name: 🇪🇸ES_1|1.5MB/s
-    network: grpc
-    port: 443
-    reality-opts:
-      public-key: PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA
-      short-id: "c5548af15927b698"
-    server: 194.58.60.228
-    tls: true
-    type: vless
-    udp: true
-    uuid: bbbee51e-021e-4e65-ba03-bf7de175116f
-    xudp: true
-    packet-encoding: xudp
-    servername: node43.lmdscdn.ru
-  - down: ""
-    fingerprint: ""
-    name: 🇩🇪DE_5|1.8MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    port: 13337
-    server: uk-tube-01.stre4m.net
-    skip-cert-verify: true
-    sni: 127.0.0.1
-    type: hysteria2
-    up: ""
-    udp: true
-    disable-sni: true
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: 🇳🇱NL_4|1.0MB/s
-    network: raw
-    port: 8443
-    server: 196.240.125.11
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0173d52e-8e1b-4681-831e-11529677b72f
-    xudp: true
-    packet-encoding: xudp
-    servername: api-v1-6b07048f.vmagnum.win
   - alpn:
       - h3
     auth_str: github.com/Alvin9999-newpac/fanqiang
     down: "55"
-    name: 🇺🇸US_1|1.2MB/s
+    name: 🇺🇸US_1|1016KB/s
     obfs: ""
     port: 22335
     protocol: ""
@@ -244,15 +68,6 @@ proxies:
     udp: true
     disable-sni: true
     auth-str: github.com/Alvin9999-newpac/fanqiang
-  - name: 🇺🇸US_2|1.6MB/s
-    password: ""
-    port: 443
-    server: 12.221.146.147
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ""
-    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
