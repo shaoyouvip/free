@@ -1,7 +1,52 @@
 proxies:
-    - name: "\U0001F1EE\U0001F1F9IT_1|1009KB/s"
+    - alpn:
+        - h3
+      auth-str: dongtaiwang.com
+      down: "55"
+      name: "\U0001F1FA\U0001F1F8US_1|1.0MB/s"
+      password: dongtaiwang.com
+      port: 11008
+      server: 38.6.222.131
+      servername: bing.com
+      skip-cert-verify: true
+      sni: bing.com
+      tls: true
+      type: hysteria
+      up: "11"
+    - name: "\U0001F1E9\U0001F1EADE_1|1019KB/s"
       port: 443
-      server: 185.183.105.130
+      server: 172.64.69.89
       skip-cert-verify: true
       tls: true
       type: http
+      udp: true
+    - name: "\U0001F1EA\U0001F1EAEE_1|1.4MB/s"
+      port: 9443
+      server: 95.153.31.66
+      skip-cert-verify: true
+      tls: true
+      type: http
+    - name: "\U0001F1F0\U0001F1F7KR_1|1.5MB/s"
+      password: ""
+      port: "1080"
+      server: 183.106.215.208
+      skip-cert-verify: true
+      type: socks5
+      username: ""
+    - alpn:
+        - h2
+      client-fingerprint: safari
+      encryption: none
+      name: "\U0001F1EA\U0001F1EAEE_2|1.3MB/s"
+      network: xhttp
+      port: "443"
+      server: ice.noooo.win
+      servername: cab-6b07048f.ferrin.uk
+      tls: true
+      type: vless
+      udp: true
+      uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+      xhttp-opts:
+        mode: stream-one
+        path: /
+      xudp: true
