@@ -1,87 +1,41 @@
 proxies:
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_1|1.2MB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.72
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇮🇹IT_2|1014KB/s
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.90
-    type: ss
-    udp: true
-  - name: 🇨🇿CZ_1|1.0MB/s
-    password: None
-    port: 9443
-    server: 152.233.16.174
+  - name: 🇻🇳VN_1|1.0MB/s
+    password: 967fbc94-fccd-46c2-9241-be92d4906186
+    port: 1665
+    server: u2xak.mjanyt.com
     skip-cert-verify: true
-    tls: true
-    type: http
+    sni: any.mjanyt.com
+    type: anytls
     udp: true
-  - name: 🇩🇪DE_1|1.3MB/s
-    port: 443
-    server: 172.64.69.89
-    skip-cert-verify: true
-    tls: true
-    type: http
-    udp: true
-  - name: 🇰🇷KR_1|2.1MB/s
-    password: ""
+  - name: 🇰🇷KR_1|1.9MB/s
     port: 1080
     server: 59.11.209.162
     skip-cert-verify: true
     type: socks5
-    username: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇩🇪DE_2|1.6MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    port: 13337
-    server: 128.254.186.163
-    skip-cert-verify: false
-    sni: mother-earth.fyi
-    type: hysteria2
-    up: ""
-    udp: true
-  - down: ""
-    fingerprint: ""
-    name: 🇩🇪DE_3|1.5MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    port: 13337
-    server: uk-tube-01.stre4m.net
-    skip-cert-verify: true
-    sni: 127.0.0.1
-    type: hysteria2
-    up: ""
-    udp: true
-    disable-sni: true
-  - down: ""
-    fingerprint: ""
-    name: 🇩🇪DE_4|2.1MB/s
-    obfs: ""
-    obfs-password: ""
-    password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-    port: 13337
-    server: uk-tube-01.stre4m.net
-    skip-cert-verify: true
-    sni: 127.0.0.1
-    type: hysteria2
-    up: ""
     udp: true
   - alterId: 0
     cipher: auto
-    name: 🇸🇬SG_1|4.5MB/s
+    name: 🇸🇬SG_1|4.9MB/s
     network: ws
     port: 16618
     server: fctwi.xiaoyan.io
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 967fbc94-fccd-46c2-9241-be92d4906186
+    ws-opts:
+      headers:
+        Host: 86714acc4cc5924e812db1c117db832f.mobgslb.tbcache.com
+      path: /
+    xudp: true
+    packet-encoding: xudp
+  - alterId: 0
+    cipher: auto
+    name: 🇹🇼TW_1|4.6MB/s
+    network: ws
+    port: 16616
+    server: fx9sc.xiaoyan.io
     skip-cert-verify: false
     tls: false
     type: vmess
